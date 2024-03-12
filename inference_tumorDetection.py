@@ -6,14 +6,14 @@ import torch
 import glob
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from network import ClfNet, WeibullModel
+from network import ClfNet
 import numpy as np
 import pandas as pd
 from util import replace_linear, FairnessMetrics, FairnessMetricsMultiClass, Find_Optimal_Cutoff
 import numpy as np
 import loralib as lora
 from pathlib import Path
-from dataset import generateDataSet, get_datasets
+from dataset_tumorDetection import generateDataSet, get_datasets
 from fairmetric import *
 
 def parse_args(input_args=None):
@@ -163,7 +163,7 @@ def main(args):
                 
         elif num_classes == 2:
             fpr, tpr, auroc, threshold = Find_Optimal_Cutoff(np.array(labels), np.array(predictions))
-            predictions = torch.ge(torch.tensor(predictions), threshold).int()
+            predictions = torch.ge(torch.from_numpy(np.array(predictions)), threshold).int()
             results = FairnessMetrics(np.array(predictions), np.array(labels), senAttrs)
             temp = {"AUROC": auroc,
                     "Threshold": threshold}
@@ -249,7 +249,7 @@ def main(args):
 
         elif num_classes == 2:
             fpr, tpr, auroc, threshold = Find_Optimal_Cutoff(np.array(labels), np.array(predictions))
-            predictions = torch.ge(torch.tensor(predictions), threshold).int()
+            predictions = torch.ge(torch.from_numpy(np.array(predictions)), threshold).int()
             results = FairnessMetrics(np.array(predictions), np.array(labels), senAttrs)
             temp = {"AUROC": auroc,
                     "Threshold": threshold}

@@ -7,7 +7,7 @@ import wandb
 import glob
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from network import ClfNet
+from network import ClfNet, WeibullModel
 from util import *
 import numpy as np
 from pathlib import Path
@@ -204,7 +204,11 @@ def main(args):
     # Dataset preparation
     data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, task = args.task, seed = args.seed)
     df = data.train_valid_test(args.split_ratio)
-    num_classes = len(df["label"].unique())
+
+    if args.task == 3:
+        num_classes = 2
+    else:
+        num_classes = len(df["label"].unique())
 
     if args.partition == 1:
         train_ds, val_ds, test_ds = get_datasets(df, "vanilla", None, args.reweight)
@@ -216,11 +220,17 @@ def main(args):
     test_dl = DataLoader(test_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=False, pin_memory=False)
 
     if not args.reweight:
-        model = ClfNet(classes=num_classes)
+        if args.task == 1 or args.task == 2:
+            model = ClfNet(classes=num_classes)
+        elif args.task == 3:
+            model = WeibullModel()
         model.train()
 
     if args.reweight:
-        model = ClfNet(classes=num_classes, ft=True)
+        if args.task == 1 or args.task == 2:
+            model = ClfNet(classes=num_classes, ft=True)
+        elif args.task == 3:
+            model = WeibullModel(ft=True)
         cancer_folder = "_".join(args.cancer)
         if args.weight_path != "":
             weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{args.weight_path}-*/model.pt")[0]
@@ -246,13 +256,19 @@ def main(args):
             else:
                 p.requires_grad = False
         print("Params to learn:" + str(len(parameters_to_update)))
-        optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
+        if args.task == 1 or args.task == 2:
+            optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
+        elif args.task == 3:
+            optimizer = torch.optim.RMSprop(parameters_to_update, lr=args.lr, weight_decay=1e-4)
     else:
         for n, p in model.named_parameters():
             p.requires_grad = True
             parameters_to_update.append(p)
         print("Params to learn:" + str(len(parameters_to_update)))
-        optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
+        if args.task == 1 or args.task == 2:
+            optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
+        elif args.task == 3:
+            optimizer = torch.optim.RMSprop(parameters_to_update, lr=args.lr)
     # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=args.scheduler) # constant lr
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=args.scheduler_step, gamma=args.scheduler_gamma)
     loss_fn = torch.nn.CrossEntropyLoss()
@@ -291,31 +307,45 @@ def main(args):
         #     print(group_count)
 
         for idx, data in pbar:
-            wsi_embeddings, lengths, sensitive, label, group = data
-            model.train()
 
-            cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
+            if args.task == 3:
+                wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                shape_scale = model(wsi_embeddings.to(args.device), lengths)
+                shape, scale = shape_scale[:, 0], shape_scale[:, 1]
+                train_loss, group_of_loss = survival_loss_function(shape, scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes).float().to(args.device), lengths, group)
+            else:
+                wsi_embeddings, lengths, sensitive, label, group = data
+                cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
+                train_loss, group_of_loss = loss_function(loss_fn, cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
 
-            train_loss, group_of_loss = loss_function(loss_fn, cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
             train_loss = train_loss / gradient_accumulation_steps
+
             if args.reweight:
-                x, y, a = wsi_embeddings.to(args.device), label.to(args.device), sensitive.to(args.device)
-                log_softmax, softmax = torch.nn.functional.log_softmax(cancer_pred, dim=1), torch.nn.functional.softmax(cancer_pred, dim=1)
-                if args.constraint == '':
-                    fair_loss = 0
-                elif args.constraint == 'MMF':
-                    fair_loss = args.fair_lambda * mmf_constraint(loss_fn, log_softmax, y, a)
+                if args.task == 3:
+                    x, y, a = (wsi_embeddings.to(args.device), event.to(args.device), sensitive.to(args.device))
+                    if args.constraint == "":
+                        fair_loss = 0
+                    else:
+                        predicted_survival_time = scale * torch.exp(torch.log(time.to(args.device) + 1e-8) / shape)
+
                 else:
-                    if args.constraint == 'EO':
-                        fpr, fnr = eo_constraint(softmax[:, 1], y, a)
-                        loss_fairness = fpr + fnr
-                    elif args.constraint == 'DI':
-                        loss_fairness = di_constraint(softmax[:, 1], a)
-                    elif args.constraint == 'DP':
-                        loss_fairness = dp_constraint(softmax[:, 1], a)
-                    elif args.constraint == 'AE':
-                        loss_fairness = ae_constraint(loss_fn, log_softmax, y, a)
-                    fair_loss = args.fair_lambda * loss_fairness
+                    x, y, a = wsi_embeddings.to(args.device), label.to(args.device), sensitive.to(args.device)
+                    log_softmax, softmax = torch.nn.functional.log_softmax(cancer_pred, dim=1), torch.nn.functional.softmax(cancer_pred, dim=1)
+                    if args.constraint == '':
+                        fair_loss = 0
+                    elif args.constraint == 'MMF':
+                        fair_loss = args.fair_lambda * mmf_constraint(loss_fn, log_softmax, y, a)
+                    else:
+                        if args.constraint == 'EO':
+                            fpr, fnr = eo_constraint(softmax[:, 1], y, a)
+                            loss_fairness = fpr + fnr
+                        elif args.constraint == 'DI':
+                            loss_fairness = di_constraint(softmax[:, 1], a)
+                        elif args.constraint == 'DP':
+                            loss_fairness = dp_constraint(softmax[:, 1], a)
+                        elif args.constraint == 'AE':
+                            loss_fairness = ae_constraint(loss_fn, log_softmax, y, a)
+                        fair_loss = args.fair_lambda * loss_fairness
             #     fair_loss = fairness_loss_fn(cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
 
             total_loss = train_loss + fair_loss
@@ -327,9 +357,18 @@ def main(args):
                 optimizer.step()
                 optimizer.zero_grad()
 
-            overall_loss += total_loss.detach().cpu().numpy()
-            total_train_loss += train_loss.detach().cpu().numpy()
-            group_loss = group_losses.detach().cpu().numpy()
+            if torch.isnan(total_loss):
+                pass
+            else:
+                overall_loss += total_loss.detach().cpu().numpy()
+            if torch.isnan(train_loss):
+                pass
+            else:
+                total_train_loss += train_loss.detach().cpu().numpy()
+            if torch.isnan(group_losses):
+                pass
+            else:
+                group_loss = group_losses.detach().cpu().numpy()
             total_fair_loss += fair_loss
 
             avg_overall_loss = overall_loss / len(train_dl)
@@ -347,50 +386,73 @@ def main(args):
 
         model.eval()
         eval_pbar = tqdm(enumerate(val_dl), colour="blue", total=len(val_dl))
-        eval_fair_loss = 0.
-        total_eval_loss = 0.
-        total_eval_fair_loss = 0.
-        eval_overall_loss = 0.
+        eval_loss = 0.0
+        eval_fair_loss = 0.0
+        eval_group_loss = 0.0
+        eval_overall_loss = 0.0
+        total_eval_loss = 0.0
+        total_eval_fair_loss = 0.0
+        predicted_survival_time = 0.0
         predictions = []
+        predicted_survival_times = []
+        true_survival_times = []
         labels = []
+        events = []
         senAttrs = []
         with torch.no_grad():
             for _, data in eval_pbar:
-                wsi_embeddings, lengths, sensitive, label, group = data
-                eval_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
-                eval_loss, group_of_loss = loss_function(loss_fn, eval_cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
+
+                if args.task == 3:
+                    wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                    eval_shape_scale = model(wsi_embeddings.to(args.device), lengths)
+                    eval_shape, eval_scale = eval_shape_scale[:, 0], eval_shape_scale[:, 1]
+                    eval_loss, eval_group_of_loss = survival_loss_function(eval_shape, eval_scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes) .float() .to(args.device), lengths, group)
+                else:
+                    wsi_embeddings, lengths, sensitive, label, group = data
+                    eval_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
+                    eval_loss, eval_group_of_loss = loss_function(loss_fn, eval_cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
 
                 if args.reweight:
-                    x, y, a = wsi_embeddings.to(args.device), label.to(args.device), sensitive.to(args.device)
-                    log_softmax, softmax = torch.nn.functional.log_softmax(eval_cancer_pred, dim=1), torch.nn.functional.softmax(eval_cancer_pred, dim=1)
-                    if args.constraint == '':
-                        eval_fair_loss = 0
-                    elif args.constraint == 'MMF':
-                        eval_fair_loss = args.fair_lambda * mmf_constraint(loss_fn, log_softmax, y, a)
+                    if args.task == 3:
+                        if args.constraint == "":
+                            eval_fair_loss = 0
                     else:
-                        if args.constraint == 'EO':
-                            fpr, fnr = eo_constraint(softmax[:, 1], y, a)
-                            eval_loss_fairness = fpr + fnr
-                        elif args.constraint == 'DI':
-                            eval_loss_fairness = di_constraint(softmax[:, 1], a)
-                        elif args.constraint == 'DP':
-                            eval_loss_fairness = dp_constraint(softmax[:, 1], a)
-                        elif args.constraint == 'AE':
-                            eval_loss_fairness = ae_constraint(loss_fn, log_softmax, y, a)
-                        eval_fair_loss = args.fair_lambda * eval_loss_fairness
+                        x, y, a = wsi_embeddings.to(args.device), label.to(args.device), sensitive.to(args.device)
+                        log_softmax, softmax = torch.nn.functional.log_softmax(eval_cancer_pred, dim=1), torch.nn.functional.softmax(eval_cancer_pred, dim=1)
+                        if args.constraint == '':
+                            eval_fair_loss = 0
+                        elif args.constraint == 'MMF':
+                            eval_fair_loss = args.fair_lambda * mmf_constraint(loss_fn, log_softmax, y, a)
+                        else:
+                            if args.constraint == 'EO':
+                                fpr, fnr = eo_constraint(softmax[:, 1], y, a)
+                                eval_loss_fairness = fpr + fnr
+                            elif args.constraint == 'DI':
+                                eval_loss_fairness = di_constraint(softmax[:, 1], a)
+                            elif args.constraint == 'DP':
+                                eval_loss_fairness = dp_constraint(softmax[:, 1], a)
+                            elif args.constraint == 'AE':
+                                eval_loss_fairness = ae_constraint(loss_fn, log_softmax, y, a)
+                            eval_fair_loss = args.fair_lambda * eval_loss_fairness
 
-                total_loss = eval_loss + eval_fair_loss
-                group_losses = sum(group_of_loss.values())
+                eval_total_loss = eval_loss + eval_fair_loss
+                eval_group_losses = sum(eval_group_of_loss.values())
 
-                eval_overall_loss += total_loss.detach().cpu().numpy()
-                total_eval_loss += eval_loss.detach().cpu().numpy()
-                group_eval_loss = group_losses.detach().cpu().numpy()
+                if torch.isnan(eval_total_loss):
+                    pass
+                else:
+                    eval_overall_loss += eval_total_loss.detach().cpu().numpy()
+                if torch.isnan(eval_loss):
+                    pass
+                else:
+                    total_eval_loss += eval_loss.detach().cpu().numpy()
+                eval_group_loss = eval_group_losses.detach().cpu().numpy()
                 total_eval_fair_loss += eval_fair_loss
 
                 avg_eval_overall_loss = eval_overall_loss / len(val_dl)
                 avg_eval_loss = total_eval_loss / len(val_dl)
                 avg_eval_fair_loss = total_eval_fair_loss / len(val_dl)
-                avg_eval_group_loss = group_eval_loss / len(val_dl)
+                avg_eval_group_loss = eval_group_loss / len(val_dl)
 
                 eval_pbar.set_description(
                     f"Iter:{epoch+1:3}/{args.epochs:3} "
@@ -399,8 +461,14 @@ def main(args):
                     f"Group_loss:{avg_eval_group_loss:.4f} ")
                 eval_pbar.update()
 
-                predictions.append(torch.argmax(eval_cancer_pred.detach().cpu(), dim=1).numpy())
-                labels.append(label.detach().cpu().numpy())
+                if args.task == 3:
+                    predicted_survival_time = eval_scale * torch.exp(torch.log(time.to(args.device) + 1e-8) / eval_shape)
+                    predicted_survival_times.append(predicted_survival_time.detach().cpu().numpy())
+                    true_survival_times.append(time.detach().cpu().numpy())
+                    events.append(event.detach().cpu().numpy())
+                else:
+                    predictions.append(torch.argmax(eval_cancer_pred.detach().cpu(), dim=1).numpy())
+                    labels.append(label.detach().cpu().numpy())
                 senAttrs.append(sensitive.detach().cpu().numpy())
 
         if num_classes > 2:
@@ -459,7 +527,7 @@ def main(args):
             wandb_record = {**temp, **results}
             wandb.log(wandb_record)
 
-        elif num_classes == 2:
+        elif num_classes == 2 and args.task != 3:
             npLabels = np.concatenate(labels)
             npPredictions = np.concatenate(predictions)
             npSenAttrs = np.concatenate(senAttrs)
@@ -515,7 +583,90 @@ def main(args):
             }
             wandb_record = {**temp, **results}
             wandb.log(wandb_record)
+
+        elif num_classes == 2 and args.task == 3:
+            try:
+                npPredictedSurvivalTime = np.concatenate(predicted_survival_times)
+            except ValueError:
+                npPredictedSurvivalTime = predicted_survival_times
+            try:
+                npTrueSurvivalTime = np.concatenate(true_survival_times)
+            except ValueError:
+                npTrueSurvivalTime = true_survival_times
+            try:
+                npEvents = np.concatenate(events)
+            except ValueError:
+                npEvents = events
+            try:
+                npSenAttrs = np.concatenate(senAttrs)
+            except ValueError:
+                npSenAttrs = senAttrs
+            try:
+                nan_mask = np.isnan(npPredictedSurvivalTime) | np.isnan(npTrueSurvivalTime)
+                npPredictedSurvivalTime = npPredictedSurvivalTime[~nan_mask]
+                npTrueSurvivalTime = npTrueSurvivalTime[~nan_mask]
+                npEvents = npEvents[~nan_mask]
+                npSenAttrs = npSenAttrs[~nan_mask]
+            except TypeError:
+                pass
+            
+            results = SurvivalMetrics(npPredictedSurvivalTime, npTrueSurvivalTime, npEvents, npSenAttrs)
+            
+            criterion = 0  # 0: performance 1: fairness 2: both
+            fairness = results["c_diff"]
+            if args.selection == "c_diff":
+                fairness = results["c_diff"]
+                criterion = 1
+            elif args.selection == "c_a":
+                fairness = (results["c_long_diff"] + results["c_short_diff"]) / 2
+                criterion = 1
+            elif args.selection == "c_index":
+                criterion = 0
+            
+            if not args.reweight:
+                if (type(results["c_index"]) != str) and results["c_index"] > 0.0:
+                    if results["c_index"] > best_performance:
+                        best_performance = results["c_index"]
+                        # Model save
+                        torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
+                        epoch_record = epoch
+                        performance_record = best_performance
+                        print(f"Epoch:{epoch_record}, C-index:{performance_record}")
+            elif args.reweight:
+                if criterion == 0:
+                    if (type(results["c_index"]) != str) and results["c_index"] > 0.0:
+                        if results["c_index"] > best_performance:
+                            best_performance = results["c_index"]
+                            torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
+                            epoch_record = epoch
+                            performance_record = best_performance
+                            print(f"Epoch:{epoch_record}, C-index:{performance_record}")
+                elif criterion == 1:
+                    if (type(fairness) != str) and fairness > 0.0:
+                        if epoch == 0 or fairness < best_fairness:
+                            best_fairness = fairness
+                            torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
+                            epoch_record = epoch
+                            fairness_record = best_fairness
+                            print(f"Epoch:{epoch_record}, {args.selection}:{fairness_record}")
+
+            temp = {
+                # "AUROC": auroc,
+                # "Threshold": threshold,
+                "Avg_Loss(train)": avg_train_loss,
+                "Avg_Loss(valid)": avg_eval_loss,
+                "Fair_Loss(train)": avg_train_fair_loss,
+                "Fair_Loss(valid)": avg_eval_fair_loss,
+                "Group_Loss(train)": avg_group_loss,
+                "Group_Loss(valid)": avg_eval_group_loss,
+                "Overall Loss(train)": avg_overall_loss,
+                "Overall Loss(valid)": avg_eval_overall_loss,
+            }
+            wandb_record = {**temp, **results}
+            wandb.log(wandb_record)
+   
     wandb.finish()
+
     print(f"Epoch:{epoch_record}, Performance:{performance_record}")
     print(f"Epoch:{epoch_record}, {args.selection}:{fairness_record}")
 

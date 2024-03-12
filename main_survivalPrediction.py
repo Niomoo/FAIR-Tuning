@@ -444,7 +444,7 @@ def main(args):
                 eval_shape_scale = model(wsi_embeddings.to(args.device), lengths)
                 eval_shape, eval_scale = eval_shape_scale[:, 0], eval_shape_scale[:, 1]
                 eval_loss, eval_group_of_loss = survival_loss_function(eval_shape, eval_scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes) .float() .to(args.device), lengths, group)
-                eval_loss = eval_loss / gradient_accumulation_steps
+
                 if args.reweight:
                     # x, y, a = wsi_embeddings.to(args.device), event.to(args.device), sensitive.to(args.device)
                     # log_softmax, softmax = torch.nn.functional.log_softmax(eval_shape, dim=1), torch.nn.functional.softmax(eval_shape, dim=1)
