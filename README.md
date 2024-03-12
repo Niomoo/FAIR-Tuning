@@ -1,4 +1,4 @@
 # FAIR-Tuning
-## Install related packages
+## Installation
 - `pip install -r requirements.txt`
 
