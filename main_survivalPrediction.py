@@ -7,7 +7,7 @@ import wandb
 import glob
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from network_survivalPrediction import WeibullModel
+from network import WeibullModel
 from util import *
 import numpy as np
 import loralib as lora
@@ -17,7 +17,6 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 from warmup_scheduler import GradualWarmupScheduler
 from lifelines.statistics import logrank_test
 from lifelines.utils import concordance_index
-
 
 def parse_args(input_args=None):
     parser = argparse.ArgumentParser()

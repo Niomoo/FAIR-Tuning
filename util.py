@@ -13,35 +13,6 @@ from lifelines.utils import concordance_index
 ## argument library
 import argparse
 
-random.seed(24)
-
-class puppetArgs():
-    def __init__(self, dictionary: dict):
-        self.d = dictionary
-    def __getattr__(self, key):
-        return self.d[key]
-
-def image_transform(size = 224):
-    return  albu.Compose([
-                albu.PadIfNeeded(min_height = 256, min_width = 256, border_mode = cv2.BORDER_CONSTANT, value = (0, 0, 0), p = 1),
-                albu.HorizontalFlip(p = 0.3),
-                albu.RandomRotate90(p = 0.6),
-                albu.CoarseDropout(max_holes = 60, max_height = 32, max_width = 32, min_holes = 10, min_height = 8, min_width = 8, fill_value = 0, p = 0.5),
-                albu.Sequential([
-                    albu.ColorJitter(brightness = 0.1, saturation = 0.3, contrast = 0.3, hue = 0, p = 0.4)
-                ], p = 1),
-                albu.CenterCrop(height = size, width = size, p = 1)
-        ], p = 1)
-
-def light_image_transform(size = 224):
-    return  albu.Compose([
-                albu.PadIfNeeded(min_height = 256, min_width = 256, border_mode = cv2.BORDER_CONSTANT, value = (0, 0, 0), p = 1),
-                albu.HorizontalFlip(p = 0.3),
-                albu.RandomRotate90(p = 0.6),
-                albu.CoarseDropout(max_holes = 60, max_height = 32, max_width = 32, min_holes = 10, min_height = 8, min_width = 8, fill_value = 0, p = 0.5),
-                albu.CenterCrop(height = size, width = size, p = 1)
-        ], p = 1)
-
 def Find_Optimal_Cutoff(target, predicted):
     """ Find the optimal probability cutoff point for a classification model related to event rate Parameters
     ----------
@@ -188,18 +159,6 @@ def FairnessMetrics(predictions, labels, sensitives):
         'DPM(Negative)': np.nanmin(NR)/np.nanmax(NR), 
         'EOM(Positive)': np.nanmin(TPR)/np.nanmax(TPR),
         'EOM(Negative)': np.nanmin(TNR)/np.nanmax(TNR),
-        # 'EOM(Negative)': (TNR.min(axis=0)/TNR.max(axis=0)).mean(),
-        # 'EOpp0': (TNR.max(axis=0)-TNR.min(axis=0)).sum(),
-        # 'EOpp1': (TPR.max(axis=0)-TPR.min(axis=0)).sum(),
-        # 'EOdd': ((TPR+FPR).max(axis=0)-(TPR+FPR).min(axis=0)).sum(),
-        # 'PQD': TOTALACC.min()/TOTALACC.max(),
-        # 'PQD(class)': (ACC.min(axis=0)/ACC.max(axis=0)).mean(),
-        # 'EPPV': (PPV.min(axis=0)/PPV.max(axis=0)).mean(),
-        # 'ENPV': (NPV.min(axis=0)/NPV.max(axis=0)).mean(),
-        # 'DPM(Positive)': (PR.min(axis=0)/PR.max(axis=0)).mean(),
-        # 'DPM(Negative)': (NR.min(axis=0)/NR.max(axis=0)).mean(),
-        # 'EOM(Positive)': (TPR.min(axis=0)/TPR.max(axis=0)).mean(),
-        # 'EOM(Negative)': (TNR.min(axis=0)/TNR.max(axis=0)).mean(),
         'OverAllAcc': OverAllACC,
         'TOTALACC': TOTALACC,
         'TOTALACCDIF': np.nanmax(TOTALACC)-np.nanmin(TOTALACC),
@@ -416,72 +375,6 @@ def load_weights(model, path):
 
 # ### ================================================== ####
 
-def setup_dataloader(IdxOuterLoop, 
-                     IdxInnerLoop, 
-                     ListDataset,
-                     patchesdirectory_list,
-                     pklPatchesInformation,
-                     config):
-    ListTrainSet = [samples['fnlist'][IdxOuterLoop][0][IdxInnerLoop][0][:] for samples in ListDataset]
-    trainDataset = PathologyDataset(
-        boxes = ListTrainSet,
-        ####
-        ## patchesdirectory 和 datasetpath 是一對一的對照 所以上面classA 對照LUAD的資料夾
-        ####
-        patchesDirectory = patchesdirectory_list,
-        pklPatchesInformation = pklPatchesInformation,
-        patchesPerBag = config["PatchesPerBag"], ## 要宣告
-        size = 224,
-        pickType = config["pickType"],      ## 有 test(前後背景前 k張), 'random', 'k-step'
-        transform = image_transform(), ## 上面有之前用的 Transform
-        multiply = config["multiply"],      ## 要取 PatchesPerBag 多少倍的 patch 當候選
-        mergeDataset = True,
-    )
-
-    ListValidSet = [samples['fnlist'][IdxOuterLoop][0][IdxInnerLoop][1][:] for samples in ListDataset]
-    validDataset = PathologyDataset(
-        boxes = ListValidSet,
-        patchesDirectory = patchesdirectory_list,
-        pklPatchesInformation = pklPatchesInformation,
-        patchesPerBag = config["PatchesPerBag"],
-        size = 224,
-        pickType = 'test',
-        mergeDataset = True,
-    )
-
-    ListTestSet = [samples['fnlist'][IdxOuterLoop][1][:] for samples in ListDataset]
-    testDataset = PathologyDataset(
-        boxes = ListTestSet,
-        patchesDirectory = patchesdirectory_list,
-        pklPatchesInformation = pklPatchesInformation,
-        patchesPerBag = config["PatchesPerBag"],
-        size = 224,
-        pickType = 'test',
-        transform = None,
-        mergeDataset = True,
-    )
-
-    ### convert to dataloader ###
-    trainLoader = DataLoader(dataset = trainDataset, 
-                             batch_size = config["batch_size"], 
-                             shuffle = True, 
-                             num_workers = config["number_of_workers"], 
-                             pin_memory = False)
-    validLoader = DataLoader(dataset = validDataset, 
-                             batch_size = 1, 
-                             shuffle = False, 
-                             num_workers = config["number_of_workers"], 
-                             pin_memory = False)
-    testLoader = DataLoader(dataset = testDataset, 
-                            batch_size = 1, 
-                            shuffle = False, 
-                            num_workers = config["number_of_workers"], 
-                            pin_memory = False)
-    
-    return trainLoader, validLoader, testLoader
-
-# ### ================================================== ####
-
 def race_acc(race_c, race_i, r_labels):
     race_labels_c = r_labels
     race_labels_i = 1 - r_labels
@@ -530,36 +423,7 @@ class FairnessLoss(nn.Module):
         # print(loss)
         return loss
 
-
 # ### =================================================== ####
-
-# def weibull(x, a, b):
-#     return (b / a) * (x / a)**(b - 1) * torch.exp(-(x / a)**b)
-
-# def weibull_loglik_discrete(event_pred, time_pred, event, time):
-#     y = time
-#     u = event
-#     a = time_pred
-#     b = event_pred
-
-#     hazard0 = (y + 1e-35/a)**b
-#     hazard1 = (y + 1/a)**b
-
-#     return -torch.mean(u * torch.log(torch.exp(hazard1 - hazard0) - 1) - hazard1)
-
-# def weibull_loglik_continuous(event_pred, time_pred, event, time):
-#     y = time
-#     u = event
-#     a = time_pred
-#     b = event_pred
-
-#     ya = (y + 1e-35)/a
-#     return -torch.mean(u * (torch.log(b) + b*torch.log(ya)) - ya**b)
-
-# def calculate_loss(pred, sur_pred, target, time):
-#     status_loss = weibull_loglik_discrete(pred, sur_pred, target, time)
-#     time_loss = weibull_loglik_continuous(pred, sur_pred, target, time)
-#     return status_loss + time_loss
 
 def weibull_loss(shape, scale, time, event):
     y = time
@@ -612,6 +476,7 @@ def loss_function(loss_func, preds, targets, lengths, group):
     return loss, group_of_loss
 
 # ### =================================================== ####
+
 def batch_resample(batch_size, group_loss):
     group_weight = {}
     group_sampling_probability = {}

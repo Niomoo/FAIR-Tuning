@@ -5,7 +5,6 @@ import torchvision.models as models
 import random
 import loralib as lora
 
-
 class MILAttention(nn.Module):
     def __init__(self, featureLength = 768, featureInside = 256):
         '''
@@ -92,7 +91,7 @@ class MILNet(nn.Module):
 class ClfNet(nn.Module):
     def __init__(self, featureLength=768, classes=2, ft=False):
         super(ClfNet, self).__init__()
-        
+
         self.featureExtractor = MILNet(featureLength=768)
         self.featureLength = featureLength
         self.fc_target = nn.Sequential(
@@ -104,7 +103,7 @@ class ClfNet(nn.Module):
             nn.LayerNorm(128),
             nn.Linear(128, classes, bias=True)
         )
-        
+
         self.fc_sen = nn.Sequential(
             nn.Linear(featureLength, 256, bias=True),
             nn.ReLU(),
@@ -128,20 +127,33 @@ class ClfNet(nn.Module):
         preds = self.fc_target(features)
         return preds
 
+
 class WeibullModel(nn.Module):
     def __init__(self, featureLength=768, ft=False):
         super(WeibullModel, self).__init__()
         self.featureExtractor = MILNet(featureLength=768)
         self.featureLength = featureLength
-        self.fc = nn.Linear(featureLength, 1, bias=True)
+        self.fc = nn.Sequential(
+            nn.Linear(featureLength, 256, bias=True),
+            nn.ReLU(),
+            nn.LayerNorm(256),
+            nn.Linear(256, 128, bias=True),
+            nn.ReLU(),
+            nn.LayerNorm(128),
+            nn.Linear(128, 2, bias=True),
+        )
+        self.softplus = nn.Softplus()
+        nn.init.xavier_uniform_(self.fc[0].weight)
 
-        self.ft = ft
-        self.lambda_ = nn.Parameter(torch.ones(1))
-        self.k_ = nn.Parameter(torch.ones(1))
-    
-    def forward(self, x, t):
-        features = self.featureExtractor(x.squeeze(0))
+    def forward(self, x, lengths):
+        features = self.featureExtractor(x.squeeze(0), lengths)
         x = self.fc(features)
-        hazard = (self.k_ / self.lambda_) * (t / self.lambda_) ** (self.k_ - 1)
-        survival = torch.exp(-torch.exp(x) * hazard)
-        return survival
+        shape_scale = self.activate(x)
+        return shape_scale
+
+    def activate(self, x):
+        a = torch.exp(x[:, 0])
+        b = self.softplus(x[:, 1])
+        a = torch.reshape(a, (a.size()[0], 1))
+        b = torch.reshape(b, (b.size()[0], 1))
+        return torch.cat((a, b), dim=1)

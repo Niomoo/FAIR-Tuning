@@ -10,7 +10,6 @@ from tqdm import tqdm
 from network import ClfNet
 from util import *
 import numpy as np
-import loralib as lora
 from pathlib import Path
 from dataset_tumorDetection import *
 from torch.optim.lr_scheduler import CosineAnnealingLR

@@ -31,9 +31,15 @@ def parse_args(input_args=None):
         help="Protected attribute we want to improve for this task.",
     )
     parser.add_argument(
+        "--task",
+        type=int,
+        default="1",
+        help="Downstream task: '1:cancer classification, 2:tumor detection, 3:survival prediction",
+    )
+    parser.add_argument(
         "--model_path",
         type=str,
-        default="./models_base/",
+        default="./models/",
         help="Path to save weights.",
     )
     parser.add_argument(
@@ -196,7 +202,7 @@ def main(args):
                group=group)
 
     # Dataset preparation
-    data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, seed = args.seed)
+    data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, task = args.task, seed = args.seed)
     df = data.train_valid_test(args.split_ratio)
     num_classes = len(df["label"].unique())
 
@@ -346,7 +352,6 @@ def main(args):
         total_eval_fair_loss = 0.
         eval_overall_loss = 0.
         predictions = []
-        race_predictions = []
         labels = []
         senAttrs = []
         with torch.no_grad():
