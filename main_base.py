@@ -288,6 +288,8 @@ def main(args):
     best_performance = 0.
     best_fairness = 9999.
     group_samples = {}
+    
+    model.train()
 
     # Training/evaluation process
     for epoch in range(args.epochs):
@@ -321,7 +323,6 @@ def main(args):
                 wsi_embeddings, lengths, sensitive, label, group = data
                 cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
                 train_loss, group_of_loss = loss_function(loss_fn, cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
-
             train_loss = train_loss / gradient_accumulation_steps
 
             if args.reweight:
@@ -567,7 +568,7 @@ def main(args):
                         performance_record = best_performance
                         print(f"Epoch:{epoch_record}, AUROC:{performance_record}")
                 elif criterion == 1:
-                    if fairness > 0 and fairness < best_fairness:
+                    if fairness > 0 and fairness < best_fairness                :
                         best_fairness = fairness
                         torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
                         epoch_record = epoch

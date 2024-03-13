@@ -21,7 +21,7 @@ class generateDataSet():
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
         self.strClinicalInformationPath = './clinical_information/' # path to clinical information
-        self.strEmbeddingPath = './AI_fairness/' # path to embeddings
+        self.strEmbeddingPath = './embedding/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
         self.dfRemoveDupDistribution = None
@@ -34,12 +34,12 @@ class generateDataSet():
     def fClinicalInformation(self):
         df = pd.DataFrame({})
         for c in self.cancer:
-            if self.task == 1:
+            if self.task == 1:      # cancer classification
                 part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/*{c}*.pkl')[0])
-            elif self.task == 2:
+            elif self.task == 2:    # tumor detection
                 part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_frozen_clinical_information.pkl')[0])
-            elif self.task == 3:
-                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
+            elif self.task == 3:    # survival analysis
+                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information copy.pkl')[0])
             df = pd.concat([df, part], ignore_index = True)
         return df
     
@@ -206,7 +206,10 @@ class generateDataSet():
         self.dictInformation['sensitive'] = leSensitive
 
         dfDummy = dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True).copy()
-        dfDummy['fold'] = (10*np.array(dfDummy['sensitive'].tolist())+np.array(dfDummy['label'])).tolist()
+        if self.task == 3:
+            dfDummy['fold'] = (10*np.array(dfDummy['sensitive'].tolist())+np.array(dfDummy['event'])).tolist()
+        else:
+            dfDummy['fold'] = (10*np.array(dfDummy['sensitive'].tolist())+np.array(dfDummy['label'])).tolist()
         dfDummy.fold = le.fit_transform(dfDummy.fold.values)
         foldNum = [0 for _ in range(int(len(dfDummy.index)))]
         if self.fold == 1:
@@ -263,44 +266,51 @@ class CancerDataset(Dataset):
                 sample = torch.load(row.path)
                 group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
             elif self.fold_idx == 1:
                 row = self.df[self.df['fold'].isin([(4-self.exp_idx+2)%4])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
             elif self.fold_idx == 2:
                 row = self.df[self.df['fold'].isin([(4-self.exp_idx+3)%4])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
 
         elif self.split_type == 'vanilla':
             if self.fold_idx == 0:
                 row = self.df[self.df['fold'].isin([0])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
             elif self.fold_idx == 1:
                 row = self.df[self.df['fold'].isin([1])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
             elif self.fold_idx == 2:
                 row = self.df[self.df['fold'].isin([2])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
+                    group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
 
     def __len__(self):
