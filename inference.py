@@ -109,7 +109,7 @@ def main(args):
     stages = []
 
     if args.partition == 1:
-        _, _, test_ds = get_datasets(df, "vanilla", None)
+        _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
         test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
 
         cancer_folder = "_".join(args.cancer)
@@ -185,23 +185,26 @@ def main(args):
                 print(f"Save results to:{result_path}")
 
             elif num_classes == 2:
-                fpr, tpr, auroc, threshold = Find_Optimal_Cutoff(np.array(labels), np.array(predictions))
-                predictions = torch.ge(torch.tensor(predictions), threshold).int()
-                results = FairnessMetrics(np.array(predictions), np.array(labels), senAttrs)
+                npLabels = np.concatenate(labels)
+                npPredictions = np.concatenate(predictions)
+                npSenAttrs = np.concatenate(senAttrs)
+                fpr, tpr, auroc, threshold = Find_Optimal_Cutoff(npLabels, npPredictions)
+                predictions = torch.ge(torch.tensor(npPredictions), threshold).int()
+                results = FairnessMetrics(npPredictions, npLabels, npSenAttrs)
                 temp = {"AUROC": auroc,
                         "Threshold": threshold}
                 results = {**temp, **results}
                 pd.DataFrame(results).T.to_csv(result_path)
                 print(f"Save results to:{result_path}")  
 
-            fmtc = Metrics(predictions = np.array(predictions), labels = np.array(labels), sensitives = senAttrs, projectName = "proposed", verbose = True)
+            fmtc = Metrics(predictions = npPredictions, labels = npLabels, sensitives = npSenAttrs, projectName = "proposed", verbose = True)
             markdown = fmtc.getResults(markdownFormat=True) 
             if auroc != 0: markdown += f"{auroc:.4f}|"
             print(markdown)
 
     elif args.partition == 2:
         for curr_fold in range(4):
-            _, _, test_ds = get_datasets(df, "kfold", curr_fold)
+            _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
             test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
             cancer_folder = "_".join(args.cancer)
             model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
@@ -229,7 +232,7 @@ def main(args):
                 fig_path2 = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve_stage.png"
                 fig_path3 = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve_black.png"
 
-            elif not args.lora and not args.reweight:
+            elif not args.reweight:
                 if args.task == 1 or args.task == 2:
                     model = ClfNet(classes=num_classes, ft=False)
                 elif args.task == 3:
@@ -276,16 +279,19 @@ def main(args):
                 print(f"Save results to:{result_path}")
 
             elif num_classes == 2:
+                npLabels = np.concatenate(labels)
+                npPredictions = np.concatenate(predictions)
+                npSenAttrs = np.concatenate(senAttrs)
                 fpr, tpr, auroc, threshold = Find_Optimal_Cutoff(np.array(labels), np.array(predictions))
-                predictions = torch.ge(torch.tensor(predictions), threshold).int()
-                results = FairnessMetrics(np.array(predictions), np.array(labels), senAttrs)
+                predictions = torch.ge(torch.tensor(npPredictions), threshold).int()
+                results = FairnessMetrics(npPredictions, npLabels, npSenAttrs)
                 temp = {"AUROC": auroc,
                         "Threshold": threshold}
                 results = {**temp, **results}
                 pd.DataFrame(results).T.to_csv(result_path)
                 print(f"Save results to:{result_path}")
 
-            fmtc = Metrics(predictions = np.array(predictions), labels = np.array(labels), sensitives = senAttrs, projectName = "proposed", verbose = True)
+            fmtc = Metrics(predictions = npPredictions, labels = npLabels, sensitives = npSenAttrs, projectName = "proposed", verbose = True)
             markdown = fmtc.getResults(markdownFormat=True) 
             if auroc != 0: markdown += f"{auroc:.4f}|"
             print(markdown)
@@ -379,7 +385,7 @@ def main(args):
         df = pd.DataFrame(results, index=[0])
         df.T.to_csv(result_path)
         print(f"Save results to:{result_path}")
-        
+
         table = showMetrics(results)
         print(table)
 
