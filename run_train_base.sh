@@ -13,7 +13,7 @@ do python main_base.py --cancer $cancer \
                   --lr=1e-5 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=200 \
+                  --epochs=10 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
@@ -38,7 +38,7 @@ do python main_base.py --cancer $cancer \
                   --lr=1e-6 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=200 \
+                  --epochs=10 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
@@ -60,7 +60,7 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
 do python main_base.py --cancer $cancer \
-                  --model_path="./models_split/" \
+                  --model_path="./models/" \
                   --partition=$partition \
                   --curr_fold=$curr \
                   --fair_attr="$SENSITIVE" \
@@ -68,7 +68,7 @@ do python main_base.py --cancer $cancer \
                   --lr=1e-5 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=200 \
+                  --epochs=5 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
@@ -96,7 +96,7 @@ do python main_base.py --cancer $cancer \
                   --lr=1e-6 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=100 \
+                  --epochs=5 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \

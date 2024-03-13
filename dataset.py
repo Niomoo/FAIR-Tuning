@@ -431,9 +431,9 @@ class ReweightDataset(Dataset):
         self.split_type = split_type
         self.exp_idx = exp_idx
         self.original_data = dataset
-        self.reweight_data = self.reweight()
         self.task = task
         self.group_idx = 2 if self.task == 3 else 4
+        self.reweight_data = self.reweight()
 
     def __getitem__(self, idx):
         return self.reweight_data[idx]

@@ -179,10 +179,12 @@ def main(args):
     if args.reweight:
         name += "_reweight"
         group += "_reweight"
+        if not os.path.exists(args.model_path + f"{cancer_folder}_{args.partition}_reweight/"):
+            os.makedirs(args.model_path + f"{cancer_folder}_{args.partition}_reweight/")
         reweight_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}_reweight/")
         subfolders = [folder for folder in reweight_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}_reweight/", folder))]
         if not subfolders:
-            max_reweight_index = 0
+            max_reweight_index = 1
         else:
             reweight_indexes = [int(name.split('-')[0]) for name in subfolders]
             max_reweight_index = max(reweight_indexes)
@@ -508,7 +510,7 @@ def main(args):
                         performance_record = best_performance
                         print(f"Epoch:{epoch_record}, {args.selection}:{performance_record}")
                 elif criterion == 1:
-                    if epoch == 0 or (fairness > 0 and fairness < best_fairness):
+                    if fairness > 0 and fairness < best_fairness:
                         best_fairness = fairness
                         torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
                         epoch_record = epoch
@@ -565,7 +567,7 @@ def main(args):
                         performance_record = best_performance
                         print(f"Epoch:{epoch_record}, AUROC:{performance_record}")
                 elif criterion == 1:
-                    if epoch == 0 or (fairness > 0 and fairness < best_fairness):
+                    if fairness > 0 and fairness < best_fairness:
                         best_fairness = fairness
                         torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
                         epoch_record = epoch
