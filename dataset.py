@@ -20,7 +20,7 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './clinical_information/'
+        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
         self.strEmbeddingPath = './AI_fairness/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
@@ -248,12 +248,14 @@ class generateDataSet():
 
 
 class CancerDataset(Dataset):
-    def __init__(self, df, fold_idx, split_type='kfold', exp_idx=0):
+
+    def __init__(self, df, task, fold_idx, split_type="kfold", exp_idx=0):
         self.df = df
         self.fold_idx = fold_idx
         self.split_type = split_type
         self.exp_idx = exp_idx
-        
+        self.task = task
+
     def __getitem__(self, idx):
         if self.split_type == 'kfold':
             if self.fold_idx == 0:
@@ -277,7 +279,7 @@ class CancerDataset(Dataset):
                 if self.task == 3:
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
                 return sample, len(sample), row.sensitive, row.label, group
-                        
+
         elif self.split_type == 'vanilla':
             if self.fold_idx == 0:
                 row = self.df[self.df['fold'].isin([0])].reset_index(drop=True).loc[idx]
@@ -300,7 +302,7 @@ class CancerDataset(Dataset):
                 if self.task == 3:
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
                 return sample, len(sample), row.sensitive, row.label, group
-                
+
     def __len__(self):
         fold_counts = self.df['fold'].value_counts()
         if self.split_type == 'kfold':
@@ -343,7 +345,7 @@ class CancerDataset(Dataset):
                 return fold_counts.get(2, 0)
             else:
                 return None
-            
+
     def get_groups(self):
         targets = set(self.df['label'].values)
         sensitives = set(self.df['sensitive'].values)
@@ -351,20 +353,20 @@ class CancerDataset(Dataset):
             return [s for s in sensitives]
         return [(s,t) for t in targets for s in sensitives]
 
-def get_datasets(df, split_type, exp_idx, reweight=False):
+def get_datasets(df, task, split_type, exp_idx, reweight=False):
     if split_type == 'kfold':
-        train_ds = CancerDataset(df, 0, split_type=split_type, exp_idx=exp_idx)
+        train_ds = CancerDataset(df, task, 0, split_type=split_type, exp_idx=exp_idx)
         if reweight:
-            train_ds = ReweightDataset(train_ds, df, 0, split_type=split_type, exp_idx=exp_idx)
-        val_ds = CancerDataset(df, 1, split_type=split_type, exp_idx=exp_idx)  
-        test_ds = CancerDataset(df, 2, split_type=split_type, exp_idx=exp_idx)
+            train_ds = ReweightDataset(train_ds, df, task, 0, split_type=split_type, exp_idx=exp_idx)
+        val_ds = CancerDataset(df, task, 1, split_type=split_type, exp_idx=exp_idx)  
+        test_ds = CancerDataset(df, task, 2, split_type=split_type, exp_idx=exp_idx)
     elif split_type == 'vanilla':
-        train_ds = CancerDataset(df, 0, split_type=split_type)
+        train_ds = CancerDataset(df, task, 0, split_type=split_type)
         if reweight:
-            train_ds = ReweightDataset(train_ds, df, 0, split_type=split_type)
-        val_ds = CancerDataset(df, 1, split_type=split_type)
-        test_ds = CancerDataset(df, 2, split_type=split_type)  
-        
+            train_ds = ReweightDataset(train_ds, df, task, 0, split_type=split_type)
+        val_ds = CancerDataset(df, task, 1, split_type=split_type)
+        test_ds = CancerDataset(df, task, 2, split_type=split_type)
+
     return train_ds, val_ds, test_ds
 
 
@@ -422,14 +424,16 @@ class BalancedSampler(Sampler):
         return self.total_size // self.batch_size
 
 class ReweightDataset(Dataset):
-    def __init__(self, dataset, df, fold_idx, split_type='kfold', exp_idx=0):
+
+    def __init__(self, dataset, df, task, fold_idx, split_type="kfold", exp_idx=0):
         self.df = df
         self.fold_idx = fold_idx
         self.split_type = split_type
         self.exp_idx = exp_idx
         self.original_data = dataset
         self.reweight_data = self.reweight()
-        self.group_idx = 4 if len(self.original_data[0]) == 5 else 2
+        self.task = task
+        self.group_idx = 2 if self.task == 3 else 4
 
     def __getitem__(self, idx):
         return self.reweight_data[idx]

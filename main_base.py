@@ -154,6 +154,8 @@ def parse_args(input_args=None):
 def main(args):
     # Wandb settings
     cancer_folder = "_".join(args.cancer)
+    if not os.path.exists(args.model_path + f"{cancer_folder}_{args.partition}/"):
+        os.makedirs(args.model_path + f"{cancer_folder}_{args.partition}/")
     model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
     subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
     if not subfolders:
@@ -211,9 +213,9 @@ def main(args):
         num_classes = len(df["label"].unique())
 
     if args.partition == 1:
-        train_ds, val_ds, test_ds = get_datasets(df, "vanilla", None, args.reweight)
+        train_ds, val_ds, test_ds = get_datasets(df, args.task, "vanilla", None, args.reweight)
     elif args.partition == 2:
-        train_ds, val_ds, test_ds = get_datasets(df, "kfold", args.curr_fold)
+        train_ds, val_ds, test_ds = get_datasets(df, args.task, "kfold", args.curr_fold)
 
     train_dl = DataLoader(train_ds, collate_fn=collate_fn, batch_size=args.batch_size, pin_memory=False)
     val_dl = DataLoader(val_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=False, pin_memory=False)
