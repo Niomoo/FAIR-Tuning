@@ -50,7 +50,7 @@ def parse_args(input_args=None):
     parser.add_argument(
         "--weight_path", 
         type=str, 
-        default="", 
+        default="1", 
         help="Path to specific model weight file"
     )
     parser.add_argument(
@@ -112,7 +112,7 @@ def main(args):
         _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
         test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
 
-        cancer_folder = "_".join(args.cancer)
+        cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
         model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
         subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
         model_indexes = [int(name.split('-')[0]) for name in subfolders]
@@ -123,7 +123,6 @@ def main(args):
                 model = ClfNet(classes=num_classes, ft=True)
             elif args.task == 3:
                 model = WeibullModel(ft=True)
-            cancer_folder = "_".join(args.cancer)
             reweight_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}_reweight/")
             subfolders = [folder for folder in reweight_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}_reweight/", folder))]
             reweight_indexes = [int(name.split('-')[0]) for name in subfolders]
@@ -206,7 +205,7 @@ def main(args):
         for curr_fold in range(4):
             _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
             test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
-            cancer_folder = "_".join(args.cancer)
+            cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
             model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
             subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
             model_indexes = [int(name.split('-')[0]) for name in subfolders]
@@ -217,7 +216,6 @@ def main(args):
                     model = ClfNet(classes=num_classes, ft=True)
                 elif args.task == 3:
                     model = WeibullModel(ft=True)
-                cancer_folder = "_".join(args.cancer)
                 reweight_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}_reweight/")
                 subfolders = [folder for folder in reweight_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}_reweight/", folder))]
                 reweight_indexes = [int(name.split('-')[0]) for name in subfolders]
@@ -225,7 +223,7 @@ def main(args):
                     max_reweight_index = max(reweight_indexes)
                 else:
                     max_reweight_index = int(args.weight_path)
-                reweight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}_reweight/{max_reweight_index}-*_reweight/model.pt")[0]
+                reweight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}_reweight/{max_reweight_index}-*_{curr_fold}_reweight/model.pt")[0]
                 model.load_state_dict(torch.load(reweight_path), strict=False)
                 result_path = Path(reweight_path).parent.parent / f"{max_reweight_index}-result.csv"
                 fig_path = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve.png"
@@ -239,7 +237,7 @@ def main(args):
                     model = WeibullModel()
                 if args.weight_path != "":
                     max_index = int(args.weight_path)
-                weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{max_index}*_{curr_fold}/model.pt")[0]
+                weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{max_index}-*_{curr_fold}/model.pt")[0]
                 model.load_state_dict(torch.load(weight_path), strict=False)
                 result_path = Path(weight_path).parent.parent / f"{max_index}-result.csv"
                 fig_path = Path(weight_path).parent.parent / f"{max_index}-survival_curve.png"

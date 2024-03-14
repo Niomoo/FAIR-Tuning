@@ -264,7 +264,6 @@ class CancerDataset(Dataset):
             if self.fold_idx == 0:
                 row = self.df[self.df['fold'].isin([(4-self.exp_idx)%4, (4-self.exp_idx+1)%4])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                group = (row.sensitive, row.label)
                 if self.task == 3:
                     group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage

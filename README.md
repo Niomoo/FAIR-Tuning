@@ -6,6 +6,7 @@
 - requirements.txt `pip install -r requirements.txt`
 
 ### Folder Structure
+```
 FAIR-Tuning/
 ├── embedding/ 
 │   └── xxx.pt
@@ -20,7 +21,7 @@ FAIR-Tuning/
 ├── run_inference.sh
 ├── run_train.sh
 └── README.md
-
+```
 ## Usage
 ### Dataset
 - Prepare image embeddings and put them under `embedding/` folder.

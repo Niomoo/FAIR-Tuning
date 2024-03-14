@@ -133,7 +133,7 @@ class WeibullModel(nn.Module):
         super(WeibullModel, self).__init__()
         self.featureExtractor = MILNet(featureLength=768)
         self.featureLength = featureLength
-        self.fc = nn.Sequential(
+        self.fc_target = nn.Sequential(
             nn.Linear(featureLength, 256, bias=True),
             nn.ReLU(),
             nn.LayerNorm(256),
@@ -143,11 +143,11 @@ class WeibullModel(nn.Module):
             nn.Linear(128, 2, bias=True),
         )
         self.softplus = nn.Softplus()
-        nn.init.xavier_uniform_(self.fc[0].weight)
+        nn.init.xavier_uniform_(self.fc_target[0].weight)
 
     def forward(self, x, lengths):
         features = self.featureExtractor(x.squeeze(0), lengths)
-        x = self.fc(features)
+        x = self.fc_target(features)
         shape_scale = self.activate(x)
         return shape_scale
 

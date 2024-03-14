@@ -153,7 +153,7 @@ def parse_args(input_args=None):
 
 def main(args):
     # Wandb settings
-    cancer_folder = "_".join(args.cancer)
+    cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
     if not os.path.exists(args.model_path + f"{cancer_folder}_{args.partition}/"):
         os.makedirs(args.model_path + f"{cancer_folder}_{args.partition}/")
     model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
@@ -174,7 +174,7 @@ def main(args):
         if not args.reweight:                             # 2 w/o reweight
             if args.curr_fold == 0:
                 max_index += 1
-    group = "_".join(args.cancer)+ "_" + str(args.partition)
+    group = "_".join(args.cancer) + "_" + str(args.partition)
 
     if args.reweight:
         name += "_reweight"
@@ -235,7 +235,7 @@ def main(args):
             model = ClfNet(classes=num_classes, ft=True)
         elif args.task == 3:
             model = WeibullModel(ft=True)
-        cancer_folder = "_".join(args.cancer)
+        cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
         if args.weight_path != "":
             weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{args.weight_path}-*/model.pt")[0]
         else:
@@ -279,7 +279,7 @@ def main(args):
     fairness_loss_fn = FairnessLoss(args.fair_lambda)
 
     # Output folder
-    model_save_path = args.model_path + f"{group}/{name}"
+    model_save_path = args.model_path + f"{args.task}_{group}/{name}"
     os.makedirs(model_save_path, exist_ok=True)
 
     epoch_record = 0
