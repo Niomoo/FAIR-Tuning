@@ -50,7 +50,7 @@ def parse_args(input_args=None):
     parser.add_argument(
         "--weight_path", 
         type=str, 
-        default="1", 
+        default="", 
         help="Path to specific model weight file"
     )
     parser.add_argument(
@@ -117,7 +117,6 @@ def main(args):
         subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
         model_indexes = [int(name.split('-')[0]) for name in subfolders]
         max_index = max(model_indexes)
-
         if args.reweight:
             if args.task == 1 or args.task == 2:
                 model = ClfNet(classes=num_classes, ft=True)
@@ -144,6 +143,7 @@ def main(args):
                 model = WeibullModel()
             if args.weight_path != "":
                 max_index = int(args.weight_path)
+            print(glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{max_index}-*/model.pt"))
             weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{max_index}-*/model.pt")[0]
             model.load_state_dict(torch.load(weight_path), strict=False)
             result_path = Path(weight_path).parent / "result.csv"
