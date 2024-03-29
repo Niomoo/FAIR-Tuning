@@ -1,0 +1,86 @@
+Target,Therapy,Type,Description
+VEGF,Ramucirumab£¨Cyramza£©;Bevacizumab (Avastin) ,protein,"Common side effects of these drugs include:
+
+High blood pressure
+Tiredness (fatigue)
+Bleeding
+Low white blood cell counts (with increased risk of infections)
+Headaches
+Mouth sores
+Loss of appetite
+Diarrhea
+Rare but possibly serious side effects can include blood clots, severe bleeding, holes (called perforations) in the intestine, heart problems, and slow wound healing. If a hole forms in the intestine it can lead to severe infection and may require surgery to fix."
+KRAS,Sotorasib (Lumakras);adagrasib (Krazati),gene,"Common side effects can include:
+
+Diarrhea
+Joint and muscle pain
+Nausea and vomiting
+Loss of appetite?
+Feeling tired or weak
+Cough
+Low white blood cell or red blood cell counts
+Changes in certain other blood tests
+Less common but more serious side effects can include liver damage as well as inflammation (swelling) or scarring in the lungs, which can make it hard to breathe."
+EGFR,Erlotinib (Tarceva);Afatinib (Gilotrif);Gefitinib (Iressa);Osimertinib (Tagrisso);Dacomitinib (Vizimpro),gene,
+EGFR,Osimertinib (Tagrisso) ,gene,"T790M mutation;Osimertinib (Tagrisso) is an EGFR inhibitor that often works against cells with the T790M mutation.
+
+Doctors now commonly get another biopsy when other EGFR inhibitors have stopped working to see if the patient's tumor has developed the T790M mutation (and therefore if this drug might be helpful)."
+EGFR ,Amivantamab (Rybrevant);Mobocertinib (Exkivity),gene,exon 20 mutation
+EGFR,Necitumumab (Portrazza),gene,squamous cell NSCLC
+ALK,Crizotinib (Xalkori);Ceritinib (Zykadia);Alectinib (Alecensa);Brigatinib (Alunbrig);Lorlatinib (Lorbrena),gene,"Common side effects of ALK inhibitors include:
+
+Nausea and vomiting
+Diarrhea
+Constipation
+Fatigue
+Changes in vision
+Other side effects are also possible with some of these drugs. Some side effects can be severe, such as inflammation (swelling) in the lungs or other parts of the body, liver damage, nerve damage (peripheral neuropathy), and heart rhythm problems."
+ROS1,Crizotinib (Xalkori);Ceritinib (Zykadia);Lorlatinib (Lorbrena);Entrectinib (Rozlytrek),gene,"Common side effects of ROS1 inhibitors include:
+
+Dizziness
+Diarrhea
+Constipation
+Fatigue
+Changes in vision
+Other side effects are also possible with some of these drugs. Some side effects can be severe, such as inflammation (swelling) in the lungs or other parts of the body, liver damage, nerve damage (peripheral neuropathy), and heart problems."
+BRAF,Dabrafenib (Tafinlar),gene,"Common side effects can include skin thickening, rash, itching, sensitivity to the sun, headache, fever, joint pain, fatigue, hair loss, nausea, and diarrhea.
+
+Less common but serious side effects can include bleeding, heart rhythm problems, liver or kidney problems, lung problems, severe allergic reactions, severe skin or eye problems, and increased blood sugar levels.
+
+Some people treated with these drugs develop skin cancers, especially squamous cell skin cancers. Your doctor will want to check your skin often during treatment and for several months after. You should also let your doctor know right away if you notice any new growths or abnormal areas on your skin."
+MEK,Trametinib (Mekinist) ,protein,"Common side effects can include skin thickening, rash, itching, sensitivity to the sun, headache, fever, joint pain, fatigue, hair loss, nausea, and diarrhea.
+
+Less common but serious side effects can include bleeding, heart rhythm problems, liver or kidney problems, lung problems, severe allergic reactions, severe skin or eye problems, and increased blood sugar levels.
+
+Some people treated with these drugs develop skin cancers, especially squamous cell skin cancers. Your doctor will want to check your skin often during treatment and for several months after. You should also let your doctor know right away if you notice any new growths or abnormal areas on your skin."
+RET,Selpercatinib (Retevmo);pralsetinib (Gavreto) ,gene,"Common side effects can include:
+
+Dry mouth
+Diarrhea or constipation
+High blood pressure
+Feeling tired
+Swelling in the hands or feet
+Skin rash
+High blood sugar levels
+Muscle and joint pain
+Low white blood cell, red blood cell, or blood platelet counts
+Changes in certain other blood tests"
+MET,Capmatinib (Tabrecta);tepotinib (Tepmetko),gene,"Common side effects can include:
+
+Swelling in the hands or feet
+Nausea or vomiting
+Feeling tired or weak
+Loss of appetite
+Constipation or diarrhea
+Changes in certain blood tests
+Joint and muscle pain"
+HER2,Trastuzumab deruxtecan (Enhertu) ,gene,"This drug can cause low blood cell counts, which can increase a person¡¯s risk of infections and bleeding.
+
+Other common side effects can include nausea, vomiting, diarrhea or constipation, loss of appetite, fever, feeling tired, and hair loss.
+
+This drug can cause serious lung disease in some people, which might even be life threatening. It¡¯s very important to let your doctor or nurse know right away if you¡¯re having symptoms such as coughing, wheezing, trouble breathing, or fever.
+
+This drug can also rarely cause heart damage. Before and during treatment with this drug, your doctor may test your heart function with an echocardiogram or a MUGA scan."
+NTRK,Larotrectinib (Vitrakvi);entrectinib (Rozlytrek),gene,"Common side effects include dizziness, fatigue, nausea, vomiting, constipation, weight gain, and diarrhea.
+
+Less common but serious side effects can include abnormal liver tests, heart problems, and confusion."

@@ -1,0 +1,530 @@
+,Study ID,Sample ID,Patient ID,Altered,ARID1A,ARID1A: MUT,ARID1A: AMP,ARID1A: HOMDEL,ARID1A: FUSION
+0,ucec_tcga_pan_can_atlas_2018,TCGA-4E-A92E-01,TCGA-4E-A92E,1,S2269* (driver),S2269* (driver),no alteration,no alteration,no alteration
+1,ucec_tcga_pan_can_atlas_2018,TCGA-5S-A9Q8-01,TCGA-5S-A9Q8,1,E1075Nfs*18 (driver),E1075Nfs*18 (driver),no alteration,no alteration,no alteration
+2,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G1-01,TCGA-A5-A0G1,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+3,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G2-01,TCGA-A5-A0G2,1,"E1156* (driver), G830V, M918I, Y1339H","E1156* (driver), G830V, M918I, Y1339H",no alteration,no alteration,no alteration
+4,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GA-01,TCGA-A5-A0GA,1,G801Vfs*32 (driver),G801Vfs*32 (driver),no alteration,no alteration,no alteration
+5,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GB-01,TCGA-A5-A0GB,1,"Y551Tfs*68 (driver), Q405* (driver)","Y551Tfs*68 (driver), Q405* (driver)",no alteration,no alteration,no alteration
+6,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GH-01,TCGA-A5-A0GH,1,E1931* (driver),E1931* (driver),no alteration,no alteration,no alteration
+7,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GI-01,TCGA-A5-A0GI,1,R1335* (driver),R1335* (driver),no alteration,no alteration,no alteration
+8,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GM-01,TCGA-A5-A0GM,1,"M737Ifs*6 (driver), A1589Gfs*19 (driver)","M737Ifs*6 (driver), A1589Gfs*19 (driver)",no alteration,no alteration,no alteration
+9,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GP-01,TCGA-A5-A0GP,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+10,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GQ-01,TCGA-A5-A0GQ,1,"K1928Lfs*29 (driver), L2239P","K1928Lfs*29 (driver), L2239P",no alteration,no alteration,no alteration
+11,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GW-01,TCGA-A5-A0GW,1,K1094Sfs*67 (driver),K1094Sfs*67 (driver),no alteration,no alteration,no alteration
+12,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OF-01,TCGA-A5-A1OF,1,"R2158* (driver), A2175T, Q2039R","R2158* (driver), A2175T, Q2039R",no alteration,no alteration,no alteration
+13,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OK-01,TCGA-A5-A1OK,1,P699Lfs*43 (driver),P699Lfs*43 (driver),no alteration,no alteration,no alteration
+14,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K3-01,TCGA-A5-A2K3,1,S664* (driver),S664* (driver),no alteration,no alteration,no alteration
+15,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K5-01,TCGA-A5-A2K5,1,E1767* (driver),E1767* (driver),no alteration,no alteration,no alteration
+16,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K7-01,TCGA-A5-A2K7,1,"R1276* (driver), D1850Tfs*33 (driver)","R1276* (driver), D1850Tfs*33 (driver)",no alteration,no alteration,no alteration
+17,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23O-01,TCGA-AJ-A23O,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+18,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QO-01,TCGA-AJ-A2QO,1,"R1528* (driver), F2141Sfs*59 (driver), Q546Rfs*73 (driver)","R1528* (driver), F2141Sfs*59 (driver), Q546Rfs*73 (driver)",no alteration,no alteration,no alteration
+19,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BG-01,TCGA-AJ-A3BG,1,"P726Vfs*84 (driver), R710H","P726Vfs*84 (driver), R710H",no alteration,no alteration,no alteration
+20,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BH-01,TCGA-AJ-A3BH,1,"D1850Tfs*33 (driver), R693* (driver), Y500C","D1850Tfs*33 (driver), R693* (driver), Y500C",no alteration,no alteration,no alteration
+21,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BK-01,TCGA-AJ-A3BK,1,"R1721* (driver), R1461* (driver)","R1721* (driver), R1461* (driver)",no alteration,no alteration,no alteration
+22,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EK-01,TCGA-AJ-A3EK,1,G461R,G461R,no alteration,no alteration,no alteration
+23,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OJ-01,TCGA-AJ-A3OJ,1,"D1850Tfs*33 (driver), D2178Tfs*22 (driver), R2236P","D1850Tfs*33 (driver), D2178Tfs*22 (driver), R2236P",no alteration,no alteration,no alteration
+24,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OK-01,TCGA-AJ-A3OK,1,Y551Tfs*68 (driver),Y551Tfs*68 (driver),no alteration,no alteration,no alteration
+25,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A5DV-01,TCGA-AJ-A5DV,1,"F1457Sfs*24 (driver), E1017* (driver)","F1457Sfs*24 (driver), E1017* (driver)",no alteration,no alteration,no alteration
+26,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CV-01,TCGA-AJ-A8CV,1,N917Kfs*2 (driver),N917Kfs*2 (driver),no alteration,no alteration,no alteration
+27,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CW-01,TCGA-AJ-A8CW,1,P1407Qfs*74 (driver),P1407Qfs*74 (driver),no alteration,no alteration,no alteration
+28,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A051-01,TCGA-AP-A051,1,Q1856H,Q1856H,no alteration,no alteration,no alteration
+29,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A056-01,TCGA-AP-A056,1,"R1989* (driver), Y592* (driver)","R1989* (driver), Y592* (driver)",no alteration,no alteration,no alteration
+30,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A059-01,TCGA-AP-A059,1,"R750* (driver), X751_splice (driver), P2114L, G1351D, D1698G","R750* (driver), X751_splice (driver), P2114L, G1351D, D1698G",no alteration,no alteration,no alteration
+31,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05N-01,TCGA-AP-A05N,1,"Q479* (driver), Q1095Afs*10 (driver)","Q479* (driver), Q1095Afs*10 (driver)",no alteration,no alteration,no alteration
+32,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05P-01,TCGA-AP-A05P,1,S1516Lfs*16 (driver),S1516Lfs*16 (driver),no alteration,no alteration,no alteration
+33,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LD-01,TCGA-AP-A0LD,1,M1634* (driver),M1634* (driver),no alteration,no alteration,no alteration
+34,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LE-01,TCGA-AP-A0LE,1,D734Gfs*83 (driver),D734Gfs*83 (driver),no alteration,no alteration,no alteration
+35,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LG-01,TCGA-AP-A0LG,1,T783Kfs*50 (driver),T783Kfs*50 (driver),no alteration,no alteration,no alteration
+36,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LL-01,TCGA-AP-A0LL,1,E1733* (driver),E1733* (driver),no alteration,no alteration,no alteration
+37,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LM-01,TCGA-AP-A0LM,1,"X451_splice (driver), G1549D","X451_splice (driver), G1549D",no alteration,no alteration,no alteration
+38,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LS-01,TCGA-AP-A0LS,1,S620Pfs*9 (driver),S620Pfs*9 (driver),no alteration,no alteration,no alteration
+39,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DH-01,TCGA-AP-A1DH,1,G864Afs*27 (driver),G864Afs*27 (driver),no alteration,no alteration,no alteration
+40,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DK-01,TCGA-AP-A1DK,1,"W1023C, R1335L","W1023C, R1335L",no alteration,no alteration,no alteration
+41,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DM-01,TCGA-AP-A1DM,1,Q1519Rfs*8 (driver),Q1519Rfs*8 (driver),no alteration,no alteration,no alteration
+42,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DP-01,TCGA-AP-A1DP,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+43,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DR-01,TCGA-AP-A1DR,1,R1446* (driver),R1446* (driver),no alteration,no alteration,no alteration
+44,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DV-01,TCGA-AP-A1DV,1,"R1989* (driver), D1638Y","R1989* (driver), D1638Y",no alteration,no alteration,no alteration
+45,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E0-01,TCGA-AP-A1E0,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+46,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E1-01,TCGA-AP-A1E1,1,R1566S,R1566S,no alteration,no alteration,no alteration
+47,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E3-01,TCGA-AP-A1E3,1,S1930* (driver),S1930* (driver),no alteration,no alteration,no alteration
+48,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05T-01,TCGA-AX-A05T,1,G1015Wfs*25 (driver),G1015Wfs*25 (driver),no alteration,no alteration,no alteration
+49,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05W-01,TCGA-AX-A05W,1,R1721* (driver),R1721* (driver),no alteration,no alteration,no alteration
+50,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05Y-01,TCGA-AX-A05Y,1,L2171dup,L2171dup,no alteration,no alteration,no alteration
+51,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05Z-01,TCGA-AX-A05Z,1,E672* (driver),E672* (driver),no alteration,no alteration,no alteration
+52,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A060-01,TCGA-AX-A060,1,T1884S,T1884S,no alteration,no alteration,no alteration
+53,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A062-01,TCGA-AX-A062,1,R693* (driver),R693* (driver),no alteration,no alteration,no alteration
+54,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A063-01,TCGA-AX-A063,1,"R1335* (driver), P687S","R1335* (driver), P687S",no alteration,no alteration,no alteration
+55,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A064-01,TCGA-AX-A064,1,P1407Qfs*74 (driver),P1407Qfs*74 (driver),no alteration,no alteration,no alteration
+56,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06F-01,TCGA-AX-A06F,1,"R1989* (driver), A1272V, Q1188H","R1989* (driver), A1272V, Q1188H",no alteration,no alteration,no alteration
+57,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06H-01,TCGA-AX-A06H,1,Q546Rfs*73 (driver),Q546Rfs*73 (driver),no alteration,no alteration,no alteration
+58,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06J-01,TCGA-AX-A06J,1,N1229Rfs*7 (driver),N1229Rfs*7 (driver),no alteration,no alteration,no alteration
+59,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06L-01,TCGA-AX-A06L,1,R1223Afs*5 (driver),R1223Afs*5 (driver),no alteration,no alteration,no alteration
+60,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IS-01,TCGA-AX-A0IS,1,Q425Rfs*8 (driver),Q425Rfs*8 (driver),no alteration,no alteration,no alteration
+61,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IU-01,TCGA-AX-A0IU,1,AMP,no alteration,AMP,AMP,no alteration
+62,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0J0-01,TCGA-AX-A0J0,1,"S995Ifs*12 (driver), S1320Y, I2135V","S995Ifs*12 (driver), S1320Y, I2135V",no alteration,no alteration,no alteration
+63,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0J1-01,TCGA-AX-A0J1,1,M1634Hfs*14 (driver),M1634Hfs*14 (driver),no alteration,no alteration,no alteration
+64,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C4-01,TCGA-AX-A1C4,1,P1175Hfs*5 (driver),P1175Hfs*5 (driver),no alteration,no alteration,no alteration
+65,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C5-01,TCGA-AX-A1C5,1,"R1528* (driver), Q766Sfs*67 (driver)","R1528* (driver), Q766Sfs*67 (driver)",no alteration,no alteration,no alteration
+66,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C9-01,TCGA-AX-A1C9,1,G971Wfs*36 (driver),G971Wfs*36 (driver),no alteration,no alteration,no alteration
+67,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CE-01,TCGA-AX-A1CE,1,Q1614* (driver),Q1614* (driver),no alteration,no alteration,no alteration
+68,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CI-01,TCGA-AX-A1CI,1,G2087R (driver),G2087R (driver),no alteration,no alteration,no alteration
+69,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CN-01,TCGA-AX-A1CN,1,X1665_splice (driver),X1665_splice (driver),no alteration,no alteration,no alteration
+70,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HA-01,TCGA-AX-A2HA,1,"K1905Nfs*18 (driver), Q802Sfs*15 (driver), Q766Pfs*51 (driver)","K1905Nfs*18 (driver), Q802Sfs*15 (driver), Q766Pfs*51 (driver)",no alteration,no alteration,no alteration
+71,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HC-01,TCGA-AX-A2HC,1,"R1989* (driver), X1180_splice (driver), G414* (driver), R1371W, S1544L, L1309I","R1989* (driver), X1180_splice (driver), G414* (driver), R1371W, S1544L, L1309I",no alteration,no alteration,no alteration
+72,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HD-01,TCGA-AX-A2HD,1,"Y551Lfs*72 (driver), P1175Hfs*5 (driver)","Y551Lfs*72 (driver), P1175Hfs*5 (driver)",no alteration,no alteration,no alteration
+73,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HG-01,TCGA-AX-A2HG,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+74,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HH-01,TCGA-AX-A2HH,1,S1919Lfs*7 (driver),S1919Lfs*7 (driver),no alteration,no alteration,no alteration
+75,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2IN-01,TCGA-AX-A2IN,1,L2174R,L2174R,no alteration,no alteration,no alteration
+76,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FS-01,TCGA-AX-A3FS,1,L603Yfs*16 (driver),L603Yfs*16 (driver),no alteration,no alteration,no alteration
+77,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FT-01,TCGA-AX-A3FT,1,P1326Rfs*155 (driver),P1326Rfs*155 (driver),no alteration,no alteration,no alteration
+78,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FZ-01,TCGA-AX-A3FZ,1,P729Lfs*9 (driver),P729Lfs*9 (driver),no alteration,no alteration,no alteration
+79,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G6-01,TCGA-AX-A3G6,1,S614* (driver),S614* (driver),no alteration,no alteration,no alteration
+80,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G8-01,TCGA-AX-A3G8,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+81,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G9-01,TCGA-AX-A3G9,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+82,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JR-01,TCGA-B5-A0JR,1,Q1519Rfs*8 (driver),Q1519Rfs*8 (driver),no alteration,no alteration,no alteration
+83,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JS-01,TCGA-B5-A0JS,1,R1722* (driver),R1722* (driver),no alteration,no alteration,no alteration
+84,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JU-01,TCGA-B5-A0JU,1,Q1332* (driver),Q1332* (driver),no alteration,no alteration,no alteration
+85,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JV-01,TCGA-B5-A0JV,1,R693* (driver),R693* (driver),no alteration,no alteration,no alteration
+86,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JX-01,TCGA-B5-A0JX,1,F2154* (driver),F2154* (driver),no alteration,no alteration,no alteration
+87,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JY-01,TCGA-B5-A0JY,1,"E1764* (driver), G925* (driver), L1713P","E1764* (driver), G925* (driver), L1713P",no alteration,no alteration,no alteration
+88,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K0-01,TCGA-B5-A0K0,1,W2048* (driver),W2048* (driver),no alteration,no alteration,no alteration
+89,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K1-01,TCGA-B5-A0K1,1,G922Hfs*13 (driver),G922Hfs*13 (driver),no alteration,no alteration,no alteration
+90,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K4-01,TCGA-B5-A0K4,1,R1446* (driver),R1446* (driver),no alteration,no alteration,no alteration
+91,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K9-01,TCGA-B5-A0K9,1,G801Vfs*32 (driver),G801Vfs*32 (driver),no alteration,no alteration,no alteration
+92,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11E-01,TCGA-B5-A11E,1,"R1722* (driver), R1989* (driver), S1090I, P1144S","R1722* (driver), R1989* (driver), S1090I, P1144S",no alteration,no alteration,no alteration
+93,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11H-01,TCGA-B5-A11H,1,Q1519Rfs*8 (driver),Q1519Rfs*8 (driver),no alteration,no alteration,no alteration
+94,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11J-01,TCGA-B5-A11J,1,"D1850Tfs*33 (driver), F2141Sfs*59 (driver)","D1850Tfs*33 (driver), F2141Sfs*59 (driver)",no alteration,no alteration,no alteration
+95,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11L-01,TCGA-B5-A11L,1,"X996_splice (driver), A1239T","X996_splice (driver), A1239T",no alteration,no alteration,no alteration
+96,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11M-01,TCGA-B5-A11M,1,K1811Sfs*4 (driver),K1811Sfs*4 (driver),not profiled,not profiled,no alteration
+97,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11O-01,TCGA-B5-A11O,1,"T1640Pfs*14 (driver), Y592* (driver)","T1640Pfs*14 (driver), Y592* (driver)",no alteration,no alteration,no alteration
+98,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11R-01,TCGA-B5-A11R,1,Q633* (driver),Q633* (driver),no alteration,no alteration,no alteration
+99,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11W-01,TCGA-B5-A11W,1,R750* (driver),R750* (driver),no alteration,no alteration,no alteration
+100,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11X-01,TCGA-B5-A11X,1,"Q561* (driver), A2237Cfs*29 (driver)","Q561* (driver), A2237Cfs*29 (driver)",not profiled,not profiled,no alteration
+101,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A121-01,TCGA-B5-A121,1,Q1188* (driver),Q1188* (driver),no alteration,no alteration,no alteration
+102,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MR-01,TCGA-B5-A1MR,1,"R1989* (driver), E1904* (driver), R1109Q, N957T, E1777D","R1989* (driver), E1904* (driver), R1109Q, N957T, E1777D",no alteration,no alteration,no alteration
+103,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MV-01,TCGA-B5-A1MV,1,S1085* (driver),S1085* (driver),no alteration,no alteration,no alteration
+104,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MX-01,TCGA-B5-A1MX,1,"Q802Sfs*15 (driver), G1210V, K2146del","Q802Sfs*15 (driver), G1210V, K2146del",no alteration,no alteration,no alteration
+105,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MZ-01,TCGA-B5-A1MZ,1,P1113Hfs*6 (driver),P1113Hfs*6 (driver),no alteration,no alteration,no alteration
+106,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3F9-01,TCGA-B5-A3F9,1,R1335* (driver),R1335* (driver),no alteration,no alteration,no alteration
+107,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FA-01,TCGA-B5-A3FA,1,S1544P,S1544P,no alteration,no alteration,no alteration
+108,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FB-01,TCGA-B5-A3FB,1,E1766* (driver),E1766* (driver),no alteration,no alteration,no alteration
+109,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FH-01,TCGA-B5-A3FH,1,R1721* (driver),R1721* (driver),no alteration,no alteration,no alteration
+110,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OC-01,TCGA-B5-A5OC,1,"P1326Rfs*155 (driver), A1616T, A2182V","P1326Rfs*155 (driver), A1616T, A2182V",no alteration,no alteration,no alteration
+111,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0LX-01,TCGA-BG-A0LX,1,V1994Cfs*21 (driver),V1994Cfs*21 (driver),no alteration,no alteration,no alteration
+112,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M3-01,TCGA-BG-A0M3,1,R1335* (driver),R1335* (driver),no alteration,no alteration,no alteration
+113,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M4-01,TCGA-BG-A0M4,1,Q758Rfs*75 (driver),Q758Rfs*75 (driver),no alteration,no alteration,no alteration
+114,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M9-01,TCGA-BG-A0M9,1,Q1131* (driver),Q1131* (driver),no alteration,no alteration,no alteration
+115,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MA-01,TCGA-BG-A0MA,1,G794Vfs*36 (driver),G794Vfs*36 (driver),no alteration,no alteration,no alteration
+116,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MG-01,TCGA-BG-A0MG,1,Y1324* (driver),Y1324* (driver),no alteration,no alteration,no alteration
+117,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MT-01,TCGA-BG-A0MT,1,T2138Hfs*62 (driver),T2138Hfs*62 (driver),no alteration,no alteration,no alteration
+118,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VT-01,TCGA-BG-A0VT,1,Y948Hfs*21 (driver),Y948Hfs*21 (driver),no alteration,no alteration,no alteration
+119,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VV-01,TCGA-BG-A0VV,1,Q1473* (driver),Q1473* (driver),no alteration,no alteration,no alteration
+120,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VZ-01,TCGA-BG-A0VZ,1,F2141Sfs*59 (driver),F2141Sfs*59 (driver),no alteration,no alteration,no alteration
+121,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0YV-01,TCGA-BG-A0YV,1,Q1409* (driver),Q1409* (driver),no alteration,no alteration,no alteration
+122,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18A-01,TCGA-BG-A18A,1,R1276* (driver),R1276* (driver),no alteration,no alteration,no alteration
+123,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18B-01,TCGA-BG-A18B,1,"Q557* (driver), P1468Lfs*13 (driver)","Q557* (driver), P1468Lfs*13 (driver)",no alteration,no alteration,no alteration
+124,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A222-01,TCGA-BG-A222,1,A438V,A438V,no alteration,no alteration,no alteration
+125,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2AE-01,TCGA-BG-A2AE,1,R1335* (driver),R1335* (driver),no alteration,no alteration,no alteration
+126,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A3EW-01,TCGA-BG-A3EW,1,"R1722* (driver), P1326Rfs*155 (driver)","R1722* (driver), P1326Rfs*155 (driver)",no alteration,no alteration,no alteration
+127,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0C9-01,TCGA-BK-A0C9,1,"S2104Pfs*31 (driver), V1288M","S2104Pfs*31 (driver), V1288M",no alteration,no alteration,no alteration
+128,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CA-01,TCGA-BK-A0CA,1,A1789Pfs*17 (driver),A1789Pfs*17 (driver),no alteration,no alteration,no alteration
+129,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CB-01,TCGA-BK-A0CB,1,"R693* (driver), S1001Ffs*6 (driver)","R693* (driver), S1001Ffs*6 (driver)",no alteration,no alteration,no alteration
+130,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A13B-01,TCGA-BK-A13B,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+131,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A13C-01,TCGA-BK-A13C,1,D1850Gfs*4 (driver),D1850Gfs*4 (driver),no alteration,no alteration,no alteration
+132,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A56F-01,TCGA-BK-A56F,1,R750* (driver),R750* (driver),no alteration,no alteration,no alteration
+133,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A6W3-01,TCGA-BK-A6W3,1,E1104* (driver),E1104* (driver),no alteration,no alteration,no alteration
+134,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TA-01,TCGA-BS-A0TA,1,G801Vfs*32 (driver),G801Vfs*32 (driver),no alteration,no alteration,no alteration
+135,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TC-01,TCGA-BS-A0TC,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+136,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TE-01,TCGA-BS-A0TE,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+137,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TG-01,TCGA-BS-A0TG,1,"R2236Afs*31 (driver), H415Pfs*205 (driver)","R2236Afs*31 (driver), H415Pfs*205 (driver)",no alteration,no alteration,no alteration
+138,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TJ-01,TCGA-BS-A0TJ,1,"D1850Tfs*33 (driver), A1628Pfs*15 (driver), T1743M","D1850Tfs*33 (driver), A1628Pfs*15 (driver), T1743M",no alteration,no alteration,no alteration
+139,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U5-01,TCGA-BS-A0U5,1,Y485Pfs*135 (driver),Y485Pfs*135 (driver),no alteration,no alteration,no alteration
+140,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U7-01,TCGA-BS-A0U7,1,D1850Gfs*4 (driver),D1850Gfs*4 (driver),no alteration,no alteration,no alteration
+141,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U8-01,TCGA-BS-A0U8,1,"K1094Sfs*67 (driver), Q1306* (driver)","K1094Sfs*67 (driver), Q1306* (driver)",no alteration,no alteration,no alteration
+142,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UA-01,TCGA-BS-A0UA,1,"F2141Sfs*59 (driver), Y2254* (driver)","F2141Sfs*59 (driver), Y2254* (driver)",no alteration,no alteration,no alteration
+143,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UJ-01,TCGA-BS-A0UJ,1,M759V,M759V,no alteration,no alteration,no alteration
+144,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UM-01,TCGA-BS-A0UM,1,W1073* (driver),W1073* (driver),not profiled,not profiled,no alteration
+145,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UV-01,TCGA-BS-A0UV,1,"R1989* (driver), E992* (driver), P1619L","R1989* (driver), E992* (driver), P1619L",no alteration,no alteration,no alteration
+146,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V6-01,TCGA-BS-A0V6,1,L2253Vfs*24 (driver),L2253Vfs*24 (driver),no alteration,no alteration,no alteration
+147,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V8-01,TCGA-BS-A0V8,1,N917Ifs*2 (driver),N917Ifs*2 (driver),no alteration,no alteration,no alteration
+148,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0VI-01,TCGA-BS-A0VI,1,K1072Nfs*21 (driver),K1072Nfs*21 (driver),no alteration,no alteration,no alteration
+149,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZN-01,TCGA-D1-A0ZN,1,A1119Vfs*43 (driver),A1119Vfs*43 (driver),no alteration,no alteration,no alteration
+150,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZO-01,TCGA-D1-A0ZO,1,K1953Rfs*3 (driver),K1953Rfs*3 (driver),no alteration,no alteration,no alteration
+151,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZS-01,TCGA-D1-A0ZS,1,"Y551Tfs*68 (driver), Q2209Sfs*22 (driver)","Y551Tfs*68 (driver), Q2209Sfs*22 (driver)",no alteration,no alteration,no alteration
+152,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZU-01,TCGA-D1-A0ZU,1,"R1989* (driver), R2158* (driver)","R1989* (driver), R2158* (driver)",no alteration,no alteration,no alteration
+153,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15W-01,TCGA-D1-A15W,1,"L2009del, HOMDEL (driver)",L2009del,HOMDEL (driver),HOMDEL (driver),no alteration
+154,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15X-01,TCGA-D1-A15X,1,"N2109Kfs*41 (driver), R2236P","N2109Kfs*41 (driver), R2236P",no alteration,no alteration,no alteration
+155,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A160-01,TCGA-D1-A160,1,R1528* (driver),R1528* (driver),no alteration,no alteration,no alteration
+156,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A163-01,TCGA-D1-A163,1,Q1519Rfs*8 (driver),Q1519Rfs*8 (driver),no alteration,no alteration,no alteration
+157,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A167-01,TCGA-D1-A167,1,"P490L, K1795N","P490L, K1795N",no alteration,no alteration,no alteration
+158,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A168-01,TCGA-D1-A168,1,"S674Ifs*68 (driver), P1353Rfs*123 (driver)","S674Ifs*68 (driver), P1353Rfs*123 (driver)",no alteration,no alteration,no alteration
+159,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16B-01,TCGA-D1-A16B,1,M434Cfs*185 (driver),M434Cfs*185 (driver),no alteration,no alteration,no alteration
+160,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16D-01,TCGA-D1-A16D,1,E2047* (driver),E2047* (driver),no alteration,no alteration,no alteration
+161,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16E-01,TCGA-D1-A16E,1,R1276* (driver),R1276* (driver),no alteration,no alteration,no alteration
+162,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16O-01,TCGA-D1-A16O,1,Q2209Sfs*22 (driver),Q2209Sfs*22 (driver),no alteration,no alteration,no alteration
+163,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16Q-01,TCGA-D1-A16Q,1,Q1331* (driver),Q1331* (driver),no alteration,no alteration,no alteration
+164,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16X-01,TCGA-D1-A16X,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+165,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A174-01,TCGA-D1-A174,1,G801Vfs*32 (driver),G801Vfs*32 (driver),no alteration,no alteration,no alteration
+166,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A176-01,TCGA-D1-A176,1,R693* (driver),R693* (driver),no alteration,no alteration,no alteration
+167,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A177-01,TCGA-D1-A177,1,D1850Gfs*4 (driver),D1850Gfs*4 (driver),no alteration,no alteration,no alteration
+168,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17A-01,TCGA-D1-A17A,1,Q543* (driver),Q543* (driver),no alteration,no alteration,no alteration
+169,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17C-01,TCGA-D1-A17C,1,"T1514Pfs*14 (driver), A1264Efs*21 (driver), G1317W","T1514Pfs*14 (driver), A1264Efs*21 (driver), G1317W",no alteration,no alteration,no alteration
+170,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17D-01,TCGA-D1-A17D,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+171,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17F-01,TCGA-D1-A17F,1,"F2141Sfs*59 (driver), K1072Nfs*21 (driver)","F2141Sfs*59 (driver), K1072Nfs*21 (driver)",no alteration,no alteration,no alteration
+172,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17H-01,TCGA-D1-A17H,1,R2158* (driver),R2158* (driver),no alteration,no alteration,no alteration
+173,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17L-01,TCGA-D1-A17L,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+174,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17M-01,TCGA-D1-A17M,1,P1115Qfs*46 (driver),P1115Qfs*46 (driver),no alteration,no alteration,no alteration
+175,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17Q-01,TCGA-D1-A17Q,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+176,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17R-01,TCGA-D1-A17R,1,Q1172* (driver),Q1172* (driver),no alteration,no alteration,no alteration
+177,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17T-01,TCGA-D1-A17T,1,"S2269* (driver), R727Vfs*12 (driver)","S2269* (driver), R727Vfs*12 (driver)",no alteration,no alteration,no alteration
+178,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17U-01,TCGA-D1-A17U,1,K1072Nfs*21 (driver),K1072Nfs*21 (driver),no alteration,no alteration,no alteration
+179,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NS-01,TCGA-D1-A1NS,1,K2159* (driver),K2159* (driver),no alteration,no alteration,no alteration
+180,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NY-01,TCGA-D1-A1NY,1,F2141Sfs*59 (driver),F2141Sfs*59 (driver),no alteration,no alteration,no alteration
+181,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NZ-01,TCGA-D1-A1NZ,1,R1276* (driver),R1276* (driver),no alteration,no alteration,no alteration
+182,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O5-01,TCGA-D1-A1O5,1,L1915Ffs*8 (driver),L1915Ffs*8 (driver),no alteration,no alteration,no alteration
+183,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O7-01,TCGA-D1-A1O7,1,E2165Rfs*35 (driver),E2165Rfs*35 (driver),no alteration,no alteration,no alteration
+184,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O8-01,TCGA-D1-A1O8,1,M875Nfs*61 (driver),M875Nfs*61 (driver),no alteration,no alteration,no alteration
+185,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KU-01,TCGA-DF-A2KU,1,"W1498* (driver), S1992P, A2110D","W1498* (driver), S1992P, A2110D",no alteration,no alteration,no alteration
+186,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KV-01,TCGA-DF-A2KV,1,"R1721* (driver), R1989* (driver)","R1721* (driver), R1989* (driver)",no alteration,no alteration,no alteration
+187,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KZ-01,TCGA-DF-A2KZ,1,S1513Hfs*18 (driver),S1513Hfs*18 (driver),no alteration,no alteration,no alteration
+188,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1BU-01,TCGA-DI-A1BU,1,"P1175Hfs*5 (driver), A861V","P1175Hfs*5 (driver), A861V",no alteration,no alteration,no alteration
+189,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1BY-01,TCGA-DI-A1BY,1,M628Nfs*14 (driver),M628Nfs*14 (driver),no alteration,no alteration,no alteration
+190,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1NO-01,TCGA-DI-A1NO,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+191,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1LX-01,TCGA-E6-A1LX,1,"R1721* (driver), S571L, R755M, L1100F, A2110V","R1721* (driver), S571L, R755M, L1100F, A2110V",no alteration,no alteration,no alteration
+192,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1M0-01,TCGA-E6-A1M0,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+193,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A2P8-01,TCGA-E6-A2P8,1,P1601* (driver),P1601* (driver),no alteration,no alteration,no alteration
+194,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A2P9-01,TCGA-E6-A2P9,1,D1850Gfs*4 (driver),D1850Gfs*4 (driver),no alteration,no alteration,no alteration
+195,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A1QX-01,TCGA-EC-A1QX,1,K1072Nfs*21 (driver),K1072Nfs*21 (driver),no alteration,no alteration,no alteration
+196,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A24G-01,TCGA-EC-A24G,1,R774H,R774H,no alteration,no alteration,no alteration
+197,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22R-01,TCGA-EO-A22R,1,"R1528* (driver), G2040R, S2262A","R1528* (driver), G2040R, S2262A",no alteration,no alteration,no alteration
+198,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22S-01,TCGA-EO-A22S,1,D1850Tfs*33 (driver),D1850Tfs*33 (driver),no alteration,no alteration,no alteration
+199,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22T-01,TCGA-EO-A22T,1,"Q1331* (driver), W1073Mfs*32 (driver)","Q1331* (driver), W1073Mfs*32 (driver)",no alteration,no alteration,no alteration
+200,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22U-01,TCGA-EO-A22U,1,"R750* (driver), A441V, M875V","R750* (driver), A441V, M875V",no alteration,no alteration,no alteration
+201,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22X-01,TCGA-EO-A22X,1,"R1989* (driver), Y1027* (driver)","R1989* (driver), Y1027* (driver)",no alteration,no alteration,no alteration
+202,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22Y-01,TCGA-EO-A22Y,1,A2235P,A2235P,no alteration,no alteration,no alteration
+203,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AU-01,TCGA-EO-A3AU,1,T590Lfs*29 (driver),T590Lfs*29 (driver),no alteration,no alteration,no alteration
+204,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AV-01,TCGA-EO-A3AV,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+205,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AY-01,TCGA-EO-A3AY,1,"R1721* (driver), R1989* (driver)","R1721* (driver), R1989* (driver)",no alteration,no alteration,no alteration
+206,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AZ-01,TCGA-EO-A3AZ,1,"S620Y, S2156G","S620Y, S2156G",no alteration,no alteration,no alteration
+207,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3B0-01,TCGA-EO-A3B0,1,"R1722* (driver), R1989* (driver)","R1722* (driver), R1989* (driver)",no alteration,no alteration,no alteration
+208,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3L0-01,TCGA-EO-A3L0,1,C1874Afs*9 (driver),C1874Afs*9 (driver),no alteration,no alteration,no alteration
+209,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GF-01,TCGA-EY-A1GF,1,M1154T,M1154T,no alteration,no alteration,no alteration
+210,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GI-01,TCGA-EY-A1GI,1,R1989* (driver),R1989* (driver),no alteration,no alteration,no alteration
+211,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GK-01,TCGA-EY-A1GK,1,"P1115Qfs*46 (driver), Q1519Rfs*8 (driver)","P1115Qfs*46 (driver), Q1519Rfs*8 (driver)",no alteration,no alteration,no alteration
+212,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GT-01,TCGA-EY-A1GT,1,"Q678* (driver), M890Afs*2 (driver)","Q678* (driver), M890Afs*2 (driver)",no alteration,no alteration,no alteration
+213,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A214-01,TCGA-EY-A214,1,S1085* (driver),S1085* (driver),no alteration,no alteration,no alteration
+214,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A215-01,TCGA-EY-A215,1,P1629L,P1629L,no alteration,no alteration,no alteration
+215,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OM-01,TCGA-EY-A2OM,1,K1072Nfs*21 (driver),K1072Nfs*21 (driver),no alteration,no alteration,no alteration
+216,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OO-01,TCGA-EY-A2OO,1,Y551Lfs*72 (driver),Y551Lfs*72 (driver),no alteration,no alteration,no alteration
+217,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OP-01,TCGA-EY-A2OP,1,D1850Gfs*4 (driver),D1850Gfs*4 (driver),no alteration,no alteration,no alteration
+218,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A5W2-01,TCGA-EY-A5W2,1,"D1850Gfs*4 (driver), Y1377Wfs*67 (driver), P545H","D1850Gfs*4 (driver), Y1377Wfs*67 (driver), P545H",no alteration,no alteration,no alteration
+219,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D4-01,TCGA-FI-A2D4,1,Q1142* (driver),Q1142* (driver),no alteration,no alteration,no alteration
+220,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D5-01,TCGA-FI-A2D5,1,"R1989* (driver), K1106E, G1283C","R1989* (driver), K1106E, G1283C",no alteration,no alteration,no alteration
+221,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D6-01,TCGA-FI-A2D6,1,"R1276* (driver), F2141Sfs*59 (driver)","R1276* (driver), F2141Sfs*59 (driver)",no alteration,no alteration,no alteration
+222,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F4-01,TCGA-FI-A2F4,1,"Q802Sfs*15 (driver), H2004Tfs*29 (driver)","Q802Sfs*15 (driver), H2004Tfs*29 (driver)",no alteration,no alteration,no alteration
+223,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A6IB-01,TCGA-PG-A6IB,1,"M1564Hfs*8 (driver), P1326Rfs*155 (driver)","M1564Hfs*8 (driver), P1326Rfs*155 (driver)",no alteration,no alteration,no alteration
+224,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A914-01,TCGA-PG-A914,1,E2224Q,E2224Q,no alteration,no alteration,no alteration
+225,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A916-01,TCGA-PG-A916,1,L2085Wfs*50 (driver),L2085Wfs*50 (driver),no alteration,no alteration,no alteration
+226,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A917-01,TCGA-PG-A917,1,R1551H,R1551H,no alteration,no alteration,no alteration
+227,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A5YR-01,TCGA-QS-A5YR,1,"Q1835* (driver), K1072Nfs*21 (driver)","Q1835* (driver), K1072Nfs*21 (driver)",no alteration,no alteration,no alteration
+228,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A744-01,TCGA-QS-A744,1,Q537* (driver),Q537* (driver),no alteration,no alteration,no alteration
+229,ucec_tcga_pan_can_atlas_2018,TCGA-SJ-A6ZI-01,TCGA-SJ-A6ZI,1,"W1073* (driver), R1722* (driver)","W1073* (driver), R1722* (driver)",no alteration,no alteration,no alteration
+230,ucec_tcga_pan_can_atlas_2018,TCGA-SL-A6JA-01,TCGA-SL-A6JA,1,"K1072Nfs*21 (driver), T1535I","K1072Nfs*21 (driver), T1535I",no alteration,no alteration,no alteration
+231,ucec_tcga_pan_can_atlas_2018,TCGA-2E-A9G8-01,TCGA-2E-A9G8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+232,ucec_tcga_pan_can_atlas_2018,TCGA-5B-A90C-01,TCGA-5B-A90C,0,no alteration,no alteration,no alteration,no alteration,no alteration
+233,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G3-01,TCGA-A5-A0G3,0,no alteration,no alteration,not profiled,not profiled,no alteration
+234,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G5-01,TCGA-A5-A0G5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+235,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G9-01,TCGA-A5-A0G9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+236,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GD-01,TCGA-A5-A0GD,0,no alteration,not profiled,no alteration,no alteration,not profiled
+237,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GE-01,TCGA-A5-A0GE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+238,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GG-01,TCGA-A5-A0GG,0,no alteration,not profiled,no alteration,no alteration,not profiled
+239,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GJ-01,TCGA-A5-A0GJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+240,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GN-01,TCGA-A5-A0GN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+241,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GR-01,TCGA-A5-A0GR,0,no alteration,not profiled,no alteration,no alteration,not profiled
+242,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GU-01,TCGA-A5-A0GU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+243,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GV-01,TCGA-A5-A0GV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+244,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GX-01,TCGA-A5-A0GX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+245,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R6-01,TCGA-A5-A0R6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+246,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R7-01,TCGA-A5-A0R7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+247,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R8-01,TCGA-A5-A0R8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+248,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R9-01,TCGA-A5-A0R9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+249,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0RA-01,TCGA-A5-A0RA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+250,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VO-01,TCGA-A5-A0VO,0,no alteration,no alteration,not profiled,not profiled,no alteration
+251,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VP-01,TCGA-A5-A0VP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+252,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VQ-01,TCGA-A5-A0VQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+253,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OG-01,TCGA-A5-A1OG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+254,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OH-01,TCGA-A5-A1OH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+255,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OJ-01,TCGA-A5-A1OJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+256,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K2-01,TCGA-A5-A2K2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+257,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K4-01,TCGA-A5-A2K4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+258,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A3LO-01,TCGA-A5-A3LO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+259,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A3LP-01,TCGA-A5-A3LP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+260,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A7WJ-01,TCGA-A5-A7WJ,0,no alteration,not profiled,no alteration,no alteration,not profiled
+261,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A7WK-01,TCGA-A5-A7WK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+262,ucec_tcga_pan_can_atlas_2018,TCGA-A5-AB3J-01,TCGA-A5-AB3J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+263,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23M-01,TCGA-AJ-A23M,0,no alteration,no alteration,no alteration,no alteration,no alteration
+264,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23N-01,TCGA-AJ-A23N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+265,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QK-01,TCGA-AJ-A2QK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+266,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QL-01,TCGA-AJ-A2QL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+267,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QM-01,TCGA-AJ-A2QM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+268,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QN-01,TCGA-AJ-A2QN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+269,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BD-01,TCGA-AJ-A3BD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+270,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BF-01,TCGA-AJ-A3BF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+271,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BI-01,TCGA-AJ-A3BI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+272,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EJ-01,TCGA-AJ-A3EJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+273,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EL-01,TCGA-AJ-A3EL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+274,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EM-01,TCGA-AJ-A3EM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+275,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3I9-01,TCGA-AJ-A3I9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+276,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3IA-01,TCGA-AJ-A3IA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+277,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NC-01,TCGA-AJ-A3NC,0,no alteration,not profiled,no alteration,no alteration,not profiled
+278,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NE-01,TCGA-AJ-A3NE,0,no alteration,not profiled,no alteration,no alteration,not profiled
+279,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NF-01,TCGA-AJ-A3NF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+280,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NG-01,TCGA-AJ-A3NG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+281,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NH-01,TCGA-AJ-A3NH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+282,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OL-01,TCGA-AJ-A3OL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+283,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3QS-01,TCGA-AJ-A3QS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+284,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3TW-01,TCGA-AJ-A3TW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+285,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A5DW-01,TCGA-AJ-A5DW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+286,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A6NU-01,TCGA-AJ-A6NU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+287,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CT-01,TCGA-AJ-A8CT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+288,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A052-01,TCGA-AP-A052,0,no alteration,no alteration,no alteration,no alteration,no alteration
+289,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A054-01,TCGA-AP-A054,0,no alteration,no alteration,no alteration,no alteration,no alteration
+290,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05A-01,TCGA-AP-A05A,0,no alteration,no alteration,no alteration,no alteration,no alteration
+291,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05D-01,TCGA-AP-A05D,0,no alteration,no alteration,no alteration,no alteration,no alteration
+292,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05H-01,TCGA-AP-A05H,0,no alteration,no alteration,no alteration,no alteration,no alteration
+293,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05J-01,TCGA-AP-A05J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+294,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05O-01,TCGA-AP-A05O,0,no alteration,not profiled,no alteration,no alteration,not profiled
+295,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0L8-01,TCGA-AP-A0L8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+296,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0L9-01,TCGA-AP-A0L9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+297,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LF-01,TCGA-AP-A0LF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+298,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LH-01,TCGA-AP-A0LH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+299,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LI-01,TCGA-AP-A0LI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+300,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LJ-01,TCGA-AP-A0LJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+301,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LN-01,TCGA-AP-A0LN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+302,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LO-01,TCGA-AP-A0LO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+303,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LP-01,TCGA-AP-A0LP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+304,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LQ-01,TCGA-AP-A0LQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+305,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LT-01,TCGA-AP-A0LT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+306,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LV-01,TCGA-AP-A0LV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+307,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DO-01,TCGA-AP-A1DO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+308,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DQ-01,TCGA-AP-A1DQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+309,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E4-01,TCGA-AP-A1E4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+310,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A3K1-01,TCGA-AP-A3K1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+311,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A5FX-01,TCGA-AP-A5FX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+312,ucec_tcga_pan_can_atlas_2018,TCGA-AW-A1PO-01,TCGA-AW-A1PO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+313,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05S-01,TCGA-AX-A05S,0,no alteration,no alteration,no alteration,no alteration,no alteration
+314,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05U-01,TCGA-AX-A05U,0,no alteration,no alteration,no alteration,no alteration,no alteration
+315,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06B-01,TCGA-AX-A06B,0,no alteration,no alteration,no alteration,no alteration,no alteration
+316,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IW-01,TCGA-AX-A0IW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+317,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IZ-01,TCGA-AX-A0IZ,0,no alteration,not profiled,no alteration,no alteration,not profiled
+318,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C7-01,TCGA-AX-A1C7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+319,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C8-01,TCGA-AX-A1C8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+320,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CA-01,TCGA-AX-A1CA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+321,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CC-01,TCGA-AX-A1CC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+322,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CF-01,TCGA-AX-A1CF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+323,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CJ-01,TCGA-AX-A1CJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+324,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CK-01,TCGA-AX-A1CK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+325,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H2-01,TCGA-AX-A2H2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+326,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H4-01,TCGA-AX-A2H4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+327,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H5-01,TCGA-AX-A2H5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+328,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H7-01,TCGA-AX-A2H7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+329,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HJ-01,TCGA-AX-A2HJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+330,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HK-01,TCGA-AX-A2HK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+331,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2IO-01,TCGA-AX-A2IO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+332,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FV-01,TCGA-AX-A3FV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+333,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FW-01,TCGA-AX-A3FW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+334,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FX-01,TCGA-AX-A3FX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+335,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G1-01,TCGA-AX-A3G1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+336,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G4-01,TCGA-AX-A3G4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+337,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G7-01,TCGA-AX-A3G7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+338,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3GB-01,TCGA-AX-A3GB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+339,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3GI-01,TCGA-AX-A3GI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+340,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JN-01,TCGA-B5-A0JN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+341,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JT-01,TCGA-B5-A0JT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+342,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JZ-01,TCGA-B5-A0JZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+343,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K2-01,TCGA-B5-A0K2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+344,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K3-01,TCGA-B5-A0K3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+345,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K6-01,TCGA-B5-A0K6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+346,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K7-01,TCGA-B5-A0K7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+347,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K8-01,TCGA-B5-A0K8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+348,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11F-01,TCGA-B5-A11F,0,no alteration,no alteration,no alteration,no alteration,no alteration
+349,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11G-01,TCGA-B5-A11G,0,no alteration,no alteration,no alteration,no alteration,no alteration
+350,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11I-01,TCGA-B5-A11I,0,no alteration,no alteration,no alteration,no alteration,no alteration
+351,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11N-01,TCGA-B5-A11N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+352,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11P-01,TCGA-B5-A11P,0,no alteration,no alteration,no alteration,no alteration,no alteration
+353,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Q-01,TCGA-B5-A11Q,0,no alteration,no alteration,no alteration,no alteration,no alteration
+354,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11S-01,TCGA-B5-A11S,0,no alteration,no alteration,no alteration,no alteration,no alteration
+355,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11U-01,TCGA-B5-A11U,0,no alteration,no alteration,no alteration,no alteration,no alteration
+356,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11V-01,TCGA-B5-A11V,0,no alteration,no alteration,no alteration,no alteration,no alteration
+357,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Y-01,TCGA-B5-A11Y,0,no alteration,no alteration,no alteration,no alteration,no alteration
+358,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Z-01,TCGA-B5-A11Z,0,no alteration,no alteration,no alteration,no alteration,no alteration
+359,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MS-01,TCGA-B5-A1MS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+360,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MU-01,TCGA-B5-A1MU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+361,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MW-01,TCGA-B5-A1MW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+362,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MY-01,TCGA-B5-A1MY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+363,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1N2-01,TCGA-B5-A1N2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+364,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FC-01,TCGA-B5-A3FC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+365,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FD-01,TCGA-B5-A3FD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+366,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3S1-01,TCGA-B5-A3S1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+367,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OD-01,TCGA-B5-A5OD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+368,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OE-01,TCGA-B5-A5OE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+369,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0LW-01,TCGA-BG-A0LW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+370,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M0-01,TCGA-BG-A0M0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+371,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M2-01,TCGA-BG-A0M2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+372,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M6-01,TCGA-BG-A0M6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+373,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M7-01,TCGA-BG-A0M7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+374,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MC-01,TCGA-BG-A0MC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+375,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MI-01,TCGA-BG-A0MI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+376,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MK-01,TCGA-BG-A0MK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+377,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MO-01,TCGA-BG-A0MO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+378,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MQ-01,TCGA-BG-A0MQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+379,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MU-01,TCGA-BG-A0MU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+380,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0RY-01,TCGA-BG-A0RY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+381,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VW-01,TCGA-BG-A0VW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+382,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VX-01,TCGA-BG-A0VX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+383,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0W1-01,TCGA-BG-A0W1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+384,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0W2-01,TCGA-BG-A0W2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+385,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0YU-01,TCGA-BG-A0YU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+386,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A186-01,TCGA-BG-A186,0,no alteration,no alteration,no alteration,no alteration,no alteration
+387,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A187-01,TCGA-BG-A187,0,no alteration,no alteration,no alteration,no alteration,no alteration
+388,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18C-01,TCGA-BG-A18C,0,no alteration,no alteration,no alteration,no alteration,no alteration
+389,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2AD-01,TCGA-BG-A2AD,0,no alteration,not profiled,no alteration,no alteration,not profiled
+390,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2L7-01,TCGA-BG-A2L7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+391,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A3PP-01,TCGA-BG-A3PP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+392,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CC-01,TCGA-BK-A0CC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+393,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A139-01,TCGA-BK-A139,0,no alteration,no alteration,no alteration,no alteration,no alteration
+394,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A26L-01,TCGA-BK-A26L,0,no alteration,no alteration,no alteration,no alteration,no alteration
+395,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A4ZD-01,TCGA-BK-A4ZD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+396,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A6W4-01,TCGA-BK-A6W4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+397,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0T9-01,TCGA-BS-A0T9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+398,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TD-01,TCGA-BS-A0TD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+399,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TI-01,TCGA-BS-A0TI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+400,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U9-01,TCGA-BS-A0U9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+401,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UF-01,TCGA-BS-A0UF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+402,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UL-01,TCGA-BS-A0UL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+403,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UT-01,TCGA-BS-A0UT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+404,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V4-01,TCGA-BS-A0V4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+405,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V7-01,TCGA-BS-A0V7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+406,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0WQ-01,TCGA-BS-A0WQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+407,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZP-01,TCGA-D1-A0ZP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+408,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZQ-01,TCGA-D1-A0ZQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+409,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZR-01,TCGA-D1-A0ZR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+410,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZV-01,TCGA-D1-A0ZV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+411,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZZ-01,TCGA-D1-A0ZZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+412,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A101-01,TCGA-D1-A101,0,no alteration,no alteration,no alteration,no alteration,no alteration
+413,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A102-01,TCGA-D1-A102,0,no alteration,no alteration,no alteration,no alteration,no alteration
+414,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A103-01,TCGA-D1-A103,0,no alteration,no alteration,no alteration,no alteration,no alteration
+415,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15V-01,TCGA-D1-A15V,0,no alteration,no alteration,no alteration,no alteration,no alteration
+416,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15Z-01,TCGA-D1-A15Z,0,no alteration,no alteration,no alteration,no alteration,no alteration
+417,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A161-01,TCGA-D1-A161,0,no alteration,no alteration,no alteration,no alteration,no alteration
+418,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A165-01,TCGA-D1-A165,0,no alteration,no alteration,no alteration,no alteration,no alteration
+419,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A169-01,TCGA-D1-A169,0,no alteration,no alteration,no alteration,no alteration,no alteration
+420,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16F-01,TCGA-D1-A16F,0,no alteration,no alteration,not profiled,not profiled,no alteration
+421,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16G-01,TCGA-D1-A16G,0,no alteration,no alteration,no alteration,no alteration,no alteration
+422,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16I-01,TCGA-D1-A16I,0,no alteration,no alteration,no alteration,no alteration,no alteration
+423,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16J-01,TCGA-D1-A16J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+424,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16N-01,TCGA-D1-A16N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+425,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16R-01,TCGA-D1-A16R,0,no alteration,no alteration,no alteration,no alteration,no alteration
+426,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16S-01,TCGA-D1-A16S,0,no alteration,no alteration,no alteration,no alteration,no alteration
+427,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16V-01,TCGA-D1-A16V,0,no alteration,no alteration,no alteration,no alteration,no alteration
+428,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16Y-01,TCGA-D1-A16Y,0,no alteration,no alteration,no alteration,no alteration,no alteration
+429,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A175-01,TCGA-D1-A175,0,no alteration,not profiled,no alteration,no alteration,not profiled
+430,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A179-01,TCGA-D1-A179,0,no alteration,not profiled,no alteration,no alteration,not profiled
+431,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17B-01,TCGA-D1-A17B,0,no alteration,no alteration,no alteration,no alteration,no alteration
+432,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17K-01,TCGA-D1-A17K,0,no alteration,no alteration,no alteration,no alteration,no alteration
+433,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17N-01,TCGA-D1-A17N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+434,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17S-01,TCGA-D1-A17S,0,no alteration,no alteration,no alteration,no alteration,no alteration
+435,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NU-01,TCGA-D1-A1NU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+436,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NW-01,TCGA-D1-A1NW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+437,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NX-01,TCGA-D1-A1NX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+438,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O0-01,TCGA-D1-A1O0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+439,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G0-01,TCGA-D1-A2G0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+440,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G5-01,TCGA-D1-A2G5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+441,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G6-01,TCGA-D1-A2G6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+442,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G7-01,TCGA-D1-A2G7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+443,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DA-01,TCGA-D1-A3DA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+444,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DG-01,TCGA-D1-A3DG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+445,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DH-01,TCGA-D1-A3DH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+446,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3JQ-01,TCGA-D1-A3JQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+447,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KN-01,TCGA-DF-A2KN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+448,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KR-01,TCGA-DF-A2KR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+449,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KS-01,TCGA-DF-A2KS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+450,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KY-01,TCGA-DF-A2KY,0,no alteration,not profiled,no alteration,no alteration,not profiled
+451,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2L0-01,TCGA-DF-A2L0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+452,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A0WH-01,TCGA-DI-A0WH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+453,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1C3-01,TCGA-DI-A1C3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+454,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1NN-01,TCGA-DI-A1NN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+455,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QT-01,TCGA-DI-A2QT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+456,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QU-01,TCGA-DI-A2QU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+457,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QY-01,TCGA-DI-A2QY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+458,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1LZ-01,TCGA-E6-A1LZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+459,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A8L9-01,TCGA-E6-A8L9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+460,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A1NJ-01,TCGA-EC-A1NJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+461,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y5-01,TCGA-EO-A1Y5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+462,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y7-01,TCGA-EO-A1Y7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+463,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y8-01,TCGA-EO-A1Y8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+464,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A2CG-01,TCGA-EO-A2CG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+465,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A2CH-01,TCGA-EO-A2CH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+466,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AS-01,TCGA-EO-A3AS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+467,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3B1-01,TCGA-EO-A3B1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+468,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KU-01,TCGA-EO-A3KU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+469,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KW-01,TCGA-EO-A3KW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+470,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KX-01,TCGA-EO-A3KX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+471,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GC-01,TCGA-EY-A1GC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+472,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GD-01,TCGA-EY-A1GD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+473,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GE-01,TCGA-EY-A1GE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+474,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GH-01,TCGA-EY-A1GH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+475,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GJ-01,TCGA-EY-A1GJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+476,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GL-01,TCGA-EY-A1GL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+477,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GM-01,TCGA-EY-A1GM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+478,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GO-01,TCGA-EY-A1GO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+479,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GP-01,TCGA-EY-A1GP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+480,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GQ-01,TCGA-EY-A1GQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+481,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GR-01,TCGA-EY-A1GR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+482,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GS-01,TCGA-EY-A1GS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+483,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GU-01,TCGA-EY-A1GU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+484,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GV-01,TCGA-EY-A1GV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+485,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GW-01,TCGA-EY-A1GW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+486,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GX-01,TCGA-EY-A1GX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+487,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1H0-01,TCGA-EY-A1H0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+488,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A210-01,TCGA-EY-A210,0,no alteration,no alteration,no alteration,no alteration,no alteration
+489,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A212-01,TCGA-EY-A212,0,no alteration,no alteration,no alteration,no alteration,no alteration
+490,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2ON-01,TCGA-EY-A2ON,0,no alteration,no alteration,no alteration,no alteration,no alteration
+491,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OQ-01,TCGA-EY-A2OQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+492,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A3L3-01,TCGA-EY-A3L3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+493,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A3QX-01,TCGA-EY-A3QX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+494,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A4KR-01,TCGA-EY-A4KR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+495,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A547-01,TCGA-EY-A547,0,no alteration,no alteration,no alteration,no alteration,no alteration
+496,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A548-01,TCGA-EY-A548,0,no alteration,no alteration,no alteration,no alteration,no alteration
+497,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A549-01,TCGA-EY-A549,0,no alteration,no alteration,no alteration,no alteration,no alteration
+498,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A54A-01,TCGA-EY-A54A,0,no alteration,no alteration,no alteration,no alteration,no alteration
+499,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A72D-01,TCGA-EY-A72D,0,no alteration,no alteration,no alteration,no alteration,no alteration
+500,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2CX-01,TCGA-FI-A2CX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+501,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2CY-01,TCGA-FI-A2CY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+502,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D0-01,TCGA-FI-A2D0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+503,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D2-01,TCGA-FI-A2D2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+504,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EU-01,TCGA-FI-A2EU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+505,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EW-01,TCGA-FI-A2EW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+506,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EX-01,TCGA-FI-A2EX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+507,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EY-01,TCGA-FI-A2EY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+508,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F8-01,TCGA-FI-A2F8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+509,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F9-01,TCGA-FI-A2F9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+510,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A3PV-01,TCGA-FI-A3PV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+511,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A3PX-01,TCGA-FI-A3PX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+512,ucec_tcga_pan_can_atlas_2018,TCGA-H5-A2HR-01,TCGA-H5-A2HR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+513,ucec_tcga_pan_can_atlas_2018,TCGA-JU-AAVI-01,TCGA-JU-AAVI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+514,ucec_tcga_pan_can_atlas_2018,TCGA-K6-A3WQ-01,TCGA-K6-A3WQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+515,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3VZ-01,TCGA-KP-A3VZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+516,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W0-01,TCGA-KP-A3W0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+517,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W1-01,TCGA-KP-A3W1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+518,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W3-01,TCGA-KP-A3W3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+519,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W4-01,TCGA-KP-A3W4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+520,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A5BC-01,TCGA-PG-A5BC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+521,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A7D5-01,TCGA-PG-A7D5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+522,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A915-01,TCGA-PG-A915,0,no alteration,no alteration,no alteration,no alteration,no alteration
+523,ucec_tcga_pan_can_atlas_2018,TCGA-QF-A5YS-01,TCGA-QF-A5YS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+524,ucec_tcga_pan_can_atlas_2018,TCGA-QF-A5YT-01,TCGA-QF-A5YT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+525,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A5YQ-01,TCGA-QS-A5YQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+526,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A8F1-01,TCGA-QS-A8F1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+527,ucec_tcga_pan_can_atlas_2018,TCGA-SJ-A6ZJ-01,TCGA-SJ-A6ZJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+528,ucec_tcga_pan_can_atlas_2018,TCGA-SL-A6J9-01,TCGA-SL-A6J9,0,no alteration,no alteration,no alteration,no alteration,no alteration

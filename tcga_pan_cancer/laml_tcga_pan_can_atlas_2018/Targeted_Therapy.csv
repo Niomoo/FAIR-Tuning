@@ -1,0 +1,7 @@
+Target,Therapy,Type,Description
+FLT3,Midostaurin£¨Rydapt);Gilteritinib (Xospata),gene,"Common side effects can include low levels of white blood cells (with increased risk of infection), fever, nausea, vomiting, redness or sores in the mouth, headache, muscle or bone pain, bruising, nosebleeds, high blood sugar levels, and upper respiratory infections."
+IDH1,Ivosidenib (Tibsovo) ;Olutasidenib (Rezlidhia),gene,"Common side effects can include nausea, vomiting, diarrhea, fatigue, joint pain, shortness of breath, increased levels of bilirubin (a substance found in bile), and loss of appetite. "
+IDH2,Enasidenib (Idhifa),gene,"Common side effects can include nausea, vomiting, diarrhea, fatigue, joint pain, shortness of breath, increased levels of bilirubin (a substance found in bile), and loss of appetite. "
+CD33,Gemtuzumab ozogamicin (Mylotarg),protein,"This drug can be used along with chemotherapy as part of the initial treatment of AML that has the CD33 protein. It can also be used by itself, either as the first treatment (especially in people who might not be healthy enough for intense chemo), or if other treatments are no longer working. It is given as an infusion into a vein (IV)."
+BCL-2,Venetoclax (Venclexta);Tumor lysis syndrome,protein,
+hedgehog,Glasdegib (Daurismo) ,protein,"Side effects can include muscle and bone pain, fatigue, low white blood cell counts (neutropenia), low red blood cell counts (anemia), bleeding, nausea, low platelet counts (thrombocytopenia), and redness or sores in the mouth.  "
