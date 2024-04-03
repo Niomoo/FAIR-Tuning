@@ -20,7 +20,7 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './../Fairness-Foundation/clinical_information/' # path to clinical information
+        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
         self.strEmbeddingPath = './../Fairness-Foundation/AI_fairness/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
@@ -35,7 +35,7 @@ class generateDataSet():
         df = pd.DataFrame({})
         for c in self.cancer:
             if self.task == 1:      # cancer classification
-                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/*{c}*.pkl')[0])
+                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
             elif self.task == 2:    # tumor detection
                 part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_frozen_clinical_information.pkl')[0])
             elif self.task == 3:    # survival analysis
