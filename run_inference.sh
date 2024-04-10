@@ -17,27 +17,8 @@
 #     done
 
 # declare -a CANCER=("LUAD LUSC")
-# declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-# PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
-
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models_gender/" \
-#                   --weight_path="1" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=1 \
-#                   --seed=0 \
-#                   --reweight \
-#                   --device="cuda"
-#     done
-#     done
-
-# declare -a CANCER=("LUAD LUSC")
 declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-PARTITION=(2)
+PARTITION=(1)
 SENSITIVE='{"race": ["white", "black or african american"]}'
 
 for cancer in "${CANCER[@]}";
@@ -48,11 +29,29 @@ do python inference.py --cancer $cancer \
                   --fair_attr="$SENSITIVE" \
                   --task=1 \
                   --seed=0 \
+                  --reweight \
                   --device="cuda"
     done
     done
 
 # declare -a CANCER=("LUAD LUSC")
+# declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
+# PARTITION=(2)
+# SENSITIVE='{"race": ["white", "black or african american"]}'
+
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference.py --cancer $cancer \
+#                   --model_path="./models_gender/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=1 \
+#                   --seed=0 \
+#                   --device="cuda"
+#     done
+#     done
+
+# declare -a CANCER=("KIRP KIRC KICH")
 declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 PARTITION=(2)
 SENSITIVE='{"race": ["white", "black or african american"]}'

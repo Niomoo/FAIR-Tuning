@@ -275,6 +275,9 @@ def main(args):
 
         if args.task == 1 or args.task == 2:
             if num_classes > 2:
+                npLabels = np.concatenate(labels)
+                npPredictions = np.concatenate(predictions)
+                npSenAttrs = np.concatenate(senAttrs)
                 results = FairnessMetricsMultiClass(np.array(predictions), np.array(labels), senAttrs)
                 pd.DataFrame(results).T.to_csv(result_path)
                 print(f"Save results to:{result_path}")
