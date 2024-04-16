@@ -61,7 +61,7 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do python inference.py --cancer $cancer \
                   --model_path="./models_gender/" \
-                  --weight_path="2" \
+                  --weight_path="" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=1 \

@@ -107,7 +107,7 @@ do python main_base.py --cancer $cancer \
                   --scheduler_step=10 \
                   --scheduler_gamma=0.9 \
                   --fair_lambda=1 \
-                  --constraint="AE" \
+                  --constraint="MMF" \
                   --reweight \
                   --selection="avgEOpp" \
                   --device="cuda"
