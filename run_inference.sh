@@ -2,7 +2,7 @@
 # declare -a CANCER=("LUAD LUSC")
 # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+# SENSITIVE='{"gender": ["female", "male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
@@ -19,7 +19,7 @@
 # declare -a CANCER=("KIRP KICH")
 # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+# SENSITIVE='{"gender": ["female", "male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
@@ -38,7 +38,7 @@
 # declare -a CANCER=("LUAD LUSC")
 # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # PARTITION=(2)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+# SENSITIVE='{"gender": ["female", "male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
@@ -53,23 +53,23 @@
 #     done
 
 # declare -a CANCER=("KIRP KIRC KICH")
-declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-PARTITION=(2)
-SENSITIVE='{"race": ["white", "black or african american"]}'
+# declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
+# PARTITION=(2)
+# SENSITIVE='{"gender": ["female", "male"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference.py --cancer $cancer \
-                  --model_path="./models_gender/" \
-                  --weight_path="9" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=1 \
-                  --seed=0 \
-                  --reweight \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference.py --cancer $cancer \
+#                   --model_path="./models_gender/" \
+#                   --weight_path="6" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=1 \
+#                   --seed=0 \
+#                   --reweight \
+#                   --device="cuda"
+#     done
+#     done
 
 # ############## Tumor Detection ###############
 
@@ -207,3 +207,71 @@ do python inference.py --cancer $cancer \
 #                   --device="cuda"
 #     done
 #     done
+
+# ############## Genetic Classification ###############
+
+# declare -a CANCER=("COAD")
+# PARTITION=(1)
+# SENSITIVE='{"gender": ["female", "male"]}'
+
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference.py --cancer $cancer \
+#                   --model_path="./models_gender/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --device="cuda"
+#     done
+#     done
+
+# declare -a CANCER=("COAD")
+# PARTITION=(1)
+# SENSITIVE='{"gender": ["female", "male"]}'
+
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference.py --cancer $cancer \
+#                   --model_path="./models_gender/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --reweight \
+#                   --device="cuda"
+#     done
+#     done
+
+declare -a CANCER=("COAD")
+PARTITION=(2)
+SENSITIVE='{"gender": ["female", "male"]}'
+
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --seed=0 \
+                  --device="cuda"
+    done
+    done
+
+declare -a CANCER=("COAD")
+PARTITION=(2)
+SENSITIVE='{"gender": ["female", "male"]}'
+
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --seed=0 \
+                  --reweight \
+                  --device="cuda"
+    done
+    done

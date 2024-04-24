@@ -34,15 +34,22 @@ class generateDataSet():
     def fClinicalInformation(self):
         df = pd.DataFrame({})
         for c in self.cancer:
-            if self.task == 1:      # cancer classification
+            if self.task == 4:      # genetic classification
                 part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
-            elif self.task == 2:    # tumor detection
-                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_frozen_clinical_information.pkl')[0])
-            elif self.task == 3:    # survival analysis
-                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information copy.pkl')[0])
-            df = pd.concat([df, part], ignore_index = True)
+                part_df = pd.concat([df, part], ignore_index=True)
+                label = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/msi.pkl')[0])
+                label_df = pd.DataFrame(list(label.items()), columns=['case_submitter_id', 'label'])
+                df = pd.merge(part_df, label_df, on = 'case_submitter_id')
+            else:
+                if self.task == 1:      # cancer classification
+                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
+                elif self.task == 2:    # tumor detection
+                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_frozen_clinical_information.pkl')[0])
+                elif self.task == 3:    # survival analysis
+                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information copy.pkl')[0])
+                df = pd.concat([df, part], ignore_index = True)
         return df
-    
+
     def fReduceDataFrame(self, df):
         if self.task == 3:
             dfClinicalInformation = df.copy()
@@ -62,15 +69,17 @@ class generateDataSet():
 
             dfClinicalInformation.columns = ['case_submitter_id', 'sensitive', 'T', 'event', 'stage']
             return dfClinicalInformation
-        
-        if(len(self.cancer) == 1):
-            df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'primary_diagnosis']]
+        if self.task == 4:
+            df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'label']]
         else:
-            df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'project_id']]
+            if(len(self.cancer) == 1):
+                df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'primary_diagnosis']]
+            else:
+                df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'project_id']]
 
         df.columns = ['case_submitter_id', 'sensitive', 'label']
         return df
-    
+
     def fTransLabel(self, df):
         pass
 
@@ -78,19 +87,19 @@ class generateDataSet():
         substrings = self.sensitive[list(self.sensitive.keys())[0]]
         df = df[[any(x in y for x in substrings) for y in df['sensitive'].tolist()]]
         return df
-    
+
     def updateDataFrame(self):
         self.dfClinicalInformation = self.fClinicalInformation()
 
     def getDistribution(self):
         return self.dfDistribution
-    
+
     def getRemoveDupDistribution(self):
         return self.dfRemoveDupDistribution
-    
+
     def getInformation(self):
         return self.dictInformation
-        
+
     def train_valid_test(self, split=1.0):
         if self.dfClinicalInformation is None:
             self.updateDataFrame()
@@ -98,8 +107,8 @@ class generateDataSet():
 
         lsDownloadPath = glob.glob(f'{self.strEmbeddingPath}/*.pt')
         lsDownloadFoldID = [s.split('/')[-1][:-3] for s in lsDownloadPath]
-        
-        ## task: cancer classification
+
+        ## task 1: cancer classification
         if self.task == 1:
             if(self.intTumor == 0):
                 lsDownloadFoldID = np.array(lsDownloadFoldID)[[s[13] == '0' for s in lsDownloadFoldID]].tolist()
@@ -113,12 +122,12 @@ class generateDataSet():
                 'folder_id': lsDownloadFoldID
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
-            
+
             if(self.intDiagnosticSlide == 0):
                 dfClinicalInformation = dfClinicalInformation[['DX' in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
             elif(self.intDiagnosticSlide == 1):
                 dfClinicalInformation = dfClinicalInformation[['DX' not in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
-            
+
             le = LabelEncoder()
             if(len(self.cancer) == 1):
                 if(self.cancer[0] == 'BRCA'):
@@ -149,7 +158,7 @@ class generateDataSet():
                 leLabel = le.classes_
             self.dictInformation['label'] = leLabel
 
-        ## task: tumor detection
+        ## task 2: tumor detection
         elif self.task == 2:
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
@@ -158,12 +167,12 @@ class generateDataSet():
                 'folder_id': lsDownloadFoldID
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
-            
+
             if(self.intDiagnosticSlide == 0):
                 dfClinicalInformation = dfClinicalInformation[['DX' in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
             elif(self.intDiagnosticSlide == 1):
                 dfClinicalInformation = dfClinicalInformation[['DX' not in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
-            
+
             le = LabelEncoder()
             project_ids = dfClinicalInformation['folder_id'].apply(lambda x: x[13]).tolist()
             le.fit(project_ids)
@@ -171,7 +180,7 @@ class generateDataSet():
             leLabel = le.classes_
             self.dictInformation['label'] = leLabel
 
-        ## task: survival analysis
+        ## task 3: survival analysis
         elif self.task == 3:
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
@@ -199,6 +208,21 @@ class generateDataSet():
             }
             dfClinicalInformation['stage'] = dfClinicalInformation['stage'].map(stage_map)
 
+        ## task 4: genetic classification
+        elif self.task == 4:
+            dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
+            lsDownloadPath = glob.glob(f'{self.strEmbeddingPath}/*.pt')
+            lsDownloadFoldID = [s.split('/')[-1][:-3] for s in lsDownloadPath]
+            lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
+            dfDownload = pd.DataFrame({
+                        'case_submitter_id': lsDownloadCaseSubmitterId,
+                        'folder_id': lsDownloadFoldID
+                    })
+            dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
+            le = LabelEncoder()
+            dfClinicalInformation.label = le.fit_transform(dfClinicalInformation.label.values)
+            leLabel = le.classes_
+            self.dictInformation["label"] = leLabel
 
         dfClinicalInformation = self.fTransSensitive(dfClinicalInformation).reset_index(drop = True)
         dfClinicalInformation.sensitive = le.fit_transform(dfClinicalInformation.sensitive.values)
@@ -233,7 +257,7 @@ class generateDataSet():
             for idx in indices:
                 foldNum[idx] = fid
         dfDummy['fold'] = foldNum
-        
+
         if self.task == 3:
             self.dfRemoveDupDistribution = dfDummy.groupby(['fold', 'event', 'sensitive']).size()
         else:
@@ -242,7 +266,7 @@ class generateDataSet():
         dfDummy = dfDummy[['case_submitter_id', 'fold']]
         dfClinicalInformation = pd.merge(dfClinicalInformation, dfDummy, on = "case_submitter_id")
         dfClinicalInformation['path'] = [f'{self.strEmbeddingPath}{p}.pt' for p in dfClinicalInformation['folder_id']]
-        
+
         if self.task == 3:
             self.dfDistribution = dfClinicalInformation.groupby(['fold', 'event', 'sensitive']).size()
         else:

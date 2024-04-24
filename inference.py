@@ -39,7 +39,7 @@ def parse_args(input_args=None):
         "--task",
         type=int,
         default="1",
-        help="Downstream task: '1:cancer classification, 2:tumor detection, 3:survival prediction",
+        help="Downstream task: '1:cancer classification, 2:tumor detection, 3:survival prediction, 4:genetic classification",
     )
     parser.add_argument(
         "--model_path", 
@@ -118,7 +118,7 @@ def main(args):
         model_indexes = [int(name.split('-')[0]) for name in subfolders]
         max_index = max(model_indexes)
         if args.reweight:
-            if args.task == 1 or args.task == 2:
+            if args.task == 1 or args.task == 2 or args.task == 4:
                 model = ClfNet(classes=num_classes, ft=True)
             elif args.task == 3:
                 model = WeibullModel(ft=True)
@@ -137,7 +137,7 @@ def main(args):
             fig_path3 = Path(reweight_path).parent / "survival_curve_black.png"
 
         elif not args.reweight:
-            if args.task == 1 or args.task == 2:
+            if args.task == 1 or args.task == 2 or args.task == 4:
                 model = ClfNet(classes=num_classes, ft=False)
             elif args.task == 3:
                 model = WeibullModel()
@@ -157,7 +157,7 @@ def main(args):
 
         with torch.no_grad():
             for _, data in test_pbar:
-                if args.task == 1 or args.task == 2:
+                if args.task == 1 or args.task == 2 or args.task == 4:
                     wsi_embeddings, lengths, sensitive, label, group = data
                     test_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device))
 
@@ -177,7 +177,7 @@ def main(args):
                     senAttrs.append(sensitive.detach().cpu().numpy())
                     stages.append(stage.detach().cpu().numpy())
 
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             if num_classes > 2:
                 npLabels = np.concatenate(labels)
                 npPredictions = np.concatenate(predictions)
@@ -215,7 +215,7 @@ def main(args):
             max_index = max(model_indexes)
 
             if args.reweight:
-                if args.task == 1 or args.task == 2:
+                if args.task == 1 or args.task == 2 or args.task == 4:
                     model = ClfNet(classes=num_classes, ft=True)
                 elif args.task == 3:
                     model = WeibullModel(ft=True)
@@ -234,7 +234,7 @@ def main(args):
                 fig_path3 = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve_black.png"
 
             elif not args.reweight:
-                if args.task == 1 or args.task == 2:
+                if args.task == 1 or args.task == 2 or args.task == 4:
                     model = ClfNet(classes=num_classes, ft=False)
                 elif args.task == 3:
                     model = WeibullModel()
@@ -253,7 +253,7 @@ def main(args):
 
             with torch.no_grad():
                 for _, data in test_pbar:
-                    if args.task == 1 or args.task == 2:
+                    if args.task == 1 or args.task == 2 or args.task == 4:
                         wsi_embeddings, lengths, sensitive, label, group = data
                         test_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device))
 
@@ -273,7 +273,7 @@ def main(args):
                         senAttrs.append(sensitive.detach().cpu().numpy())
                         stages.append(stage.detach().cpu().numpy())
 
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             if num_classes > 2:
                 npLabels = np.concatenate(labels)
                 npPredictions = np.concatenate(predictions)

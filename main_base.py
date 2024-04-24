@@ -34,7 +34,7 @@ def parse_args(input_args=None):
         "--task",
         type=int,
         default="1",
-        help="Downstream task: '1:cancer classification, 2:tumor detection, 3:survival prediction",
+        help="Downstream task: '1:cancer classification, 2:tumor detection, 3:survival prediction, 4:genetic classification",
     )
     parser.add_argument(
         "--model_path",
@@ -224,14 +224,14 @@ def main(args):
     test_dl = DataLoader(test_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=False, pin_memory=False)
 
     if not args.reweight:
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             model = ClfNet(classes=num_classes)
         elif args.task == 3:
             model = WeibullModel()
         model.train()
 
     if args.reweight:
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             model = ClfNet(classes=num_classes, ft=True)
         elif args.task == 3:
             model = WeibullModel(ft=True)
@@ -260,7 +260,7 @@ def main(args):
             else:
                 p.requires_grad = False
         print("Params to learn:" + str(len(parameters_to_update)))
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
         elif args.task == 3:
             optimizer = torch.optim.RMSprop(parameters_to_update, lr=args.lr, weight_decay=1e-4)
@@ -269,7 +269,7 @@ def main(args):
             p.requires_grad = True
             parameters_to_update.append(p)
         print("Params to learn:" + str(len(parameters_to_update)))
-        if args.task == 1 or args.task == 2:
+        if args.task == 1 or args.task == 2 or args.task == 4:
             optimizer = torch.optim.Adam(parameters_to_update, lr=args.lr)
         elif args.task == 3:
             optimizer = torch.optim.RMSprop(parameters_to_update, lr=args.lr)
