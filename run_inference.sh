@@ -226,22 +226,23 @@
 #     done
 #     done
 
-# declare -a CANCER=("COAD")
-# PARTITION=(1)
-# SENSITIVE='{"gender": ["female", "male"]}'
+declare -a CANCER=("COAD")
+PARTITION=(1)
+SENSITIVE='{"gender": ["female", "male"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models_gender/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=4 \
-#                   --seed=0 \
-#                   --reweight \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --weight_path="4" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --seed=0 \
+                  --reweight \
+                  --device="cuda"
+    done
+    done
 
 # declare -a CANCER=("COAD")
 # PARTITION=(2)
@@ -267,7 +268,7 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do python inference.py --cancer $cancer \
                   --model_path="./models_gender/" \
-                  --weight_path="" \
+                  --weight_path="3" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=4 \
