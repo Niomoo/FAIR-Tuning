@@ -367,19 +367,50 @@
 #     done
 #     done
 
+declare -a CANCER=("COAD")
+PARTITION=(1)
+SENSITIVE='{"gender": ["female", "male"]}'
+
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python main_base.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --weight_path="" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --lr=1e-6 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=100 \
+                  --batch_size=16 \
+                  --acc_grad=1 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.9 \
+                  --split_ratio=1 \
+                  --fair_lambda=1 \
+                  --constraint="MMF" \
+                  --reweight \
+                  --selection="avgEOpp" \
+                  --device="cuda"
+    done
+    done
+
 # declare -a CANCER=("COAD")
-# PARTITION=(1)
+# PARTITION=(2)
+# CURR=(0 1 2 3)
 # SENSITIVE='{"gender": ["female", "male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
+# do for curr in ${CURR[@]};
 # do python main_base.py --cancer $cancer \
 #                   --model_path="./models_gender/" \
-#                   --weight_path="" \
 #                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
+#                   --curr_fold=$curr \
 #                   --task=4 \
-#                   --lr=1e-6 \
+#                   --fair_attr="$SENSITIVE" \
+#                   --lr=1e-5 \
 #                   --dropout=0.3 \
 #                   --seed=0 \
 #                   --epochs=100 \
@@ -389,41 +420,10 @@
 #                   --scheduler_gamma=0.9 \
 #                   --split_ratio=1 \
 #                   --fair_lambda=1 \
-#                   --constraint="EO" \
-#                   --reweight \
-#                   --selection="avgEOpp" \
 #                   --device="cuda"
-#     done
-#     done
-
-declare -a CANCER=("COAD")
-PARTITION=(2)
-CURR=(0 1 2 3)
-SENSITIVE='{"gender": ["female", "male"]}'
-
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do for curr in ${CURR[@]};
-do python main_base.py --cancer $cancer \
-                  --model_path="./models_gender/" \
-                  --partition=$partition \
-                  --curr_fold=$curr \
-                  --task=4 \
-                  --fair_attr="$SENSITIVE" \
-                  --lr=1e-5 \
-                  --dropout=0.3 \
-                  --seed=0 \
-                  --epochs=100 \
-                  --batch_size=16 \
-                  --acc_grad=1 \
-                  --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
-                  --split_ratio=1 \
-                  --fair_lambda=1 \
-                  --device="cuda"
-done
-done
-done
+# done
+# done
+# done
 
 declare -a CANCER=("COAD")
 PARTITION=(2)
@@ -449,39 +449,7 @@ do python main_base.py --cancer $cancer \
                   --scheduler_gamma=0.9 \
                   --split_ratio=1 \
                   --fair_lambda=1 \
-                  --constraint="" \
-                  --reweight \
-                  --selection="avgEOpp" \
-                  --device="cuda"
-done
-done
-done
-
-declare -a CANCER=("COAD")
-PARTITION=(2)
-CURR=(0 1 2 3)
-SENSITIVE='{"gender": ["female", "male"]}'
-
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do for curr in ${CURR[@]};
-do python main_base.py --cancer $cancer \
-                  --model_path="./models_gender/" \
-                  --partition=$partition \
-                  --curr_fold=$curr \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --lr=1e-6 \
-                  --dropout=0.3 \
-                  --seed=0 \
-                  --epochs=100 \
-                  --batch_size=16 \
-                  --acc_grad=1 \
-                  --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
-                  --split_ratio=1 \
-                  --fair_lambda=1 \
-                  --constraint="EO" \
+                  --constraint="MMF" \
                   --reweight \
                   --selection="avgEOpp" \
                   --device="cuda"
