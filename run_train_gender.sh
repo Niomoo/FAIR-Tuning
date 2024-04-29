@@ -342,7 +342,7 @@
 
 ############### Genetic Mutation Classification ###############
 
-declare -a CANCER=("brca")
+declare -a CANCER=("luad" "lusc" "kirp")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
 
