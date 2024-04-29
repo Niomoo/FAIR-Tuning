@@ -353,7 +353,7 @@ do python main_genetic.py --cancer $cancer \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=4 \
-                  --lr=1e-5 \
+                  --lr=5e-5 \
                   --dropout=0.3 \
                   --seed=0 \
                   --epochs=150 \

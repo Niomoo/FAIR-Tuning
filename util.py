@@ -84,7 +84,7 @@ def FairnessMetrics(predictions, labels, sensitives):
         if len(y_pred) == 0:
             continue
         cnf_matrix = confusion_matrix(y_true, y_pred,labels=[0,1])
-        CR = classification_report(y_true, y_pred,labels=[0,1],output_dict=True)
+        CR = classification_report(y_true, y_pred,labels=[0,1],output_dict=True, zero_division=1)
         # AUC
         # if len(set(y_true)) == 1:
         #     AUC.append(float("NaN"))
@@ -110,7 +110,7 @@ def FairnessMetrics(predictions, labels, sensitives):
         # Prevalence
         PR.append(np.sum(cnf_matrix[:,1]) / np.sum(cnf_matrix))
         # Negative Prevalence
-        NR.append( np.sum(cnf_matrix[:,0]) / np.sum(cnf_matrix))
+        NR.append(np.sum(cnf_matrix[:,0]) / np.sum(cnf_matrix))
         # # False discovery rate
         # FDR = FP/(TP+FP)
         # total ACC
@@ -151,14 +151,14 @@ def FairnessMetrics(predictions, labels, sensitives):
         'EOdd': np.nanmax(TPR+FPR) - np.nanmin(TPR+FPR),
         'EOdd0':  np.nanmax(TNR+FNR) - np.nanmin(TNR+FNR),
         'EOdd1': np.nanmax(TPR+FPR) - np.nanmin(TPR+FPR),
-        'PQD': np.nanmin(TOTALACC)/ np.nanmax(TOTALACC),
-        'PQD(class)': np.mean(np.nanmin(ACC)/np.nanmax(ACC)),
-        'EPPV': np.nanmin(PPV)/np.nanmax(PPV),
-        'ENPV': np.nanmin(NPV)/np.nanmax(NPV),
-        'DPM(Positive)': np.nanmin(PR)/np.nanmax(PR),
-        'DPM(Negative)': np.nanmin(NR)/np.nanmax(NR), 
-        'EOM(Positive)': np.nanmin(TPR)/np.nanmax(TPR),
-        'EOM(Negative)': np.nanmin(TNR)/np.nanmax(TNR),
+        'PQD': np.nanmin(TOTALACC)/ np.nanmax(TOTALACC) if np.nanmax(TOTALACC) != 0 else 0,
+        'PQD(class)': np.mean(np.nanmin(ACC)/np.nanmax(ACC)) if np.nanmax(ACC) != 0 else 0,
+        'EPPV': np.nanmin(PPV)/np.nanmax(PPV) if np.nanmax(PPV) != 0 else 0,
+        'ENPV': np.nanmin(NPV)/np.nanmax(NPV) if np.nanmax(NPV) != 0 else 0,
+        'DPM(Positive)': np.nanmin(PR)/np.nanmax(PR) if np.nanmax(PR) != 0 else 0,
+        'DPM(Negative)': np.nanmin(NR)/np.nanmax(NR) if np.nanmax(NR) != 0 else 0, 
+        'EOM(Positive)': np.nanmin(TPR)/np.nanmax(TPR) if np.nanmax(TPR) != 0 else 0,
+        'EOM(Negative)': np.nanmin(TNR)/np.nanmax(TNR) if np.nanmax(TNR) != 0 else 0,
         'OverAllAcc': OverAllACC,
         'TOTALACC': TOTALACC,
         'TOTALACCDIF': np.nanmax(TOTALACC)-np.nanmin(TOTALACC),
@@ -382,12 +382,12 @@ def race_acc(race_c, race_i, r_labels):
     mask_c = race_c >= 0.5
     race_c[mask_c] = 1
     race_c[~mask_c] = 0
-    acc_c = metrics.accuracy_score(race_labels_c, race_c)
+    acc_c = metrics.accuracy_score(race_labels_c, race_c, zero_division=1)
     
     mask_i = race_i >= 0.5
     race_i[mask_i] = 1
     race_i[~mask_i] = 0
-    acc_i = metrics.accuracy_score(race_labels_i, race_i)
+    acc_i = metrics.accuracy_score(race_labels_i, race_i, zero_division=1)
     return acc_c, acc_i
 
 # ### ================================================== ####
