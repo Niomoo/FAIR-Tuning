@@ -6,7 +6,7 @@ SENSITIVE='{"race": ["white", "black or african american"]}'
 
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
-do python main_base.py --cancer $cancer \
+do python main.py --cancer $cancer \
                   --model_path="./models/" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
@@ -30,7 +30,7 @@ SENSITIVE='{"race": ["white", "black or african american"]}'
 
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
-do python main_base.py --cancer $cancer \
+do python main.py --cancer $cancer \
                   --model_path="./models/" \
                   --weight_path="" \
                   --partition=$partition \
@@ -60,7 +60,7 @@ SENSITIVE='{"race": ["white", "black or african american"]}'
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
-do python main_base.py --cancer $cancer \
+do python main.py --cancer $cancer \
                   --model_path="./models/" \
                   --partition=$partition \
                   --curr_fold=$curr \
@@ -87,7 +87,7 @@ SENSITIVE='{"race": ["white", "black or african american"]}'
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
-do python main_base.py --cancer $cancer \
+do python main.py --cancer $cancer \
                   --model_path="./models/" \
                   --weight_path="" \
                   --partition=$partition \
@@ -119,7 +119,7 @@ done
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -142,7 +142,7 @@ done
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
@@ -172,7 +172,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --partition=$partition \
 #                   --curr_fold=$curr \
@@ -199,7 +199,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
@@ -231,7 +231,7 @@ done
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -255,7 +255,7 @@ done
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
@@ -285,7 +285,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --partition=$partition \
 #                   --curr_fold=$curr \
@@ -314,7 +314,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
-# do python main_base.py --cancer $cancer \
+# do python main.py --cancer $cancer \
 #                   --model_path="./models/" \
 #                   --partition=$partition \
 #                   --curr_fold=$curr \

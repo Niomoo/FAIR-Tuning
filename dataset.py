@@ -8,7 +8,7 @@ import glob
 import torch
 
 class generateDataSet():
-    def __init__(self, cancer, sensitive, fold, task, seed = 24):
+    def __init__(self, cancer, sensitive, fold, task, seed = 24, geneType='', geneName=''):
         '''
 
         '''
@@ -20,12 +20,14 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
+        self.strClinicalInformationPath = './tcga_pan_cancer/' # path to clinical information
         self.strEmbeddingPath = './../Fairness-Foundation/AI_fairness/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
         self.dfRemoveDupDistribution = None
         self.dictInformation = {}
+        self.geneType=geneType
+        self.geneName=geneName
         if self.cancer != None and self.sensitive != None and self.fold != None:
             self.dfClinicalInformation = self.fClinicalInformation()
         else:
@@ -35,11 +37,12 @@ class generateDataSet():
         df = pd.DataFrame({})
         for c in self.cancer:
             if self.task == 4:      # genetic classification
-                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
-                part_df = pd.concat([df, part], ignore_index=True)
-                label = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/msi.pkl')[0])
-                label_df = pd.DataFrame(list(label.items()), columns=['case_submitter_id', 'label'])
-                df = pd.merge(part_df, label_df, on = 'case_submitter_id')
+                part = pd.read_csv(glob.glob(f'{self.strClinicalInformationPath}{c}_tcga_pan_can_atlas_2018/clinical_data.tsv')[0], sep='\t')
+                df = pd.concat([df, part], ignore_index=True)
+                label = pd.read_csv(glob.glob(f'{self.strClinicalInformationPath}{c}_tcga_pan_can_atlas_2018/*/{self.geneType}_{self.geneName}*/*.csv')[0])
+                label_filter = label[['Patient ID', 'Altered']]
+                df = pd.merge(df, label_filter, on="Patient ID")
+                df.rename(columns={'Patient ID': 'case_submitter_id', 'Altered': 'label'}, inplace=True)
             else:
                 if self.task == 1:      # cancer classification
                     part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
@@ -69,7 +72,7 @@ class generateDataSet():
 
             dfClinicalInformation.columns = ['case_submitter_id', 'sensitive', 'T', 'event', 'stage']
             return dfClinicalInformation
-        if self.task == 4:
+        elif self.task == 4:
             df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'label']]
         else:
             if(len(self.cancer) == 1):
@@ -78,6 +81,7 @@ class generateDataSet():
                 df = df[['case_submitter_id', list(self.sensitive.keys())[0], 'project_id']]
 
         df.columns = ['case_submitter_id', 'sensitive', 'label']
+        df = df.dropna(subset=['sensitive'])
         return df
 
     def fTransLabel(self, df):
@@ -208,16 +212,14 @@ class generateDataSet():
             }
             dfClinicalInformation['stage'] = dfClinicalInformation['stage'].map(stage_map)
 
-        ## task 4: genetic classification
+        ## task 4: genetic mutation classification
         elif self.task == 4:
-            dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
-            lsDownloadPath = glob.glob(f'{self.strEmbeddingPath}/*.pt')
-            lsDownloadFoldID = [s.split('/')[-1][:-3] for s in lsDownloadPath]
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
+            dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
             dfDownload = pd.DataFrame({
-                        'case_submitter_id': lsDownloadCaseSubmitterId,
-                        'folder_id': lsDownloadFoldID
-                    })
+                'case_submitter_id': lsDownloadCaseSubmitterId,
+                'folder_id': lsDownloadFoldID
+            })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
             le = LabelEncoder()
             dfClinicalInformation.label = le.fit_transform(dfClinicalInformation.label.values)

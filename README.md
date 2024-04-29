@@ -15,7 +15,7 @@ FAIR-Tuning/
 ├── datasets.py
 ├── fairmetric.py
 ├── inference.py
-├── main_base.py
+├── main.py
 ├── network.py
 ├── requirements.txt
 ├── run_inference.sh
@@ -35,7 +35,7 @@ bash run_train.sh
     - `--model_path`: path to store the training model
     - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis
     - `--reweight`: add this argument to do the FAIR-Tuning stage.
-    - other argument details can be seen in the `main_base.py`.
+    - other argument details can be seen in the `main.py`.
 
 ### Inference
 ```
