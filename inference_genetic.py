@@ -93,9 +93,9 @@ def parse_args(input_args=None):
 def main(args):
     # Dataset preparation
     for models in os.listdir(args.model_path):
-        if models.split("_")[0] == str(args.task) and models.split("_")[1] == "_".join(args.cancer) and models.split("_")[4] == str(args.partition):
+        if models.split("_")[0] == str(args.task) and models.split("_")[1] == "_".join(args.cancer) and models.split("_")[-1] == str(args.partition):
             geneType = models.split("_")[2]
-            geneName = models.split("_")[3]
+            geneName = models.split("_")[3:-2]
             data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, task=args.task, seed = args.seed, geneType = geneType, geneName = geneName)
             df = data.train_valid_test()
             if args.task == 3:

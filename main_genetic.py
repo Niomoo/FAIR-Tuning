@@ -161,7 +161,8 @@ def main(args):
                 geneType = 'Mutated Genes'
             if os.path.isdir(f'{directory_path}/{types}/'):
                 for gName in os.listdir(f"{directory_path}/{types}/"):
-                    geneName = gName.split('-')[0].split('_')[1]
+                    geneName = gName.split('_')[1:]
+                    geneName = "_".join(geneName)
 
                     cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName
                     if not os.path.exists(args.model_path + f"{cancer_folder}_{args.partition}/"):
