@@ -540,6 +540,7 @@ def main(args):
                                     "Group_Loss(valid)": avg_eval_group_loss,
                                     "Overall Loss(train)": avg_overall_loss,
                                     "Overall Loss(valid)": avg_eval_overall_loss,
+                                    "Learning rate": optimizer.param_groups[0]['lr']
                             } 
                             wandb_record = {**temp, **results}
                             wandb.log(wandb_record)
@@ -597,6 +598,7 @@ def main(args):
                                     "Group_Loss(valid)": avg_eval_group_loss,
                                     "Overall Loss(train)": avg_overall_loss,
                                     "Overall Loss(valid)": avg_eval_overall_loss,
+                                    "Learning rate": optimizer.param_groups[0]['lr']
                             }
                             wandb_record = {**temp, **results}
                             wandb.log(wandb_record)
@@ -678,6 +680,7 @@ def main(args):
                                 "Group_Loss(valid)": avg_eval_group_loss,
                                 "Overall Loss(train)": avg_overall_loss,
                                 "Overall Loss(valid)": avg_eval_overall_loss,
+                                "Learning rate": optimizer.param_groups[0]['lr']
                             }
                             wandb_record = {**temp, **results}
                             wandb.log(wandb_record)

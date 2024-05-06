@@ -395,6 +395,35 @@
 #     done
 #     done
 
+# declare -a CANCER=("brca" "luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
+# PARTITION=(2)
+# CURR=(0 1 2 3)
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
+
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do for curr in ${CURR[@]};
+# do python main_genetic.py --cancer $cancer \
+#                  --model_path="./models_pan_cancer/" \
+#                  --partition=$partition \
+#                   --curr_fold=$curr \
+#                   --task=4 \
+#                   --fair_attr="$SENSITIVE" \
+#                   --lr=1e-5 \
+#                   --dropout=0.3 \
+#                   --seed=0 \
+#                   --epochs=150 \
+#                   --batch_size=16 \
+#                   --acc_grad=1 \
+#                   --scheduler_step=10 \
+#                   --scheduler_gamma=0.8 \
+#                   --split_ratio=1 \
+#                   --fair_lambda=1 \
+#                   --device="cuda"
+# done
+# done
+# done
+
 declare -a CANCER=("brca" "luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
 PARTITION=(2)
 CURR=(0 1 2 3)
@@ -404,54 +433,25 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
 do python main_genetic.py --cancer $cancer \
-                 --model_path="./models_pan_cancer/" \
-                 --partition=$partition \
+                  --model_path="./models_pan_cancer/" \
+                  --partition=$partition \
                   --curr_fold=$curr \
-                  --task=4 \
                   --fair_attr="$SENSITIVE" \
-                  --lr=1e-5 \
+                  --task=4 \
+                  --lr=1e-6 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=150 \
+                  --epochs=100 \
                   --batch_size=16 \
                   --acc_grad=1 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.8 \
+                  --scheduler_gamma=0.9 \
                   --split_ratio=1 \
                   --fair_lambda=1 \
+                  --constraint="EO" \
+                  --reweight \
+                  --selection="EOdd" \
                   --device="cuda"
 done
 done
 done
-
-# declare -a CANCER=("COAD")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
-
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main_genetic.py --cancer $cancer \
-#                   --model_path="./models_pan_cancer/" \
-#                   --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=4 \
-#                   --lr=1e-6 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=100 \
-#                   --batch_size=16 \
-#                   --acc_grad=1 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.9 \
-#                   --split_ratio=1 \
-#                   --fair_lambda=1 \
-#                   --constraint="MMF" \
-#                   --reweight \
-#                   --selection="avgEOpp" \
-#                   --device="cuda"
-# done
-# done
-# done

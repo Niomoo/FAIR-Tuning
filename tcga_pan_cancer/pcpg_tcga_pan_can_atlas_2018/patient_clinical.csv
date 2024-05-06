@@ -1,0 +1,179 @@
+Patient ID,Diagnosis Age,Neoplasm Disease Stage American Joint Committee on Cancer Code,Race Category,Sex,NF1-Percentage_9.0_,EPAS1-Percentage_4.5_,ABCA13-Percentage_3.4_,RET-Percentage_3.4_,HRAS-Percentage_10.1_
+TCGA-P7-A5NX,78,,White,Female,0,0,0,0,0
+TCGA-P7-A5NY,21,,White,Female,0,0,0,0,0
+TCGA-P8-A5KC,48,,White,Male,0,0,0,0,0
+TCGA-P8-A5KD,35,,White,Female,0,0,0,0,1
+TCGA-P8-A6RX,65,,White,Male,0,0,0,0,0
+TCGA-P8-A6RY,55,,White,Male,0,0,0,0,0
+TCGA-PR-A5PF,62,,White,Female,0,0,0,0,1
+TCGA-PR-A5PG,42,,White,Female,0,0,0,0,1
+TCGA-PR-A5PH,47,,White,Male,0,0,0,0,0
+TCGA-QR-A6GO,43,,White,Male,0,0,0,0,0
+TCGA-QR-A6GR,30,,White,Female,0,0,0,0,0
+TCGA-QR-A6GS,51,,White,Female,1,0,0,0,0
+TCGA-QR-A6GT,63,,White,Female,0,0,0,0,0
+TCGA-QR-A6GU,31,,White,Male,0,0,0,0,0
+TCGA-QR-A6GW,53,,White,Female,0,0,0,0,1
+TCGA-QR-A6GX,28,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A6GY,37,,White,Female,0,0,0,0,0
+TCGA-QR-A6GZ,31,,White,Male,0,0,0,0,0
+TCGA-QR-A6H0,53,,White,Male,0,0,0,0,0
+TCGA-QR-A6H1,55,,White,Male,0,0,0,0,0
+TCGA-QR-A6H2,33,,Asian,Male,0,0,0,0,0
+TCGA-QR-A6H3,41,,White,Male,0,0,0,0,0
+TCGA-QR-A6H4,56,,White,Female,0,0,0,0,1
+TCGA-QR-A6H5,30,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A6H6,27,,White,Male,0,0,0,0,0
+TCGA-QR-A6ZZ,30,,White,Female,0,0,0,0,0
+TCGA-QR-A700,67,,White,Male,0,0,0,0,0
+TCGA-QR-A702,75,,White,Female,1,0,0,0,0
+TCGA-QR-A703,23,,White,Male,0,0,0,0,0
+TCGA-QR-A705,63,,White,Female,0,0,0,0,0
+TCGA-QR-A706,50,,White,Female,0,0,0,0,0
+TCGA-QR-A707,43,,White,Female,1,0,0,0,0
+TCGA-QR-A708,44,,White,Female,0,0,0,0,0
+TCGA-QR-A70A,54,,White,Female,0,0,0,0,0
+TCGA-QR-A70C,51,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A70D,39,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A70E,31,,White,Female,0,0,0,0,0
+TCGA-QR-A70G,54,,Black or African American,Male,0,0,0,0,0
+TCGA-QR-A70H,36,,White,Male,0,0,0,0,0
+TCGA-QR-A70I,24,,Black or African American,Male,0,0,0,0,0
+TCGA-QR-A70J,42,,White,Female,0,0,0,0,0
+TCGA-QR-A70K,61,,White,Male,0,0,0,0,0
+TCGA-QR-A70M,38,,White,Male,0,0,1,0,1
+TCGA-QR-A70N,32,,Black or African American,Male,0,0,0,0,0
+TCGA-QR-A70O,35,,White,Female,0,0,0,0,0
+TCGA-QR-A70P,45,,White,Female,0,0,0,0,0
+TCGA-QR-A70Q,33,,White,Male,0,0,0,0,0
+TCGA-QR-A70R,43,,White,Male,0,0,0,0,0
+TCGA-QR-A70T,40,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A70U,46,,White,Female,0,0,0,0,0
+TCGA-QR-A70V,66,,,Female,1,0,0,0,0
+TCGA-QR-A70W,40,,White,Male,0,0,0,0,1
+TCGA-QR-A70X,46,,Black or African American,Female,0,0,0,0,0
+TCGA-QR-A7IN,52,,Black or African American,Female,0,1,0,0,0
+TCGA-QR-A7IP,30,,White,Male,0,0,0,0,0
+TCGA-QT-A5XJ,42,,Black or African American,Female,0,0,0,0,0
+TCGA-QT-A5XK,56,,Black or African American,Female,0,0,0,1,0
+TCGA-QT-A5XL,27,,White,Male,0,1,0,0,1
+TCGA-QT-A5XM,43,,White,Male,0,0,1,1,0
+TCGA-QT-A5XN,51,,Black or African American,Female,0,0,0,0,0
+TCGA-QT-A5XO,63,,Black or African American,Female,0,0,0,0,0
+TCGA-QT-A5XP,57,,Black or African American,Female,1,0,0,0,0
+TCGA-QT-A69Q,40,,White,Male,0,0,0,0,0
+TCGA-QT-A7U0,56,,White,Male,0,1,0,0,0
+TCGA-RM-A68T,46,,Black or African American,Male,0,0,0,0,0
+TCGA-RM-A68W,41,,White,Female,0,0,0,0,0
+TCGA-RT-A6Y9,50,,White,Female,0,0,0,0,0
+TCGA-RT-A6YA,71,,White,Female,1,0,0,0,0
+TCGA-RT-A6YC,31,,White,Male,0,0,0,0,0
+TCGA-RW-A67V,44,,White,Female,0,0,0,0,0
+TCGA-RW-A67W,46,,White,Female,0,0,0,0,0
+TCGA-RW-A67X,47,,White,Male,0,0,0,0,0
+TCGA-RW-A67Y,43,,White,Female,1,0,0,0,0
+TCGA-RW-A680,57,,White,Female,0,0,0,0,0
+TCGA-RW-A681,56,,White,Male,0,0,1,0,0
+TCGA-RW-A684,64,,White,Female,0,0,0,0,0
+TCGA-RW-A685,70,,White,Female,1,0,0,0,0
+TCGA-RW-A686,62,,White,Male,0,0,0,0,0
+TCGA-RW-A688,69,,White,Female,1,0,0,0,0
+TCGA-RW-A689,58,,White,Male,1,0,0,0,1
+TCGA-RW-A68A,19,,White,Female,0,0,0,0,0
+TCGA-RW-A68B,31,,,Male,0,0,0,0,0
+TCGA-RW-A68C,43,,White,Male,0,0,0,0,0
+TCGA-RW-A68D,31,,Asian,Female,0,1,0,0,1
+TCGA-RW-A68F,51,,White,Female,0,0,0,0,0
+TCGA-RW-A68G,49,,White,Male,0,0,0,0,0
+TCGA-RW-A7CZ,72,,White,Female,0,0,0,0,0
+TCGA-RW-A7D0,47,,White,Female,1,0,0,0,0
+TCGA-RW-A8AZ,66,,White,Male,0,0,0,0,0
+TCGA-RX-A8JQ,44,,White,Male,0,0,0,0,0
+TCGA-S7-A7WL,59,,White,Male,1,0,0,0,0
+TCGA-S7-A7WM,76,,White,Male,1,0,1,0,0
+TCGA-S7-A7WN,40,,White,Male,0,0,0,0,1
+TCGA-S7-A7WO,76,,White,Female,0,0,0,0,0
+TCGA-S7-A7WP,25,,White,Female,0,0,0,0,0
+TCGA-S7-A7WQ,19,,White,Male,0,0,0,0,0
+TCGA-S7-A7WR,32,,White,Female,0,0,0,0,1
+TCGA-S7-A7WT,74,,White,Male,0,0,0,0,0
+TCGA-S7-A7WU,63,,White,Female,0,0,0,0,0
+TCGA-S7-A7WV,35,,White,Female,0,0,0,0,0
+TCGA-S7-A7WW,34,,White,Male,0,0,0,0,0
+TCGA-S7-A7WX,52,,White,Male,0,0,0,0,0
+TCGA-S7-A7X0,75,,White,Female,0,1,0,0,0
+TCGA-S7-A7X1,23,,White,Male,0,0,0,0,0
+TCGA-S7-A7X2,57,,White,Female,0,0,0,0,0
+TCGA-SA-A6C2,46,,Black or African American,Female,0,0,0,0,0
+TCGA-SP-A6QC,46,,White,Male,0,0,0,0,0
+TCGA-SP-A6QD,26,,,Male,0,0,0,0,0
+TCGA-SP-A6QF,48,,Asian,Male,0,0,0,0,1
+TCGA-SP-A6QG,35,,White,Female,0,0,0,0,0
+TCGA-SP-A6QH,35,,Asian,Female,0,0,0,0,0
+TCGA-SP-A6QI,47,,White,Male,0,0,0,0,0
+TCGA-SP-A6QJ,64,,White,Female,0,0,0,0,1
+TCGA-SP-A6QK,46,,Asian,Female,0,0,0,1,0
+TCGA-SQ-A6I4,53,,White,Male,0,0,0,0,0
+TCGA-SQ-A6I6,39,,White,Male,1,0,0,0,0
+TCGA-SR-A6MP,30,,White,Female,0,0,0,0,0
+TCGA-SR-A6MQ,61,,Asian,Female,0,0,0,0,1
+TCGA-SR-A6MR,41,,White,Male,0,0,0,0,0
+TCGA-SR-A6MS,35,,White,Female,0,0,0,0,0
+TCGA-SR-A6MT,57,,White,Female,0,0,0,0,0
+TCGA-SR-A6MU,49,,White,Female,0,0,0,0,0
+TCGA-SR-A6MV,35,,White,Female,0,1,0,0,0
+TCGA-SR-A6MX,55,,White,Male,0,0,0,0,0
+TCGA-SR-A6MY,54,,White,Female,0,0,0,0,1
+TCGA-SR-A6MZ,46,,White,Female,0,0,1,0,0
+TCGA-SR-A6N0,45,,White,Female,0,0,0,0,0
+TCGA-TT-A6YJ,45,,,Female,1,0,0,0,0
+TCGA-TT-A6YK,61,,White,Male,0,0,0,0,0
+TCGA-TT-A6YN,37,,White,Female,0,0,0,0,0
+TCGA-TT-A6YO,64,,Black or African American,Female,0,0,0,0,0
+TCGA-TT-A6YP,19,,White,Female,0,0,0,0,0
+TCGA-W2-A7H5,25,,White,Female,0,0,0,0,0
+TCGA-W2-A7H7,59,,White,Male,0,0,0,0,0
+TCGA-W2-A7HA,63,,American Indian or Alaska Native,Female,0,0,0,1,0
+TCGA-W2-A7HB,24,,White,Male,0,0,0,0,0
+TCGA-W2-A7HC,67,,White,Male,0,1,0,0,1
+TCGA-W2-A7HD,76,,White,Female,0,0,0,0,1
+TCGA-W2-A7HE,80,,White,Male,0,0,0,0,0
+TCGA-W2-A7HF,28,,Black or African American,Female,0,0,0,0,0
+TCGA-W2-A7HH,69,,White,Female,0,0,0,0,0
+TCGA-W2-A7UY,44,,White,Female,0,0,0,0,0
+TCGA-WB-A80K,49,,White,Male,0,0,0,0,0
+TCGA-WB-A80L,30,,White,Female,0,0,0,0,0
+TCGA-WB-A80M,63,,White,Male,0,0,0,0,0
+TCGA-WB-A80N,54,,White,Male,0,0,0,0,1
+TCGA-WB-A80O,83,,White,Female,0,0,0,0,1
+TCGA-WB-A80P,20,,White,Male,0,0,0,0,0
+TCGA-WB-A80Q,64,,White,Female,0,0,0,0,0
+TCGA-WB-A80V,63,,White,Female,0,0,0,1,0
+TCGA-WB-A80Y,59,,White,Female,0,0,0,0,0
+TCGA-WB-A814,35,,Black or African American,Female,0,1,0,0,0
+TCGA-WB-A815,68,,White,Female,0,0,0,0,0
+TCGA-WB-A816,42,,White,Female,0,0,0,0,0
+TCGA-WB-A817,27,,White,Male,0,0,0,0,0
+TCGA-WB-A818,37,,White,Male,1,0,0,0,0
+TCGA-WB-A819,36,,White,Male,0,0,0,1,0
+TCGA-WB-A81A,65,,White,Female,0,0,1,0,0
+TCGA-WB-A81D,82,,White,Female,0,0,0,0,0
+TCGA-WB-A81E,47,,White,Female,0,0,0,0,0
+TCGA-WB-A81F,40,,White,Male,0,0,0,0,0
+TCGA-WB-A81G,25,,White,Male,0,0,0,0,0
+TCGA-WB-A81H,44,,White,Female,1,0,0,0,0
+TCGA-WB-A81I,64,,White,Male,0,0,0,0,0
+TCGA-WB-A81J,40,,White,Male,1,0,1,0,0
+TCGA-WB-A81K,45,,White,Male,0,0,0,0,0
+TCGA-WB-A81M,42,,White,Female,0,0,0,0,0
+TCGA-WB-A81N,28,,White,Female,0,0,0,0,0
+TCGA-WB-A81P,73,,White,Female,0,0,0,0,0
+TCGA-WB-A81Q,44,,White,Male,1,0,0,0,0
+TCGA-WB-A81R,55,,White,Female,0,0,0,0,1
+TCGA-WB-A81S,59,,White,Female,0,0,0,0,0
+TCGA-WB-A81T,45,,White,Male,0,0,0,0,1
+TCGA-WB-A81V,57,,White,Male,1,0,0,0,0
+TCGA-WB-A81W,41,,White,Male,1,0,0,0,0
+TCGA-WB-A821,73,,White,Female,0,1,0,0,0
+TCGA-WB-A822,23,,White,Male,0,0,0,0,0
+TCGA-XG-A823,25,,White,Female,0,0,0,0,0
