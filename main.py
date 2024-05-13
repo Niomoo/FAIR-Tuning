@@ -198,7 +198,7 @@ def main(args):
     else:
         name = str(max_index) + "-base-" + name
 
-    wandb.init(project='FAIR-Tuning-Gender', 
+    wandb.init(project='FAIR-Tuning-CHIEF', 
                entity='jennyliu-lyh', 
                config=args, 
                name=name, 

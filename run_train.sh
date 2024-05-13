@@ -1,58 +1,58 @@
 ############### Cancer Classification ###############
 
-declare -a CANCER=("GBM" "LGG")
+declare -a CANCER=("LUAD LUSC")
 PARTITION=(1)
 SENSITIVE='{"race": ["white", "black or african american"]}'
 
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do python main.py --cancer $cancer \
-                  --model_path="./models/" \
+                  --model_path="./models_CHIEF/" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=1 \
                   --lr=1e-5 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=10 \
+                  --epochs=250 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
+                  --scheduler_gamma=1 \
                   --device="cuda"
     done
     done
 
 
-declare -a CANCER=("GBM" "LGG")
+declare -a CANCER=("LUAD LUSC")
 PARTITION=(1)
 SENSITIVE='{"race": ["white", "black or african american"]}'
 
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do python main.py --cancer $cancer \
-                  --model_path="./models/" \
+                  --model_path="./models_CHIEF/" \
                   --weight_path="" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=1 \
-                  --lr=1e-6 \
+                  --lr=5e-6 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=10 \
+                  --epochs=100 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
+                  --scheduler_gamma=1 \
                   --fair_lambda=1 \
-                  --constraint="" \
+                  --constraint="EO" \
                   --reweight \
-                  --selection="avgEOpp" \
+                  --selection="EOdd" \
                   --device="cuda"
     done
     done
 
-declare -a CANCER=("GBM" "LGG")
+declare -a CANCER=("LUAD LUSC")
 PARTITION=(2)
 CURR=(0 1 2 3)
 SENSITIVE='{"race": ["white", "black or african american"]}'
@@ -61,7 +61,7 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
 do python main.py --cancer $cancer \
-                  --model_path="./models/" \
+                  --model_path="./models_CHIEF/" \
                   --partition=$partition \
                   --curr_fold=$curr \
                   --fair_attr="$SENSITIVE" \
@@ -69,17 +69,17 @@ do python main.py --cancer $cancer \
                   --lr=1e-5 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=5 \
+                  --epochs=250 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
+                  --scheduler_gamma=1 \
                   --device="cuda"
 done
 done
 done
 
-declare -a CANCER=("GBM" "LGG")
+declare -a CANCER=("LUAD LUSC")
 PARTITION=(2)
 CURR=(0 1 2 3)
 SENSITIVE='{"race": ["white", "black or african american"]}'
@@ -88,24 +88,24 @@ for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do for curr in ${CURR[@]};
 do python main.py --cancer $cancer \
-                  --model_path="./models/" \
+                  --model_path="./models_CHIEF/" \
                   --weight_path="" \
                   --partition=$partition \
                   --curr_fold=$curr \
                   --fair_attr="$SENSITIVE" \
                   --task=1 \
-                  --lr=1e-6 \
+                  --lr=5e-6 \
                   --dropout=0.3 \
                   --seed=0 \
-                  --epochs=5 \
+                  --epochs=100 \
                   --batch_size=16 \
                   --acc_grad=2 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.9 \
+                  --scheduler_gamma=1 \
                   --fair_lambda=1 \
-                  --constraint="" \
+                  --constraint="EO" \
                   --reweight \
-                  --selection="avgEOpp" \
+                  --selection="EOdd" \
                   --device="cuda"
 done
 done

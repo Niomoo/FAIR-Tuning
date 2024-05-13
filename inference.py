@@ -110,7 +110,7 @@ def main(args):
 
     if args.partition == 1:
         _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
-        test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
+        test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=False)
 
         cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
         model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
@@ -207,7 +207,7 @@ def main(args):
     elif args.partition == 2:
         for curr_fold in range(4):
             _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
-            test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
+            test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=False)
             cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
             model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
             subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]

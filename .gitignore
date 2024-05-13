@@ -3,4 +3,5 @@ __pycache__/
 wandb/
 models*/
 embedding/
+CHIEF_features/
 result.csv

@@ -20,8 +20,8 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './tcga_pan_cancer/' # path to clinical information
-        self.strEmbeddingPath = './../Fairness-Foundation/AI_fairness/' # path to embeddings
+        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
+        self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
         self.dfRemoveDupDistribution = None

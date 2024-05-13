@@ -96,6 +96,7 @@ def main(args):
         if models.split("_")[0] == str(args.task) and models.split("_")[1] == "_".join(args.cancer) and models.split("_")[-1] == str(args.partition):
             geneType = models.split("_")[2]
             geneName = models.split("_")[3:-2]
+            geneName = "_".join(geneName)
             data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, task=args.task, seed = args.seed, geneType = geneType, geneName = geneName)
             df = data.train_valid_test()
             if args.task == 3:
@@ -212,7 +213,7 @@ def main(args):
                 for curr_fold in range(4):
                     _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
                     test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
-                    cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName
+                    cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName + "_"
                     model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
                     subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
                     model_indexes = [int(name.split('-')[0]) for name in subfolders]
