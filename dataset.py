@@ -20,8 +20,8 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
-        self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
+        self.strClinicalInformationPath = './tcga_pan_cancer/' # path to clinical information
+        self.strEmbeddingPath = './../Fairness-Foundation/AI_fairness/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
         self.dfRemoveDupDistribution = None
@@ -238,6 +238,7 @@ class generateDataSet():
             dfDummy['fold'] = (10*np.array(dfDummy['sensitive'].tolist())+np.array(dfDummy['label'])).tolist()
         dfDummy.fold = le.fit_transform(dfDummy.fold.values)
         foldNum = [0 for _ in range(int(len(dfDummy.index)))]
+        
         if self.fold == 1:
             train, valitest = train_test_split(dfDummy, train_size = 0.6, random_state = self.seed, shuffle = True, stratify = dfDummy['fold'].tolist())
             vali, test = train_test_split(valitest, test_size = 0.5, random_state = self.seed, shuffle = True, stratify = valitest['fold'].tolist())
@@ -273,6 +274,28 @@ class generateDataSet():
             self.dfDistribution = dfClinicalInformation.groupby(['fold', 'event', 'sensitive']).size()
         else:
             self.dfDistribution = dfClinicalInformation.groupby(['fold', 'label', 'sensitive']).size()
+
+        # print("\n=====Dataset number=====")
+        # print(self.cancer[0], self.geneType, self.geneName)
+        # print("Total number of samples: ", len(dfClinicalInformation))
+        # print("Training set: ", len(dfClinicalInformation[dfClinicalInformation['fold'] == 0]))
+        # print("Label 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['label'] == 0)]))
+        # print("Label 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['label'] == 1)]))
+        # print("Sensitive 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['sensitive'] == 0)]))
+        # print("Sensitive 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['sensitive'] == 1)]))
+        
+        # print("Validation set: ", len(dfClinicalInformation[dfClinicalInformation['fold'] == 1]))
+        # print("Label 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['label'] == 0)]))
+        # print("Label 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['label'] == 1)]))
+        # print("Sensitive 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['sensitive'] == 0)]))
+        # print("Sensitive 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['sensitive'] == 1)]))
+
+        # print("Test set: ", len(dfClinicalInformation[dfClinicalInformation['fold'] == 2]))
+        # print("Label 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 0)]))
+        # print("Label 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 1)]))
+        # print("Sensitive 0: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 0)]))
+        # print("Sensitive 1: ", len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 1)]))
+
         return dfClinicalInformation
 
 
