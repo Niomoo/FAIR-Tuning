@@ -210,21 +210,21 @@
 
 # ############## Genetic Mutation Classification ###############
 
-# declare -a CANCER=("brca" "luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
-# PARTITION=(1)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
+declare -a CANCER=("luad")
+PARTITION=(1)
+SENSITIVE='{"Sex": ["Female", "Male"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference_genetic.py --cancer $cancer \
-#                   --model_path="./models_pan_cancer/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=4 \
-#                   --seed=0 \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference_genetic.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --seed=0 \
+                  --device="cuda"
+    done
+    done
 
 # declare -a CANCER=("brca" "luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
 # PARTITION=(1)
@@ -244,21 +244,21 @@
 #     done
 #     done
 
-declare -a CANCER=("lusc" "coadread")
-PARTITION=(2)
-SENSITIVE='{"Sex": ["Female", "Male"]}'
+# declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "gbm" "lgg")
+# PARTITION=(2)
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference_genetic.py --cancer $cancer \
-                  --model_path="./models_pan_cancer/" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --seed=0 \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference_genetic.py --cancer $cancer \
+#                   --model_path="./models_pan_cancer/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --device="cuda"
+#     done
+#     done
 
 # declare -a CANCER=("brca" "luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
 # PARTITION=(2)

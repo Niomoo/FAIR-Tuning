@@ -18,39 +18,35 @@ class MILAttention(nn.Module):
         self.featureLength = featureLength
         self.featureInside = featureInside
 
-        self.attetion_V = nn.Sequential(
+        self.attention_V = nn.Sequential(
             nn.Linear(self.featureLength, self.featureInside, bias=True),
             nn.Tanh()
         )
-        self.attetion_U = nn.Sequential(
+        self.attention_U = nn.Sequential(
             nn.Linear(self.featureLength, self.featureInside, bias=True),
             nn.Sigmoid()
         )
-        self.attetion_weights =lora.Linear(self.featureInside, 1, bias=True)
-        self.softmax = nn.Softmax(dim = 0)
+        self.attention_weights = lora.Linear(self.featureInside, 1, bias=True)
+        self.softmax = nn.Softmax(dim = 1)
         
     def forward(self, x: Tensor, nonpad = None) -> Tensor:
-        if len(x.shape) == 2:
-            bz = 1
-            pz, fz = x.shape
-        else:
-            bz, pz, fz = x.shape
-#         x = x.view(bz*pz, fz)
-        att_v = self.attetion_V(x)
+        bz, pz, fz = x.shape if len(x.shape) == 3 else (1, *x.shape)
+        # x = x.view(bz*pz, fz)
+        att_v = self.attention_V(x)
         # print("att_v", att_v.shape)
-        att_u = self.attetion_U(x)
+        att_u = self.attention_U(x)
         # print("att_u", att_u.shape)
         att_v = att_v.view(bz * pz, -1)
-        att_u = att_v.view(bz * pz, -1)
+        att_u = att_u.view(bz * pz, -1)
 
-        att = self.attetion_weights(att_u * att_v)
+        att = self.attention_weights(att_u * att_v)
         # print("att", att.shape)
-        weight = att.view(bz, pz)
+        weight = att.view(bz, pz, 1)
 
-        if nonpad != None:
+        if nonpad is not None:
             for idx, i in enumerate(weight):
                 weight[idx][:nonpad[idx]] = self.softmax(weight[idx][:nonpad[idx]])
-                weight[idx][nonpad[idx]:] = weight[idx][nonpad[idx]:] * 0
+                weight[idx][nonpad[idx]:] = 0
         else:
             weight = self.softmax(att)
         weight = weight.view(bz, 1, pz)
@@ -78,6 +74,7 @@ class MILNet(nn.Module):
             num_patches, feature_dim = x.shape
         else:
             batch_size, num_patches, feature_dim = x.shape
+
         weight = self.attentionlayer(x, lengths)
         # print(weight)
         x = x.view(batch_size * num_patches, -1)
@@ -103,27 +100,10 @@ class ClfNet(nn.Module):
             nn.LayerNorm(128),
             nn.Linear(128, classes, bias=True)
         )
-
-        self.fc_sen = nn.Sequential(
-            nn.Linear(featureLength, 256, bias=True),
-            nn.ReLU(),
-            nn.LayerNorm(256),
-            nn.Linear(256, 128, bias=True),
-            nn.ReLU(),
-            nn.LayerNorm(128),
-            nn.Linear(128, 2, bias=True)
-        )
-
         self.ft = ft
-        self.race_emb = nn.Embedding(2, featureLength).requires_grad_(False)
-        nn.init.constant_(self.race_emb.weight[0], 0.5)
-        nn.init.constant_(self.race_emb.weight[1], -0.5)
 
     def forward(self, x, race, lengths=None):
-        if self.ft:
-            features = self.featureExtractor(x.squeeze(0), lengths)
-        else:
-            features = self.featureExtractor(x.squeeze(0), lengths)
+        features = self.featureExtractor(x.squeeze(0), lengths)
         preds = self.fc_target(features)
         return preds
 

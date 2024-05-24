@@ -95,7 +95,7 @@ def main(args):
     for models in os.listdir(args.model_path):
         if models.split("_")[0] == str(args.task) and models.split("_")[1] == "_".join(args.cancer) and models.split("_")[-1] == str(args.partition):
             geneType = models.split("_")[2]
-            geneName = models.split("_")[3:-2]
+            geneName = models.split("_")[3:-1]
             geneName = "_".join(geneName)
             cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName + "_" + str(args.partition)
 
@@ -118,7 +118,7 @@ def main(args):
 
                 if args.partition == 1:
                     _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
-                    test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=True, pin_memory_device=args.device)
+                    test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=False)
 
                     cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName
                     model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")

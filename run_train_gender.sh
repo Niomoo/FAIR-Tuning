@@ -342,6 +342,7 @@
 
 ############### Genetic Mutation Classification ###############
 
+# declare -a CANCER=("luad")
 declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
@@ -349,7 +350,7 @@ SENSITIVE='{"Sex": ["Female", "Male"]}'
 for cancer in "${CANCER[@]}";
 do for partition in ${PARTITION[@]};
 do python main_genetic.py --cancer $cancer \
-                  --model_path="./models_pan_cancer/" \
+                  --model_path="./models_CHIEF/" \
                   --partition=$partition \
                   --fair_attr="$SENSITIVE" \
                   --task=4 \
@@ -360,7 +361,7 @@ do python main_genetic.py --cancer $cancer \
                   --batch_size=16 \
                   --acc_grad=1 \
                   --scheduler_step=10 \
-                  --scheduler_gamma=0.8 \
+                  --scheduler_gamma=0.9 \
                   --split_ratio=1 \
                   --device="cuda"
     done
