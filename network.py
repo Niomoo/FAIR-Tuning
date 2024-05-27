@@ -26,9 +26,10 @@ class MILAttention(nn.Module):
             nn.Linear(self.featureLength, self.featureInside, bias=True),
             nn.Sigmoid()
         )
-        self.attention_weights = lora.Linear(self.featureInside, 1, bias=True)
-        self.softmax = nn.Softmax(dim = 1)
-        
+        self.attention_weights = nn.Linear(self.featureInside, 1, bias=True)
+        self.softmax_0 = nn.Softmax(dim=0)
+        self.softmax_1 = nn.Softmax(dim=1)
+
     def forward(self, x: Tensor, nonpad = None) -> Tensor:
         bz, pz, fz = x.shape if len(x.shape) == 3 else (1, *x.shape)
         # x = x.view(bz*pz, fz)
@@ -45,10 +46,10 @@ class MILAttention(nn.Module):
 
         if nonpad is not None:
             for idx, i in enumerate(weight):
-                weight[idx][:nonpad[idx]] = self.softmax(weight[idx][:nonpad[idx]])
+                weight[idx][:nonpad[idx]] = self.softmax_0(weight[idx][:nonpad[idx]])
                 weight[idx][nonpad[idx]:] = 0
         else:
-            weight = self.softmax(att)
+            weight = self.softmax_1(att)
         weight = weight.view(bz, 1, pz)
 
         return weight

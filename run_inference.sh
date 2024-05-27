@@ -210,7 +210,7 @@
 
 # ############## Genetic Mutation Classification ###############
 
-declare -a CANCER=("luad")
+declare -a CANCER=("gbm")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
 

@@ -342,8 +342,8 @@
 
 ############### Genetic Mutation Classification ###############
 
-# declare -a CANCER=("luad")
-declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
+declare -a CANCER=("luad")
+# declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
 
@@ -360,7 +360,7 @@ do python main_genetic.py --cancer $cancer \
                   --epochs=150 \
                   --batch_size=16 \
                   --acc_grad=1 \
-                  --scheduler_step=10 \
+                  --scheduler_step=15 \
                   --scheduler_gamma=0.9 \
                   --split_ratio=1 \
                   --device="cuda"

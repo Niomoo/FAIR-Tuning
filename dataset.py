@@ -345,11 +345,15 @@ class CancerDataset(Dataset):
             if self.fold_idx == 0:
                 row = self.df[self.df['fold'].isin([0])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
-                if self.task == 3:
-                    group = (row.sensitive)
-                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
-                group = (row.sensitive, row.label)
-                return sample, len(sample), row.sensitive, row.label, group
+                try:
+                    if self.task == 3:
+                        group = (row.sensitive)
+                        return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                    group = (row.sensitive, row.label)
+                    return sample, len(sample), row.sensitive, row.label, group
+                except:
+                    print(row.path)
+                    return None
             elif self.fold_idx == 1:
                 row = self.df[self.df['fold'].isin([1])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
