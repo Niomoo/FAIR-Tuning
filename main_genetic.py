@@ -175,6 +175,9 @@ def main(args):
                         model_indexes = [int(name.split('-')[0]) for name in subfolders]
                         max_index = max(model_indexes)       
 
+                    if max_index == 2:
+                        continue
+
                     # Wandb settings
                     wandb_id = wandb.util.generate_id()
                     if args.partition == 1:

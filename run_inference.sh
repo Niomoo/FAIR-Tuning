@@ -210,7 +210,7 @@
 
 # ############## Genetic Mutation Classification ###############
 
-declare -a CANCER=("gbm")
+declare -a CANCER=("lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
 

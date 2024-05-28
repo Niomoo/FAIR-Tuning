@@ -11,4 +11,4 @@ torchvision
 tqdm==4.64.1
 wandb==0.15.4
 warmup_scheduler==0.3
-opencv-python
+opencv-python-headless

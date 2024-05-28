@@ -342,8 +342,8 @@
 
 ############### Genetic Mutation Classification ###############
 
-declare -a CANCER=("luad")
-# declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
+# declare -a CANCER=("luad")
+declare -a CANCER=("lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 PARTITION=(1)
 SENSITIVE='{"Sex": ["Female", "Male"]}'
 
