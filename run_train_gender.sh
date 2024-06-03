@@ -343,31 +343,31 @@
 ############### Genetic Mutation Classification ###############
 
 # declare -a CANCER=("luad")
-declare -a CANCER=("lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
-PARTITION=(1)
-SENSITIVE='{"Sex": ["Female", "Male"]}'
+# declare -a CANCER=("lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
+# PARTITION=(1)
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python main_genetic.py --cancer $cancer \
-                  --model_path="./models_CHIEF/" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --lr=1e-5 \
-                  --dropout=0.3 \
-                  --seed=0 \
-                  --epochs=150 \
-                  --batch_size=16 \
-                  --acc_grad=1 \
-                  --scheduler_step=15 \
-                  --scheduler_gamma=0.9 \
-                  --split_ratio=1 \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python main_genetic.py --cancer $cancer \
+#                   --model_path="./models_CHIEF/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --lr=1e-5 \
+#                   --dropout=0.3 \
+#                   --seed=0 \
+#                   --epochs=150 \
+#                   --batch_size=16 \
+#                   --acc_grad=1 \
+#                   --scheduler_step=15 \
+#                   --scheduler_gamma=0.9 \
+#                   --split_ratio=1 \
+#                   --device="cuda"
+#     done
+#     done
 
-# declare -a CANCER=("lusc" "kirp" "kich" "coadread")
+# declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 # PARTITION=(1)
 # SENSITIVE='{"Sex": ["Female", "Male"]}'
 
@@ -386,7 +386,7 @@ do python main_genetic.py --cancer $cancer \
 #                   --batch_size=16 \
 #                   --acc_grad=1 \
 #                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.9 \
+#                   --scheduler_gamma=0.95 \
 #                   --split_ratio=1 \
 #                   --fair_lambda=1 \
 #                   --constraint="EO" \
@@ -396,63 +396,63 @@ do python main_genetic.py --cancer $cancer \
 #     done
 #     done
 
-# declare -a CANCER=("lusc" "kirp" "kich" "coadread")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
+declare -a CANCER=("kich" "coadread" "gbm" "lgg")
+PARTITION=(2)
+CURR=(0 1 2 3)
+SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main_genetic.py --cancer $cancer \
-#                  --model_path="./models_pan_cancer/" \
-#                  --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --task=4 \
-#                   --fair_attr="$SENSITIVE" \
-#                   --lr=1e-5 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=150 \
-#                   --batch_size=16 \
-#                   --acc_grad=1 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.8 \
-#                   --split_ratio=1 \
-#                   --fair_lambda=1 \
-#                   --device="cuda"
-# done
-# done
-# done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do for curr in ${CURR[@]};
+do python main_genetic.py --cancer $cancer \
+                 --model_path="./models_race/" \
+                 --partition=$partition \
+                  --curr_fold=$curr \
+                  --task=4 \
+                  --fair_attr="$SENSITIVE" \
+                  --lr=1e-5 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=150 \
+                  --batch_size=16 \
+                  --acc_grad=1 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.95 \
+                  --split_ratio=1 \
+                  --fair_lambda=1 \
+                  --device="cuda"
+done
+done
+done
 
-# declare -a CANCER=("lusc" "kirp" "kich" "coadread")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
+declare -a CANCER=("kich" "coadread" "gbm" "lgg")
+PARTITION=(2)
+CURR=(0 1 2 3)
+SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main_genetic.py --cancer $cancer \
-#                   --model_path="./models_pan_cancer/" \
-#                   --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=4 \
-#                   --lr=1e-6 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=100 \
-#                   --batch_size=16 \
-#                   --acc_grad=1 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.9 \
-#                   --split_ratio=1 \
-#                   --fair_lambda=1 \
-#                   --constraint="EO" \
-#                   --reweight \
-#                   --selection="EOdd" \
-#                   --device="cuda"
-# done
-# done
-# done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do for curr in ${CURR[@]};
+do python main_genetic.py --cancer $cancer \
+                  --model_path="./models_race/" \
+                  --partition=$partition \
+                  --curr_fold=$curr \
+                  --fair_attr="$SENSITIVE" \
+                  --task=4 \
+                  --lr=1e-6 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=150 \
+                  --batch_size=16 \
+                  --acc_grad=1 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.95 \
+                  --split_ratio=1 \
+                  --fair_lambda=1 \
+                  --constraint="EO" \
+                  --reweight \
+                  --selection="EOdd" \
+                  --device="cuda"
+done
+done
+done

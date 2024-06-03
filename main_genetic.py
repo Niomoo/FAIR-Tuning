@@ -175,9 +175,6 @@ def main(args):
                         model_indexes = [int(name.split('-')[0]) for name in subfolders]
                         max_index = max(model_indexes)       
 
-                    if max_index == 2:
-                        continue
-
                     # Wandb settings
                     wandb_id = wandb.util.generate_id()
                     if args.partition == 1:
@@ -695,6 +692,7 @@ def main(args):
                         print(f"Epoch:{epoch_record}, {args.selection}:{fairness_record}")
                         del model
                     except:
+                        print(Exception)
                         print(cancer_folder)
                         print("Data not enough for this task.")
 
