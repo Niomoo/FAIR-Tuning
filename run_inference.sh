@@ -73,71 +73,71 @@
 
 # ############## Tumor Detection ###############
 
-# declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
-# PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
+PARTITION=(1)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=2 \
-#                   --seed=0 \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=2 \
+                  --seed=0 \
+                  --device="cuda"
+    done
+    done
 
-# declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
-# PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
+PARTITION=(1)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=2 \
-#                   --seed=0 \
-#                   --reweight \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=2 \
+                  --seed=0 \
+                  --reweight \
+                  --device="cuda"
+    done
+    done
 
-# declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
-# PARTITION=(2)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
+PARTITION=(2)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=2 \
-#                   --seed=0 \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=2 \
+                  --seed=0 \
+                  --device="cuda"
+    done
+    done
 
-# declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
-# PARTITION=(2)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRP" "KIRC")
+PARTITION=(2)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=2 \
-#                   --seed=0 \
-#                   --reweight \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=2 \
+                  --seed=0 \
+                  --reweight \
+                  --device="cuda"
+    done
+    done
 
 
 # ############## Survival Analysis ###############
@@ -244,36 +244,36 @@
 #     done
 #     done
 
-declare -a CANCER=("kich" "coadread" "gbm" "lgg")
-PARTITION=(2)
-SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# declare -a CANCER=("luad" "lusc" "kirp" "kirc")
+# PARTITION=(2)
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference_genetic.py --cancer $cancer \
-                  --model_path="./models_pan_cancer/" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --seed=0 \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference_genetic.py --cancer $cancer \
+#                   --model_path="./models_pan_cancer/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --device="cuda"
+#     done
+#     done
 
-declare -a CANCER=("kich" "coadread" "gbm" "lgg")
-PARTITION=(2)
-SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# declare -a CANCER=("luad" "lusc" "kirp" "kirc")
+# PARTITION=(2)
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference_genetic.py --cancer $cancer \
-                  --model_path="./models_pan_cancer/" \
-                  --weight_path="" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --seed=0 \
-                  --reweight \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference_genetic.py --cancer $cancer \
+#                   --model_path="./models_pan_cancer/" \
+#                   --weight_path="" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --reweight \
+#                   --device="cuda"
+#     done
+#     done

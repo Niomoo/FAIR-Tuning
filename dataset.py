@@ -20,7 +20,7 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './tcga_pan_cancer/' # path to clinical information
+        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
         self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
@@ -44,12 +44,7 @@ class generateDataSet():
                 df = pd.merge(df, label_filter, on="Patient ID")
                 df.rename(columns={'Patient ID': 'case_submitter_id', 'Altered': 'label'}, inplace=True)
             else:
-                if self.task == 1:      # cancer classification
-                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
-                elif self.task == 2:    # tumor detection
-                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_frozen_clinical_information.pkl')[0])
-                elif self.task == 3:    # survival analysis
-                    part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information copy.pkl')[0])
+                part = pd.read_pickle(glob.glob(f'{self.strClinicalInformationPath}/{c}_clinical_information.pkl')[0])
                 df = pd.concat([df, part], ignore_index = True)
         return df
 
@@ -172,10 +167,7 @@ class generateDataSet():
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
 
-            if(self.intDiagnosticSlide == 0):
-                dfClinicalInformation = dfClinicalInformation[['DX' in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
-            elif(self.intDiagnosticSlide == 1):
-                dfClinicalInformation = dfClinicalInformation[['DX' not in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
+            dfClinicalInformation = dfClinicalInformation[['DX' not in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
 
             le = LabelEncoder()
             project_ids = dfClinicalInformation['folder_id'].apply(lambda x: x[13]).tolist()
