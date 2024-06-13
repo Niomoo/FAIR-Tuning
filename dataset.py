@@ -20,7 +20,7 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './clinical_information/' # path to clinical information
+        self.strClinicalInformationPath = self.setClinicalInformationPath()
         self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
@@ -51,7 +51,7 @@ class generateDataSet():
     def fReduceDataFrame(self, df):
         if self.task == 3:
             dfClinicalInformation = df.copy()
-            mask = (df['days_to_death'] == '\'--') & (df['days_to_last_follow_up'] == '\'--')
+            mask = (dfClinicalInformation['days_to_death'] == '\'--') & (dfClinicalInformation['days_to_last_follow_up'] == '\'--')
             dfClinicalInformation = dfClinicalInformation[~mask].reset_index(drop = True)
             dfClinicalInformation['event'] = dfClinicalInformation['days_to_death'].apply(lambda x: 1 if x != '\'--' else 0)  # 1: death 0: alive
             # print(dfClinicalInformation['event'].value_counts())
@@ -98,6 +98,16 @@ class generateDataSet():
 
     def getInformation(self):
         return self.dictInformation
+
+    def setClinicalInformationPath(self):
+        if self.task in [1,2]:
+            self.strClinicalInformationPath = './clinical_information/'
+        elif self.task == 3:
+            self.strClinicalInformationPath = './survival_clinical_information/'
+        elif self.task == 4:
+            self.strClinicalInformationPath = './tcga_pan_cancer/'
+        else:
+            print("Invalid task number. Please check the task number again.")
 
     def train_valid_test(self, split=1.0):
         if self.dfClinicalInformation is None:
@@ -168,7 +178,7 @@ class generateDataSet():
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
 
             dfClinicalInformation = dfClinicalInformation[['DX' not in s[20:22] for s in dfClinicalInformation['folder_id'].tolist()]].reset_index(drop = True)
-
+            
             le = LabelEncoder()
             project_ids = dfClinicalInformation['folder_id'].apply(lambda x: x[13]).tolist()
             le.fit(project_ids)

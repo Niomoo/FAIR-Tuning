@@ -568,7 +568,9 @@ def main(args):
                         performance_record = best_performance
                         print(f"Epoch:{epoch_record}, AUROC:{performance_record}")
                 elif criterion == 1:
-                    if fairness > 0 and fairness < best_fairness                :
+                    if epoch == 0:
+                        torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
+                    if fairness > 0 and fairness < best_fairness:
                         best_fairness = fairness
                         torch.save(model.state_dict(), Path(model_save_path) / "model.pt")
                         epoch_record = epoch
