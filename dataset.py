@@ -20,7 +20,7 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = self.setClinicalInformationPath()
+        self.strClinicalInformationPath = './clinical_information/'
         self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
@@ -35,6 +35,7 @@ class generateDataSet():
 
     def fClinicalInformation(self):
         df = pd.DataFrame({})
+        self.setClinicalInformationPath()
         for c in self.cancer:
             if self.task == 4:      # genetic classification
                 part = pd.read_csv(glob.glob(f'{self.strClinicalInformationPath}{c}_tcga_pan_can_atlas_2018/clinical_data.tsv')[0], sep='\t')
