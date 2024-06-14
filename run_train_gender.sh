@@ -53,66 +53,66 @@
 #     done
 #     done
 
-# declare -a CANCER=("KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
+declare -a CANCER=("LUAD LUSC" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"gender": ["female", "male"]}'
+PARTITION=(2)
+CURR=(0 1 2 3)
+SENSITIVE='{"gender": ["female", "male"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main.py --cancer $cancer \
-#                   --model_path="./models_gender/" \
-#                   --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=1 \
-#                   --lr=1e-5 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=100 \
-#                   --batch_size=16 \
-#                   --acc_grad=2 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.9 \
-#                   --device="cuda"
-# done
-# done
-# done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do for curr in ${CURR[@]};
+do python main.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --partition=$partition \
+                  --curr_fold=$curr \
+                  --fair_attr="$SENSITIVE" \
+                  --task=1 \
+                  --lr=1e-4 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=100 \
+                  --batch_size=16 \
+                  --acc_grad=1 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.95 \
+                  --device="cuda"
+done
+done
+done
 
 # declare -a CANCER=("LUAD LUSC")
-# declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"gender": ["female", "male"]}'
+declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
+PARTITION=(2)
+CURR=(0 1 2 3)
+SENSITIVE='{"gender": ["female", "male"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main.py --cancer $cancer \
-#                   --model_path="./models_gender/" \
-#                   --weight_path="" \
-#                   --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=1 \
-#                   --lr=1e-5 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=100 \
-#                   --batch_size=16 \
-#                   --acc_grad=1 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.9 \
-#                   --fair_lambda=1 \
-#                   --constraint="MMF" \
-#                   --reweight \
-#                   --selection="EOdd"  \
-#                   --device="cuda"
-# done
-# done
-# done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do for curr in ${CURR[@]};
+do python main.py --cancer $cancer \
+                  --model_path="./models_gender/" \
+                  --weight_path="" \
+                  --partition=$partition \
+                  --curr_fold=$curr \
+                  --fair_attr="$SENSITIVE" \
+                  --task=1 \
+                  --lr=1e-5 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=100 \
+                  --batch_size=16 \
+                  --acc_grad=1 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.95 \
+                  --fair_lambda=1 \
+                  --constraint="EO" \
+                  --reweight \
+                  --selection="EOdd"  \
+                  --device="cuda"
+done
+done
+done
 
 ############### Tumor detection ###############
 
