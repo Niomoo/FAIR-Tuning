@@ -100,6 +100,8 @@ def main(args):
         num_classes = len(df["label"].unique())
 
     auroc = 0.
+    logits = []
+    probs = []
     predictions = []
     labels = []
     events = []
@@ -228,6 +230,7 @@ def main(args):
                     max_reweight_index = int(args.weight_path)
                 reweight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}_reweight/{max_reweight_index}-*_{curr_fold}_reweight/model.pt")[0]
                 model.load_state_dict(torch.load(reweight_path), strict=False)
+                inference_results_path = Path(reweight_path).parent / f"inference_results_fold{curr_fold}.csv"
                 result_path = Path(reweight_path).parent.parent / f"{max_reweight_index}-result.csv"
                 fig_path = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve.png"
                 fig_path2 = Path(reweight_path).parent.parent / f"{max_reweight_index}-survival_curve_stage.png"
@@ -243,6 +246,7 @@ def main(args):
                 weight_path = glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/{max_index}-*_{curr_fold}/model.pt")[0]
                 model.load_state_dict(torch.load(weight_path), strict=False)
                 result_path = Path(weight_path).parent.parent / f"{max_index}-result.csv"
+                inference_results_path = Path(weight_path).parent / f"inference_results_fold{curr_fold}.csv"
                 fig_path = Path(weight_path).parent.parent / f"{max_index}-survival_curve.png"
                 fig_path2 = Path(weight_path).parent.parent / f"{max_index}-survival_curve_stage.png"
                 fig_path3 = Path(weight_path).parent.parent / f"{max_index}-survival_curve_black.png"
@@ -256,10 +260,12 @@ def main(args):
                     if args.task == 1 or args.task == 2 or args.task == 4:
                         wsi_embeddings, lengths, sensitive, label, group = data
                         test_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device))
-
+                        logits.append(test_cancer_pred.detach().cpu().tolist()[0][1])
+                        probs.append(torch.nn.functional.softmax(test_cancer_pred, dim=1).detach().cpu().tolist()[0][1])
                         predictions.append(torch.argmax(test_cancer_pred.detach().cpu(), dim=1).numpy())
                         labels.append(label.detach().cpu().numpy())
                         senAttrs.append(sensitive.detach().cpu().numpy())
+                        # print(f"Logits: {logits[-1]}, Probs: {probs[-1]} Predictions: {predictions[-1]}, Labels: {labels[-1]}")
                     elif args.task == 3:
                         wsi_embeddings, lengths, sensitive, event, time, group, stage = data
                         test_shape_scale = model(wsi_embeddings.to(args.device), sensitive.to(args.device))
@@ -272,6 +278,18 @@ def main(args):
                         events.append(event.detach().cpu().numpy())
                         senAttrs.append(sensitive.detach().cpu().numpy())
                         stages.append(stage.detach().cpu().numpy())
+            
+            inference_results = pd.DataFrame({
+                "logits": logits, 
+                "probs": probs, 
+                "predictions": predictions,
+                "labels": labels, 
+                "senAttrs": senAttrs
+            })
+            inference_results["predictions"] = inference_results["predictions"].astype(int)
+            inference_results["labels"] = inference_results["labels"].astype(int)
+            inference_results["senAttrs"] = inference_results["senAttrs"].astype(int)
+            inference_results.to_csv(inference_results_path)
 
         if args.task == 1 or args.task == 2 or args.task == 4:
             if num_classes > 2:

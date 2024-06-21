@@ -13,7 +13,7 @@ import glob
 import numpy as np
 from argparse import ArgumentParser
 from typing import List, Tuple, Literal
-from utils import FairnessMetrics, get_metric_names
+from .utils import FairnessMetrics, get_metric_names
 from tqdm import tqdm
 
 SUBJ_ID_COL = 'bcr_patient_barcode'
