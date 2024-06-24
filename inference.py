@@ -261,6 +261,7 @@ def main(args):
                     if args.task == 1 or args.task == 2 or args.task == 4:
                         wsi_embeddings, lengths, sensitive, label, group, case_id = data
                         test_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device))
+                        
                         logits.append(test_cancer_pred.detach().cpu().tolist()[0][1])
                         probs.append(torch.nn.functional.softmax(test_cancer_pred, dim=1).detach().cpu().tolist()[0][1])
                         predictions.append(torch.argmax(test_cancer_pred.detach().cpu(), dim=1).numpy())
