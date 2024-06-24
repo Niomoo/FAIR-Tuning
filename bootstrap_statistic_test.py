@@ -119,8 +119,8 @@ def main(args):
     dfs_baseline = [df.loc[~df['sens_attr'].isna()] for df in dfs_baseline]
     dfs_corrected = [df.loc[~df['sens_attr'].isna()] for df in dfs_corrected]
 
-    print(dfs_baseline[0].head())
-    print(dfs_corrected[0].head())
+    # print(dfs_baseline[0].head())
+    # print(dfs_corrected[0].head())
 
     aggregate_method = 'fisher'
     n_bootstrap = 1000
@@ -141,7 +141,19 @@ def main(args):
             aggregate_method=aggregate_method,
         )
     )
-    print(df_p_worse_baseline)
+
+    df_improv, df_p_better, df_p_worse = CV_bootstrap_improvement_test(
+        dfs_baseline,
+        dfs_corrected,
+        privileged_group=privileged_group,
+        n_bootstrap=n_bootstrap,
+        aggregate_method=aggregate_method,
+        ID_col='ID_col'
+    )
+    os.mkdir(f'significance_test_results/{cancer_folder}_{args.partition}')
+    df_p_worse_baseline.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/bias_baseline.csv')
+    df_p_better_baseline.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/bias_corrected.csv')
+    df_p_better.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/improvement.csv')
 
 if __name__ == "__main__":
     args = parse_args()

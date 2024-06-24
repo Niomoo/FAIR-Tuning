@@ -324,25 +324,25 @@ class CancerDataset(Dataset):
                 sample = torch.load(row.path)
                 if self.task == 3:
                     group = (row.sensitive)
-                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage, row.case_submitter_id
                 group = (row.sensitive, row.label)
-                return sample, len(sample), row.sensitive, row.label, group
+                return sample, len(sample), row.sensitive, row.label, group, row.case_submitter_id
             elif self.fold_idx == 1:
                 row = self.df[self.df['fold'].isin([(4-self.exp_idx+2)%4])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
                 if self.task == 3:
                     group = (row.sensitive)
-                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage, row.case_submitter_id
                 group = (row.sensitive, row.label)
-                return sample, len(sample), row.sensitive, row.label, group
+                return sample, len(sample), row.sensitive, row.label, group, row.case_submitter_id
             elif self.fold_idx == 2:
                 row = self.df[self.df['fold'].isin([(4-self.exp_idx+3)%4])].reset_index(drop=True).loc[idx]
                 sample = torch.load(row.path)
                 if self.task == 3:
                     group = (row.sensitive)
-                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage, row.case_submitter_id
                 group = (row.sensitive, row.label)
-                return sample, len(sample), row.sensitive, row.label, group
+                return sample, len(sample), row.sensitive, row.label, group, row.case_submitter_id
 
         elif self.split_type == 'vanilla':
             if self.fold_idx == 0:
@@ -351,9 +351,9 @@ class CancerDataset(Dataset):
                 try:
                     if self.task == 3:
                         group = (row.sensitive)
-                        return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                        return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage, row.case_submitter_id
                     group = (row.sensitive, row.label)
-                    return sample, len(sample), row.sensitive, row.label, group
+                    return sample, len(sample), row.sensitive, row.label, group, row.case_submitter_id
                 except:
                     print(row.path)
                     return None
@@ -362,7 +362,7 @@ class CancerDataset(Dataset):
                 sample = torch.load(row.path)
                 if self.task == 3:
                     group = (row.sensitive)
-                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
+                    return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage, row.case_submitter_id
                 group = (row.sensitive, row.label)
                 return sample, len(sample), row.sensitive, row.label, group
             elif self.fold_idx == 2:
@@ -372,7 +372,7 @@ class CancerDataset(Dataset):
                     group = (row.sensitive)
                     return sample, len(sample), row.sensitive, row.event, row['T'], group, row.stage
                 group = (row.sensitive, row.label)
-                return sample, len(sample), row.sensitive, row.label, group
+                return sample, len(sample), row.sensitive, row.label, group, row.case_submitter_id
 
     def __len__(self):
         fold_counts = self.df['fold'].value_counts()
@@ -442,10 +442,10 @@ def get_datasets(df, task, split_type, exp_idx, reweight=False):
 
 
 def collate_fn(batch):
-    if len(batch[0]) == 7:
-        samples, lengths, sensitives, events, times, groups, stage = zip(*batch)
+    if len(batch[0]) == 8:
+        samples, lengths, sensitives, events, times, groups, stage, case_submitter_ids = zip(*batch)
     else:
-        samples, lengths, sensitives, labels, groups = zip(*batch)
+        samples, lengths, sensitives, labels, groups, case_submitter_ids = zip(*batch)
     max_len = max(lengths)
     padded_slides = []
     for i in range(0, len(samples)):
@@ -455,9 +455,9 @@ def collate_fn(batch):
 
     padded_slides = torch.stack(padded_slides)
 
-    if len(batch[0]) == 7:
-        return padded_slides, lengths, torch.tensor(sensitives), torch.tensor(events), torch.tensor(times), groups, stage
-    return padded_slides, lengths, torch.tensor(sensitives), torch.tensor(labels), groups
+    if len(batch[0]) == 8:
+        return padded_slides, lengths, torch.tensor(sensitives), torch.tensor(events), torch.tensor(times), groups, stage, case_submitter_ids
+    return padded_slides, lengths, torch.tensor(sensitives), torch.tensor(labels), groups, case_submitter_ids
 
 class BalancedSampler(Sampler):
     def __init__(self, data_source, batch_size, resample=False, group_nums=None):
