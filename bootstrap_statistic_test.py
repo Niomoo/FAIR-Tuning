@@ -93,8 +93,15 @@ def parse_args(input_args=None):
 
 
 def main(args):
-
-    cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
+    if args.task == 4:
+        cancerType = args.cancer[0]
+        geneType = args.cancer[1]
+        geneName = args.cancer[2]
+        geneType += " Genes"
+        cancer_folder = str(args.task) + "_" + cancerType + "_" + geneType + "_" + geneName
+        print(cancer_folder)
+    else:
+        cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
     model_names = [name.split('/')[-1] for name in glob.glob(args.model_path + f"{cancer_folder}_{args.partition}/*")]
     max_index = max([int(name.split('-')[0]) for name in model_names])
 
@@ -142,18 +149,26 @@ def main(args):
         )
     )
 
+    id_col = 'ID_col'
+
     df_improv, df_p_better, df_p_worse = CV_bootstrap_improvement_test(
         dfs_baseline,
         dfs_corrected,
         privileged_group=privileged_group,
         n_bootstrap=n_bootstrap,
         aggregate_method=aggregate_method,
-        ID_col='ID_col'
+        ID_col=id_col
     )
-    os.mkdir(f'significance_test_results/{cancer_folder}_{args.partition}')
-    df_p_worse_baseline.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/bias_baseline.csv')
-    df_p_better_baseline.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/bias_corrected.csv')
-    df_p_better.to_csv(f'significance_test_results/{cancer_folder}_{args.partition}/improvement.csv')
+
+    if eval(args.fair_attr).keys() == "Sex" or eval(args.fair_attr).keys() == "gender":
+        fair_folder = "gender"
+    else:
+        fair_folder = "race"
+
+    os.mkdir(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}')
+    df_p_worse_baseline.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/bias_baseline.csv')
+    df_p_worse_corrected.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/bias_corrected.csv')
+    df_p_better.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/improvement.csv')
 
 if __name__ == "__main__":
     args = parse_args()

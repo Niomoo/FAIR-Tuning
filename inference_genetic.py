@@ -290,12 +290,12 @@ def main(args):
                                     stages.append(stage.detach().cpu().numpy())
                                     caseIds.append(case_id[0])
                         inference_results = pd.DataFrame({
-                            "case_id": caseIds, 
                             "logits": logits, 
-                            "probs": probs, 
-                            "predictions": predictions, 
-                            "labels": labels, 
-                            "senAttrs": senAttrs
+                            "prob": probs, 
+                            "pred": predictions, 
+                            "label": labels, 
+                            "sens_attr": senAttrs,
+                            "ID_col ": caseIds
                         })
                         inference_results["pred"] = inference_results["pred"].astype(int)
                         inference_results["label"] = inference_results["label"].astype(int)
