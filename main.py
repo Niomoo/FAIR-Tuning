@@ -217,9 +217,9 @@ def main(args):
     if args.partition == 1:
         train_ds, val_ds, test_ds = get_datasets(df, args.task, "vanilla", None, args.reweight)
     elif args.partition == 2:
-        train_ds, val_ds, test_ds = get_datasets(df, args.task, "kfold", args.curr_fold)
+        train_ds, val_ds, test_ds = get_datasets(df, args.task, "kfold", args.curr_fold, args.reweight)
 
-    train_dl = DataLoader(train_ds, collate_fn=collate_fn, batch_size=args.batch_size, pin_memory=False)
+    train_dl = DataLoader(train_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=True, pin_memory=False)
     val_dl = DataLoader(val_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=False, pin_memory=False)
     test_dl = DataLoader(test_ds, collate_fn=collate_fn, batch_size=args.batch_size, shuffle=False, pin_memory=False)
 
@@ -288,7 +288,7 @@ def main(args):
     best_performance = 0.
     best_fairness = 9999.
     group_samples = {}
-    
+
     model.train()
 
     # Training/evaluation process
@@ -315,12 +315,12 @@ def main(args):
         for idx, data in pbar:
 
             if args.task == 3:
-                wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                wsi_embeddings, lengths, sensitive, event, time, group, stage, case_id = data
                 shape_scale = model(wsi_embeddings.to(args.device), lengths)
                 shape, scale = shape_scale[:, 0], shape_scale[:, 1]
                 train_loss, group_of_loss = survival_loss_function(shape, scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes).float().to(args.device), lengths, group)
             else:
-                wsi_embeddings, lengths, sensitive, label, group = data
+                wsi_embeddings, lengths, sensitive, label, group, case_id = data
                 cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
                 train_loss, group_of_loss = loss_function(loss_fn, cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
             train_loss = train_loss / gradient_accumulation_steps
@@ -408,12 +408,12 @@ def main(args):
             for _, data in eval_pbar:
 
                 if args.task == 3:
-                    wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                    wsi_embeddings, lengths, sensitive, event, time, group, stage, case_id = data
                     eval_shape_scale = model(wsi_embeddings.to(args.device), lengths)
                     eval_shape, eval_scale = eval_shape_scale[:, 0], eval_shape_scale[:, 1]
                     eval_loss, eval_group_of_loss = survival_loss_function(eval_shape, eval_scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes) .float() .to(args.device), lengths, group)
                 else:
-                    wsi_embeddings, lengths, sensitive, label, group = data
+                    wsi_embeddings, lengths, sensitive, label, group, case_id = data
                     eval_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
                     eval_loss, eval_group_of_loss = loss_function(loss_fn, eval_cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
 
@@ -616,9 +616,9 @@ def main(args):
                 npSenAttrs = npSenAttrs[~nan_mask]
             except TypeError:
                 pass
-            
+
             results = SurvivalMetrics(npPredictedSurvivalTime, npTrueSurvivalTime, npEvents, npSenAttrs)
-            
+
             criterion = 0  # 0: performance 1: fairness 2: both
             fairness = results["c_diff"]
             if args.selection == "c_diff":
@@ -629,7 +629,7 @@ def main(args):
                 criterion = 1
             elif args.selection == "c_index":
                 criterion = 0
-            
+
             if not args.reweight:
                 if (type(results["c_index"]) != str) and results["c_index"] > 0.0:
                     if results["c_index"] > best_performance:
@@ -671,7 +671,7 @@ def main(args):
             }
             wandb_record = {**temp, **results}
             wandb.log(wandb_record)
-   
+
     wandb.finish()
 
     print(f"Epoch:{epoch_record}, Performance:{performance_record}")

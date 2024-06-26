@@ -1,20 +1,20 @@
 ############## Cancer Classification ###############
 # declare -a CANCER=("COAD READ")
-# # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
-# PARTITION=(1)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
+PARTITION=(1)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python inference.py --cancer $cancer \
-#                   --model_path="./models_CHIEF/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=1 \
-#                   --seed=0 \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python inference.py --cancer $cancer \
+                  --model_path="./models_CHIEF/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=1 \
+                  --seed=0 \
+                  --device="cuda"
+    done
+    done
 
 # declare -a CANCER=("LUAD LUSC")
 # # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
@@ -52,7 +52,7 @@
 #     done
 #     done
 
-# # declare -a CANCER=("LUAD LUSC")
+# declare -a CANCER=("LUAD LUSC")
 # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # PARTITION=(2)
 # SENSITIVE='{"gender": ["female", "male"]}'
@@ -244,7 +244,7 @@
 #     done
 #     done
 
-# declare -a CANCER=("lusc")
+# declare -a CANCER=("lusc" "kich" "coadread" "lgg" "gbm")
 # PARTITION=(2)
 # SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
@@ -260,7 +260,7 @@
 #     done
 #     done
 
-# declare -a CANCER=("lusc")
+# declare -a CANCER=("lusc" "kich" "coadread" "lgg" "gbm")
 # PARTITION=(2)
 # SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
