@@ -1,24 +1,11 @@
 import os
-import sys
-import ast
 import argparse
-import torch
 import glob
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from network import ClfNet, WeibullModel
 import numpy as np
 import pandas as pd
-from util import replace_linear, FairnessMetrics, FairnessMetricsMultiClass, Find_Optimal_Cutoff, SurvivalMetrics
 import numpy as np
-import loralib as lora
-from pathlib import Path
-from dataset import generateDataSet, get_datasets
 from fairmetric import *
 import matplotlib.pyplot as plt
-from lifelines import KaplanMeierFitter
-from lifelines.statistics import logrank_test
-from lifelines.utils import concordance_index
 from bootstrap_significant_test.bootstrap_TCGA_improvement_test import CV_bootstrap_improvement_test
 from bootstrap_significant_test.bootstrap_TCGA_bias_test import CV_bootstrap_bias_test
 
@@ -54,29 +41,6 @@ def parse_args(input_args=None):
         type=str, 
         default="", 
         help="Path to specific model weight file"
-    )
-    parser.add_argument(
-        "--curr_fold", 
-        type=int, 
-        default=0, 
-        help="For k-fold experiments, current fold."
-    )
-    parser.add_argument(
-        "--partition", 
-        type=int, 
-        default=1, 
-        help="Data partition method:'1:train/valid/test(6:2:2), 2:k-folds'."
-    )
-    parser.add_argument(
-        "--seed", 
-        type=int, 
-        default=0, 
-        help="Random seed for data partition."
-    )
-    parser.add_argument(
-        "--reweight", 
-        action='store_true', 
-        help="For FAIR-Tuning."
     )
     parser.add_argument(
         "--device",
@@ -149,7 +113,10 @@ def main(args):
         )
     )
 
-    id_col = 'ID_col'
+    if args.task == 4:
+        id_col = 'case_id'
+    else:
+        id_col = 'ID_col'
 
     df_improv, df_p_better, df_p_worse = CV_bootstrap_improvement_test(
         dfs_baseline,
@@ -159,7 +126,7 @@ def main(args):
         aggregate_method=aggregate_method,
         ID_col=id_col
     )
-
+    
     if eval(args.fair_attr).keys() == "Sex" or eval(args.fair_attr).keys() == "gender":
         fair_folder = "gender"
     else:

@@ -282,19 +282,19 @@ def main(args):
                         senAttrs.append(sensitive.detach().cpu().numpy())
                         stages.append(stage.detach().cpu().numpy())
                         caseIds.append(case_id)
-
-            inference_results = pd.DataFrame({
-                "logits": logits, 
-                "prob": probs, 
-                "pred": predictions,
-                "label": labels, 
-                "sens_attr": senAttrs,
-                "ID_col": caseIds
-            })
-            inference_results["pred"] = inference_results["pred"].astype(int)
-            inference_results["label"] = inference_results["label"].astype(int)
-            inference_results["sens_attr"] = inference_results["sens_attr"].astype(int)
-            inference_results.to_csv(inference_results_path)
+            if args.task == 1 or args.task == 2 or args.task == 4:
+                inference_results = pd.DataFrame({
+                    "logits": logits, 
+                    "prob": probs, 
+                    "pred": predictions,
+                    "label": labels, 
+                    "sens_attr": senAttrs,
+                    "ID_col": caseIds
+                })
+                inference_results["pred"] = inference_results["pred"].astype(int)
+                inference_results["label"] = inference_results["label"].astype(int)
+                inference_results["sens_attr"] = inference_results["sens_attr"].astype(int)
+                inference_results.to_csv(inference_results_path)
 
         if args.task == 1 or args.task == 2 or args.task == 4:
             if num_classes > 2:

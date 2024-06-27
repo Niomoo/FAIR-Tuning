@@ -328,12 +328,12 @@ def main(args):
                             for idx, data in pbar:
 
                                 if args.task == 3:
-                                    wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                                    wsi_embeddings, lengths, sensitive, event, time, group, stage, case_id = data
                                     shape_scale = model(wsi_embeddings.to(args.device), lengths)
                                     shape, scale = shape_scale[:, 0], shape_scale[:, 1]
                                     train_loss, group_of_loss = survival_loss_function(shape, scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes).float().to(args.device), lengths, group)
                                 else:
-                                    wsi_embeddings, lengths, sensitive, label, group = data
+                                    wsi_embeddings, lengths, sensitive, label, group, case_id = data
                                     cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
                                     train_loss, group_of_loss = loss_function(loss_fn, cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
                                 train_loss = train_loss / gradient_accumulation_steps
@@ -421,12 +421,12 @@ def main(args):
                                 for _, data in eval_pbar:
 
                                     if args.task == 3:
-                                        wsi_embeddings, lengths, sensitive, event, time, group, stage = data
+                                        wsi_embeddings, lengths, sensitive, event, time, group, stage, case_id = data
                                         eval_shape_scale = model(wsi_embeddings.to(args.device), lengths)
                                         eval_shape, eval_scale = eval_shape_scale[:, 0], eval_shape_scale[:, 1]
                                         eval_loss, eval_group_of_loss = survival_loss_function(eval_shape, eval_scale, time.float().to(args.device), torch.nn.functional.one_hot(event, num_classes) .float() .to(args.device), lengths, group)
                                     else:
-                                        wsi_embeddings, lengths, sensitive, label, group = data
+                                        wsi_embeddings, lengths, sensitive, label, group, case_id = data
                                         eval_cancer_pred = model(wsi_embeddings.to(args.device), sensitive.to(args.device), lengths)
                                         eval_loss, eval_group_of_loss = loss_function(loss_fn, eval_cancer_pred, torch.nn.functional.one_hot(label, num_classes).float().to(args.device), lengths, group)
 
