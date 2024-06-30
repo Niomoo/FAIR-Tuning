@@ -295,7 +295,7 @@ def main(args):
                             "pred": predictions, 
                             "label": labels, 
                             "sens_attr": senAttrs,
-                            "ID_col ": caseIds
+                            "ID_col": caseIds
                         })
                         inference_results["pred"] = inference_results["pred"].astype(int)
                         inference_results["label"] = inference_results["label"].astype(int)
