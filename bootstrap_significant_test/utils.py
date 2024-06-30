@@ -13,13 +13,15 @@ random.seed(24)
 
 HIGHER_BETTER_COLS=['AUC', 'ACC', 'TPR', 'TNR', 'PPV', 'NPV', 'PQD', 'PQD(class)','PR','NR','BAcc',
                     'EPPV', 'ENPV', 'DPM(Positive)', 'DPM(Negative)', 'EOM(Positive)',
-                    'EOM(Negative)', 'AUCRatio', 'OverAllAcc', 'OverAllAUC', 'TOTALACC']
-LOWER_BETTER_COLS=['FPR', 'FNR', 'EOpp0', 'EOpp1','EBAcc',
+                    'EOM(Negative)', 'AUCRatio', 'OverAllAcc', 'OverAllAUC', 'TOTALACC',
+                    'FAT_EO', 'FAT_ED', 'FAUCT_EO', 'FAUCT_ED']
+LOWER_BETTER_COLS=['FPR', 'FNR', 'EOpp0', 'avgEOpp', 'EOpp1','EBAcc',
                     'EOdd', 'AUCDiff', 'TOTALACCDIF', 'ACCDIF']
 PERF_COLS=['AUC', 'ACC', 'TPR', 'TNR', 'PPV', 'NPV','PR','NR','BAcc',
             'FPR', 'FNR', 'OverAllAcc', 'OverAllAUC', 'TOTALACC']
 FAIRNESS_COLS=['PQD', 'PQD(class)', 'EPPV', 'ENPV', 'DPM(Positive)', 'DPM(Negative)', 'EOM(Positive)',
-                'EOM(Negative)', 'AUCRatio', 'EOpp0', 'EOpp1','EBAcc', 'EOdd', 'AUCDiff', 'TOTALACCDIF', 'ACCDIF']
+                'EOM(Negative)', 'AUCRatio', 'EOpp0', 'avgEOpp', 'EOpp1','EBAcc', 'EOdd', 'AUCDiff', 'TOTALACCDIF', 'ACCDIF',
+                'FAT_EO', 'FAT_ED', 'FAUCT_EO', 'FAUCT_ED']
 
 # maps the csv name to the TCGA project name
 TCGA_NAME_DICT = {
@@ -146,22 +148,16 @@ def FairnessMetrics(predictions, probs, labels, sensitives,
         # if only the unprevileged group is provided, we categorize the rest of the groups as previleged
         group_types = ['minority' if group == unprevileged_group else 'majority' for group in uniSens]
         # for group in uniSens:
-            # g_type = 'minority' if group == unprevileged_group else 'majority'
-            # group_types.append(g_type)
+        # g_type = 'minority' if group == unprevileged_group else 'majority'
+        # group_types.append(g_type)
     else:
         # if both previleged and unprevileged groups are not provided, set to unspecified
         group_types = ['unspecified' for group in uniSens]
         # for group in uniSens:
         #     g_type =  'unspecified'
         #     group_types.append(g_type)
-                
-    
-            
-            
-            
-            
     ##
-    
+
     for modeSensitive in uniSens:
         modeSensitive = str(modeSensitive)
         df_sub = df.loc[df['group'] == modeSensitive]
@@ -217,14 +213,26 @@ def FairnessMetrics(predictions, probs, labels, sensitives,
     except:
         OverAllAUC = np.nan
 
+    AUC = np.array(AUC)
+    ACC = np.array(ACC)
+    TPR = np.array(TPR)
+    TNR = np.array(TNR)
+    PPV = np.array(PPV)
+    NPV = np.array(NPV)
+    PR = np.array(PR)
+    NR = np.array(NR)
+    FPR = np.array(FPR)
+    FNR = np.array(FNR)
+    TOTALACC = np.array(TOTALACC)
+
     df_perf = pd.DataFrame(
         {'AUC': AUC, 'ACC': ACC, 'TPR': TPR, 'TNR': TNR, 'PPV': PPV, 'NPV': NPV, 'BAcc': (np.array(TPR)+np.array(TNR))/2,
-         'PR': PR, 'NR': NR, 'FPR': FPR, 'FNR': FNR, 'TOTALACC': TOTALACC,'OverAllAcc': OverAllACC,
+         'PR': PR, 'NR': NR, 'FPR': FPR, 'FNR': FNR, 'TOTALACC': TOTALACC,'OverAllAcc': OverAllACC,'Odd1': TPR+FPR,'Odd0':TNR+FNR,
          'OverAllAUC': OverAllAUC}, index=uniSens)
     lower_better_metrics = ['FPR', 'FNR']
     higher_better_metrics = ['TPR', 'TNR', 'NPV','BAcc',
-                             'PPV', 'TOTALACC','OverAllAcc','OverAllAUC', 'AUC', 'ACC', 'PR', 'NR']
-    
+                             'PPV', 'TOTALACC','OverAllAcc','OverAllAUC', 'AUC', 'ACC', 'PR', 'NR', 'Odd1', 'Odd0']
+
     if previleged_group is not None:
         perf_previleged = df_perf.loc[previleged_group]
     else:
@@ -249,56 +257,62 @@ def FairnessMetrics(predictions, probs, labels, sensitives,
     perf_diff = perf_previleged - perf_unprevileged
     perf_ratio = perf_unprevileged / perf_previleged
 
-    AUC = np.array(AUC)
-    ACC = np.array(ACC)
-    TPR = np.array(TPR)
-    TNR = np.array(TNR)
-    PPV = np.array(PPV)
-    NPV = np.array(NPV)
-    PR = np.array(PR)
-    NR = np.array(NR)
-    FPR = np.array(FPR)
-    FNR = np.array(FNR)
-    TOTALACC = np.array(TOTALACC)
-    BAcc = (TPR+TNR)/2
-    
+    BAcc = (TPR + TNR) / 2
+    alpha = 0.5
+    avgEOpp = (perf_diff["TNR"] + perf_diff["TPR"]) / 2
+    EOdd = -perf_diff["Odd1"]
+    FAT_EO = 1 / (alpha * (1 / (1 - avgEOpp)) + (1 - alpha) * (1 / OverAllACC))
+    FAT_ED = 1 / (alpha * (1 / (1 - EOdd)) + (1 - alpha) * (1 / OverAllACC))
+    FAT_EO = np.array(FAT_EO)
+    FAT_ED = np.array(FAT_ED)
+
+    FAUCT_EO = 1 / (alpha * (1 / (1 - avgEOpp)) + (1 - alpha) * (1 / OverAllAUC))
+    FAUCT_ED = 1 / (alpha * (1 / (1 - EOdd)) + (1 - alpha) * (1 / OverAllAUC))
+    FAUCT_EO = np.array(FAUCT_EO)
+    FAUCT_ED = np.array(FAUCT_ED)
+
     results = {
-        'sensitiveAttr': uniSens,
-        'group_type': group_types,
-        'N_0': N_0,
-        'N_1': N_1,
-        'AUC': AUC,
-        'ACC': ACC,
-        'TPR': TPR,
-        'TNR': TNR,
-        'PPV': PPV,
-        'NPV': NPV,
-        'BAcc': BAcc,
-        'PR': PR,
-        'NR': NR,
-        'FPR': FPR,
-        'FNR': FNR,
-        'EOpp0': perf_diff['TNR'],
-        'EOpp1': perf_diff['TPR'],
-        'EBAcc': perf_diff['BAcc'],
-        'EOdd':  (-perf_diff['FPR']-perf_diff['TPR']),
-        'EOdd0':  (-perf_diff['FNR']-perf_diff['TNR']),
-        'EOdd1':  (-perf_diff['FPR']-perf_diff['TPR']),
-        'PQD': perf_ratio['TOTALACC'],
-        'PQD(class)': perf_ratio['TOTALACC'],
-        'EPPV': perf_ratio['PPV'],
-        'ENPV': perf_ratio['NPV'],
-        'DPM(Positive)': perf_ratio['PR'],
-        'DPM(Negative)': perf_ratio['NR'],
-        'EOM(Positive)': perf_ratio['TPR'],
-        'EOM(Negative)':  perf_ratio['TNR'],
-        'AUCRatio':  perf_ratio['AUC'],
-        'AUCDiff':  perf_diff['AUC'],
-        'OverAllAcc': OverAllACC,
-        'OverAllAUC': OverAllAUC,
-        'TOTALACC': TOTALACC,
-        'TOTALACCDIF': perf_diff['TOTALACC'],
-        'ACCDIF': perf_diff['ACC'],
+        "sensitiveAttr": uniSens,
+        "group_type": group_types,
+        "N_0": N_0,
+        "N_1": N_1,
+        "AUC": AUC,
+        "ACC": ACC,
+        "TPR": TPR,
+        "TNR": TNR,
+        "PPV": PPV,
+        "NPV": NPV,
+        "BAcc": BAcc,
+        "PR": PR,
+        "NR": NR,
+        "FPR": FPR,
+        "FNR": FNR,
+        "EOpp0": perf_diff["TNR"],
+        "avgEOpp": avgEOpp,
+        "EOpp1": perf_diff["TPR"],
+        "EBAcc": perf_diff["BAcc"],
+        "EOdd": (-perf_diff["Odd1"]),
+        "EOdd0": (-perf_diff["Odd0"]),
+        "EOdd1": (-perf_diff["Odd1"]),
+        "PQD": perf_ratio["TOTALACC"],
+        "PQD(class)": perf_ratio["TOTALACC"],
+        "EPPV": perf_ratio["PPV"],
+        "ENPV": perf_ratio["NPV"],
+        "DPM(Positive)": perf_ratio["PR"],
+        "DPM(Negative)": perf_ratio["NR"],
+        "EOM(Positive)": perf_ratio["TPR"],
+        "EOM(Negative)": perf_ratio["TNR"],
+        "AUCRatio": perf_ratio["AUC"],
+        "AUCDiff": perf_diff["AUC"],
+        "OverAllAcc": OverAllACC,
+        "OverAllAUC": OverAllAUC,
+        "TOTALACC": TOTALACC,
+        "TOTALACCDIF": perf_diff["TOTALACC"],
+        "ACCDIF": perf_diff["ACC"],
+        "FAT_EO": FAT_EO.tolist(),
+        "FAT_ED": FAT_ED.tolist(),
+        "FAUCT_EO": FAUCT_EO.tolist(),
+        "FAUCT_ED": FAUCT_ED.tolist(),
     }
     if add_perf_difference:
         results, new_cols = get_perf_diff(
