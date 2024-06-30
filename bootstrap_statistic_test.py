@@ -156,7 +156,6 @@ def main(args):
                 if dfs_baseline == None or dfs_corrected == None:
                     continue
                 run_statistics(args, dfs_baseline, dfs_corrected, cancer_folder, n_bootstrap, aggregate_method, privileged_group)
-                break
 
     else:
         cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
