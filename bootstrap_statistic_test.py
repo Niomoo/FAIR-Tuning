@@ -133,7 +133,8 @@ def run_statistics(args, dfs_baseline, dfs_corrected, cancer_folder, n_bootstrap
     else:
         fair_folder = "race"
 
-    os.mkdir(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}')
+    if not os.path.exists(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}'):
+        os.mkdir(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}')
     df_p_worse_baseline.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/bias_baseline.csv')
     df_p_worse_corrected.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/bias_corrected.csv')
     df_p_better.to_csv(f'significance_test_results/{fair_folder}/{cancer_folder}_{args.partition}/improvement.csv')
