@@ -18,21 +18,20 @@
 #     done
 
 # # ############## Tumor Detection ###############
-# declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRC")
-# PARTITION=(2)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRC")
+PARTITION=(2)
+SENSITIVE='{"race": ["white", "black or african american"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do python bootstrap_statistic_test.py --cancer $cancer \
-#                   --model_path="./models_race/" \
-#                   --partition=$partition \
-#                   --fair_attr="$SENSITIVE" \
-#                   --task=2 \
-#                   --seed=0 \
-#                   --device="cuda"
-#     done
-#     done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do python bootstrap_statistic_test.py --cancer $cancer \
+                  --model_path="./models_race/" \
+                  --partition=$partition \
+                  --fair_attr="$SENSITIVE" \
+                  --task=2 \
+                  --device="cuda"
+    done
+    done
 
 # ############## Survival Analysis ###############
 # declare -a CANCER=("BRCA" "LUAD" "LUSC" "KIRC")
@@ -52,17 +51,17 @@
 #     done
 
 # ############## Genetic Mutation Classification ###############
-declare -a CANCER=("luad" "lusc")
-PARTITION=(2)
-SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# declare -a CANCER=("luad" "lusc")
+# PARTITION=(2)
+# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python bootstrap_statistic_test.py --cancer $cancer \
-                  --model_path="./models_race/" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python bootstrap_statistic_test.py --cancer $cancer \
+#                   --model_path="./models_race/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --device="cuda"
+#     done
+#     done

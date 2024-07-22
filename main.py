@@ -438,6 +438,8 @@ def main(args):
                                 eval_loss_fairness = dp_constraint(softmax[:, 1], a)
                             elif args.constraint == 'AE':
                                 eval_loss_fairness = ae_constraint(loss_fn, log_softmax, y, a)
+                            if torch.isnan(eval_loss_fairness):
+                                eval_loss_fairness = 0.0
                             eval_fair_loss = args.fair_lambda * eval_loss_fairness
 
                 eval_total_loss = eval_loss + eval_fair_loss
