@@ -54,12 +54,6 @@ def parse_args(input_args=None):
         default=1, 
         help="Data partition method:'1:train/valid/test(6:2:2), 2:k-folds'."
     )
-    parser.add_argument(
-        "--device",
-        type=str,
-        default="cuda",
-        help="cpu or cuda",
-    )
     if input_args is not None:
         args = parser.parse_args(input_args)
     else:

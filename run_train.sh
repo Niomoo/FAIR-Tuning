@@ -7,7 +7,7 @@
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python main.py --cancer $cancer \
-#                   --model_path="./models_CHIEF/" \
+#                   --model_path="./models_race/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=1 \
@@ -30,7 +30,7 @@
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python main.py --cancer $cancer \
-#                   --model_path="./models_CHIEF/" \
+#                   --model_path="./models_race/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -51,64 +51,64 @@
 #     done
 #     done
 
-declare -a CANCER=("GBM LGG")
-PARTITION=(2)
-CURR=(0 1 2 3)
-SENSITIVE='{"race": ["white", "black or african american"]}'
+# declare -a CANCER=("GBM LGG")
+# PARTITION=(2)
+# CURR=(0 1 2 3)
+# SENSITIVE='{"race": ["white", "black or african american"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do for curr in ${CURR[@]};
-do python main.py --cancer $cancer \
-                  --model_path="./models_race/" \
-                  --partition=$partition \
-                  --curr_fold=$curr \
-                  --fair_attr="$SENSITIVE" \
-                  --task=1 \
-                  --lr=1e-5 \
-                  --dropout=0.3 \
-                  --seed=0 \
-                  --epochs=100 \
-                  --batch_size=16 \
-                  --acc_grad=1 \
-                  --scheduler_step=10 \
-                  --scheduler_gamma=0.95 \
-                  --device="cuda"
-done
-done
-done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do for curr in ${CURR[@]};
+# do python main.py --cancer $cancer \
+#                   --model_path="./models_race/" \
+#                   --partition=$partition \
+#                   --curr_fold=$curr \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=1 \
+#                   --lr=1e-5 \
+#                   --dropout=0.3 \
+#                   --seed=0 \
+#                   --epochs=100 \
+#                   --batch_size=16 \
+#                   --acc_grad=1 \
+#                   --scheduler_step=10 \
+#                   --scheduler_gamma=0.95 \
+#                   --device="cuda"
+# done
+# done
+# done
 
-declare -a CANCER=("GBM LGG")
-PARTITION=(2)
-CURR=(0 1 2 3)
-SENSITIVE='{"race": ["white", "black or african american"]}'
+# declare -a CANCER=("GBM LGG")
+# PARTITION=(2)
+# CURR=(0 1 2 3)
+# SENSITIVE='{"race": ["white", "black or african american"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do for curr in ${CURR[@]};
-do python main.py --cancer $cancer \
-                  --model_path="./models_race/" \
-                  --weight_path="" \
-                  --partition=$partition \
-                  --curr_fold=$curr \
-                  --fair_attr="$SENSITIVE" \
-                  --task=1 \
-                  --lr=1e-6 \
-                  --dropout=0.3 \
-                  --seed=0 \
-                  --epochs=150 \
-                  --batch_size=16 \
-                  --acc_grad=2 \
-                  --scheduler_step=10 \
-                  --scheduler_gamma=0.95 \
-                  --fair_lambda=1 \
-                  --constraint="EO" \
-                  --reweight \
-                  --selection="EOdd" \
-                  --device="cuda"
-done
-done
-done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do for curr in ${CURR[@]};
+# do python main.py --cancer $cancer \
+#                   --model_path="./models_race/" \
+#                   --weight_path="" \
+#                   --partition=$partition \
+#                   --curr_fold=$curr \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=1 \
+#                   --lr=1e-6 \
+#                   --dropout=0.3 \
+#                   --seed=0 \
+#                   --epochs=150 \
+#                   --batch_size=16 \
+#                   --acc_grad=2 \
+#                   --scheduler_step=10 \
+#                   --scheduler_gamma=0.95 \
+#                   --fair_lambda=1 \
+#                   --constraint="EO" \
+#                   --reweight \
+#                   --selection="EOdd" \
+#                   --device="cuda"
+# done
+# done
+# done
 
 ############### Tumor detection ###############
 
@@ -119,7 +119,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python main.py --cancer $cancer \
-#                   --model_path="./models/" \
+#                   --model_path="./models_race/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=2 \
@@ -142,7 +142,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python main.py --cancer $cancer \
-#                   --model_path="./models/" \
+#                   --model_path="./models_race/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -231,7 +231,7 @@ done
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python main.py --cancer $cancer \
-#                   --model_path="./models/" \
+#                   --model_path="./models_race/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=3 \
