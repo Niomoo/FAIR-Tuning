@@ -1,0 +1,530 @@
+,Study ID,Sample ID,Patient ID,Altered,PTEN,PTEN: MUT,PTEN: AMP,PTEN: HOMDEL,PTEN: FUSION
+0,ucec_tcga_pan_can_atlas_2018,TCGA-4E-A92E-01,TCGA-4E-A92E,1,"T319* (driver), Q245* (driver)","T319* (driver), Q245* (driver)",no alteration,no alteration,no alteration
+1,ucec_tcga_pan_can_atlas_2018,TCGA-5S-A9Q8-01,TCGA-5S-A9Q8,1,"D92V (driver), K237_F241del, Q245E","D92V (driver), K237_F241del, Q245E",no alteration,no alteration,no alteration
+2,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G1-01,TCGA-A5-A0G1,1,A137V,A137V,no alteration,no alteration,no alteration
+3,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G2-01,TCGA-A5-A0G2,1,"R173C (driver), R130Q (driver), G282* (driver), K266N","R173C (driver), R130Q (driver), G282* (driver), K266N",no alteration,no alteration,no alteration
+4,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G9-01,TCGA-A5-A0G9,1,R130L (driver),R130L (driver),no alteration,no alteration,no alteration
+5,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GA-01,TCGA-A5-A0GA,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+6,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GB-01,TCGA-A5-A0GB,1,X212_splice (driver),X212_splice (driver),no alteration,no alteration,no alteration
+7,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GE-01,TCGA-A5-A0GE,1,"R130Q (driver), T319Nfs*6 (driver), R335G (driver)","R130Q (driver), T319Nfs*6 (driver), R335G (driver)",no alteration,no alteration,no alteration
+8,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GH-01,TCGA-A5-A0GH,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+9,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GI-01,TCGA-A5-A0GI,1,H64Ifs*35 (driver),H64Ifs*35 (driver),no alteration,no alteration,no alteration
+10,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GJ-01,TCGA-A5-A0GJ,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+11,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GM-01,TCGA-A5-A0GM,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+12,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GP-01,TCGA-A5-A0GP,1,"R130Q (driver), R233* (driver)","R130Q (driver), R233* (driver)",no alteration,no alteration,no alteration
+13,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GQ-01,TCGA-A5-A0GQ,1,C218Afs*3 (driver),C218Afs*3 (driver),no alteration,no alteration,no alteration
+14,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GU-01,TCGA-A5-A0GU,1,"R130G (driver), D268Kfs*10 (driver), K66N","R130G (driver), D268Kfs*10 (driver), K66N",no alteration,no alteration,no alteration
+15,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GV-01,TCGA-A5-A0GV,1,"R130G (driver), X338_splice (driver)","R130G (driver), X338_splice (driver)",no alteration,no alteration,no alteration
+16,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GW-01,TCGA-A5-A0GW,1,"R130Q (driver), D252Y (driver)","R130Q (driver), D252Y (driver)",no alteration,no alteration,no alteration
+17,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GX-01,TCGA-A5-A0GX,1,"Y16_Q17delins* (driver), L152R","Y16_Q17delins* (driver), L152R",no alteration,no alteration,no alteration
+18,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R7-01,TCGA-A5-A0R7,1,"N184Efs*6 (driver), K66Tfs*36 (driver)","N184Efs*6 (driver), K66Tfs*36 (driver)",no alteration,no alteration,no alteration
+19,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R8-01,TCGA-A5-A0R8,1,"H93R (driver), H75Kfs*4 (driver)","H93R (driver), H75Kfs*4 (driver)",no alteration,no alteration,no alteration
+20,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R9-01,TCGA-A5-A0R9,1,"T319* (driver), H259Tfs*7 (driver)","T319* (driver), H259Tfs*7 (driver)",no alteration,no alteration,no alteration
+21,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0RA-01,TCGA-A5-A0RA,1,"R130G (driver), X70_splice (driver)","R130G (driver), X70_splice (driver)",no alteration,no alteration,no alteration
+22,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VO-01,TCGA-A5-A0VO,1,N117Sfs*5 (driver),N117Sfs*5 (driver),not profiled,not profiled,no alteration
+23,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VP-01,TCGA-A5-A0VP,1,"R173H (driver), R233* (driver), R161S (driver), R142Q","R173H (driver), R233* (driver), R161S (driver), R142Q",no alteration,no alteration,no alteration
+24,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0VQ-01,TCGA-A5-A0VQ,1,"V290* (driver), D324del, A86V","V290* (driver), D324del, A86V",no alteration,no alteration,no alteration
+25,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OF-01,TCGA-A5-A1OF,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+26,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OJ-01,TCGA-A5-A1OJ,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+27,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K5-01,TCGA-A5-A2K5,1,"E299* (driver), R142W, S59P","E299* (driver), R142W, S59P",no alteration,no alteration,no alteration
+28,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K7-01,TCGA-A5-A2K7,1,"L320* (driver), Y336* (driver), A34T (driver)","L320* (driver), Y336* (driver), A34T (driver)",no alteration,no alteration,no alteration
+29,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A3LO-01,TCGA-A5-A3LO,1,E99* (driver),E99* (driver),no alteration,no alteration,no alteration
+30,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A7WK-01,TCGA-A5-A7WK,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+31,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23O-01,TCGA-AJ-A23O,1,F154Sfs*5 (driver),F154Sfs*5 (driver),no alteration,no alteration,no alteration
+32,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QK-01,TCGA-AJ-A2QK,1,"K13E, I28T, AMP","K13E, I28T",AMP,AMP,no alteration
+33,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QL-01,TCGA-AJ-A2QL,1,"Y225* (driver), Y68* (driver)","Y225* (driver), Y68* (driver)",no alteration,no alteration,no alteration
+34,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QN-01,TCGA-AJ-A2QN,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+35,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QO-01,TCGA-AJ-A2QO,1,"R130L (driver), S170I (driver)","R130L (driver), S170I (driver)",no alteration,no alteration,no alteration
+36,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BD-01,TCGA-AJ-A3BD,1,C136R (driver),C136R (driver),no alteration,no alteration,no alteration
+37,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BG-01,TCGA-AJ-A3BG,1,"R233* (driver), D268Gfs*30 (driver)","R233* (driver), D268Gfs*30 (driver)",no alteration,no alteration,no alteration
+38,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BI-01,TCGA-AJ-A3BI,1,"G127V (driver), X70_splice (driver), G127* (driver)","G127V (driver), X70_splice (driver), G127* (driver)",no alteration,no alteration,no alteration
+39,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BK-01,TCGA-AJ-A3BK,1,"T319* (driver), I168_Q171delinsM","T319* (driver), I168_Q171delinsM",no alteration,no alteration,no alteration
+40,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EK-01,TCGA-AJ-A3EK,1,"R130Q (driver), E299* (driver)","R130Q (driver), E299* (driver)",no alteration,no alteration,no alteration
+41,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EL-01,TCGA-AJ-A3EL,1,"E299* (driver), F341V (driver), F154L (driver), R14M","E299* (driver), F341V (driver), F154L (driver), R14M",no alteration,no alteration,no alteration
+42,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EM-01,TCGA-AJ-A3EM,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+43,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3I9-01,TCGA-AJ-A3I9,1,G129R (driver),G129R (driver),no alteration,no alteration,no alteration
+44,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NG-01,TCGA-AJ-A3NG,1,"R130G (driver), R130Q (driver)","R130G (driver), R130Q (driver)",no alteration,no alteration,no alteration
+45,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OJ-01,TCGA-AJ-A3OJ,1,"K267Rfs*9 (driver), E157Gfs*23 (driver)","K267Rfs*9 (driver), E157Gfs*23 (driver)",no alteration,no alteration,no alteration
+46,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OK-01,TCGA-AJ-A3OK,1,"R130Q (driver), R173H (driver), X342_splice (driver)","R130Q (driver), R173H (driver), X342_splice (driver)",no alteration,no alteration,no alteration
+47,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3OL-01,TCGA-AJ-A3OL,1,C136* (driver),C136* (driver),no alteration,no alteration,no alteration
+48,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A5DV-01,TCGA-AJ-A5DV,1,"R233* (driver), M199del (driver)","R233* (driver), M199del (driver)",no alteration,no alteration,no alteration
+49,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A5DW-01,TCGA-AJ-A5DW,1,"R130Q (driver), F341V (driver), R142W","R130Q (driver), F341V (driver), R142W",no alteration,no alteration,no alteration
+50,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CT-01,TCGA-AJ-A8CT,1,"R130Q (driver), K254Rfs*42 (driver)","R130Q (driver), K254Rfs*42 (driver)",no alteration,no alteration,no alteration
+51,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CV-01,TCGA-AJ-A8CV,1,X55_splice (driver),X55_splice (driver),no alteration,no alteration,no alteration
+52,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A051-01,TCGA-AP-A051,1,N184Efs*6 (driver),N184Efs*6 (driver),no alteration,no alteration,no alteration
+53,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A052-01,TCGA-AP-A052,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+54,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A054-01,TCGA-AP-A054,1,"R233* (driver), C136* (driver)","R233* (driver), C136* (driver)",no alteration,no alteration,no alteration
+55,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A056-01,TCGA-AP-A056,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+56,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A059-01,TCGA-AP-A059,1,"X27_splice (driver), A137V","X27_splice (driver), A137V",no alteration,no alteration,no alteration
+57,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05N-01,TCGA-AP-A05N,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+58,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05P-01,TCGA-AP-A05P,1,M270I,M270I,no alteration,no alteration,no alteration
+59,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LD-01,TCGA-AP-A0LD,1,"E43* (driver), F238Vfs*5 (driver)","E43* (driver), F238Vfs*5 (driver)",no alteration,no alteration,no alteration
+60,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LE-01,TCGA-AP-A0LE,1,"R233* (driver), K60Lfs*9 (driver)","R233* (driver), K60Lfs*9 (driver)",no alteration,no alteration,no alteration
+61,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LG-01,TCGA-AP-A0LG,1,"N323Kfs*2 (driver), I33del","N323Kfs*2 (driver), I33del",no alteration,no alteration,no alteration
+62,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LJ-01,TCGA-AP-A0LJ,1,R130Qfs*4 (driver),R130Qfs*4 (driver),no alteration,no alteration,no alteration
+63,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LN-01,TCGA-AP-A0LN,1,"I4Tfs*19 (driver), K125_V133del","I4Tfs*19 (driver), K125_V133del",no alteration,no alteration,no alteration
+64,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LO-01,TCGA-AP-A0LO,1,"R130P (driver), S170N (driver)","R130P (driver), S170N (driver)",no alteration,no alteration,no alteration
+65,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LP-01,TCGA-AP-A0LP,1,"R130G (driver), HOMDEL (driver)",R130G (driver),HOMDEL (driver),HOMDEL (driver),no alteration
+66,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LQ-01,TCGA-AP-A0LQ,1,"C136R (driver), R47Ifs*6 (driver)","C136R (driver), R47Ifs*6 (driver)",no alteration,no alteration,no alteration
+67,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LS-01,TCGA-AP-A0LS,1,I5Rfs*4 (driver),I5Rfs*4 (driver),no alteration,no alteration,no alteration
+68,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LT-01,TCGA-AP-A0LT,1,"R130* (driver), Q298* (driver)","R130* (driver), Q298* (driver)",no alteration,no alteration,no alteration
+69,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LV-01,TCGA-AP-A0LV,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+70,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DH-01,TCGA-AP-A1DH,1,"K267Rfs*9 (driver), V290* (driver), T167N (driver)","K267Rfs*9 (driver), V290* (driver), T167N (driver)",no alteration,no alteration,no alteration
+71,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DK-01,TCGA-AP-A1DK,1,R233* (driver),R233* (driver),no alteration,no alteration,no alteration
+72,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DM-01,TCGA-AP-A1DM,1,"E285* (driver), A39P (driver)","E285* (driver), A39P (driver)",no alteration,no alteration,no alteration
+73,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DO-01,TCGA-AP-A1DO,1,"R130Qfs*4 (driver), N323Kfs*2 (driver), L112Qfs*9 (driver)","R130Qfs*4 (driver), N323Kfs*2 (driver), L112Qfs*9 (driver)",no alteration,no alteration,no alteration
+74,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DP-01,TCGA-AP-A1DP,1,S10Afs*14 (driver),S10Afs*14 (driver),no alteration,no alteration,no alteration
+75,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DR-01,TCGA-AP-A1DR,1,K267Rfs*9 (driver),K267Rfs*9 (driver),no alteration,no alteration,no alteration
+76,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DV-01,TCGA-AP-A1DV,1,"D92Y (driver), N49T","D92Y (driver), N49T",no alteration,no alteration,no alteration
+77,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E0-01,TCGA-AP-A1E0,1,"R15K (driver), G129R (driver), R14M, N63H, K66T","R15K (driver), G129R (driver), R14M, N63H, K66T",no alteration,no alteration,no alteration
+78,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E1-01,TCGA-AP-A1E1,1,"R233* (driver), X55_splice (driver)","R233* (driver), X55_splice (driver)",no alteration,no alteration,no alteration
+79,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E3-01,TCGA-AP-A1E3,1,X212_splice (driver),X212_splice (driver),no alteration,no alteration,no alteration
+80,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A5FX-01,TCGA-AP-A5FX,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+81,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05S-01,TCGA-AX-A05S,1,Q298* (driver),Q298* (driver),no alteration,no alteration,no alteration
+82,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05T-01,TCGA-AX-A05T,1,I33del,I33del,no alteration,no alteration,no alteration
+83,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05U-01,TCGA-AX-A05U,1,"R130G (driver), X70_splice (driver)","R130G (driver), X70_splice (driver)",no alteration,no alteration,no alteration
+84,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05W-01,TCGA-AX-A05W,1,"R130* (driver), R233* (driver)","R130* (driver), R233* (driver)",no alteration,no alteration,no alteration
+85,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05Y-01,TCGA-AX-A05Y,1,"X343_splice (driver), R233* (driver)","X343_splice (driver), R233* (driver)",no alteration,no alteration,no alteration
+86,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A05Z-01,TCGA-AX-A05Z,1,"R130Q (driver), E201* (driver), R142W","R130Q (driver), E201* (driver), R142W",no alteration,no alteration,no alteration
+87,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A060-01,TCGA-AX-A060,1,R130L (driver),R130L (driver),no alteration,no alteration,no alteration
+88,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A063-01,TCGA-AX-A063,1,"Y16* (driver), D153Gfs*3 (driver)","Y16* (driver), D153Gfs*3 (driver)",no alteration,no alteration,no alteration
+89,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A064-01,TCGA-AX-A064,1,"R130G (driver), X267_splice (driver)","R130G (driver), X267_splice (driver)",no alteration,no alteration,no alteration
+90,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06F-01,TCGA-AX-A06F,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+91,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06H-01,TCGA-AX-A06H,1,"D92G (driver), E150* (driver)","D92G (driver), E150* (driver)",no alteration,no alteration,no alteration
+92,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06J-01,TCGA-AX-A06J,1,I28N,I28N,no alteration,no alteration,no alteration
+93,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06L-01,TCGA-AX-A06L,1,"X70_splice (driver), R172Gfs*11 (driver)","X70_splice (driver), R172Gfs*11 (driver)",no alteration,no alteration,no alteration
+94,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IS-01,TCGA-AX-A0IS,1,D301Ifs*6 (driver),D301Ifs*6 (driver),no alteration,no alteration,no alteration
+95,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0J0-01,TCGA-AX-A0J0,1,"R130Q (driver), R142W, M270T","R130Q (driver), R142W, M270T",no alteration,no alteration,no alteration
+96,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0J1-01,TCGA-AX-A0J1,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+97,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C4-01,TCGA-AX-A1C4,1,I101N (driver),I101N (driver),no alteration,no alteration,no alteration
+98,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C5-01,TCGA-AX-A1C5,1,"R233* (driver), C136R (driver), T286I","R233* (driver), C136R (driver), T286I",no alteration,no alteration,no alteration
+99,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C9-01,TCGA-AX-A1C9,1,"R173H (driver), R233* (driver), P246L (driver)","R173H (driver), R233* (driver), P246L (driver)",no alteration,no alteration,no alteration
+100,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CE-01,TCGA-AX-A1CE,1,"A126S (driver), G36R (driver)","A126S (driver), G36R (driver)",no alteration,no alteration,no alteration
+101,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CJ-01,TCGA-AX-A1CJ,1,N323Mfs*21 (driver),N323Mfs*21 (driver),no alteration,no alteration,no alteration
+102,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CK-01,TCGA-AX-A1CK,1,"X343_splice (driver), E373Lfs*42 (driver)","X343_splice (driver), E373Lfs*42 (driver)",no alteration,no alteration,no alteration
+103,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HA-01,TCGA-AX-A2HA,1,"N323Kfs*2 (driver), R233Dfs*23 (driver)","N323Kfs*2 (driver), R233Dfs*23 (driver)",no alteration,no alteration,no alteration
+104,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HC-01,TCGA-AX-A2HC,1,"Q171R (driver), R15I (driver), Y240* (driver)","Q171R (driver), R15I (driver), Y240* (driver)",no alteration,no alteration,no alteration
+105,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HD-01,TCGA-AX-A2HD,1,"X342_splice (driver), R14Kfs*30 (driver)","X342_splice (driver), R14Kfs*30 (driver)",no alteration,no alteration,no alteration
+106,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HG-01,TCGA-AX-A2HG,1,"V290* (driver), N63Kfs*11 (driver)","V290* (driver), N63Kfs*11 (driver)",no alteration,no alteration,no alteration
+107,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HJ-01,TCGA-AX-A2HJ,1,"R233* (driver), X85_splice (driver), E288Kfs*9 (driver)","R233* (driver), X85_splice (driver), E288Kfs*9 (driver)",no alteration,no alteration,no alteration
+108,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2IN-01,TCGA-AX-A2IN,1,"D92Y (driver), L57Ffs*6 (driver)","D92Y (driver), L57Ffs*6 (driver)",no alteration,no alteration,no alteration
+109,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FS-01,TCGA-AX-A3FS,1,"R173H (driver), K128M (driver)","R173H (driver), K128M (driver)",no alteration,no alteration,no alteration
+110,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FW-01,TCGA-AX-A3FW,1,C296* (driver),C296* (driver),no alteration,no alteration,no alteration
+111,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FX-01,TCGA-AX-A3FX,1,"Q17* (driver), G127del","Q17* (driver), G127del",no alteration,no alteration,no alteration
+112,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FZ-01,TCGA-AX-A3FZ,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+113,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G1-01,TCGA-AX-A3G1,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+114,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G4-01,TCGA-AX-A3G4,1,V217del,V217del,no alteration,no alteration,no alteration
+115,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G6-01,TCGA-AX-A3G6,1,I101T (driver),I101T (driver),no alteration,no alteration,no alteration
+116,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G7-01,TCGA-AX-A3G7,1,K125T (driver),K125T (driver),no alteration,no alteration,no alteration
+117,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G8-01,TCGA-AX-A3G8,1,"K267Rfs*9 (driver), G132D (driver)","K267Rfs*9 (driver), G132D (driver)",no alteration,no alteration,no alteration
+118,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3G9-01,TCGA-AX-A3G9,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+119,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3GB-01,TCGA-AX-A3GB,1,T321Qfs*23 (driver),T321Qfs*23 (driver),no alteration,no alteration,no alteration
+120,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JR-01,TCGA-B5-A0JR,1,"N323Kfs*2 (driver), L325R (driver)","N323Kfs*2 (driver), L325R (driver)",no alteration,no alteration,no alteration
+121,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JS-01,TCGA-B5-A0JS,1,"G127V (driver), L140* (driver)","G127V (driver), L140* (driver)",no alteration,no alteration,no alteration
+122,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JT-01,TCGA-B5-A0JT,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+123,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JU-01,TCGA-B5-A0JU,1,"R233* (driver), A39V (driver)","R233* (driver), A39V (driver)",no alteration,no alteration,no alteration
+124,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JV-01,TCGA-B5-A0JV,1,P96T (driver),P96T (driver),no alteration,no alteration,no alteration
+125,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JX-01,TCGA-B5-A0JX,1,G293Efs*14 (driver),G293Efs*14 (driver),no alteration,no alteration,no alteration
+126,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JY-01,TCGA-B5-A0JY,1,"E7* (driver), K128Q (driver), D268Gfs*30 (driver), R47M","E7* (driver), K128Q (driver), D268Gfs*30 (driver), R47M",no alteration,no alteration,no alteration
+127,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JZ-01,TCGA-B5-A0JZ,1,"F90Lfs*9 (driver), V290* (driver), F145I","F90Lfs*9 (driver), V290* (driver), F145I",no alteration,no alteration,no alteration
+128,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K1-01,TCGA-B5-A0K1,1,"X343_splice (driver), A126S (driver), N323Lfs*21 (driver)","X343_splice (driver), A126S (driver), N323Lfs*21 (driver)",no alteration,no alteration,no alteration
+129,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K2-01,TCGA-B5-A0K2,1,"R130Q (driver), HOMDEL (driver)",R130Q (driver),HOMDEL (driver),HOMDEL (driver),no alteration
+130,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K4-01,TCGA-B5-A0K4,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+131,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K6-01,TCGA-B5-A0K6,1,"R173C (driver), K267Rfs*9 (driver), I33S","R173C (driver), K267Rfs*9 (driver), I33S",no alteration,no alteration,no alteration
+132,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K7-01,TCGA-B5-A0K7,1,"R335* (driver), Y138C (driver), R308Vfs*9 (driver)","R335* (driver), Y138C (driver), R308Vfs*9 (driver)",no alteration,no alteration,no alteration
+133,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K9-01,TCGA-B5-A0K9,1,E150* (driver),E150* (driver),no alteration,no alteration,no alteration
+134,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11E-01,TCGA-B5-A11E,1,"E299* (driver), Y68C (driver), R11K","E299* (driver), Y68C (driver), R11K",no alteration,no alteration,no alteration
+135,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11F-01,TCGA-B5-A11F,1,F241S (driver),F241S (driver),no alteration,no alteration,no alteration
+136,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11G-01,TCGA-B5-A11G,1,"N323Kfs*2 (driver), D268Gfs*30 (driver)","N323Kfs*2 (driver), D268Gfs*30 (driver)",no alteration,no alteration,no alteration
+137,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11H-01,TCGA-B5-A11H,1,"N323Mfs*21 (driver), I203Sfs*39 (driver), Y178del","N323Mfs*21 (driver), I203Sfs*39 (driver), Y178del",no alteration,no alteration,no alteration
+138,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11J-01,TCGA-B5-A11J,1,"Y65* (driver), D24G (driver)","Y65* (driver), D24G (driver)",no alteration,no alteration,no alteration
+139,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11L-01,TCGA-B5-A11L,1,"L140* (driver), E235* (driver)","L140* (driver), E235* (driver)",no alteration,no alteration,no alteration
+140,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11M-01,TCGA-B5-A11M,1,G165R (driver),G165R (driver),not profiled,not profiled,no alteration
+141,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11N-01,TCGA-B5-A11N,1,"R173C (driver), E7* (driver), F341V (driver)","R173C (driver), E7* (driver), F341V (driver)",no alteration,no alteration,no alteration
+142,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11O-01,TCGA-B5-A11O,1,"R130Q (driver), N323Mfs*21 (driver)","R130Q (driver), N323Mfs*21 (driver)",no alteration,no alteration,no alteration
+143,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11P-01,TCGA-B5-A11P,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+144,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Q-01,TCGA-B5-A11Q,1,L23Sfs*2 (driver),L23Sfs*2 (driver),no alteration,no alteration,no alteration
+145,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11R-01,TCGA-B5-A11R,1,"R130* (driver), X343_splice (driver)","R130* (driver), X343_splice (driver)",no alteration,no alteration,no alteration
+146,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11S-01,TCGA-B5-A11S,1,P248Tfs*5 (driver),P248Tfs*5 (driver),no alteration,no alteration,no alteration
+147,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11U-01,TCGA-B5-A11U,1,"N323Mfs*21 (driver), V290Sfs*8 (driver)","N323Mfs*21 (driver), V290Sfs*8 (driver)",no alteration,no alteration,no alteration
+148,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11V-01,TCGA-B5-A11V,1,"R130L (driver), G165R (driver)","R130L (driver), G165R (driver)",no alteration,no alteration,no alteration
+149,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11W-01,TCGA-B5-A11W,1,N340Kfs*3 (driver),N340Kfs*3 (driver),no alteration,no alteration,no alteration
+150,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11X-01,TCGA-B5-A11X,1,"P248Tfs*5 (driver), I8Tfs*16 (driver)","P248Tfs*5 (driver), I8Tfs*16 (driver)",not profiled,not profiled,no alteration
+151,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Y-01,TCGA-B5-A11Y,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+152,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11Z-01,TCGA-B5-A11Z,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+153,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MR-01,TCGA-B5-A1MR,1,"R233* (driver), F154L (driver), R14M","R233* (driver), F154L (driver), R14M",no alteration,no alteration,no alteration
+154,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MV-01,TCGA-B5-A1MV,1,T78Rfs*4 (driver),T78Rfs*4 (driver),no alteration,no alteration,no alteration
+155,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MW-01,TCGA-B5-A1MW,1,D268Gfs*30 (driver),D268Gfs*30 (driver),no alteration,no alteration,no alteration
+156,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MX-01,TCGA-B5-A1MX,1,"N323Kfs*2 (driver), X85_splice (driver), G165* (driver), P281S","N323Kfs*2 (driver), X85_splice (driver), G165* (driver), P281S",no alteration,no alteration,no alteration
+157,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MZ-01,TCGA-B5-A1MZ,1,"X27_splice (driver), G209* (driver)","X27_splice (driver), G209* (driver)",no alteration,no alteration,no alteration
+158,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3F9-01,TCGA-B5-A3F9,1,K197Rfs*2 (driver),K197Rfs*2 (driver),no alteration,no alteration,no alteration
+159,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FA-01,TCGA-B5-A3FA,1,"R173C (driver), R130Q (driver), I5V","R173C (driver), R130Q (driver), I5V",no alteration,no alteration,no alteration
+160,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FC-01,TCGA-B5-A3FC,1,"N323Kfs*2 (driver), X55_splice (driver)","N323Kfs*2 (driver), X55_splice (driver)",no alteration,no alteration,no alteration
+161,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FD-01,TCGA-B5-A3FD,1,T202Afs*13 (driver),T202Afs*13 (driver),no alteration,no alteration,no alteration
+162,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FH-01,TCGA-B5-A3FH,1,X212_splice (driver),X212_splice (driver),no alteration,no alteration,no alteration
+163,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OC-01,TCGA-B5-A5OC,1,"D92E (driver), L320* (driver)","D92E (driver), L320* (driver)",no alteration,no alteration,no alteration
+164,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0LW-01,TCGA-BG-A0LW,1,L146Ffs*34 (driver),L146Ffs*34 (driver),no alteration,no alteration,no alteration
+165,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0LX-01,TCGA-BG-A0LX,1,H93* (driver),H93* (driver),no alteration,no alteration,no alteration
+166,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M0-01,TCGA-BG-A0M0,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+167,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M2-01,TCGA-BG-A0M2,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+168,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M3-01,TCGA-BG-A0M3,1,"N48Tfs*6 (driver), T319Yfs*6 (driver)","N48Tfs*6 (driver), T319Yfs*6 (driver)",no alteration,no alteration,no alteration
+169,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M4-01,TCGA-BG-A0M4,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+170,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M7-01,TCGA-BG-A0M7,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+171,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M9-01,TCGA-BG-A0M9,1,"R130* (driver), Q149* (driver), F154C (driver)","R130* (driver), Q149* (driver), F154C (driver)",no alteration,no alteration,no alteration
+172,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MA-01,TCGA-BG-A0MA,1,"Q214* (driver), D310G","Q214* (driver), D310G",no alteration,no alteration,no alteration
+173,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MC-01,TCGA-BG-A0MC,1,"D52Vfs*2 (driver), S59Kfs*40 (driver)","D52Vfs*2 (driver), S59Kfs*40 (driver)",no alteration,no alteration,no alteration
+174,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MG-01,TCGA-BG-A0MG,1,K342N (driver),K342N (driver),no alteration,no alteration,no alteration
+175,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MI-01,TCGA-BG-A0MI,1,"R130G (driver), C71Y (driver)","R130G (driver), C71Y (driver)",no alteration,no alteration,no alteration
+176,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MK-01,TCGA-BG-A0MK,1,X342_splice (driver),X342_splice (driver),no alteration,no alteration,no alteration
+177,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MQ-01,TCGA-BG-A0MQ,1,"R130G (driver), S370Vfs*46 (driver)","R130G (driver), S370Vfs*46 (driver)",no alteration,no alteration,no alteration
+178,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MT-01,TCGA-BG-A0MT,1,"X212_splice (driver), S10del","X212_splice (driver), S10del",no alteration,no alteration,no alteration
+179,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MU-01,TCGA-BG-A0MU,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+180,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0RY-01,TCGA-BG-A0RY,1,R233* (driver),R233* (driver),no alteration,no alteration,no alteration
+181,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VW-01,TCGA-BG-A0VW,1,"T319Kfs*24 (driver), D92E (driver), K267Rfs*9 (driver)","T319Kfs*24 (driver), D92E (driver), K267Rfs*9 (driver)",no alteration,no alteration,no alteration
+182,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VX-01,TCGA-BG-A0VX,1,L57Ffs*6 (driver),L57Ffs*6 (driver),no alteration,no alteration,no alteration
+183,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VZ-01,TCGA-BG-A0VZ,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+184,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0W1-01,TCGA-BG-A0W1,1,X268_splice (driver),X268_splice (driver),no alteration,no alteration,no alteration
+185,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0W2-01,TCGA-BG-A0W2,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+186,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0YV-01,TCGA-BG-A0YV,1,"X212_splice (driver), Q87Hfs*12 (driver)","X212_splice (driver), Q87Hfs*12 (driver)",no alteration,no alteration,no alteration
+187,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A186-01,TCGA-BG-A186,1,"T319Kfs*24 (driver), E291Kfs*16 (driver)","T319Kfs*24 (driver), E291Kfs*16 (driver)",no alteration,no alteration,no alteration
+188,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A187-01,TCGA-BG-A187,1,"X343_splice (driver), M134del","X343_splice (driver), M134del",no alteration,no alteration,no alteration
+189,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18A-01,TCGA-BG-A18A,1,"V158Gfs*8 (driver), D312Afs*5 (driver)","V158Gfs*8 (driver), D312Afs*5 (driver)",no alteration,no alteration,no alteration
+190,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18B-01,TCGA-BG-A18B,1,R233* (driver),R233* (driver),no alteration,no alteration,no alteration
+191,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A222-01,TCGA-BG-A222,1,K267Rfs*9 (driver),K267Rfs*9 (driver),no alteration,no alteration,no alteration
+192,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2L7-01,TCGA-BG-A2L7,1,"T319* (driver), S170Vfs*13 (driver)","T319* (driver), S170Vfs*13 (driver)",no alteration,no alteration,no alteration
+193,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A3EW-01,TCGA-BG-A3EW,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+194,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A3PP-01,TCGA-BG-A3PP,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+195,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0C9-01,TCGA-BK-A0C9,1,G127R (driver),G127R (driver),no alteration,no alteration,no alteration
+196,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CA-01,TCGA-BK-A0CA,1,"R130Q (driver), E307Vfs*9 (driver)","R130Q (driver), E307Vfs*9 (driver)",no alteration,no alteration,no alteration
+197,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CB-01,TCGA-BK-A0CB,1,"R130G (driver), E91* (driver)","R130G (driver), E91* (driver)",no alteration,no alteration,no alteration
+198,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A139-01,TCGA-BK-A139,1,R130L (driver),R130L (driver),no alteration,no alteration,no alteration
+199,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A13B-01,TCGA-BK-A13B,1,"Y16* (driver), S170G (driver), G36R (driver)","Y16* (driver), S170G (driver), G36R (driver)",no alteration,no alteration,no alteration
+200,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A13C-01,TCGA-BK-A13C,1,X268_splice (driver),X268_splice (driver),no alteration,no alteration,no alteration
+201,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A4ZD-01,TCGA-BK-A4ZD,1,"D92E (driver), E242* (driver)","D92E (driver), E242* (driver)",no alteration,no alteration,no alteration
+202,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A6W3-01,TCGA-BK-A6W3,1,R130Q (driver),R130Q (driver),no alteration,no alteration,no alteration
+203,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A6W4-01,TCGA-BK-A6W4,1,N184Efs*6 (driver),N184Efs*6 (driver),no alteration,no alteration,no alteration
+204,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0T9-01,TCGA-BS-A0T9,1,L57Wfs*42 (driver),L57Wfs*42 (driver),no alteration,no alteration,no alteration
+205,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TA-01,TCGA-BS-A0TA,1,"G129V (driver), R15Mfs*5 (driver)","G129V (driver), R15Mfs*5 (driver)",no alteration,no alteration,no alteration
+206,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TC-01,TCGA-BS-A0TC,1,"R130G (driver), L146* (driver)","R130G (driver), L146* (driver)",no alteration,no alteration,no alteration
+207,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TD-01,TCGA-BS-A0TD,1,"T319* (driver), N329Kfs*14 (driver)","T319* (driver), N329Kfs*14 (driver)",no alteration,no alteration,no alteration
+208,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TE-01,TCGA-BS-A0TE,1,"V249E, HOMDEL (driver)",V249E,HOMDEL (driver),HOMDEL (driver),no alteration
+209,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TG-01,TCGA-BS-A0TG,1,"L152P, D153E","L152P, D153E",no alteration,no alteration,no alteration
+210,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TI-01,TCGA-BS-A0TI,1,"E40* (driver), AMP",E40* (driver),AMP,AMP,no alteration
+211,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0TJ-01,TCGA-BS-A0TJ,1,"R233* (driver), X342_splice (driver)","R233* (driver), X342_splice (driver)",no alteration,no alteration,no alteration
+212,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U5-01,TCGA-BS-A0U5,1,K164Rfs*3 (driver),K164Rfs*3 (driver),no alteration,no alteration,no alteration
+213,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U7-01,TCGA-BS-A0U7,1,"R130* (driver), H64Ifs*35 (driver)","R130* (driver), H64Ifs*35 (driver)",no alteration,no alteration,no alteration
+214,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U8-01,TCGA-BS-A0U8,1,"E157* (driver), E40Dfs*13 (driver)","E157* (driver), E40Dfs*13 (driver)",no alteration,no alteration,no alteration
+215,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UA-01,TCGA-BS-A0UA,1,"V290Sfs*8 (driver), P96A (driver)","V290Sfs*8 (driver), P96A (driver)",no alteration,no alteration,no alteration
+216,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UF-01,TCGA-BS-A0UF,1,"R130Q (driver), F215S","R130Q (driver), F215S",no alteration,no alteration,no alteration
+217,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UJ-01,TCGA-BS-A0UJ,1,"R233* (driver), D268Gfs*30 (driver)","R233* (driver), D268Gfs*30 (driver)",no alteration,no alteration,no alteration
+218,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UL-01,TCGA-BS-A0UL,1,N323Kfs*2 (driver),N323Kfs*2 (driver),no alteration,no alteration,no alteration
+219,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UM-01,TCGA-BS-A0UM,1,"C211Wfs*32 (driver), K313Rfs*4 (driver), N31K","C211Wfs*32 (driver), K313Rfs*4 (driver), N31K",not profiled,not profiled,no alteration
+220,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UV-01,TCGA-BS-A0UV,1,"R130Q (driver), Y240* (driver)","R130Q (driver), Y240* (driver)",no alteration,no alteration,no alteration
+221,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V4-01,TCGA-BS-A0V4,1,"R130G (driver), C136Y (driver)","R130G (driver), C136Y (driver)",no alteration,no alteration,no alteration
+222,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V6-01,TCGA-BS-A0V6,1,"R130G (driver), C136F (driver)","R130G (driver), C136F (driver)",no alteration,no alteration,no alteration
+223,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V7-01,TCGA-BS-A0V7,1,"V45Yfs*9 (driver), A34V (driver)","V45Yfs*9 (driver), A34V (driver)",no alteration,no alteration,no alteration
+224,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0V8-01,TCGA-BS-A0V8,1,"G127R (driver), G132D (driver)","G127R (driver), G132D (driver)",no alteration,no alteration,no alteration
+225,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0VI-01,TCGA-BS-A0VI,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+226,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0WQ-01,TCGA-BS-A0WQ,1,L182Ffs*8 (driver),L182Ffs*8 (driver),no alteration,no alteration,no alteration
+227,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZN-01,TCGA-D1-A0ZN,1,K260* (driver),K260* (driver),no alteration,no alteration,no alteration
+228,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZO-01,TCGA-D1-A0ZO,1,I300Mfs*7 (driver),I300Mfs*7 (driver),no alteration,no alteration,no alteration
+229,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZQ-01,TCGA-D1-A0ZQ,1,N63Tfs*36 (driver),N63Tfs*36 (driver),no alteration,no alteration,no alteration
+230,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZR-01,TCGA-D1-A0ZR,1,"R130G (driver), A328Qfs*16 (driver), V255G (driver)","R130G (driver), A328Qfs*16 (driver), V255G (driver)",no alteration,no alteration,no alteration
+231,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZS-01,TCGA-D1-A0ZS,1,G165R (driver),G165R (driver),no alteration,no alteration,no alteration
+232,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZU-01,TCGA-D1-A0ZU,1,Y336* (driver),Y336* (driver),no alteration,no alteration,no alteration
+233,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZV-01,TCGA-D1-A0ZV,1,R130Qfs*4 (driver),R130Qfs*4 (driver),no alteration,no alteration,no alteration
+234,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A101-01,TCGA-D1-A101,1,V255del,V255del,no alteration,no alteration,no alteration
+235,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A102-01,TCGA-D1-A102,1,R335* (driver),R335* (driver),no alteration,no alteration,no alteration
+236,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A103-01,TCGA-D1-A103,1,E7* (driver),E7* (driver),no alteration,no alteration,no alteration
+237,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15W-01,TCGA-D1-A15W,1,"R130G (driver), R130Q (driver), I67T (driver)","R130G (driver), R130Q (driver), I67T (driver)",no alteration,no alteration,no alteration
+238,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15Z-01,TCGA-D1-A15Z,1,"H196Sfs*6 (driver), K260Tfs*37 (driver)","H196Sfs*6 (driver), K260Tfs*37 (driver)",no alteration,no alteration,no alteration
+239,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A160-01,TCGA-D1-A160,1,"L146* (driver), HOMDEL (driver)",L146* (driver),HOMDEL (driver),HOMDEL (driver),no alteration
+240,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A161-01,TCGA-D1-A161,1,S302Lfs*8 (driver),S302Lfs*8 (driver),no alteration,no alteration,no alteration
+241,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A163-01,TCGA-D1-A163,1,N323Kfs*2 (driver),N323Kfs*2 (driver),no alteration,no alteration,no alteration
+242,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A165-01,TCGA-D1-A165,1,"N262Qfs*35 (driver), L112V (driver)","N262Qfs*35 (driver), L112V (driver)",no alteration,no alteration,no alteration
+243,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A169-01,TCGA-D1-A169,1,"R130P (driver), A328Qfs*16 (driver)","R130P (driver), A328Qfs*16 (driver)",no alteration,no alteration,no alteration
+244,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16B-01,TCGA-D1-A16B,1,"R233* (driver), K344Sfs*8 (driver)","R233* (driver), K344Sfs*8 (driver)",no alteration,no alteration,no alteration
+245,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16D-01,TCGA-D1-A16D,1,R233* (driver),R233* (driver),no alteration,no alteration,no alteration
+246,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16E-01,TCGA-D1-A16E,1,"H123D (driver), A72* (driver)","H123D (driver), A72* (driver)",no alteration,no alteration,no alteration
+247,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16F-01,TCGA-D1-A16F,1,"W274* (driver), T210Nfs*33 (driver)","W274* (driver), T210Nfs*33 (driver)",not profiled,not profiled,no alteration
+248,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16J-01,TCGA-D1-A16J,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+249,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16N-01,TCGA-D1-A16N,1,L140* (driver),L140* (driver),no alteration,no alteration,no alteration
+250,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16O-01,TCGA-D1-A16O,1,T319* (driver),T319* (driver),no alteration,no alteration,no alteration
+251,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16Q-01,TCGA-D1-A16Q,1,"R130G (driver), Y155C (driver)","R130G (driver), Y155C (driver)",no alteration,no alteration,no alteration
+252,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16R-01,TCGA-D1-A16R,1,"C124R (driver), AMP",C124R (driver),AMP,AMP,no alteration
+253,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16V-01,TCGA-D1-A16V,1,"M35K (driver), X163_splice (driver), R173L (driver)","M35K (driver), X163_splice (driver), R173L (driver)",no alteration,no alteration,no alteration
+254,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16X-01,TCGA-D1-A16X,1,"R130Q (driver), E201* (driver)","R130Q (driver), E201* (driver)",no alteration,no alteration,no alteration
+255,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16Y-01,TCGA-D1-A16Y,1,"R130Q (driver), Q87* (driver), K144T","R130Q (driver), Q87* (driver), K144T",no alteration,no alteration,no alteration
+256,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A174-01,TCGA-D1-A174,1,T210Ifs*11 (driver),T210Ifs*11 (driver),no alteration,no alteration,no alteration
+257,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A176-01,TCGA-D1-A176,1,G129V (driver),G129V (driver),no alteration,no alteration,no alteration
+258,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A177-01,TCGA-D1-A177,1,"R130Q (driver), E157* (driver)","R130Q (driver), E157* (driver)",no alteration,no alteration,no alteration
+259,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17A-01,TCGA-D1-A17A,1,"R233* (driver), N323Mfs*21 (driver)","R233* (driver), N323Mfs*21 (driver)",no alteration,no alteration,no alteration
+260,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17B-01,TCGA-D1-A17B,1,Y16* (driver),Y16* (driver),no alteration,no alteration,no alteration
+261,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17C-01,TCGA-D1-A17C,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+262,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17D-01,TCGA-D1-A17D,1,"R130G (driver), Y240* (driver)","R130G (driver), Y240* (driver)",no alteration,no alteration,no alteration
+263,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17F-01,TCGA-D1-A17F,1,"T319* (driver), D268Gfs*30 (driver)","T319* (driver), D268Gfs*30 (driver)",no alteration,no alteration,no alteration
+264,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17H-01,TCGA-D1-A17H,1,"R74Dfs*25 (driver), HOMDEL (driver)",R74Dfs*25 (driver),HOMDEL (driver),HOMDEL (driver),no alteration
+265,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17K-01,TCGA-D1-A17K,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+266,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17L-01,TCGA-D1-A17L,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+267,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17M-01,TCGA-D1-A17M,1,"R233* (driver), V290* (driver), L57Ffs*6 (driver), V275L","R233* (driver), V290* (driver), L57Ffs*6 (driver), V275L",no alteration,no alteration,no alteration
+268,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17N-01,TCGA-D1-A17N,1,"M134I (driver), Y27D (driver), R41Dfs*13 (driver)","M134I (driver), Y27D (driver), R41Dfs*13 (driver)",no alteration,no alteration,no alteration
+269,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17Q-01,TCGA-D1-A17Q,1,"E7* (driver), Y336* (driver), R15K (driver), P30Q","E7* (driver), Y336* (driver), R15K (driver), P30Q",no alteration,no alteration,no alteration
+270,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17R-01,TCGA-D1-A17R,1,"X70_splice (driver), Y88* (driver)","X70_splice (driver), Y88* (driver)",no alteration,no alteration,no alteration
+271,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17S-01,TCGA-D1-A17S,1,H196Lfs*4 (driver),H196Lfs*4 (driver),no alteration,no alteration,no alteration
+272,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17T-01,TCGA-D1-A17T,1,"R130G (driver), T319* (driver)","R130G (driver), T319* (driver)",no alteration,no alteration,no alteration
+273,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A17U-01,TCGA-D1-A17U,1,X212_splice (driver),X212_splice (driver),no alteration,no alteration,no alteration
+274,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NS-01,TCGA-D1-A1NS,1,"X343_splice (driver), G293Efs*14 (driver)","X343_splice (driver), G293Efs*14 (driver)",no alteration,no alteration,no alteration
+275,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NY-01,TCGA-D1-A1NY,1,"V290Sfs*8 (driver), L181P (driver)","V290Sfs*8 (driver), L181P (driver)",no alteration,no alteration,no alteration
+276,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NZ-01,TCGA-D1-A1NZ,1,P38S (driver),P38S (driver),no alteration,no alteration,no alteration
+277,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O0-01,TCGA-D1-A1O0,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+278,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O5-01,TCGA-D1-A1O5,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+279,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O7-01,TCGA-D1-A1O7,1,"A34S (driver), E99Nfs*14 (driver), A34V (driver)","A34S (driver), E99Nfs*14 (driver), A34V (driver)",no alteration,no alteration,no alteration
+280,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1O8-01,TCGA-D1-A1O8,1,"G132D (driver), S338Ffs*5 (driver)","G132D (driver), S338Ffs*5 (driver)",no alteration,no alteration,no alteration
+281,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G0-01,TCGA-D1-A2G0,1,"T210Lfs*11 (driver), I280Yfs*11 (driver)","T210Lfs*11 (driver), I280Yfs*11 (driver)",no alteration,no alteration,no alteration
+282,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G5-01,TCGA-D1-A2G5,1,"C124S (driver), A328Sfs*3 (driver)","C124S (driver), A328Sfs*3 (driver)",no alteration,no alteration,no alteration
+283,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G6-01,TCGA-D1-A2G6,1,N323Mfs*21 (driver),N323Mfs*21 (driver),no alteration,no alteration,no alteration
+284,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DA-01,TCGA-D1-A3DA,1,"K125T (driver), W111R (driver)","K125T (driver), W111R (driver)",no alteration,no alteration,no alteration
+285,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DG-01,TCGA-D1-A3DG,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+286,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KN-01,TCGA-DF-A2KN,1,"N323Mfs*21 (driver), L57Ffs*6 (driver)","N323Mfs*21 (driver), L57Ffs*6 (driver)",no alteration,no alteration,no alteration
+287,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KS-01,TCGA-DF-A2KS,1,Q97Hfs*4 (driver),Q97Hfs*4 (driver),no alteration,no alteration,no alteration
+288,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KU-01,TCGA-DF-A2KU,1,"R130Q (driver), P204L, R142W","R130Q (driver), P204L, R142W",no alteration,no alteration,no alteration
+289,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KV-01,TCGA-DF-A2KV,1,"E7* (driver), C218* (driver)","E7* (driver), C218* (driver)",no alteration,no alteration,no alteration
+290,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KZ-01,TCGA-DF-A2KZ,1,X27_splice (driver),X27_splice (driver),no alteration,no alteration,no alteration
+291,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2L0-01,TCGA-DF-A2L0,1,"I122M (driver), T319Nfs*4 (driver)","I122M (driver), T319Nfs*4 (driver)",no alteration,no alteration,no alteration
+292,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1BU-01,TCGA-DI-A1BU,1,F279S,F279S,no alteration,no alteration,no alteration
+293,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1BY-01,TCGA-DI-A1BY,1,"F241Lfs*15 (driver), D92V (driver)","F241Lfs*15 (driver), D92V (driver)",no alteration,no alteration,no alteration
+294,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1C3-01,TCGA-DI-A1C3,1,"R130G (driver), P213Lfs*8 (driver)","R130G (driver), P213Lfs*8 (driver)",no alteration,no alteration,no alteration
+295,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1LX-01,TCGA-E6-A1LX,1,"R173C (driver), R130Q (driver), D92N (driver), M35T (driver)","R173C (driver), R130Q (driver), D92N (driver), M35T (driver)",no alteration,no alteration,no alteration
+296,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1M0-01,TCGA-E6-A1M0,1,"E7* (driver), E299* (driver)","E7* (driver), E299* (driver)",no alteration,no alteration,no alteration
+297,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A2P8-01,TCGA-E6-A2P8,1,E157Gfs*23 (driver),E157Gfs*23 (driver),no alteration,no alteration,no alteration
+298,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A2P9-01,TCGA-E6-A2P9,1,N228Ifs*28 (driver),N228Ifs*28 (driver),no alteration,no alteration,no alteration
+299,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A8L9-01,TCGA-E6-A8L9,1,I33del,I33del,no alteration,no alteration,no alteration
+300,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A1NJ-01,TCGA-EC-A1NJ,1,"D162V (driver), D268Gfs*30 (driver)","D162V (driver), D268Gfs*30 (driver)",no alteration,no alteration,no alteration
+301,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A1QX-01,TCGA-EC-A1QX,1,Y177* (driver),Y177* (driver),no alteration,no alteration,no alteration
+302,ucec_tcga_pan_can_atlas_2018,TCGA-EC-A24G-01,TCGA-EC-A24G,1,"R130* (driver), G36R (driver)","R130* (driver), G36R (driver)",no alteration,no alteration,no alteration
+303,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y7-01,TCGA-EO-A1Y7,1,R233* (driver),R233* (driver),no alteration,no alteration,no alteration
+304,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22R-01,TCGA-EO-A22R,1,"E7* (driver), S10N (driver)","E7* (driver), S10N (driver)",no alteration,no alteration,no alteration
+305,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22S-01,TCGA-EO-A22S,1,"N323Kfs*2 (driver), I135Kfs*2 (driver)","N323Kfs*2 (driver), I135Kfs*2 (driver)",no alteration,no alteration,no alteration
+306,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22T-01,TCGA-EO-A22T,1,L146Ffs*34 (driver),L146Ffs*34 (driver),no alteration,no alteration,no alteration
+307,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22U-01,TCGA-EO-A22U,1,"R173C (driver), E299* (driver)","R173C (driver), E299* (driver)",no alteration,no alteration,no alteration
+308,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22X-01,TCGA-EO-A22X,1,"R130Q (driver), D24G (driver)","R130Q (driver), D24G (driver)",no alteration,no alteration,no alteration
+309,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A22Y-01,TCGA-EO-A22Y,1,P95L (driver),P95L (driver),no alteration,no alteration,no alteration
+310,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A2CH-01,TCGA-EO-A2CH,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+311,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AS-01,TCGA-EO-A3AS,1,Q171E (driver),Q171E (driver),no alteration,no alteration,no alteration
+312,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AU-01,TCGA-EO-A3AU,1,"R130G (driver), Q171Efs*8 (driver)","R130G (driver), Q171Efs*8 (driver)",no alteration,no alteration,no alteration
+313,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AV-01,TCGA-EO-A3AV,1,"E7* (driver), F341V (driver), F145C","E7* (driver), F341V (driver), F145C",no alteration,no alteration,no alteration
+314,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AY-01,TCGA-EO-A3AY,1,"E299* (driver), F341C (driver), F273S, R142W","E299* (driver), F341C (driver), F273S, R142W",no alteration,no alteration,no alteration
+315,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3B0-01,TCGA-EO-A3B0,1,"R130Q (driver), E7* (driver)","R130Q (driver), E7* (driver)",no alteration,no alteration,no alteration
+316,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3B1-01,TCGA-EO-A3B1,1,PTEN-HECTD2 fusion,no alteration,no alteration,no alteration,PTEN-HECTD2 fusion
+317,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KX-01,TCGA-EO-A3KX,1,"Q245* (driver), L152P","Q245* (driver), L152P",no alteration,no alteration,no alteration
+318,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3L0-01,TCGA-EO-A3L0,1,"R130G (driver), H75Tfs*3 (driver)","R130G (driver), H75Tfs*3 (driver)",no alteration,no alteration,no alteration
+319,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GD-01,TCGA-EY-A1GD,1,"R142W, R74I","R142W, R74I",no alteration,no alteration,no alteration
+320,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GE-01,TCGA-EY-A1GE,1,"R130G (driver), P283Qfs*8 (driver)","R130G (driver), P283Qfs*8 (driver)",no alteration,no alteration,no alteration
+321,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GF-01,TCGA-EY-A1GF,1,"R130Q (driver), L320S (driver), R142W","R130Q (driver), L320S (driver), R142W",no alteration,no alteration,no alteration
+322,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GH-01,TCGA-EY-A1GH,1,"R130G (driver), T319* (driver)","R130G (driver), T319* (driver)",no alteration,no alteration,no alteration
+323,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GI-01,TCGA-EY-A1GI,1,"Y177* (driver), Y177D (driver)","Y177* (driver), Y177D (driver)",no alteration,no alteration,no alteration
+324,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GK-01,TCGA-EY-A1GK,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+325,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GQ-01,TCGA-EY-A1GQ,1,"N323Kfs*2 (driver), C136R (driver), L194del","N323Kfs*2 (driver), C136R (driver), L194del",no alteration,no alteration,no alteration
+326,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GT-01,TCGA-EY-A1GT,1,"R130G (driver), Q149* (driver)","R130G (driver), Q149* (driver)",no alteration,no alteration,no alteration
+327,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GU-01,TCGA-EY-A1GU,1,"K164Rfs*3 (driver), A126T (driver), G44D (driver)","K164Rfs*3 (driver), A126T (driver), G44D (driver)",no alteration,no alteration,no alteration
+328,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GW-01,TCGA-EY-A1GW,1,"C124F (driver), C124W (driver)","C124F (driver), C124W (driver)",no alteration,no alteration,no alteration
+329,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GX-01,TCGA-EY-A1GX,1,W274* (driver),W274* (driver),no alteration,no alteration,no alteration
+330,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1H0-01,TCGA-EY-A1H0,1,P248Tfs*5 (driver),P248Tfs*5 (driver),no alteration,no alteration,no alteration
+331,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A215-01,TCGA-EY-A215,1,"P244Lfs*12 (driver), T202I","P244Lfs*12 (driver), T202I",no alteration,no alteration,no alteration
+332,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OM-01,TCGA-EY-A2OM,1,R130G (driver),R130G (driver),no alteration,no alteration,no alteration
+333,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OO-01,TCGA-EY-A2OO,1,"R335Dfs*9 (driver), Y138* (driver)","R335Dfs*9 (driver), Y138* (driver)",no alteration,no alteration,no alteration
+334,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OP-01,TCGA-EY-A2OP,1,R130Qfs*4 (driver),R130Qfs*4 (driver),no alteration,no alteration,no alteration
+335,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A3L3-01,TCGA-EY-A3L3,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+336,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A548-01,TCGA-EY-A548,1,"D268Gfs*30 (driver), R142W","D268Gfs*30 (driver), R142W",no alteration,no alteration,no alteration
+337,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A549-01,TCGA-EY-A549,1,"W274Gfs*2 (driver), X212_splice (driver)","W274Gfs*2 (driver), X212_splice (driver)",no alteration,no alteration,no alteration
+338,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A5W2-01,TCGA-EY-A5W2,1,"Y65* (driver), C136F (driver)","Y65* (driver), C136F (driver)",no alteration,no alteration,no alteration
+339,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D2-01,TCGA-FI-A2D2,1,HOMDEL (driver),no alteration,HOMDEL (driver),HOMDEL (driver),no alteration
+340,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D4-01,TCGA-FI-A2D4,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+341,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D5-01,TCGA-FI-A2D5,1,"R173C (driver), E43* (driver), Y88* (driver), R142W, R14M","R173C (driver), E43* (driver), Y88* (driver), R142W, R14M",no alteration,no alteration,no alteration
+342,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D6-01,TCGA-FI-A2D6,1,R130* (driver),R130* (driver),no alteration,no alteration,no alteration
+343,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F4-01,TCGA-FI-A2F4,1,"N31Tfs*23 (driver), E7Gfs*17 (driver)","N31Tfs*23 (driver), E7Gfs*17 (driver)",no alteration,no alteration,no alteration
+344,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A6IB-01,TCGA-PG-A6IB,1,"G127V (driver), R233* (driver)","G127V (driver), R233* (driver)",no alteration,no alteration,no alteration
+345,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A916-01,TCGA-PG-A916,1,"N184Efs*6 (driver), K6T (driver)","N184Efs*6 (driver), K6T (driver)",no alteration,no alteration,no alteration
+346,ucec_tcga_pan_can_atlas_2018,TCGA-QF-A5YS-01,TCGA-QF-A5YS,1,"R130Q (driver), F341V (driver), K62T (driver), I135R","R130Q (driver), F341V (driver), K62T (driver), I135R",no alteration,no alteration,no alteration
+347,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A5YQ-01,TCGA-QS-A5YQ,1,"E7* (driver), E299* (driver), H141N","E7* (driver), E299* (driver), H141N",no alteration,no alteration,no alteration
+348,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A5YR-01,TCGA-QS-A5YR,1,D268Gfs*30 (driver),D268Gfs*30 (driver),no alteration,no alteration,no alteration
+349,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A744-01,TCGA-QS-A744,1,"G230* (driver), K221Rfs*2 (driver)","G230* (driver), K221Rfs*2 (driver)",no alteration,no alteration,no alteration
+350,ucec_tcga_pan_can_atlas_2018,TCGA-SJ-A6ZI-01,TCGA-SJ-A6ZI,1,R234Gfs*22 (driver),R234Gfs*22 (driver),no alteration,no alteration,no alteration
+351,ucec_tcga_pan_can_atlas_2018,TCGA-SJ-A6ZJ-01,TCGA-SJ-A6ZJ,1,"Q298* (driver), E284* (driver), X164_splice (driver)","Q298* (driver), E284* (driver), X164_splice (driver)",no alteration,no alteration,no alteration
+352,ucec_tcga_pan_can_atlas_2018,TCGA-2E-A9G8-01,TCGA-2E-A9G8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+353,ucec_tcga_pan_can_atlas_2018,TCGA-5B-A90C-01,TCGA-5B-A90C,0,no alteration,no alteration,no alteration,no alteration,no alteration
+354,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G3-01,TCGA-A5-A0G3,0,no alteration,no alteration,not profiled,not profiled,no alteration
+355,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0G5-01,TCGA-A5-A0G5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+356,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GD-01,TCGA-A5-A0GD,0,no alteration,not profiled,no alteration,no alteration,not profiled
+357,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GG-01,TCGA-A5-A0GG,0,no alteration,not profiled,no alteration,no alteration,not profiled
+358,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GN-01,TCGA-A5-A0GN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+359,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0GR-01,TCGA-A5-A0GR,0,no alteration,not profiled,no alteration,no alteration,not profiled
+360,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A0R6-01,TCGA-A5-A0R6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+361,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OG-01,TCGA-A5-A1OG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+362,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OH-01,TCGA-A5-A1OH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+363,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A1OK-01,TCGA-A5-A1OK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+364,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K2-01,TCGA-A5-A2K2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+365,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K3-01,TCGA-A5-A2K3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+366,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A2K4-01,TCGA-A5-A2K4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+367,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A3LP-01,TCGA-A5-A3LP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+368,ucec_tcga_pan_can_atlas_2018,TCGA-A5-A7WJ-01,TCGA-A5-A7WJ,0,no alteration,not profiled,no alteration,no alteration,not profiled
+369,ucec_tcga_pan_can_atlas_2018,TCGA-A5-AB3J-01,TCGA-A5-AB3J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+370,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23M-01,TCGA-AJ-A23M,0,no alteration,no alteration,no alteration,no alteration,no alteration
+371,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A23N-01,TCGA-AJ-A23N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+372,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A2QM-01,TCGA-AJ-A2QM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+373,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BF-01,TCGA-AJ-A3BF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+374,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3BH-01,TCGA-AJ-A3BH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+375,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3EJ-01,TCGA-AJ-A3EJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+376,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3IA-01,TCGA-AJ-A3IA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+377,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NC-01,TCGA-AJ-A3NC,0,no alteration,not profiled,no alteration,no alteration,not profiled
+378,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NE-01,TCGA-AJ-A3NE,0,no alteration,not profiled,no alteration,no alteration,not profiled
+379,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NF-01,TCGA-AJ-A3NF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+380,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3NH-01,TCGA-AJ-A3NH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+381,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3QS-01,TCGA-AJ-A3QS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+382,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A3TW-01,TCGA-AJ-A3TW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+383,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A6NU-01,TCGA-AJ-A6NU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+384,ucec_tcga_pan_can_atlas_2018,TCGA-AJ-A8CW-01,TCGA-AJ-A8CW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+385,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05A-01,TCGA-AP-A05A,0,no alteration,no alteration,no alteration,no alteration,no alteration
+386,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05D-01,TCGA-AP-A05D,0,no alteration,no alteration,no alteration,no alteration,no alteration
+387,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05H-01,TCGA-AP-A05H,0,no alteration,no alteration,no alteration,no alteration,no alteration
+388,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05J-01,TCGA-AP-A05J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+389,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A05O-01,TCGA-AP-A05O,0,no alteration,not profiled,no alteration,no alteration,not profiled
+390,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0L8-01,TCGA-AP-A0L8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+391,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0L9-01,TCGA-AP-A0L9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+392,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LF-01,TCGA-AP-A0LF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+393,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LH-01,TCGA-AP-A0LH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+394,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LI-01,TCGA-AP-A0LI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+395,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LL-01,TCGA-AP-A0LL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+396,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A0LM-01,TCGA-AP-A0LM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+397,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1DQ-01,TCGA-AP-A1DQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+398,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A1E4-01,TCGA-AP-A1E4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+399,ucec_tcga_pan_can_atlas_2018,TCGA-AP-A3K1-01,TCGA-AP-A3K1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+400,ucec_tcga_pan_can_atlas_2018,TCGA-AW-A1PO-01,TCGA-AW-A1PO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+401,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A062-01,TCGA-AX-A062,0,no alteration,no alteration,no alteration,no alteration,no alteration
+402,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A06B-01,TCGA-AX-A06B,0,no alteration,no alteration,no alteration,no alteration,no alteration
+403,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IU-01,TCGA-AX-A0IU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+404,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IW-01,TCGA-AX-A0IW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+405,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A0IZ-01,TCGA-AX-A0IZ,0,no alteration,not profiled,no alteration,no alteration,not profiled
+406,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C7-01,TCGA-AX-A1C7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+407,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1C8-01,TCGA-AX-A1C8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+408,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CA-01,TCGA-AX-A1CA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+409,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CC-01,TCGA-AX-A1CC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+410,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CF-01,TCGA-AX-A1CF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+411,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CI-01,TCGA-AX-A1CI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+412,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A1CN-01,TCGA-AX-A1CN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+413,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H2-01,TCGA-AX-A2H2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+414,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H4-01,TCGA-AX-A2H4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+415,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H5-01,TCGA-AX-A2H5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+416,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2H7-01,TCGA-AX-A2H7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+417,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HH-01,TCGA-AX-A2HH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+418,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2HK-01,TCGA-AX-A2HK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+419,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A2IO-01,TCGA-AX-A2IO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+420,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FT-01,TCGA-AX-A3FT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+421,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3FV-01,TCGA-AX-A3FV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+422,ucec_tcga_pan_can_atlas_2018,TCGA-AX-A3GI-01,TCGA-AX-A3GI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+423,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0JN-01,TCGA-B5-A0JN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+424,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K0-01,TCGA-B5-A0K0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+425,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K3-01,TCGA-B5-A0K3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+426,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A0K8-01,TCGA-B5-A0K8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+427,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A11I-01,TCGA-B5-A11I,0,no alteration,no alteration,no alteration,no alteration,no alteration
+428,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A121-01,TCGA-B5-A121,0,no alteration,no alteration,no alteration,no alteration,no alteration
+429,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MS-01,TCGA-B5-A1MS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+430,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MU-01,TCGA-B5-A1MU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+431,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1MY-01,TCGA-B5-A1MY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+432,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A1N2-01,TCGA-B5-A1N2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+433,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3FB-01,TCGA-B5-A3FB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+434,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A3S1-01,TCGA-B5-A3S1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+435,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OD-01,TCGA-B5-A5OD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+436,ucec_tcga_pan_can_atlas_2018,TCGA-B5-A5OE-01,TCGA-B5-A5OE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+437,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0M6-01,TCGA-BG-A0M6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+438,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0MO-01,TCGA-BG-A0MO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+439,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VT-01,TCGA-BG-A0VT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+440,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0VV-01,TCGA-BG-A0VV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+441,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A0YU-01,TCGA-BG-A0YU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+442,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A18C-01,TCGA-BG-A18C,0,no alteration,no alteration,no alteration,no alteration,no alteration
+443,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2AD-01,TCGA-BG-A2AD,0,no alteration,not profiled,no alteration,no alteration,not profiled
+444,ucec_tcga_pan_can_atlas_2018,TCGA-BG-A2AE-01,TCGA-BG-A2AE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+445,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A0CC-01,TCGA-BK-A0CC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+446,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A26L-01,TCGA-BK-A26L,0,no alteration,no alteration,no alteration,no alteration,no alteration
+447,ucec_tcga_pan_can_atlas_2018,TCGA-BK-A56F-01,TCGA-BK-A56F,0,no alteration,no alteration,no alteration,no alteration,no alteration
+448,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0U9-01,TCGA-BS-A0U9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+449,ucec_tcga_pan_can_atlas_2018,TCGA-BS-A0UT-01,TCGA-BS-A0UT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+450,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZP-01,TCGA-D1-A0ZP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+451,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A0ZZ-01,TCGA-D1-A0ZZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+452,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15V-01,TCGA-D1-A15V,0,no alteration,no alteration,no alteration,no alteration,no alteration
+453,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A15X-01,TCGA-D1-A15X,0,no alteration,no alteration,no alteration,no alteration,no alteration
+454,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A167-01,TCGA-D1-A167,0,no alteration,no alteration,no alteration,no alteration,no alteration
+455,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A168-01,TCGA-D1-A168,0,no alteration,no alteration,no alteration,no alteration,no alteration
+456,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16G-01,TCGA-D1-A16G,0,no alteration,no alteration,no alteration,no alteration,no alteration
+457,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16I-01,TCGA-D1-A16I,0,no alteration,no alteration,no alteration,no alteration,no alteration
+458,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A16S-01,TCGA-D1-A16S,0,no alteration,no alteration,no alteration,no alteration,no alteration
+459,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A175-01,TCGA-D1-A175,0,no alteration,not profiled,no alteration,no alteration,not profiled
+460,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A179-01,TCGA-D1-A179,0,no alteration,not profiled,no alteration,no alteration,not profiled
+461,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NU-01,TCGA-D1-A1NU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+462,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NW-01,TCGA-D1-A1NW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+463,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A1NX-01,TCGA-D1-A1NX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+464,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A2G7-01,TCGA-D1-A2G7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+465,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3DH-01,TCGA-D1-A3DH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+466,ucec_tcga_pan_can_atlas_2018,TCGA-D1-A3JQ-01,TCGA-D1-A3JQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+467,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KR-01,TCGA-DF-A2KR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+468,ucec_tcga_pan_can_atlas_2018,TCGA-DF-A2KY-01,TCGA-DF-A2KY,0,no alteration,not profiled,no alteration,no alteration,not profiled
+469,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A0WH-01,TCGA-DI-A0WH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+470,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1NN-01,TCGA-DI-A1NN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+471,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A1NO-01,TCGA-DI-A1NO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+472,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QT-01,TCGA-DI-A2QT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+473,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QU-01,TCGA-DI-A2QU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+474,ucec_tcga_pan_can_atlas_2018,TCGA-DI-A2QY-01,TCGA-DI-A2QY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+475,ucec_tcga_pan_can_atlas_2018,TCGA-E6-A1LZ-01,TCGA-E6-A1LZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+476,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y5-01,TCGA-EO-A1Y5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+477,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A1Y8-01,TCGA-EO-A1Y8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+478,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A2CG-01,TCGA-EO-A2CG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+479,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3AZ-01,TCGA-EO-A3AZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+480,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KU-01,TCGA-EO-A3KU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+481,ucec_tcga_pan_can_atlas_2018,TCGA-EO-A3KW-01,TCGA-EO-A3KW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+482,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GC-01,TCGA-EY-A1GC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+483,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GJ-01,TCGA-EY-A1GJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+484,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GL-01,TCGA-EY-A1GL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+485,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GM-01,TCGA-EY-A1GM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+486,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GO-01,TCGA-EY-A1GO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+487,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GP-01,TCGA-EY-A1GP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+488,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GR-01,TCGA-EY-A1GR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+489,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GS-01,TCGA-EY-A1GS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+490,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A1GV-01,TCGA-EY-A1GV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+491,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A210-01,TCGA-EY-A210,0,no alteration,no alteration,no alteration,no alteration,no alteration
+492,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A212-01,TCGA-EY-A212,0,no alteration,no alteration,no alteration,no alteration,no alteration
+493,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A214-01,TCGA-EY-A214,0,no alteration,no alteration,no alteration,no alteration,no alteration
+494,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2ON-01,TCGA-EY-A2ON,0,no alteration,no alteration,no alteration,no alteration,no alteration
+495,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A2OQ-01,TCGA-EY-A2OQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+496,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A3QX-01,TCGA-EY-A3QX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+497,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A4KR-01,TCGA-EY-A4KR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+498,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A547-01,TCGA-EY-A547,0,no alteration,no alteration,no alteration,no alteration,no alteration
+499,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A54A-01,TCGA-EY-A54A,0,no alteration,no alteration,no alteration,no alteration,no alteration
+500,ucec_tcga_pan_can_atlas_2018,TCGA-EY-A72D-01,TCGA-EY-A72D,0,no alteration,no alteration,no alteration,no alteration,no alteration
+501,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2CX-01,TCGA-FI-A2CX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+502,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2CY-01,TCGA-FI-A2CY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+503,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2D0-01,TCGA-FI-A2D0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+504,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EU-01,TCGA-FI-A2EU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+505,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EW-01,TCGA-FI-A2EW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+506,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EX-01,TCGA-FI-A2EX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+507,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2EY-01,TCGA-FI-A2EY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+508,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F8-01,TCGA-FI-A2F8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+509,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A2F9-01,TCGA-FI-A2F9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+510,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A3PV-01,TCGA-FI-A3PV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+511,ucec_tcga_pan_can_atlas_2018,TCGA-FI-A3PX-01,TCGA-FI-A3PX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+512,ucec_tcga_pan_can_atlas_2018,TCGA-H5-A2HR-01,TCGA-H5-A2HR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+513,ucec_tcga_pan_can_atlas_2018,TCGA-JU-AAVI-01,TCGA-JU-AAVI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+514,ucec_tcga_pan_can_atlas_2018,TCGA-K6-A3WQ-01,TCGA-K6-A3WQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+515,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3VZ-01,TCGA-KP-A3VZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+516,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W0-01,TCGA-KP-A3W0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+517,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W1-01,TCGA-KP-A3W1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+518,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W3-01,TCGA-KP-A3W3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+519,ucec_tcga_pan_can_atlas_2018,TCGA-KP-A3W4-01,TCGA-KP-A3W4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+520,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A5BC-01,TCGA-PG-A5BC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+521,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A7D5-01,TCGA-PG-A7D5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+522,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A914-01,TCGA-PG-A914,0,no alteration,no alteration,no alteration,no alteration,no alteration
+523,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A915-01,TCGA-PG-A915,0,no alteration,no alteration,no alteration,no alteration,no alteration
+524,ucec_tcga_pan_can_atlas_2018,TCGA-PG-A917-01,TCGA-PG-A917,0,no alteration,no alteration,no alteration,no alteration,no alteration
+525,ucec_tcga_pan_can_atlas_2018,TCGA-QF-A5YT-01,TCGA-QF-A5YT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+526,ucec_tcga_pan_can_atlas_2018,TCGA-QS-A8F1-01,TCGA-QS-A8F1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+527,ucec_tcga_pan_can_atlas_2018,TCGA-SL-A6J9-01,TCGA-SL-A6J9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+528,ucec_tcga_pan_can_atlas_2018,TCGA-SL-A6JA-01,TCGA-SL-A6JA,0,no alteration,no alteration,no alteration,no alteration,no alteration

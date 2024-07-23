@@ -1,0 +1,284 @@
+Patient ID,Diagnosis Age,Neoplasm Disease Stage American Joint Committee on Cancer Code,Race Category,Sex,BLTP1-Percentage_6.9_,KMT2C-Percentage_6.9_,TTN-Percentage_18.5_,MET-Percentage_8.0_,MUC16-Percentage_9.8_
+TCGA-2K-A9WE,53.0,STAGE II,White,Male,0,0,0,0,0
+TCGA-2Z-A9J1,71.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9J2,71.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-2Z-A9J3,67.0,STAGE II,White,Male,0,0,0,0,0
+TCGA-2Z-A9J5,80.0,STAGE II,White,Male,0,0,0,0,0
+TCGA-2Z-A9J6,60.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9J7,63.0,STAGE IV,White,Male,0,0,0,0,0
+TCGA-2Z-A9J8,50.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9J9,77.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-2Z-A9JD,66.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-2Z-A9JE,59.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JG,64.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JI,38.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-2Z-A9JJ,69.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-2Z-A9JK,50.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-2Z-A9JL,47.0,STAGE I,Black or African American,Male,0,0,0,1,0
+TCGA-2Z-A9JM,28.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JN,50.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-2Z-A9JO,56.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-2Z-A9JP,63.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JQ,66.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JR,57.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JS,74.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-2Z-A9JT,71.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-4A-A93W,66.0,STAGE I,White,Female,0,1,1,1,0
+TCGA-4A-A93X,58.0,STAGE IV,White,Male,0,1,1,1,0
+TCGA-4A-A93Y,63.0,STAGE II,Black or African American,Female,0,0,1,0,0
+TCGA-5P-A9JU,81.0,STAGE III,White,Male,0,0,1,0,0
+TCGA-5P-A9JV,49.0,,White,Male,1,0,0,0,1
+TCGA-5P-A9JW,64.0,,White,Male,0,0,0,0,1
+TCGA-5P-A9JY,79.0,,White,Male,0,0,1,0,0
+TCGA-5P-A9JZ,51.0,,White,Female,0,0,0,1,0
+TCGA-5P-A9K0,75.0,,White,Male,0,0,0,0,0
+TCGA-5P-A9K2,62.0,,White,Male,0,0,0,0,0
+TCGA-5P-A9K3,59.0,,White,Male,0,0,1,0,0
+TCGA-5P-A9K4,54.0,,White,Male,0,0,0,0,0
+TCGA-5P-A9K6,64.0,,White,Male,0,0,0,0,0
+TCGA-5P-A9K8,51.0,,White,Female,0,0,0,0,0
+TCGA-5P-A9K9,59.0,,White,Female,0,0,0,0,0
+TCGA-5P-A9KA,61.0,,White,Male,0,1,0,1,0
+TCGA-5P-A9KC,51.0,,White,Female,0,0,0,0,0
+TCGA-5P-A9KE,70.0,,White,Male,0,0,0,0,0
+TCGA-5P-A9KH,77.0,,White,Male,0,0,0,0,0
+TCGA-A4-7286,42.0,,White,Male,0,0,0,0,0
+TCGA-A4-7287,75.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-A4-7288,71.0,,White,Female,0,0,0,0,0
+TCGA-A4-7583,60.0,STAGE I,Black or African American,Male,0,0,0,0,1
+TCGA-A4-7584,59.0,STAGE I,Black or African American,Male,0,0,0,0,1
+TCGA-A4-7585,67.0,STAGE III,White,Male,1,0,0,0,0
+TCGA-A4-7732,55.0,,Black or African American,Male,0,0,0,0,1
+TCGA-A4-7734,53.0,STAGE I,White,Female,0,0,0,1,0
+TCGA-A4-7828,74.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-A4-7915,35.0,STAGE II,Black or African American,Female,0,0,0,0,0
+TCGA-A4-7996,61.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-A4-7997,67.0,STAGE I,White,Male,0,1,0,1,0
+TCGA-A4-8098,73.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-A4-8310,58.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-A4-8311,60.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-A4-8312,60.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-A4-8515,47.0,STAGE I,American Indian or Alaska Native,Male,0,0,0,0,0
+TCGA-A4-8516,62.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-A4-8517,71.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-A4-8518,48.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-A4-8630,59.0,STAGE I,White,Female,0,0,1,0,1
+TCGA-A4-A48D,84.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-A4-A4ZT,71.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-A4-A57E,59.0,STAGE IV,White,Male,0,0,0,0,0
+TCGA-A4-A5DU,45.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-A4-A5XZ,65.0,STAGE II,White,Female,0,0,0,0,0
+TCGA-A4-A5Y0,61.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-A4-A5Y1,75.0,STAGE III,White,Male,1,0,1,0,0
+TCGA-A4-A6HP,66.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-A4-A772,39.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-A4-A7UZ,71.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-AL-3466,41.0,STAGE IV,White,Male,0,0,1,0,0
+TCGA-AL-3467,54.0,,White,Female,0,0,0,0,0
+TCGA-AL-3471,74.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-AL-3472,57.0,,Black or African American,Male,0,0,0,1,1
+TCGA-AL-3473,55.0,STAGE II,White,Male,0,0,0,0,0
+TCGA-AL-7173,72.0,STAGE IV,White,Female,0,0,0,1,0
+TCGA-AT-A5NU,77.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-B1-5398,73.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-B1-7332,60.0,STAGE II,Black or African American,Female,0,0,0,1,0
+TCGA-B1-A47M,79.0,STAGE III,Black or African American,Male,1,0,0,0,0
+TCGA-B1-A47N,62.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-B1-A654,43.0,STAGE I,Black or African American,Female,0,0,0,1,0
+TCGA-B1-A655,77.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-B1-A656,64.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-B1-A657,54.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-B3-3925,52.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-B3-3926,59.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-B3-4103,56.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-B3-4104,75.0,STAGE II,White,Male,0,1,0,0,0
+TCGA-B3-8121,48.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-B3-A6W5,43.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-B9-4113,64.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-B9-4114,49.0,,Black or African American,Male,0,1,0,0,0
+TCGA-B9-4115,53.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-B9-4116,75.0,,Black or African American,Female,0,0,0,1,0
+TCGA-B9-4117,48.0,,Black or African American,Female,0,0,0,0,0
+TCGA-B9-4617,41.0,,Black or African American,Male,0,0,0,0,0
+TCGA-B9-5155,71.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-B9-5156,51.0,,White,Male,0,0,0,0,0
+TCGA-B9-7268,59.0,STAGE II,White,Male,1,0,0,0,0
+TCGA-B9-A44B,70.0,STAGE III,Black or African American,Male,0,0,0,0,0
+TCGA-B9-A5W7,47.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-B9-A5W8,50.0,STAGE II,Black or African American,Male,0,1,0,0,0
+TCGA-B9-A5W9,40.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-B9-A69E,71.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-B9-A8YH,52.0,STAGE I,Black or African American,Male,0,0,1,0,0
+TCGA-B9-A8YI,79.0,STAGE I,Black or African American,Male,1,1,1,0,0
+TCGA-BQ-5875,66.0,STAGE III,White,Female,0,0,0,0,0
+TCGA-BQ-5876,75.0,STAGE I,White,Male,0,0,1,0,1
+TCGA-BQ-5877,60.0,STAGE IV,Black or African American,Male,0,0,0,0,0
+TCGA-BQ-5878,79.0,STAGE III,White,Female,0,0,1,0,1
+TCGA-BQ-5879,32.0,STAGE III,White,Female,0,0,1,0,0
+TCGA-BQ-5880,79.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-5881,69.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-BQ-5882,54.0,STAGE III,,Male,0,0,0,1,0
+TCGA-BQ-5883,79.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-BQ-5884,59.0,STAGE I,Black or African American,Female,1,0,0,0,0
+TCGA-BQ-5885,63.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-5886,75.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-5887,54.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-5888,74.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-BQ-5889,63.0,STAGE IV,White,Male,0,0,0,0,0
+TCGA-BQ-5890,69.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-5891,57.0,STAGE III,White,Female,0,0,0,0,1
+TCGA-BQ-5892,51.0,STAGE I,White,Male,1,0,0,0,1
+TCGA-BQ-5893,61.0,STAGE IV,White,Male,0,1,0,0,0
+TCGA-BQ-5894,42.0,STAGE IV,,Male,0,0,0,0,0
+TCGA-BQ-7044,73.0,STAGE III,White,Male,0,0,1,0,0
+TCGA-BQ-7045,78.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-BQ-7046,61.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-BQ-7048,64.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-7050,53.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-BQ-7051,74.0,STAGE II,White,Male,0,1,0,0,0
+TCGA-BQ-7053,57.0,STAGE III,Black or African American,Female,0,0,1,0,0
+TCGA-BQ-7055,73.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-BQ-7058,81.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-BQ-7059,71.0,STAGE I,White,Male,0,0,1,1,0
+TCGA-BQ-7060,53.0,STAGE I,American Indian or Alaska Native,Male,0,0,0,0,1
+TCGA-BQ-7061,83.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-BQ-7062,64.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DW-5560,38.0,STAGE I,White,Female,0,1,1,1,0
+TCGA-DW-5561,51.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DW-7834,53.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-DW-7836,55.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-DW-7837,43.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DW-7838,66.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-DW-7839,58.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-DW-7840,60.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DW-7841,61.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DW-7842,52.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-DW-7963,43.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-DZ-6131,31.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-DZ-6132,69.0,STAGE I,,Male,0,0,1,1,0
+TCGA-DZ-6133,66.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-DZ-6134,69.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-DZ-6135,45.0,STAGE I,,Male,0,0,0,1,0
+TCGA-EV-5901,47.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-EV-5902,58.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-EV-5903,57.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-F9-A4JJ,35.0,STAGE III,Black or African American,Female,0,0,0,0,0
+TCGA-F9-A7Q0,37.0,STAGE I,Asian,Female,0,0,0,0,0
+TCGA-F9-A7VF,75.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-F9-A8NY,38.0,STAGE IV,Asian,Female,0,0,0,0,0
+TCGA-F9-A97G,79.0,STAGE III,Asian,Male,0,0,0,0,0
+TCGA-G7-6789,53.0,STAGE IV,White,Female,0,0,0,0,0
+TCGA-G7-6790,57.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-G7-6792,40.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-G7-6793,60.0,STAGE IV,White,Female,0,0,0,0,0
+TCGA-G7-6795,56.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-G7-6796,58.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-G7-6797,46.0,STAGE III,White,Male,1,0,1,0,0
+TCGA-G7-7501,55.0,STAGE III,Black or African American,Female,0,0,1,0,0
+TCGA-G7-7502,83.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-G7-A4TM,40.0,STAGE I,Black or African American,Male,0,1,0,0,0
+TCGA-G7-A8LB,70.0,STAGE IV,White,Male,0,0,1,0,1
+TCGA-G7-A8LC,61.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-G7-A8LD,71.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-G7-A8LE,62.0,STAGE I,White,Male,0,0,0,1,1
+TCGA-GL-6846,52.0,STAGE IV,White,Male,0,0,1,0,0
+TCGA-GL-7773,63.0,STAGE I,White,Male,1,0,0,1,0
+TCGA-GL-7966,28.0,STAGE III,White,Female,0,0,1,0,0
+TCGA-GL-8500,63.0,STAGE I,White,Male,1,0,0,0,0
+TCGA-GL-A4EM,61.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-GL-A59R,79.0,STAGE III,White,Male,0,0,1,1,0
+TCGA-GL-A59T,46.0,STAGE I,White,Male,0,0,0,0,1
+TCGA-GL-A9DC,66.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-GL-A9DD,69.0,STAGE I,White,Male,0,1,0,0,0
+TCGA-GL-A9DE,74.0,STAGE I,Black or African American,Male,1,0,0,0,1
+TCGA-HE-7128,,STAGE I,,Male,0,0,1,0,0
+TCGA-HE-7129,,STAGE II,,Male,0,0,1,0,0
+TCGA-HE-7130,,STAGE III,,Female,0,0,1,0,0
+TCGA-HE-A5NF,58.0,STAGE I,,Male,0,0,0,0,0
+TCGA-HE-A5NH,62.0,STAGE I,,Male,0,0,0,0,0
+TCGA-HE-A5NI,73.0,STAGE I,,Male,0,0,0,0,0
+TCGA-HE-A5NJ,58.0,,,Male,0,0,0,0,0
+TCGA-HE-A5NK,82.0,,,Male,0,0,0,0,0
+TCGA-HE-A5NL,51.0,STAGE I,,Male,0,0,0,0,0
+TCGA-IA-A40U,56.0,STAGE III,White,Male,0,0,0,1,0
+TCGA-IA-A40X,49.0,STAGE I,Black or African American,Female,0,0,0,0,0
+TCGA-IA-A40Y,60.0,STAGE III,White,Female,0,0,1,0,0
+TCGA-IA-A83S,81.0,STAGE II,White,Male,0,0,1,0,1
+TCGA-IA-A83T,80.0,STAGE II,White,Male,0,0,0,0,1
+TCGA-IA-A83V,63.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-IA-A83W,70.0,STAGE I,White,Male,0,0,0,1,0
+TCGA-IZ-8195,82.0,STAGE II,White,Male,0,0,0,0,0
+TCGA-IZ-8196,50.0,STAGE I,White,Male,0,0,0,1,0
+TCGA-IZ-A6M8,69.0,STAGE I,Black or African American,Male,0,0,0,0,1
+TCGA-IZ-A6M9,63.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-J7-6720,42.0,STAGE I,Asian,Male,0,0,0,0,0
+TCGA-J7-8537,37.0,STAGE III,Asian,Female,0,0,0,0,0
+TCGA-J7-A8I2,75.0,STAGE I,Asian,Male,0,0,0,0,0
+TCGA-KV-A6GD,85.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-KV-A6GE,65.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-KV-A74V,40.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-MH-A55W,50.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-MH-A55Z,65.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-MH-A560,62.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-MH-A561,66.0,STAGE I,White,Male,1,0,0,1,0
+TCGA-MH-A562,57.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-MH-A854,62.0,STAGE I,Black or African American,Female,0,0,0,0,1
+TCGA-MH-A855,52.0,STAGE II,Black or African American,Female,0,0,0,0,0
+TCGA-MH-A856,54.0,STAGE I,White,Male,1,0,0,0,0
+TCGA-MH-A857,63.0,STAGE I,Black or African American,Male,0,0,0,0,0
+TCGA-O9-A75Z,44.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-P4-A5E6,67.0,STAGE III,Black or African American,Male,0,0,0,0,0
+TCGA-P4-A5E7,74.0,STAGE I,White,Female,0,1,0,0,0
+TCGA-P4-A5E8,57.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-P4-A5EA,54.0,STAGE III,White,Female,0,0,0,0,1
+TCGA-P4-A5EB,83.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-P4-A5ED,51.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-P4-AAVK,74.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-P4-AAVL,85.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-P4-AAVM,69.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-P4-AAVO,69.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-PJ-A5Z8,60.0,STAGE I,White,Female,0,1,0,0,0
+TCGA-PJ-A5Z9,80.0,STAGE I,White,Female,0,0,0,0,1
+TCGA-Q2-A5QZ,61.0,STAGE III,Black or African American,Female,0,1,0,0,0
+TCGA-SX-A71R,51.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-SX-A71S,66.0,STAGE I,White,Female,0,0,1,1,0
+TCGA-SX-A71U,57.0,STAGE I,White,Male,1,1,1,0,0
+TCGA-SX-A71V,80.0,STAGE I,White,Male,0,0,1,0,0
+TCGA-SX-A7SL,74.0,STAGE I,,Male,0,0,0,0,0
+TCGA-SX-A7SM,60.0,STAGE IV,Black or African American,Male,0,0,1,0,0
+TCGA-SX-A7SN,52.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-SX-A7SO,64.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-SX-A7SP,66.0,STAGE I,White,Female,1,0,0,0,0
+TCGA-SX-A7SQ,48.0,STAGE I,White,Male,0,0,0,1,0
+TCGA-SX-A7SR,66.0,STAGE II,White,Male,1,0,0,0,0
+TCGA-SX-A7SS,67.0,STAGE I,White,Male,0,0,1,0,1
+TCGA-SX-A7SU,47.0,STAGE I,,Male,0,0,0,0,0
+TCGA-UN-AAZ9,76.0,STAGE I,Black or African American,Female,0,0,1,0,0
+TCGA-UZ-A9PJ,78.0,STAGE I,White,Male,0,0,0,1,0
+TCGA-UZ-A9PK,71.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PL,59.0,STAGE II,White,Male,0,0,0,1,0
+TCGA-UZ-A9PM,62.0,STAGE II,White,Male,0,0,0,0,1
+TCGA-UZ-A9PN,54.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-UZ-A9PO,80.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PP,60.0,STAGE I,White,Male,0,0,1,0,1
+TCGA-UZ-A9PQ,59.0,STAGE III,Black or African American,Male,0,0,0,0,0
+TCGA-UZ-A9PR,84.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PS,62.0,STAGE II,Black or African American,Female,1,1,0,0,1
+TCGA-UZ-A9PU,76.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PV,64.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PX,72.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9PZ,64.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-UZ-A9Q0,60.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-UZ-A9Q1,88.0,STAGE I,White,Female,0,1,0,0,0
+TCGA-V9-A7HT,67.0,STAGE II,Black or African American,Male,0,1,1,0,1
+TCGA-WN-A9G9,55.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-WN-AB4C,60.0,STAGE I,White,Female,0,0,1,0,0
+TCGA-Y8-A894,57.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-Y8-A895,74.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-Y8-A896,62.0,STAGE III,White,Male,0,0,0,0,0
+TCGA-Y8-A897,68.0,STAGE I,White,Female,0,0,0,0,0
+TCGA-Y8-A898,69.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-Y8-A8RY,63.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-Y8-A8RZ,55.0,STAGE I,White,Male,1,0,0,0,0
+TCGA-Y8-A8S0,58.0,STAGE I,White,Male,0,0,0,0,0
+TCGA-Y8-A8S1,61.0,STAGE I,White,Male,0,0,0,0,0

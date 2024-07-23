@@ -1,0 +1,66 @@
+,Study ID,Sample ID,Patient ID,Altered,TTN,TTN: MUT,TTN: AMP,TTN: HOMDEL,TTN: FUSION
+0,kich_tcga_pan_can_atlas_2018,TCGA-KL-8335-01,TCGA-KL-8335,1,R31411H,R31411H,no alteration,no alteration,no alteration
+1,kich_tcga_pan_can_atlas_2018,TCGA-KM-8438-01,TCGA-KM-8438,1,R1861H,R1861H,no alteration,no alteration,no alteration
+2,kich_tcga_pan_can_atlas_2018,TCGA-KN-8427-01,TCGA-KN-8427,1,F22950S,F22950S,no alteration,no alteration,no alteration
+3,kich_tcga_pan_can_atlas_2018,TCGA-KN-8428-01,TCGA-KN-8428,1,M17625V,M17625V,no alteration,no alteration,no alteration
+4,kich_tcga_pan_can_atlas_2018,TCGA-KL-8323-01,TCGA-KL-8323,0,no alteration,no alteration,no alteration,no alteration,no alteration
+5,kich_tcga_pan_can_atlas_2018,TCGA-KL-8324-01,TCGA-KL-8324,0,no alteration,no alteration,no alteration,no alteration,no alteration
+6,kich_tcga_pan_can_atlas_2018,TCGA-KL-8325-01,TCGA-KL-8325,0,no alteration,no alteration,no alteration,no alteration,no alteration
+7,kich_tcga_pan_can_atlas_2018,TCGA-KL-8326-01,TCGA-KL-8326,0,no alteration,no alteration,no alteration,no alteration,no alteration
+8,kich_tcga_pan_can_atlas_2018,TCGA-KL-8327-01,TCGA-KL-8327,0,no alteration,no alteration,no alteration,no alteration,no alteration
+9,kich_tcga_pan_can_atlas_2018,TCGA-KL-8328-01,TCGA-KL-8328,0,no alteration,no alteration,no alteration,no alteration,no alteration
+10,kich_tcga_pan_can_atlas_2018,TCGA-KL-8329-01,TCGA-KL-8329,0,no alteration,no alteration,no alteration,no alteration,no alteration
+11,kich_tcga_pan_can_atlas_2018,TCGA-KL-8330-01,TCGA-KL-8330,0,no alteration,no alteration,no alteration,no alteration,no alteration
+12,kich_tcga_pan_can_atlas_2018,TCGA-KL-8331-01,TCGA-KL-8331,0,no alteration,no alteration,no alteration,no alteration,no alteration
+13,kich_tcga_pan_can_atlas_2018,TCGA-KL-8332-01,TCGA-KL-8332,0,no alteration,no alteration,no alteration,no alteration,no alteration
+14,kich_tcga_pan_can_atlas_2018,TCGA-KL-8333-01,TCGA-KL-8333,0,no alteration,no alteration,no alteration,no alteration,no alteration
+15,kich_tcga_pan_can_atlas_2018,TCGA-KL-8334-01,TCGA-KL-8334,0,no alteration,no alteration,no alteration,no alteration,no alteration
+16,kich_tcga_pan_can_atlas_2018,TCGA-KL-8336-01,TCGA-KL-8336,0,no alteration,no alteration,no alteration,no alteration,no alteration
+17,kich_tcga_pan_can_atlas_2018,TCGA-KL-8337-01,TCGA-KL-8337,0,no alteration,no alteration,no alteration,no alteration,no alteration
+18,kich_tcga_pan_can_atlas_2018,TCGA-KL-8338-01,TCGA-KL-8338,0,no alteration,no alteration,no alteration,no alteration,no alteration
+19,kich_tcga_pan_can_atlas_2018,TCGA-KL-8339-01,TCGA-KL-8339,0,no alteration,no alteration,no alteration,no alteration,no alteration
+20,kich_tcga_pan_can_atlas_2018,TCGA-KL-8340-01,TCGA-KL-8340,0,no alteration,no alteration,no alteration,no alteration,no alteration
+21,kich_tcga_pan_can_atlas_2018,TCGA-KL-8341-01,TCGA-KL-8341,0,no alteration,no alteration,no alteration,no alteration,no alteration
+22,kich_tcga_pan_can_atlas_2018,TCGA-KL-8342-01,TCGA-KL-8342,0,no alteration,no alteration,no alteration,no alteration,no alteration
+23,kich_tcga_pan_can_atlas_2018,TCGA-KL-8343-01,TCGA-KL-8343,0,no alteration,no alteration,no alteration,no alteration,no alteration
+24,kich_tcga_pan_can_atlas_2018,TCGA-KL-8344-01,TCGA-KL-8344,0,no alteration,no alteration,no alteration,no alteration,no alteration
+25,kich_tcga_pan_can_atlas_2018,TCGA-KL-8345-01,TCGA-KL-8345,0,no alteration,no alteration,no alteration,no alteration,no alteration
+26,kich_tcga_pan_can_atlas_2018,TCGA-KL-8346-01,TCGA-KL-8346,0,no alteration,no alteration,no alteration,no alteration,no alteration
+27,kich_tcga_pan_can_atlas_2018,TCGA-KM-8439-01,TCGA-KM-8439,0,no alteration,no alteration,no alteration,no alteration,no alteration
+28,kich_tcga_pan_can_atlas_2018,TCGA-KM-8440-01,TCGA-KM-8440,0,no alteration,no alteration,no alteration,no alteration,no alteration
+29,kich_tcga_pan_can_atlas_2018,TCGA-KM-8441-01,TCGA-KM-8441,0,no alteration,no alteration,no alteration,no alteration,no alteration
+30,kich_tcga_pan_can_atlas_2018,TCGA-KM-8442-01,TCGA-KM-8442,0,no alteration,no alteration,no alteration,no alteration,no alteration
+31,kich_tcga_pan_can_atlas_2018,TCGA-KM-8443-01,TCGA-KM-8443,0,no alteration,no alteration,no alteration,no alteration,no alteration
+32,kich_tcga_pan_can_atlas_2018,TCGA-KM-8476-01,TCGA-KM-8476,0,no alteration,no alteration,no alteration,no alteration,no alteration
+33,kich_tcga_pan_can_atlas_2018,TCGA-KM-8477-01,TCGA-KM-8477,0,no alteration,no alteration,no alteration,no alteration,no alteration
+34,kich_tcga_pan_can_atlas_2018,TCGA-KM-8639-01,TCGA-KM-8639,0,no alteration,no alteration,no alteration,no alteration,no alteration
+35,kich_tcga_pan_can_atlas_2018,TCGA-KN-8418-01,TCGA-KN-8418,0,no alteration,no alteration,no alteration,no alteration,no alteration
+36,kich_tcga_pan_can_atlas_2018,TCGA-KN-8419-01,TCGA-KN-8419,0,no alteration,no alteration,no alteration,no alteration,no alteration
+37,kich_tcga_pan_can_atlas_2018,TCGA-KN-8421-01,TCGA-KN-8421,0,no alteration,no alteration,no alteration,no alteration,no alteration
+38,kich_tcga_pan_can_atlas_2018,TCGA-KN-8422-01,TCGA-KN-8422,0,no alteration,no alteration,no alteration,no alteration,no alteration
+39,kich_tcga_pan_can_atlas_2018,TCGA-KN-8423-01,TCGA-KN-8423,0,no alteration,no alteration,no alteration,no alteration,no alteration
+40,kich_tcga_pan_can_atlas_2018,TCGA-KN-8424-01,TCGA-KN-8424,0,no alteration,no alteration,no alteration,no alteration,no alteration
+41,kich_tcga_pan_can_atlas_2018,TCGA-KN-8425-01,TCGA-KN-8425,0,no alteration,no alteration,no alteration,no alteration,no alteration
+42,kich_tcga_pan_can_atlas_2018,TCGA-KN-8426-01,TCGA-KN-8426,0,no alteration,no alteration,no alteration,no alteration,no alteration
+43,kich_tcga_pan_can_atlas_2018,TCGA-KN-8429-01,TCGA-KN-8429,0,no alteration,no alteration,no alteration,no alteration,no alteration
+44,kich_tcga_pan_can_atlas_2018,TCGA-KN-8431-01,TCGA-KN-8431,0,no alteration,no alteration,no alteration,no alteration,no alteration
+45,kich_tcga_pan_can_atlas_2018,TCGA-KN-8432-01,TCGA-KN-8432,0,no alteration,no alteration,no alteration,no alteration,no alteration
+46,kich_tcga_pan_can_atlas_2018,TCGA-KN-8433-01,TCGA-KN-8433,0,no alteration,no alteration,no alteration,no alteration,no alteration
+47,kich_tcga_pan_can_atlas_2018,TCGA-KN-8434-01,TCGA-KN-8434,0,no alteration,no alteration,no alteration,no alteration,no alteration
+48,kich_tcga_pan_can_atlas_2018,TCGA-KN-8435-01,TCGA-KN-8435,0,no alteration,no alteration,no alteration,no alteration,no alteration
+49,kich_tcga_pan_can_atlas_2018,TCGA-KN-8436-01,TCGA-KN-8436,0,no alteration,no alteration,no alteration,no alteration,no alteration
+50,kich_tcga_pan_can_atlas_2018,TCGA-KN-8437-01,TCGA-KN-8437,0,no alteration,no alteration,no alteration,no alteration,no alteration
+51,kich_tcga_pan_can_atlas_2018,TCGA-KO-8403-01,TCGA-KO-8403,0,no alteration,no alteration,no alteration,no alteration,no alteration
+52,kich_tcga_pan_can_atlas_2018,TCGA-KO-8404-01,TCGA-KO-8404,0,no alteration,no alteration,no alteration,no alteration,no alteration
+53,kich_tcga_pan_can_atlas_2018,TCGA-KO-8405-01,TCGA-KO-8405,0,no alteration,no alteration,no alteration,no alteration,no alteration
+54,kich_tcga_pan_can_atlas_2018,TCGA-KO-8406-01,TCGA-KO-8406,0,no alteration,no alteration,no alteration,no alteration,no alteration
+55,kich_tcga_pan_can_atlas_2018,TCGA-KO-8407-01,TCGA-KO-8407,0,no alteration,no alteration,no alteration,no alteration,no alteration
+56,kich_tcga_pan_can_atlas_2018,TCGA-KO-8408-01,TCGA-KO-8408,0,no alteration,no alteration,no alteration,no alteration,no alteration
+57,kich_tcga_pan_can_atlas_2018,TCGA-KO-8409-01,TCGA-KO-8409,0,no alteration,no alteration,no alteration,no alteration,no alteration
+58,kich_tcga_pan_can_atlas_2018,TCGA-KO-8410-01,TCGA-KO-8410,0,no alteration,no alteration,no alteration,no alteration,no alteration
+59,kich_tcga_pan_can_atlas_2018,TCGA-KO-8411-01,TCGA-KO-8411,0,no alteration,no alteration,no alteration,no alteration,no alteration
+60,kich_tcga_pan_can_atlas_2018,TCGA-KO-8413-01,TCGA-KO-8413,0,no alteration,no alteration,no alteration,no alteration,no alteration
+61,kich_tcga_pan_can_atlas_2018,TCGA-KO-8414-01,TCGA-KO-8414,0,no alteration,no alteration,no alteration,no alteration,no alteration
+62,kich_tcga_pan_can_atlas_2018,TCGA-KO-8415-01,TCGA-KO-8415,0,no alteration,no alteration,no alteration,no alteration,no alteration
+63,kich_tcga_pan_can_atlas_2018,TCGA-KO-8416-01,TCGA-KO-8416,0,no alteration,no alteration,no alteration,no alteration,no alteration
+64,kich_tcga_pan_can_atlas_2018,TCGA-KO-8417-01,TCGA-KO-8417,0,no alteration,no alteration,no alteration,no alteration,no alteration

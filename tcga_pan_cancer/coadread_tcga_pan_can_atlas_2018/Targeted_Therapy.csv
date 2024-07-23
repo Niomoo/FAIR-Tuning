@@ -1,0 +1,17 @@
+Target,Therapy,Type,Description
+VEGF,Bevacizumab (Avastin);Ramucirumab (Cyramza);Ziv-aflibercept (Zaltrap),protein,"These drugs are given as infusions into your vein (IV) every 2 or 3 weeks, in most cases along with chemotherapy. When combined with chemo, these drugs can often help people with advanced colon or rectal cancers live longer."
+EGFR,Cetuximab (Erbitux);Panitumumab (Vectibix),protein,"These drugs typically don't work by themselves in colorectal cancers that have mutations (defects) in the KRAS, NRAS or BRAF gene. Doctors commonly test the tumor for these gene changes before treatment, and only use these drugs in people whose cancer cells don't have these mutations. 
+
+One exception to this is when an EGFR inhibitor is combined with the BRAF inhibitor encorafenib (see below). The combination of these two drugs appears to help people with advanced colorectal cancer live longer, even when the cells have one of these gene mutations."
+BRAF,Encorafenib£¨Braftovi£©,gene,"This drug is taken as pills or capsules, once a day.
+
+Common side effects can include skin thickening, diarrhea, rash, loss of appetite, abdominal pain, joint pain, fatigue, and nausea.
+
+Some people treated with a BRAF inhibitor might develop new squamous cell skin cancers. These cancers can often be treated by removing them. Still, your doctor will want to check your skin regularly during treatment and for several months afterward. You should also let your doctor know right away if you notice any new growths or abnormal areas on your skin."
+HER2,"Trastuzumab (Herceptin, other names);Pertuzumab (Perjeta);Tucatinib (Tukysa);Lapatinib (Tykerb);Fam-trastuzumab deruxtecan (Enhertu)",protein,"The side effects of HER2 targeted drugs tend to be mild overall, but some can be serious, and different drugs can have different possible side effects. Discuss what you can expect with your doctor. "
+NTRK,Larotrectinib (Vitrakvi);entrectinib (Rozlytrek),gene,"Common side effects of these drugs can include dizziness, fatigue, nausea, vomiting, constipation, weight gain, and diarrhea.
+
+Less common but serious side effects can include abnormal liver tests, heart problems, and confusion."
+multikinase,Regorafenib (Stivarga),kinase,"Common side effects include fatigue, rash, hand-foot syndrome (redness and irritation of the hands and feet), diarrhea, high blood pressure, weight loss, and abdominal pain.
+
+Less common but more serious side effects can include severe bleeding or perforations (holes) in the stomach or intestines."

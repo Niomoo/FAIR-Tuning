@@ -1,0 +1,37 @@
+Patient ID,Diagnosis Age,Neoplasm Disease Stage American Joint Committee on Cancer Code,Race Category,Sex,IDH1-Percentage_5.6_,FGFR2-Percentage_13.9_,BAP1-Percentage_19.4_,PBRM1-Percentage_19.4_,DNAH5-Percentage_11.1_,IDH1-Percentage_13.9_,ARID1A-Percentage_11.1_
+TCGA-3X-AAV9,72,STAGE I,Asian,Male,0,0,0,0,0,0,0
+TCGA-3X-AAVA,50,STAGE II,White,Female,0,0,0,0,0,0,0
+TCGA-3X-AAVB,70,STAGE IVB,White,Female,0,0,0,0,0,0,0
+TCGA-3X-AAVC,72,STAGE I,White,Female,0,0,0,0,1,0,0
+TCGA-3X-AAVE,60,STAGE II,Asian,Male,0,0,0,0,0,0,1
+TCGA-4G-AAZO,71,STAGE II,White,Female,0,0,1,0,0,0,0
+TCGA-4G-AAZT,62,STAGE I,White,Male,0,0,1,1,0,0,1
+TCGA-W5-AA2G,62,STAGE I,White,Female,1,0,0,0,0,1,0
+TCGA-W5-AA2H,70,STAGE III,White,Female,0,0,0,0,0,0,0
+TCGA-W5-AA2I,66,STAGE I,White,Male,0,0,0,1,0,0,0
+TCGA-W5-AA2O,57,STAGE I,White,Male,1,0,0,0,0,1,0
+TCGA-W5-AA2Q,68,STAGE II,White,Male,0,1,0,0,0,0,0
+TCGA-W5-AA2R,77,STAGE I,White,Female,0,0,0,0,0,0,0
+TCGA-W5-AA2T,64,STAGE II,White,Female,0,0,0,0,0,0,0
+TCGA-W5-AA2U,78,STAGE I,White,Female,0,0,0,0,0,0,0
+TCGA-W5-AA2W,31,STAGE IVA,White,Female,0,1,1,0,0,0,0
+TCGA-W5-AA2X,67,STAGE IVB,White,Male,0,0,0,0,1,0,0
+TCGA-W5-AA2Z,29,STAGE II,White,Female,0,1,0,0,0,0,0
+TCGA-W5-AA30,82,STAGE I,White,Male,0,0,0,1,0,0,0
+TCGA-W5-AA31,71,STAGE I,White,Male,0,0,1,0,0,0,0
+TCGA-W5-AA33,60,STAGE I,White,Male,0,0,0,0,1,0,0
+TCGA-W5-AA34,75,STAGE I,White,Female,1,1,0,0,0,1,0
+TCGA-W5-AA36,51,STAGE IV,White,Female,1,1,0,0,0,1,0
+TCGA-W5-AA38,55,STAGE I,White,Female,0,0,0,1,0,0,0
+TCGA-W5-AA39,81,STAGE II,White,Male,0,0,1,1,0,0,0
+TCGA-W6-AA0S,46,STAGE I,White,Female,0,0,0,0,0,0,0
+TCGA-WD-A7RX,71,STAGE II,White,Female,0,0,0,0,0,0,1
+TCGA-YR-A95A,52,STAGE IV,White,Male,1,0,0,0,0,1,1
+TCGA-ZD-A8I3,73,STAGE II,Asian,Female,0,0,0,0,0,0,0
+TCGA-ZH-A8Y1,74,STAGE IVA,White,Female,0,1,0,1,0,0,0
+TCGA-ZH-A8Y2,59,STAGE I,Black or African American,Female,0,0,1,0,0,0,0
+TCGA-ZH-A8Y4,58,STAGE I,White,Male,0,0,1,1,0,0,0
+TCGA-ZH-A8Y5,69,STAGE IVB,White,Male,0,1,0,0,0,0,0
+TCGA-ZH-A8Y6,41,STAGE I,Black or African American,Female,0,0,0,0,1,0,0
+TCGA-ZH-A8Y8,73,STAGE I,White,Male,0,0,0,0,0,0,0
+TCGA-ZU-A8S4,52,STAGE I,White,Male,0,0,0,0,0,0,1

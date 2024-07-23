@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.hypothesis/
+wandb/
+pretrained_weight/
+models*/
+embedding/
+CHIEF_features/
+result.csv

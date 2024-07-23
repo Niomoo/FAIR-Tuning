@@ -1,0 +1,49 @@
+,Study ID,Sample ID,Patient ID,Altered,IGLV3-1,IGLV3-1: MUT,IGLV3-1: AMP,IGLV3-1: HOMDEL,IGLV3-1: FUSION
+0,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A7Q1-01,TCGA-FA-A7Q1,1,"S70T, Q107P","S70T, Q107P",no alteration,no alteration,no alteration
+1,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A82F-01,TCGA-FA-A82F,1,"Y50F, T90A, L91V","Y50F, T90A, L91V",no alteration,no alteration,no alteration
+2,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8041-01,TCGA-FF-8041,1,"X16_splice, Q25L, V29E, Q35H, Q56Vfs*17, K71E, G86V, N87H, I93F, Y105F","X16_splice, Q25L, V29E, Q35H, Q56Vfs*17, K71E, G86V, N87H, I93F, Y105F",no alteration,no alteration,no alteration
+3,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8043-01,TCGA-FF-8043,1,S70T,S70T,no alteration,no alteration,no alteration
+4,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8047-01,TCGA-FF-8047,1,"S70N, Q25R, A89V","S70N, Q25R, A89V",no alteration,no alteration,no alteration
+5,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-A7CQ-01,TCGA-FF-A7CQ,1,"S70T, L23V, K45T","S70T, L23V, K45T",no alteration,no alteration,no alteration
+6,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-A7CR-01,TCGA-FF-A7CR,1,"F7I, K71R","F7I, K71R",no alteration,no alteration,no alteration
+7,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-A4D4-01,TCGA-GR-A4D4,1,S70T,S70T,no alteration,no alteration,no alteration
+8,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TQ-01,TCGA-GS-A9TQ,1,"Y21*, A98T","Y21*, A98T",no alteration,no alteration,no alteration
+9,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TT-01,TCGA-GS-A9TT,1,"S70T, A89V, V31M, S38T, A51T, S112C, S112I","S70T, A89V, V31M, S38T, A51T, S112C, S112I",no alteration,no alteration,no alteration
+10,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TU-01,TCGA-GS-A9TU,1,K45T,K45T,no alteration,no alteration,no alteration
+11,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TY-01,TCGA-GS-A9TY,1,"S70N, S20P, S112T","S70N, S20P, S112T",no alteration,no alteration,no alteration
+12,dlbc_tcga_pan_can_atlas_2018,TCGA-RQ-A68N-01,TCGA-RQ-A68N,1,"A51P, Q55H, Q68*, N84D, S111N","A51P, Q55H, Q68*, N84D, S111N",no alteration,no alteration,no alteration
+13,dlbc_tcga_pan_can_atlas_2018,TCGA-RQ-A6JB-01,TCGA-RQ-A6JB,1,"I39T, K45*, D48G","I39T, K45*, D48G",no alteration,no alteration,no alteration
+14,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-8693-01,TCGA-FA-8693,0,no alteration,no alteration,no alteration,no alteration,no alteration
+15,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A4BB-01,TCGA-FA-A4BB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+16,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A4XK-01,TCGA-FA-A4XK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+17,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A6HN-01,TCGA-FA-A6HN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+18,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A6HO-01,TCGA-FA-A6HO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+19,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A7DS-01,TCGA-FA-A7DS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+20,dlbc_tcga_pan_can_atlas_2018,TCGA-FA-A86F-01,TCGA-FA-A86F,0,no alteration,no alteration,no alteration,no alteration,no alteration
+21,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8042-01,TCGA-FF-8042,0,no alteration,no alteration,no alteration,no alteration,no alteration
+22,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8046-01,TCGA-FF-8046,0,no alteration,no alteration,no alteration,no alteration,no alteration
+23,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8061-01,TCGA-FF-8061,0,no alteration,no alteration,no alteration,no alteration,no alteration
+24,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-8062-01,TCGA-FF-8062,0,no alteration,not profiled,no alteration,no alteration,not profiled
+25,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-A7CW-01,TCGA-FF-A7CW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+26,dlbc_tcga_pan_can_atlas_2018,TCGA-FF-A7CX-01,TCGA-FF-A7CX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+27,dlbc_tcga_pan_can_atlas_2018,TCGA-FM-8000-01,TCGA-FM-8000,0,no alteration,not profiled,no alteration,no alteration,not profiled
+28,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6324-01,TCGA-G8-6324,0,no alteration,not profiled,no alteration,no alteration,not profiled
+29,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6325-01,TCGA-G8-6325,0,no alteration,no alteration,no alteration,no alteration,no alteration
+30,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6326-01,TCGA-G8-6326,0,no alteration,no alteration,no alteration,no alteration,no alteration
+31,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6906-01,TCGA-G8-6906,0,no alteration,no alteration,no alteration,no alteration,no alteration
+32,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6907-01,TCGA-G8-6907,0,no alteration,not profiled,no alteration,no alteration,not profiled
+33,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6909-01,TCGA-G8-6909,0,no alteration,no alteration,no alteration,no alteration,no alteration
+34,dlbc_tcga_pan_can_atlas_2018,TCGA-G8-6914-01,TCGA-G8-6914,0,no alteration,not profiled,no alteration,no alteration,not profiled
+35,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-7351-01,TCGA-GR-7351,0,no alteration,not profiled,no alteration,no alteration,not profiled
+36,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-7353-01,TCGA-GR-7353,0,no alteration,not profiled,no alteration,no alteration,not profiled
+37,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-A4D5-01,TCGA-GR-A4D5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+38,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-A4D6-01,TCGA-GR-A4D6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+39,dlbc_tcga_pan_can_atlas_2018,TCGA-GR-A4D9-01,TCGA-GR-A4D9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+40,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TV-01,TCGA-GS-A9TV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+41,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TW-01,TCGA-GS-A9TW,0,no alteration,no alteration,no alteration,no alteration,no alteration
+42,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TX-01,TCGA-GS-A9TX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+43,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9TZ-01,TCGA-GS-A9TZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+44,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9U3-01,TCGA-GS-A9U3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+45,dlbc_tcga_pan_can_atlas_2018,TCGA-GS-A9U4-01,TCGA-GS-A9U4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+46,dlbc_tcga_pan_can_atlas_2018,TCGA-RQ-AAAT-01,TCGA-RQ-AAAT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+47,dlbc_tcga_pan_can_atlas_2018,TCGA-VB-A8QN-01,TCGA-VB-A8QN,0,no alteration,no alteration,no alteration,no alteration,no alteration

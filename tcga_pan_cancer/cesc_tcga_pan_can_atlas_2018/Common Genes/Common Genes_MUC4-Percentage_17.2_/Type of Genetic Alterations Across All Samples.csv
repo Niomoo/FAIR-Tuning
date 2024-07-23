@@ -1,0 +1,298 @@
+,Study ID,Sample ID,Patient ID,Altered,MUC4,MUC4: MUT,MUC4: AMP,MUC4: HOMDEL,MUC4: FUSION
+0,cesc_tcga_pan_can_atlas_2018,TCGA-2W-A8YY-01,TCGA-2W-A8YY,1,"G4490D, A4345V, D2869N, S778I, V393M","G4490D, A4345V, D2869N, S778I, V393M",no alteration,no alteration,no alteration
+1,cesc_tcga_pan_can_atlas_2018,TCGA-BI-A0VR-01,TCGA-BI-A0VR,1,AMP,no alteration,AMP,AMP,no alteration
+2,cesc_tcga_pan_can_atlas_2018,TCGA-BI-A20A-01,TCGA-BI-A20A,1,AMP,no alteration,AMP,AMP,no alteration
+3,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BE-01,TCGA-C5-A1BE,1,AMP,no alteration,AMP,AMP,no alteration
+4,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BI-01,TCGA-C5-A1BI,1,AMP,no alteration,AMP,AMP,no alteration
+5,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BK-01,TCGA-C5-A1BK,1,AMP,no alteration,AMP,AMP,no alteration
+6,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BL-01,TCGA-C5-A1BL,1,AMP,no alteration,AMP,AMP,no alteration
+7,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1M8-01,TCGA-C5-A1M8,1,A741V,A741V,no alteration,no alteration,no alteration
+8,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1ML-01,TCGA-C5-A1ML,1,AMP,no alteration,AMP,AMP,no alteration
+9,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LX-01,TCGA-C5-A2LX,1,"T4046S, AMP",T4046S,AMP,AMP,no alteration
+10,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CK-01,TCGA-C5-A7CK,1,AMP,no alteration,AMP,AMP,no alteration
+11,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7UE-01,TCGA-C5-A7UE,1,"L3969F, S3512*, AMP","L3969F, S3512*",AMP,AMP,no alteration
+12,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7UH-01,TCGA-C5-A7UH,1,T3131R,T3131R,no alteration,no alteration,no alteration
+13,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7X5-01,TCGA-C5-A7X5,1,"S2263F, AMP",S2263F,AMP,AMP,no alteration
+14,cesc_tcga_pan_can_atlas_2018,TCGA-DG-A2KH-01,TCGA-DG-A2KH,1,L2081V,L2081V,no alteration,no alteration,no alteration
+15,cesc_tcga_pan_can_atlas_2018,TCGA-DG-A2KL-01,TCGA-DG-A2KL,1,S3066C,S3066C,no alteration,no alteration,no alteration
+16,cesc_tcga_pan_can_atlas_2018,TCGA-DR-A0ZL-01,TCGA-DR-A0ZL,1,AMP,no alteration,AMP,AMP,no alteration
+17,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A0VK-01,TCGA-DS-A0VK,1,AMP,no alteration,AMP,AMP,no alteration
+18,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A5RQ-01,TCGA-DS-A5RQ,1,S1864*,S1864*,no alteration,no alteration,no alteration
+19,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A1QT-01,TCGA-EA-A1QT,1,AMP,no alteration,AMP,AMP,no alteration
+20,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3HR-01,TCGA-EA-A3HR,1,"L957Vfs*7, AMP",L957Vfs*7,AMP,AMP,no alteration
+21,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3HS-01,TCGA-EA-A3HS,1,AMP,no alteration,AMP,AMP,no alteration
+22,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3HU-01,TCGA-EA-A3HU,1,S3368L,S3368L,not profiled,not profiled,no alteration
+23,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A411-01,TCGA-EA-A411,1,T3087S,T3087S,no alteration,no alteration,no alteration
+24,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A44S-01,TCGA-EA-A44S,1,AMP,no alteration,AMP,AMP,no alteration
+25,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A50E-01,TCGA-EA-A50E,1,AMP,no alteration,AMP,AMP,no alteration
+26,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A556-01,TCGA-EA-A556,1,AMP,no alteration,AMP,AMP,no alteration
+27,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A5ZE-01,TCGA-EA-A5ZE,1,R5106W,R5106W,no alteration,no alteration,no alteration
+28,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2R7-01,TCGA-EK-A2R7,1,S1079Y,S1079Y,no alteration,no alteration,no alteration
+29,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2R8-01,TCGA-EK-A2R8,1,AMP,no alteration,AMP,AMP,no alteration
+30,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RD-01,TCGA-EK-A2RD,1,"S3064L, S2072L, P1698S, L2353V, L1937V","S3064L, S2072L, P1698S, L2353V, L1937V",no alteration,no alteration,no alteration
+31,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RK-01,TCGA-EK-A2RK,1,L1697F,L1697F,no alteration,no alteration,no alteration
+32,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RM-01,TCGA-EK-A2RM,1,"L3633V, AMP",L3633V,AMP,AMP,no alteration
+33,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A3GJ-01,TCGA-EK-A3GJ,1,"S3528L, S2202F, L2129I, S2104*, S2056*, Q2045*, P2034S, S1912L, L1681V, S1624L, S2040L","S3528L, S2202F, L2129I, S2104*, S2056*, Q2045*, P2034S, S1912L, L1681V, S1624L, S2040L",no alteration,no alteration,no alteration
+34,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A3GK-01,TCGA-EK-A3GK,1,"*5413Sext*56, S1032L, L1489V","*5413Sext*56, S1032L, L1489V",no alteration,no alteration,no alteration
+35,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A3GM-01,TCGA-EK-A3GM,1,"V3987F, T3935I, L2465V, S1912L, S1608*, D401N, S2472L, S2392L, S2008*","V3987F, T3935I, L2465V, S1912L, S1608*, D401N, S2472L, S2392L, S2008*",no alteration,no alteration,no alteration
+36,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3HY-01,TCGA-FU-A3HY,1,S3863F,S3863F,no alteration,no alteration,no alteration
+37,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3HZ-01,TCGA-FU-A3HZ,1,E478*,E478*,no alteration,no alteration,no alteration
+38,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3NI-01,TCGA-FU-A3NI,1,"S2272F, L1889F, AMP","S2272F, L1889F",AMP,AMP,no alteration
+39,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LH-01,TCGA-IR-A3LH,1,"P2258S, L2881F","P2258S, L2881F",no alteration,no alteration,no alteration
+40,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LK-01,TCGA-IR-A3LK,1,"S2936L, S2552*, L2481F, S2359F, S2344*, H2109Y, S1911F, E504Q, D190H, S3208L","S2936L, S2552*, L2481F, S2359F, S2344*, H2109Y, S1911F, E504Q, D190H, S3208L",no alteration,no alteration,no alteration
+41,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LL-01,TCGA-IR-A3LL,1,"L2273V, S3336L, S2904*, H2546Y, L2577V, L2481V, S2379L, L2161F, L2145F","L2273V, S3336L, S2904*, H2546Y, L2577V, L2481V, S2379L, L2161F, L2145F",no alteration,no alteration,no alteration
+42,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VJ-01,TCGA-JW-A5VJ,1,"S2904L, L2097F","S2904L, L2097F",no alteration,no alteration,no alteration
+43,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VL-01,TCGA-JW-A5VL,1,"S2968*, S2936L, L2897F, G2844D, S2552L, L1633V, S3495F, S3280F, L2945F, P2754S, L2209F, S1736*, L1729F, P1618A, AMP","S2968*, S2936L, L2897F, G2844D, S2552L, L1633V, S3495F, S3280F, L2945F, P2754S, L2209F, S1736*, L1729F, P1618A",AMP,AMP,no alteration
+44,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A852-01,TCGA-JW-A852,1,"S2344*, AMP",S2344*,AMP,AMP,no alteration
+45,cesc_tcga_pan_can_atlas_2018,TCGA-JW-AAVH-01,TCGA-JW-AAVH,1,AMP,no alteration,AMP,AMP,no alteration
+46,cesc_tcga_pan_can_atlas_2018,TCGA-JX-A3Q0-01,TCGA-JX-A3Q0,1,S4160C,S4160C,no alteration,no alteration,no alteration
+47,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A4AV-01,TCGA-LP-A4AV,1,"L3745V, S2184*","L3745V, S2184*",no alteration,no alteration,no alteration
+48,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A4AW-01,TCGA-LP-A4AW,1,AMP,no alteration,AMP,AMP,no alteration
+49,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A5U2-01,TCGA-LP-A5U2,1,L2209V,L2209V,no alteration,no alteration,no alteration
+50,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A5U3-01,TCGA-LP-A5U3,1,S1872C,S1872C,no alteration,no alteration,no alteration
+51,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA3W-01,TCGA-MA-AA3W,1,AMP,no alteration,AMP,AMP,no alteration
+52,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA3X-01,TCGA-MA-AA3X,1,S2536*,S2536*,no alteration,no alteration,no alteration
+53,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA3Z-01,TCGA-MA-AA3Z,1,AMP,no alteration,AMP,AMP,no alteration
+54,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA42-01,TCGA-MA-AA42,1,"P1890A, AMP",P1890A,AMP,AMP,no alteration
+55,cesc_tcga_pan_can_atlas_2018,TCGA-MY-A5BD-01,TCGA-MY-A5BD,1,AMP,not profiled,AMP,AMP,not profiled
+56,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A5R1-01,TCGA-Q1-A5R1,1,AMP,no alteration,AMP,AMP,no alteration
+57,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A5R2-01,TCGA-Q1-A5R2,1,"S3968C, AMP",S3968C,AMP,AMP,no alteration
+58,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A6DW-01,TCGA-Q1-A6DW,1,N2533S,N2533S,no alteration,no alteration,no alteration
+59,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A73O-01,TCGA-Q1-A73O,1,"S3289*, L1361V, P950A","S3289*, L1361V, P950A",no alteration,no alteration,no alteration
+60,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A73S-01,TCGA-Q1-A73S,1,AMP,no alteration,AMP,AMP,no alteration
+61,cesc_tcga_pan_can_atlas_2018,TCGA-RA-A741-01,TCGA-RA-A741,1,"P3410S, P3778S, L3409F, S1832*, H1069Y, S877F, S439F, L274V, L101V, P1058S","P3410S, P3778S, L3409F, S1832*, H1069Y, S877F, S439F, L274V, L101V, P1058S",no alteration,no alteration,no alteration
+62,cesc_tcga_pan_can_atlas_2018,TCGA-UC-A7PF-01,TCGA-UC-A7PF,1,"S1400L, AMP",S1400L,AMP,AMP,no alteration
+63,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EC-01,TCGA-VS-A8EC,1,AMP,no alteration,AMP,AMP,no alteration
+64,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EH-01,TCGA-VS-A8EH,1,V655I,V655I,no alteration,no alteration,no alteration
+65,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EI-01,TCGA-VS-A8EI,1,P4146A,P4146A,no alteration,no alteration,no alteration
+66,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8QA-01,TCGA-VS-A8QA,1,"L1729F, S1767F, L1713I","L1729F, S1767F, L1713I",no alteration,no alteration,no alteration
+67,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8QC-01,TCGA-VS-A8QC,1,"L3777V, AMP",L3777V,AMP,AMP,no alteration
+68,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A94X-01,TCGA-VS-A94X,1,"H2546Y, P2578S, S2379*, S1863F, S1208*, P116S","H2546Y, P2578S, S2379*, S1863F, S1208*, P116S",no alteration,no alteration,no alteration
+69,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A950-01,TCGA-VS-A950,1,AMP,no alteration,AMP,AMP,no alteration
+70,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A957-01,TCGA-VS-A957,1,AMP,no alteration,AMP,AMP,no alteration
+71,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A958-01,TCGA-VS-A958,1,"L3777V, S3784L, S3720L, L2881V, T1899R, P1634A","L3777V, S3784L, S3720L, L2881V, T1899R, P1634A",no alteration,no alteration,no alteration
+72,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9U7-01,TCGA-VS-A9U7,1,P2208A,P2208A,no alteration,no alteration,no alteration
+73,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UO-01,TCGA-VS-A9UO,1,AMP,no alteration,AMP,AMP,no alteration
+74,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UQ-01,TCGA-VS-A9UQ,1,AMP,no alteration,AMP,AMP,no alteration
+75,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXD-01,TCGA-ZJ-AAXD,1,AMP,no alteration,AMP,AMP,no alteration
+76,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXI-01,TCGA-ZJ-AAXI,1,S2968*,S2968*,no alteration,no alteration,no alteration
+77,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXU-01,TCGA-ZJ-AAXU,1,"S1720*, AMP",S1720*,AMP,AMP,no alteration
+78,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AB0I-01,TCGA-ZJ-AB0I,1,A5186T,A5186T,no alteration,no alteration,no alteration
+79,cesc_tcga_pan_can_atlas_2018,TCGA-4J-AA1J-01,TCGA-4J-AA1J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+80,cesc_tcga_pan_can_atlas_2018,TCGA-BI-A0VS-01,TCGA-BI-A0VS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+81,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A0TN-01,TCGA-C5-A0TN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+82,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BF-01,TCGA-C5-A1BF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+83,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BJ-01,TCGA-C5-A1BJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+84,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BM-01,TCGA-C5-A1BM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+85,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BN-01,TCGA-C5-A1BN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+86,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1BQ-01,TCGA-C5-A1BQ,0,no alteration,not profiled,no alteration,no alteration,not profiled
+87,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1M5-01,TCGA-C5-A1M5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+88,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1M6-01,TCGA-C5-A1M6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+89,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1M7-01,TCGA-C5-A1M7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+90,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1M9-01,TCGA-C5-A1M9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+91,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1ME-01,TCGA-C5-A1ME,0,no alteration,no alteration,no alteration,no alteration,no alteration
+92,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MF-01,TCGA-C5-A1MF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+93,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MH-01,TCGA-C5-A1MH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+94,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MI-01,TCGA-C5-A1MI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+95,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MJ-01,TCGA-C5-A1MJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+96,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MK-01,TCGA-C5-A1MK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+97,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MN-01,TCGA-C5-A1MN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+98,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MP-01,TCGA-C5-A1MP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+99,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A1MQ-01,TCGA-C5-A1MQ,0,no alteration,no alteration,not profiled,not profiled,no alteration
+100,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LS-01,TCGA-C5-A2LS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+101,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LT-01,TCGA-C5-A2LT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+102,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LV-01,TCGA-C5-A2LV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+103,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LY-01,TCGA-C5-A2LY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+104,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2LZ-01,TCGA-C5-A2LZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+105,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2M1-01,TCGA-C5-A2M1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+106,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A2M2-01,TCGA-C5-A2M2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+107,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A3HD-01,TCGA-C5-A3HD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+108,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A3HE-01,TCGA-C5-A3HE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+109,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A3HF-01,TCGA-C5-A3HF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+110,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A3HL-01,TCGA-C5-A3HL,0,no alteration,not profiled,no alteration,no alteration,not profiled
+111,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CG-01,TCGA-C5-A7CG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+112,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CH-01,TCGA-C5-A7CH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+113,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CJ-01,TCGA-C5-A7CJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+114,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CL-01,TCGA-C5-A7CL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+115,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CM-01,TCGA-C5-A7CM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+116,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7CO-01,TCGA-C5-A7CO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+117,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7UC-01,TCGA-C5-A7UC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+118,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7UI-01,TCGA-C5-A7UI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+119,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7X3-01,TCGA-C5-A7X3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+120,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7X8-01,TCGA-C5-A7X8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+121,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A7XC-01,TCGA-C5-A7XC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+122,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8XH-01,TCGA-C5-A8XH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+123,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8XI-01,TCGA-C5-A8XI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+124,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8XJ-01,TCGA-C5-A8XJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+125,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8XK-01,TCGA-C5-A8XK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+126,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8YQ-01,TCGA-C5-A8YQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+127,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8YR-01,TCGA-C5-A8YR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+128,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8YT-01,TCGA-C5-A8YT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+129,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A8ZZ-01,TCGA-C5-A8ZZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+130,cesc_tcga_pan_can_atlas_2018,TCGA-C5-A907-01,TCGA-C5-A907,0,no alteration,no alteration,no alteration,no alteration,no alteration
+131,cesc_tcga_pan_can_atlas_2018,TCGA-DG-A2KJ-01,TCGA-DG-A2KJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+132,cesc_tcga_pan_can_atlas_2018,TCGA-DG-A2KK-01,TCGA-DG-A2KK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+133,cesc_tcga_pan_can_atlas_2018,TCGA-DG-A2KM-01,TCGA-DG-A2KM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+134,cesc_tcga_pan_can_atlas_2018,TCGA-DR-A0ZM-01,TCGA-DR-A0ZM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+135,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A0VL-01,TCGA-DS-A0VL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+136,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A0VM-01,TCGA-DS-A0VM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+137,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A0VN-01,TCGA-DS-A0VN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+138,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A1OA-01,TCGA-DS-A1OA,0,no alteration,no alteration,not profiled,not profiled,no alteration
+139,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A3LQ-01,TCGA-DS-A3LQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+140,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A7WF-01,TCGA-DS-A7WF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+141,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A7WH-01,TCGA-DS-A7WH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+142,cesc_tcga_pan_can_atlas_2018,TCGA-DS-A7WI-01,TCGA-DS-A7WI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+143,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A1QS-01,TCGA-EA-A1QS,0,no alteration,no alteration,no alteration,no alteration,no alteration
+144,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3HQ-01,TCGA-EA-A3HQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+145,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3HT-01,TCGA-EA-A3HT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+146,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3QD-01,TCGA-EA-A3QD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+147,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3QE-01,TCGA-EA-A3QE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+148,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A3Y4-01,TCGA-EA-A3Y4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+149,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A410-01,TCGA-EA-A410,0,no alteration,no alteration,no alteration,no alteration,no alteration
+150,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A439-01,TCGA-EA-A439,0,no alteration,no alteration,no alteration,no alteration,no alteration
+151,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A43B-01,TCGA-EA-A43B,0,no alteration,no alteration,no alteration,no alteration,no alteration
+152,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A4BA-01,TCGA-EA-A4BA,0,no alteration,not profiled,no alteration,no alteration,not profiled
+153,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A5FO-01,TCGA-EA-A5FO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+154,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A5O9-01,TCGA-EA-A5O9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+155,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A5ZD-01,TCGA-EA-A5ZD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+156,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A5ZF-01,TCGA-EA-A5ZF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+157,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A6QX-01,TCGA-EA-A6QX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+158,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A78R-01,TCGA-EA-A78R,0,no alteration,no alteration,no alteration,no alteration,no alteration
+159,cesc_tcga_pan_can_atlas_2018,TCGA-EA-A97N-01,TCGA-EA-A97N,0,no alteration,no alteration,no alteration,no alteration,no alteration
+160,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2GZ-01,TCGA-EK-A2GZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+161,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2H0-01,TCGA-EK-A2H0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+162,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2H1-01,TCGA-EK-A2H1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+163,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2IP-01,TCGA-EK-A2IP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+164,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2PG-01,TCGA-EK-A2PG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+165,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2PI-01,TCGA-EK-A2PI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+166,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2PK-01,TCGA-EK-A2PK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+167,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2PL-01,TCGA-EK-A2PL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+168,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2PM-01,TCGA-EK-A2PM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+169,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2R9-01,TCGA-EK-A2R9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+170,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RA-01,TCGA-EK-A2RA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+171,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RB-01,TCGA-EK-A2RB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+172,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RC-01,TCGA-EK-A2RC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+173,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RE-01,TCGA-EK-A2RE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+174,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RJ-01,TCGA-EK-A2RJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+175,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RL-01,TCGA-EK-A2RL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+176,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RN-01,TCGA-EK-A2RN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+177,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A2RO-01,TCGA-EK-A2RO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+178,cesc_tcga_pan_can_atlas_2018,TCGA-EK-A3GN-01,TCGA-EK-A3GN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+179,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A1H5-01,TCGA-EX-A1H5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+180,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A1H6-01,TCGA-EX-A1H6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+181,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A3L1-01,TCGA-EX-A3L1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+182,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A69L-01,TCGA-EX-A69L,0,no alteration,no alteration,no alteration,no alteration,no alteration
+183,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A69M-01,TCGA-EX-A69M,0,no alteration,no alteration,no alteration,no alteration,no alteration
+184,cesc_tcga_pan_can_atlas_2018,TCGA-EX-A8YF-01,TCGA-EX-A8YF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+185,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A23K-01,TCGA-FU-A23K,0,no alteration,no alteration,no alteration,no alteration,no alteration
+186,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A23L-01,TCGA-FU-A23L,0,no alteration,no alteration,no alteration,no alteration,no alteration
+187,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A2QG-01,TCGA-FU-A2QG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+188,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3EO-01,TCGA-FU-A3EO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+189,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3TQ-01,TCGA-FU-A3TQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+190,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3TX-01,TCGA-FU-A3TX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+191,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3WB-01,TCGA-FU-A3WB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+192,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A3YQ-01,TCGA-FU-A3YQ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+193,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A40J-01,TCGA-FU-A40J,0,no alteration,no alteration,no alteration,no alteration,no alteration
+194,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A57G-01,TCGA-FU-A57G,0,no alteration,not profiled,no alteration,no alteration,not profiled
+195,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A5XV-01,TCGA-FU-A5XV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+196,cesc_tcga_pan_can_atlas_2018,TCGA-FU-A770-01,TCGA-FU-A770,0,no alteration,no alteration,no alteration,no alteration,no alteration
+197,cesc_tcga_pan_can_atlas_2018,TCGA-GH-A9DA-01,TCGA-GH-A9DA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+198,cesc_tcga_pan_can_atlas_2018,TCGA-HG-A2PA-01,TCGA-HG-A2PA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+199,cesc_tcga_pan_can_atlas_2018,TCGA-HG-A9SC-01,TCGA-HG-A9SC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+200,cesc_tcga_pan_can_atlas_2018,TCGA-HM-A3JJ-01,TCGA-HM-A3JJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+201,cesc_tcga_pan_can_atlas_2018,TCGA-HM-A3JK-01,TCGA-HM-A3JK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+202,cesc_tcga_pan_can_atlas_2018,TCGA-HM-A4S6-01,TCGA-HM-A4S6,0,no alteration,not profiled,no alteration,no alteration,not profiled
+203,cesc_tcga_pan_can_atlas_2018,TCGA-HM-A6W2-01,TCGA-HM-A6W2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+204,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3L7-01,TCGA-IR-A3L7,0,no alteration,no alteration,no alteration,no alteration,no alteration
+205,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LA-01,TCGA-IR-A3LA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+206,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LB-01,TCGA-IR-A3LB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+207,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LC-01,TCGA-IR-A3LC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+208,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LF-01,TCGA-IR-A3LF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+209,cesc_tcga_pan_can_atlas_2018,TCGA-IR-A3LI-01,TCGA-IR-A3LI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+210,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VG-01,TCGA-JW-A5VG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+211,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VH-01,TCGA-JW-A5VH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+212,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VI-01,TCGA-JW-A5VI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+213,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A5VK-01,TCGA-JW-A5VK,0,no alteration,no alteration,no alteration,no alteration,no alteration
+214,cesc_tcga_pan_can_atlas_2018,TCGA-JW-A69B-01,TCGA-JW-A69B,0,no alteration,no alteration,no alteration,no alteration,no alteration
+215,cesc_tcga_pan_can_atlas_2018,TCGA-JX-A3PZ-01,TCGA-JX-A3PZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+216,cesc_tcga_pan_can_atlas_2018,TCGA-JX-A3Q8-01,TCGA-JX-A3Q8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+217,cesc_tcga_pan_can_atlas_2018,TCGA-JX-A5QV-01,TCGA-JX-A5QV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+218,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A4AU-01,TCGA-LP-A4AU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+219,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A4AX-01,TCGA-LP-A4AX,0,no alteration,no alteration,no alteration,no alteration,no alteration
+220,cesc_tcga_pan_can_atlas_2018,TCGA-LP-A7HU-01,TCGA-LP-A7HU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+221,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA3Y-01,TCGA-MA-AA3Y,0,no alteration,no alteration,no alteration,no alteration,no alteration
+222,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA41-01,TCGA-MA-AA41,0,no alteration,no alteration,no alteration,no alteration,no alteration
+223,cesc_tcga_pan_can_atlas_2018,TCGA-MA-AA43-01,TCGA-MA-AA43,0,no alteration,no alteration,no alteration,no alteration,no alteration
+224,cesc_tcga_pan_can_atlas_2018,TCGA-MU-A51Y-01,TCGA-MU-A51Y,0,no alteration,no alteration,no alteration,no alteration,no alteration
+225,cesc_tcga_pan_can_atlas_2018,TCGA-MU-A5YI-01,TCGA-MU-A5YI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+226,cesc_tcga_pan_can_atlas_2018,TCGA-MU-A8JM-01,TCGA-MU-A8JM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+227,cesc_tcga_pan_can_atlas_2018,TCGA-MY-A5BE-01,TCGA-MY-A5BE,0,no alteration,no alteration,no alteration,no alteration,no alteration
+228,cesc_tcga_pan_can_atlas_2018,TCGA-MY-A5BF-01,TCGA-MY-A5BF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+229,cesc_tcga_pan_can_atlas_2018,TCGA-MY-A913-01,TCGA-MY-A913,0,no alteration,no alteration,no alteration,no alteration,no alteration
+230,cesc_tcga_pan_can_atlas_2018,TCGA-PN-A8MA-01,TCGA-PN-A8MA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+231,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A5R3-01,TCGA-Q1-A5R3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+232,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A6DT-01,TCGA-Q1-A6DT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+233,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A6DV-01,TCGA-Q1-A6DV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+234,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A73P-01,TCGA-Q1-A73P,0,no alteration,no alteration,no alteration,no alteration,no alteration
+235,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A73Q-01,TCGA-Q1-A73Q,0,no alteration,no alteration,no alteration,no alteration,no alteration
+236,cesc_tcga_pan_can_atlas_2018,TCGA-Q1-A73R-01,TCGA-Q1-A73R,0,no alteration,no alteration,no alteration,no alteration,no alteration
+237,cesc_tcga_pan_can_atlas_2018,TCGA-R2-A69V-01,TCGA-R2-A69V,0,no alteration,no alteration,no alteration,no alteration,no alteration
+238,cesc_tcga_pan_can_atlas_2018,TCGA-UC-A7PD-01,TCGA-UC-A7PD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+239,cesc_tcga_pan_can_atlas_2018,TCGA-UC-A7PG-01,TCGA-UC-A7PG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+240,cesc_tcga_pan_can_atlas_2018,TCGA-UC-A7PI-01,TCGA-UC-A7PI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+241,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EB-01,TCGA-VS-A8EB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+242,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EG-01,TCGA-VS-A8EG,0,no alteration,no alteration,no alteration,no alteration,no alteration
+243,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EJ-01,TCGA-VS-A8EJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+244,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8EL-01,TCGA-VS-A8EL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+245,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8Q8-01,TCGA-VS-A8Q8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+246,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8Q9-01,TCGA-VS-A8Q9,0,no alteration,no alteration,no alteration,no alteration,no alteration
+247,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8QF-01,TCGA-VS-A8QF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+248,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8QH-01,TCGA-VS-A8QH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+249,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A8QM-01,TCGA-VS-A8QM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+250,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A94W-01,TCGA-VS-A94W,0,no alteration,no alteration,no alteration,no alteration,no alteration
+251,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A94Y-01,TCGA-VS-A94Y,0,no alteration,no alteration,no alteration,no alteration,no alteration
+252,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A94Z-01,TCGA-VS-A94Z,0,no alteration,no alteration,no alteration,no alteration,no alteration
+253,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A952-01,TCGA-VS-A952,0,no alteration,no alteration,no alteration,no alteration,no alteration
+254,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A953-01,TCGA-VS-A953,0,no alteration,no alteration,no alteration,no alteration,no alteration
+255,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A954-01,TCGA-VS-A954,0,no alteration,no alteration,no alteration,no alteration,no alteration
+256,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A959-01,TCGA-VS-A959,0,no alteration,no alteration,no alteration,no alteration,no alteration
+257,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9U5-01,TCGA-VS-A9U5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+258,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9U6-01,TCGA-VS-A9U6,0,no alteration,no alteration,no alteration,no alteration,no alteration
+259,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UA-01,TCGA-VS-A9UA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+260,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UB-01,TCGA-VS-A9UB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+261,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UC-01,TCGA-VS-A9UC,0,no alteration,no alteration,no alteration,no alteration,no alteration
+262,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UD-01,TCGA-VS-A9UD,0,no alteration,no alteration,no alteration,no alteration,no alteration
+263,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UH-01,TCGA-VS-A9UH,0,no alteration,no alteration,no alteration,no alteration,no alteration
+264,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UI-01,TCGA-VS-A9UI,0,no alteration,no alteration,no alteration,no alteration,no alteration
+265,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UJ-01,TCGA-VS-A9UJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+266,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UL-01,TCGA-VS-A9UL,0,no alteration,no alteration,no alteration,no alteration,no alteration
+267,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UM-01,TCGA-VS-A9UM,0,no alteration,no alteration,no alteration,no alteration,no alteration
+268,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UP-01,TCGA-VS-A9UP,0,no alteration,no alteration,no alteration,no alteration,no alteration
+269,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UR-01,TCGA-VS-A9UR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+270,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UT-01,TCGA-VS-A9UT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+271,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UU-01,TCGA-VS-A9UU,0,no alteration,no alteration,no alteration,no alteration,no alteration
+272,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UV-01,TCGA-VS-A9UV,0,no alteration,no alteration,no alteration,no alteration,no alteration
+273,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UY-01,TCGA-VS-A9UY,0,no alteration,no alteration,no alteration,no alteration,no alteration
+274,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9UZ-01,TCGA-VS-A9UZ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+275,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V0-01,TCGA-VS-A9V0,0,no alteration,no alteration,no alteration,no alteration,no alteration
+276,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V1-01,TCGA-VS-A9V1,0,no alteration,no alteration,no alteration,no alteration,no alteration
+277,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V2-01,TCGA-VS-A9V2,0,no alteration,no alteration,no alteration,no alteration,no alteration
+278,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V3-01,TCGA-VS-A9V3,0,no alteration,no alteration,no alteration,no alteration,no alteration
+279,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V4-01,TCGA-VS-A9V4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+280,cesc_tcga_pan_can_atlas_2018,TCGA-VS-A9V5-01,TCGA-VS-A9V5,0,no alteration,no alteration,no alteration,no alteration,no alteration
+281,cesc_tcga_pan_can_atlas_2018,TCGA-VS-AA62-01,TCGA-VS-AA62,0,no alteration,no alteration,no alteration,no alteration,no alteration
+282,cesc_tcga_pan_can_atlas_2018,TCGA-WL-A834-01,TCGA-WL-A834,0,no alteration,no alteration,no alteration,no alteration,no alteration
+283,cesc_tcga_pan_can_atlas_2018,TCGA-XS-A8TJ-01,TCGA-XS-A8TJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+284,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-A8QO-01,TCGA-ZJ-A8QO,0,no alteration,no alteration,no alteration,no alteration,no alteration
+285,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-A8QQ-01,TCGA-ZJ-A8QQ,0,no alteration,no alteration,not profiled,not profiled,no alteration
+286,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-A8QR-01,TCGA-ZJ-A8QR,0,no alteration,no alteration,no alteration,no alteration,no alteration
+287,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAX4-01,TCGA-ZJ-AAX4,0,no alteration,no alteration,no alteration,no alteration,no alteration
+288,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAX8-01,TCGA-ZJ-AAX8,0,no alteration,no alteration,no alteration,no alteration,no alteration
+289,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXA-01,TCGA-ZJ-AAXA,0,no alteration,no alteration,no alteration,no alteration,no alteration
+290,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXB-01,TCGA-ZJ-AAXB,0,no alteration,no alteration,no alteration,no alteration,no alteration
+291,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXF-01,TCGA-ZJ-AAXF,0,no alteration,no alteration,no alteration,no alteration,no alteration
+292,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXJ-01,TCGA-ZJ-AAXJ,0,no alteration,no alteration,no alteration,no alteration,no alteration
+293,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXN-01,TCGA-ZJ-AAXN,0,no alteration,no alteration,no alteration,no alteration,no alteration
+294,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AAXT-01,TCGA-ZJ-AAXT,0,no alteration,no alteration,no alteration,no alteration,no alteration
+295,cesc_tcga_pan_can_atlas_2018,TCGA-ZJ-AB0H-01,TCGA-ZJ-AB0H,0,no alteration,no alteration,no alteration,no alteration,no alteration
+296,cesc_tcga_pan_can_atlas_2018,TCGA-ZX-AA5X-01,TCGA-ZX-AA5X,0,no alteration,no alteration,no alteration,no alteration,no alteration
