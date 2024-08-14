@@ -163,7 +163,8 @@ def main(args):
                 for gName in os.listdir(f"{directory_path}/{types}/"):
                     geneName = gName.split('_')[1:]
                     geneName = "_".join(geneName)
-
+                    if geneName != "EGFR-Percentage_12.4_":
+                        continue
                     cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName
                     if not os.path.exists(args.model_path + f"{cancer_folder}_{args.partition}/"):
                         os.makedirs(args.model_path + f"{cancer_folder}_{args.partition}/")
@@ -221,7 +222,7 @@ def main(args):
                     try:
                         data = generateDataSet(cancer = args.cancer, sensitive = eval(args.fair_attr), fold = args.partition, task = args.task, seed = args.seed, geneType = geneType, geneName = geneName)
                         df = data.train_valid_test(args.split_ratio)
-                        
+
                         if args.task == 3:
                             num_classes = 2
                         else:

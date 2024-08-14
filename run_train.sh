@@ -338,36 +338,36 @@
 
 ############### Genetic Mutation Classification ###############
 
-# declare -a CANCER=("lgg" "gbm")
-# PARTITION=(2)
-# CURR=(0 1 2 3)
-# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+declare -a CANCER=("luad")
+PARTITION=(2)
+CURR=(0 1 2 3)
+SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-# for cancer in "${CANCER[@]}";
-# do for partition in ${PARTITION[@]};
-# do for curr in ${CURR[@]};
-# do python main_genetic.py --cancer $cancer \
-#                  --model_path="./models_race/" \
-#                  --partition=$partition \
-#                   --curr_fold=$curr \
-#                   --task=4 \
-#                   --fair_attr="$SENSITIVE" \
-#                   --lr=1e-5 \
-#                   --dropout=0.3 \
-#                   --seed=0 \
-#                   --epochs=150 \
-#                   --batch_size=16 \
-#                   --acc_grad=2 \
-#                   --scheduler_step=10 \
-#                   --scheduler_gamma=0.95 \
-#                   --split_ratio=1 \
-#                   --fair_lambda=1 \
-#                   --device="cuda"
-# done
-# done
-# done
+for cancer in "${CANCER[@]}";
+do for partition in ${PARTITION[@]};
+do for curr in ${CURR[@]};
+do python main_genetic.py --cancer $cancer \
+                 --model_path="./models_race/" \
+                 --partition=$partition \
+                  --curr_fold=$curr \
+                  --task=4 \
+                  --fair_attr="$SENSITIVE" \
+                  --lr=1e-5 \
+                  --dropout=0.3 \
+                  --seed=0 \
+                  --epochs=150 \
+                  --batch_size=16 \
+                  --acc_grad=2 \
+                  --scheduler_step=10 \
+                  --scheduler_gamma=0.95 \
+                  --split_ratio=1 \
+                  --fair_lambda=1 \
+                  --device="cuda"
+done
+done
+done
 
-# declare -a CANCER=("lgg" "gbm")
+# declare -a CANCER=("luad")
 # PARTITION=(2)
 # CURR=(0 1 2 3)
 # SENSITIVE='{"Race Category": ["White", "Black or African American"]}'

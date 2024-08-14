@@ -118,6 +118,7 @@ def main(args):
                 predicted_survival_times = []
                 true_survival_times = []
                 stages = []
+                dl_start = 0
 
                 if args.partition == 1:
                     _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
@@ -217,8 +218,9 @@ def main(args):
 
                 elif args.partition == 2:
                     for curr_fold in range(4):
-                        _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
+                        _, val_ds, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
                         test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=False)
+                        dl_end = len(test_dl) + dl_start
                         cancer_folder = str(args.task) + "_" + "_".join(args.cancer) + "_" + geneType + "_" + geneName
                         model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
                         subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
@@ -290,17 +292,18 @@ def main(args):
                                     stages.append(stage.detach().cpu().numpy())
                                     caseIds.append(case_id[0])
                         inference_results = pd.DataFrame({
-                            "logits": logits, 
-                            "prob": probs, 
-                            "pred": predictions, 
-                            "label": labels, 
-                            "sens_attr": senAttrs,
-                            "ID_col": caseIds
+                            "logits": logits[dl_start:dl_end+1], 
+                            "prob": probs[dl_start:dl_end+1], 
+                            "pred": predictions[dl_start:dl_end+1], 
+                            "label": labels[dl_start:dl_end+1], 
+                            "sens_attr": senAttrs[dl_start:dl_end+1],
+                            "ID_col": caseIds[dl_start:dl_end+1]
                         })
                         inference_results["pred"] = inference_results["pred"].astype(int)
                         inference_results["label"] = inference_results["label"].astype(int)
                         inference_results["sens_attr"] = inference_results["sens_attr"].astype(int)
                         inference_results.to_csv(inference_results_path)
+                        dl_start = dl_end
 
                     if args.task == 1 or args.task == 2 or args.task == 4:
                         if num_classes > 2:

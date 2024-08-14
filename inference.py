@@ -110,6 +110,7 @@ def main(args):
     predicted_survival_times = []
     true_survival_times = []
     stages = []
+    dl_start = 0
 
     if args.partition == 1:
         _, _, test_ds = get_datasets(df, args.task, "vanilla", None)
@@ -209,8 +210,9 @@ def main(args):
 
     elif args.partition == 2:
         for curr_fold in range(4):
-            _, _, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
+            _, val_ds, test_ds = get_datasets(df, args.task, "kfold", curr_fold)
             test_dl = DataLoader(test_ds, batch_size=1, shuffle=False, pin_memory=False)
+            dl_end = dl_start + len(test_dl)
             cancer_folder = str(args.task) + "_" + "_".join(args.cancer)
             model_names = os.listdir(args.model_path + f"{cancer_folder}_{args.partition}/")
             subfolders = [folder for folder in model_names if os.path.isdir(os.path.join(args.model_path + f"{cancer_folder}_{args.partition}/", folder))]
@@ -248,6 +250,7 @@ def main(args):
                 model.load_state_dict(torch.load(weight_path), strict=False)
                 result_path = Path(weight_path).parent.parent / f"{max_index}-result.csv"
                 inference_results_path = Path(weight_path).parent / f"inference_results_fold{curr_fold}.csv"
+                validation_results_path = Path(weight_path).parent / f"validation_results_fold{curr_fold}.csv"
                 fig_path = Path(weight_path).parent.parent / f"{max_index}-survival_curve.png"
                 fig_path2 = Path(weight_path).parent.parent / f"{max_index}-survival_curve_stage.png"
                 fig_path3 = Path(weight_path).parent.parent / f"{max_index}-survival_curve_black.png"
@@ -284,17 +287,18 @@ def main(args):
                         caseIds.append(case_id)
             if args.task == 1 or args.task == 2 or args.task == 4:
                 inference_results = pd.DataFrame({
-                    "logits": logits, 
-                    "prob": probs, 
-                    "pred": predictions,
-                    "label": labels, 
-                    "sens_attr": senAttrs,
-                    "ID_col": caseIds
+                    "logits": logits[dl_start:dl_end+1], 
+                    "prob": probs[dl_start:dl_end+1], 
+                    "pred": predictions[dl_start:dl_end+1],
+                    "label": labels[dl_start:dl_end+1], 
+                    "sens_attr": senAttrs[dl_start:dl_end+1],
+                    "ID_col": caseIds[dl_start:dl_end+1]
                 })
                 inference_results["pred"] = inference_results["pred"].astype(int)
                 inference_results["label"] = inference_results["label"].astype(int)
                 inference_results["sens_attr"] = inference_results["sens_attr"].astype(int)
                 inference_results.to_csv(inference_results_path)
+                dl_start = dl_end
 
         if args.task == 1 or args.task == 2 or args.task == 4:
             if num_classes > 2:
