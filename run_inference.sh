@@ -245,37 +245,37 @@
 #     done
 
 # declare -a CANCER=("luad")
-declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
-PARTITION=(2)
-SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
+# PARTITION=(2)
+# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference_genetic.py --cancer $cancer \
-                  --model_path="./models_race/" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --seed=0 \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference_genetic.py --cancer $cancer \
+#                   --model_path="./models_race/" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --device="cuda"
+#     done
+#     done
 
 # declare -a CANCER=("lgg")
-declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
-PARTITION=(2)
-SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
+# PARTITION=(2)
+# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
-for cancer in "${CANCER[@]}";
-do for partition in ${PARTITION[@]};
-do python inference_genetic.py --cancer $cancer \
-                  --model_path="./models_race/" \
-                  --weight_path="" \
-                  --partition=$partition \
-                  --fair_attr="$SENSITIVE" \
-                  --task=4 \
-                  --seed=0 \
-                  --reweight \
-                  --device="cuda"
-    done
-    done
+# for cancer in "${CANCER[@]}";
+# do for partition in ${PARTITION[@]};
+# do python inference_genetic.py --cancer $cancer \
+#                   --model_path="./models_race/" \
+#                   --weight_path="" \
+#                   --partition=$partition \
+#                   --fair_attr="$SENSITIVE" \
+#                   --task=4 \
+#                   --seed=0 \
+#                   --reweight \
+#                   --device="cuda"
+#     done
+#     done
