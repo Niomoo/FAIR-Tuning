@@ -396,7 +396,7 @@
 #     done
 #     done
 
-# declare -a CANCER=("kich" "coadread" "gbm" "lgg")
+# declare -a CANCER=("coadread" "gbm" "lgg")
 # PARTITION=(2)
 # CURR=(0 1 2 3)
 # SENSITIVE='{"Sex": ["Female", "Male"]}'
@@ -405,7 +405,7 @@
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
 # do python main_genetic.py --cancer $cancer \
-#                  --model_path="./models_gender/" \
+#                  --model_path="./models_pan_cancer/" \
 #                  --partition=$partition \
 #                   --curr_fold=$curr \
 #                   --task=4 \
@@ -425,7 +425,7 @@
 # done
 # done
 
-# declare -a CANCER=("kich" "coadread" "gbm" "lgg")
+# declare -a CANCER=("coadread" "gbm" "lgg")
 # PARTITION=(2)
 # CURR=(0 1 2 3)
 # SENSITIVE='{"Sex": ["Female", "Male"]}'
@@ -434,12 +434,12 @@
 # do for partition in ${PARTITION[@]};
 # do for curr in ${CURR[@]};
 # do python main_genetic.py --cancer $cancer \
-#                   --model_path="./models_gender/" \
+#                   --model_path="./models_pan_cancer/" \
 #                   --partition=$partition \
 #                   --curr_fold=$curr \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=4 \
-#                   --lr=1e-6 \
+#                   --lr=1e-5 \
 #                   --dropout=0.3 \
 #                   --seed=0 \
 #                   --epochs=150 \

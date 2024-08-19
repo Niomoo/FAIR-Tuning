@@ -31,6 +31,7 @@ FAIR-Tuning/
 ```
 bash run_train.sh
 ```
+- Add a `model/` folder to store models.
 - Set training argument in `run_train.sh`.
     - `--model_path`: path to store the training model
     - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis

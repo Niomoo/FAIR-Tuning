@@ -55,12 +55,12 @@
 # declare -a CANCER=("GBM LGG")
 # # declare -a CANCER=("LUAD LUSC" "KIRP KIRC KICH" "KIRP KIRC" "KIRP KICH" "KIRC KICH" "COAD READ" "GBM LGG")
 # PARTITION=(2)
-# SENSITIVE='{"race": ["white", "black or african american"]}'
+# SENSITIVE='{"gender": ["female", "male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python inference.py --cancer $cancer \
-#                   --model_path="./models_race/" \
+#                   --model_path="./models_gender/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -212,12 +212,12 @@
 
 # declare -a CANCER=("lusc" "kirp" "kirc" "kich" "coadread" "lgg" "gbm")
 # PARTITION=(1)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
+# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python inference_genetic.py --cancer $cancer \
-#                   --model_path="./models_CHIEF/" \
+#                   --model_path="./models_race/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=4 \
@@ -228,12 +228,12 @@
 
 # declare -a CANCER=("luad" "lusc" "kirp" "kirc" "kich" "coad" "read" "gbm" "lgg")
 # PARTITION=(1)
-# SENSITIVE='{"Sex": ["Female", "Male"]}'
+# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python inference_genetic.py --cancer $cancer \
-#                   --model_path="./models_pan_cancer/" \
+#                   --model_path="./models_race/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
@@ -244,15 +244,15 @@
 #     done
 #     done
 
-# declare -a CANCER=("luad")
-# declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
+# declare -a CANCER=("coadread" "gbm" "lgg")
+# # declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
 # PARTITION=(2)
-# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python inference_genetic.py --cancer $cancer \
-#                   --model_path="./models_race/" \
+#                   --model_path="./models_pan_cancer/" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
 #                   --task=4 \
@@ -261,15 +261,15 @@
 #     done
 #     done
 
-# declare -a CANCER=("lgg")
-# declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
+# declare -a CANCER=("coadread" "gbm" "lgg")
+# # declare -a CANCER=("coadread" "gbm" "kich" "lgg" "luad")
 # PARTITION=(2)
-# SENSITIVE='{"Race Category": ["White", "Black or African American"]}'
+# SENSITIVE='{"Sex": ["Female", "Male"]}'
 
 # for cancer in "${CANCER[@]}";
 # do for partition in ${PARTITION[@]};
 # do python inference_genetic.py --cancer $cancer \
-#                   --model_path="./models_race/" \
+#                   --model_path="./models_pan_cancer/" \
 #                   --weight_path="" \
 #                   --partition=$partition \
 #                   --fair_attr="$SENSITIVE" \
