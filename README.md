@@ -33,8 +33,9 @@ bash run_train.sh
 ```
 - Add a `model/` folder to store models.
 - Set training argument in `run_train.sh`.
+    - `SENSITIVE`: the demographic subgroups for mitigating bias
     - `--model_path`: path to store the training model
-    - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis
+    - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis, 4 for genetic mutation classification
     - `--reweight`: add this argument to do the FAIR-Tuning stage.
     - other argument details can be seen in the `main.py`.
 
@@ -42,8 +43,9 @@ bash run_train.sh
 ```
 bash run_inference.sh
 ```
-- Set training argument in `run_train.sh`.
-    - `--model_path`: path to the existed weight
-    - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis
+- Set inference argument in `run_inference.sh`.
+    - `SENSITIVE`: the demographic subgroups for mitigating bias
+    - `--weight_path`: path to the existed weight
+    - `--task`: 1 for cancer classification, 2 for tumor detection, 3 for survival analysis, 4 for genetic mutation classification
     - `--reweight`: add this argument to select the weight after FAIR-Tuning.
     - other argument details can be seen in the `inference.py`.
