@@ -12,6 +12,9 @@ FAIR-Tuning/
 │   └── xxx.pt
 ├── clinical_information/
 │   └── xxx_clinical_information.pkl
+├── pretrained_weight/
+│   └── race
+│   └── gender
 ├── datasets.py
 ├── fairmetric.py
 ├── inference.py
@@ -25,6 +28,7 @@ FAIR-Tuning/
 ## Usage
 ### Dataset
 - Prepare image embeddings and put them under `embedding/` folder.
+    - e.g. `sudo mount <ip>:<path_to_remote_embeddng> <path_to_local_embedding>` (suggest to download the whole embedding files)
 - Prepare clinical information pickle files and put them under `clinical_information/` folder.
 
 ### Training
