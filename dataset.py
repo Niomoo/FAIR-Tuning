@@ -20,8 +20,10 @@ class generateDataSet():
         self.seed = seed
         self.intDiagnosticSlide = 0
         self.intTumor = 0 
-        self.strClinicalInformationPath = './clinical_information/'
-        self.strEmbeddingPath = './CHIEF_features/' # path to embeddings
+        self.strClinicalInformationPath = (
+            "./clinical_information/"  # path to clinical information
+        )
+        self.strEmbeddingPath = './embedding/' # path to embeddings
         self.sort = False
         self.dfDistribution = None
         self.dfRemoveDupDistribution = None
@@ -34,7 +36,7 @@ class generateDataSet():
             self.dfClinicalInformation = None
 
     def fClinicalInformation(self):
-        df = pd.DataFrame({})
+        df = pd.DataFrame({})        
         self.setClinicalInformationPath()
         for c in self.cancer:
             if self.task == 4:      # genetic classification
@@ -101,12 +103,12 @@ class generateDataSet():
         return self.dictInformation
 
     def setClinicalInformationPath(self):
-        if self.task in [1,2]:
-            self.strClinicalInformationPath = './clinical_information/'
+        if self.task in [1, 2]:
+            self.strClinicalInformationPath = "./clinical_information/"
         elif self.task == 3:
-            self.strClinicalInformationPath = './survival_clinical_information/'
+            self.strClinicalInformationPath = "./survival_clinical_information/"
         elif self.task == 4:
-            self.strClinicalInformationPath = './tcga_pan_cancer/'
+            self.strClinicalInformationPath = "./tcga_pan_cancer/"
         else:
             print("Invalid task number. Please check the task number again.")
 
@@ -115,7 +117,7 @@ class generateDataSet():
             self.updateDataFrame()
         dfClinicalInformation = self.dfClinicalInformation.copy()
 
-        lsDownloadPath = glob.glob(f'{self.strEmbeddingPath}/*.pt')
+        lsDownloadPath = glob.glob(f'{self.strEmbeddingPath}*/*.pt')
         lsDownloadFoldID = [s.split('/')[-1][:-3] for s in lsDownloadPath]
 
         ## task 1: cancer classification
@@ -124,12 +126,14 @@ class generateDataSet():
                 lsDownloadFoldID = np.array(lsDownloadFoldID)[[s[13] == '0' for s in lsDownloadFoldID]].tolist()
             elif(self.intTumor == 1):
                 lsDownloadFoldID = np.array(lsDownloadFoldID)[[s[13] != '0' for s in lsDownloadFoldID]].tolist()
-
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
+
+            lsDownloadPath = [s for s in lsDownloadPath if s.split('/')[-1][:-3] in lsDownloadFoldID]
             dfDownload = pd.DataFrame({
                 'case_submitter_id': lsDownloadCaseSubmitterId,
-                'folder_id': lsDownloadFoldID
+                'folder_id': lsDownloadFoldID,
+                'path': lsDownloadPath
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
 
@@ -172,9 +176,11 @@ class generateDataSet():
         elif self.task == 2:
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
+            lsDownloadPath = [s for s in lsDownloadPath if s.split('/')[-1][:-3] in lsDownloadFoldID]
             dfDownload = pd.DataFrame({
                 'case_submitter_id': lsDownloadCaseSubmitterId,
-                'folder_id': lsDownloadFoldID
+                'folder_id': lsDownloadFoldID,
+                'path': lsDownloadPath
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
 
@@ -191,9 +197,11 @@ class generateDataSet():
         elif self.task == 3:
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
+            lsDownloadPath = [s for s in lsDownloadPath if s.split('/')[-1][:-3] in lsDownloadFoldID]
             dfDownload = pd.DataFrame({
                 'case_submitter_id': lsDownloadCaseSubmitterId,
-                'folder_id': lsDownloadFoldID
+                'folder_id': lsDownloadFoldID,
+                'path': lsDownloadPath
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
             le = LabelEncoder()
@@ -219,9 +227,11 @@ class generateDataSet():
         elif self.task == 4:
             lsDownloadCaseSubmitterId = [s[:12] for s in lsDownloadFoldID]
             dfClinicalInformation = self.fReduceDataFrame(dfClinicalInformation.drop_duplicates(subset = 'case_submitter_id', ignore_index = True))
+            lsDownloadPath = [s for s in lsDownloadPath if s.split('/')[-1][:-3] in lsDownloadFoldID]
             dfDownload = pd.DataFrame({
                 'case_submitter_id': lsDownloadCaseSubmitterId,
-                'folder_id': lsDownloadFoldID
+                'folder_id': lsDownloadFoldID,
+                'path': lsDownloadPath
             })
             dfClinicalInformation = pd.merge(dfClinicalInformation, dfDownload, on = "case_submitter_id")
             le = LabelEncoder()
@@ -241,7 +251,7 @@ class generateDataSet():
             dfDummy['fold'] = (10*np.array(dfDummy['sensitive'].tolist())+np.array(dfDummy['label'])).tolist()
         dfDummy.fold = le.fit_transform(dfDummy.fold.values)
         foldNum = [0 for _ in range(int(len(dfDummy.index)))]
-        
+
         if self.fold == 1:
             train, valitest = train_test_split(dfDummy, train_size = 0.6, random_state = self.seed, shuffle = True, stratify = dfDummy['fold'].tolist())
             vali, test = train_test_split(valitest, test_size = 0.5, random_state = self.seed, shuffle = True, stratify = valitest['fold'].tolist())
@@ -271,7 +281,7 @@ class generateDataSet():
 
         dfDummy = dfDummy[['case_submitter_id', 'fold']]
         dfClinicalInformation = pd.merge(dfClinicalInformation, dfDummy, on = "case_submitter_id")
-        dfClinicalInformation['path'] = [f'{self.strEmbeddingPath}{p}.pt' for p in dfClinicalInformation['folder_id']]
+        dfClinicalInformation['path'] = [p for p in dfClinicalInformation['path']]
 
         if self.task == 3:
             self.dfDistribution = dfClinicalInformation.groupby(['fold', 'event', 'sensitive']).size()
@@ -285,25 +295,25 @@ class generateDataSet():
         # print("Train/Val/Test: ",
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['label'] == 0)]), "/",
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['label'] == 0)]), "/",
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 0)])      
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 0)])
         # )
         # print("Label 1: ", len(dfClinicalInformation[dfClinicalInformation['label'] == 1]))
-        # print("Train/Val/Test: ", 
+        # print("Train/Val/Test: ",
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['label'] == 1)]), "/" ,
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['label'] == 1)]), "/",
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 1)])      
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['label'] == 1)])
         # )
         # print("Sensitive 0: ", len(dfClinicalInformation[dfClinicalInformation['sensitive'] == 0]))
         # print("Train/Val/Test: ",
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['sensitive'] == 0)]), "/",
         #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['sensitive'] == 0)]), "/",
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 0)])      
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 0)])
         # )
         # print("Sensitive 1: ", len(dfClinicalInformation[dfClinicalInformation['sensitive'] == 1]))
         # print("Train/Val/Test: ",
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['sensitive'] == 1)]), "/", 
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['sensitive'] == 1)]), "/", 
-        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 1)])      
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 0) & (dfClinicalInformation['sensitive'] == 1)]), "/",
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 1) & (dfClinicalInformation['sensitive'] == 1)]), "/",
+        #     len(dfClinicalInformation[(dfClinicalInformation['fold'] == 2) & (dfClinicalInformation['sensitive'] == 1)])
         # )
         return dfClinicalInformation
 
